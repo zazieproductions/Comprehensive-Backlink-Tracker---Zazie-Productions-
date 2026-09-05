@@ -1,6 +1,6 @@
 # Official Properties & Channels
 
-**45 records.** Self-owned channels: storefronts, Bandcamp, itch.io, YouTube, Linktree.
+**47 records.** Self-owned channels: storefronts, Bandcamp, itch.io, YouTube, Linktree.
 
 ## archive.org — 7
 
@@ -57,6 +57,12 @@
 |---|---|---|---|---|---|---|---|
 | [https://music.youtube.com/browse/UCeYo8Y6ocrsQzscw158u-tw](https://music.youtube.com/browse/UCeYo8Y6ocrsQzscw158u-tw) | Zazie Productions | B | 2026-09-05 | Zazie Productions - YouTube Music | research | verified | Distinct YouTube Music ARTIST channel (195 subscribers) renders "Zazie Productions" exact; full discography incl. Anesthesia for the Signal Age, Sellotape |
 
+## substack.com — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://substack.com/@zazieproductions](https://substack.com/@zazieproductions) | Zazie Productions | C | 2026-09-05 | Substack profile @zazieproductions (user 35672413) | web_presence_expansion | verified | Reader profile; authored the reply in Lake Ivan review comments 2025-03-24 (WPX pass) |
+
 ## youtu.be — 2
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -71,10 +77,11 @@
 | [https://www.youtube.com/watch?v=7fR5Ps12xvs](https://www.youtube.com/watch?v=7fR5Ps12xvs) | Zazie Productions | B |  |  | link_dump | unverified |  |
 | [https://youtube.com/@zazieproductions?si=T9Zc5jsMttuG3n-e](https://youtube.com/@zazieproductions?si=T9Zc5jsMttuG3n-e) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
-## zazieproductions.bandcamp.com — 19
+## zazieproductions.bandcamp.com — 20
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
+| [http://web.archive.org/web/20210914053312/https://zazieproductions.bandcamp.com/](http://web.archive.org/web/20210914053312/https://zazieproductions.bandcamp.com/) | Zazie Productions | B | 2026-09-05 | Wayback: earliest Bandcamp capture (2021-09-14, Archive Team | web_presence_expansion | verified | Historical: 4 albums; 2021 bio text; Typescript magazine claim (unverified) (WPX pass) |
 | [https://zazieproductions.bandcamp.com](https://zazieproductions.bandcamp.com) | Zazie Productions | B |  |  | link_dump | unverified |  |
 | [https://zazieproductions.bandcamp.com/album/a-long-way-to-nowhere](https://zazieproductions.bandcamp.com/album/a-long-way-to-nowhere) | Zazie Productions | B |  | A Long Way To Nowhere | research | unverified | Bandcamp release page (official discography) |
 | [https://zazieproductions.bandcamp.com/album/anesthesia-for-the-signal-age](https://zazieproductions.bandcamp.com/album/anesthesia-for-the-signal-age) | Zazie Productions | B |  | Anesthesia For The Signal Age | research | unverified | Bandcamp release page (official discography) |

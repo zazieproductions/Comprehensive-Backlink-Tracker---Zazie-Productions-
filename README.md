@@ -129,29 +129,30 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 
 ## 📊 Census results (latest pass)
 
-The search sweeps (Pass 1–10) fold confirmed exact-name URLs into the live master index.
-As of the latest pass the master index holds **524 records**:
+The search sweeps (Pass 1–11) fold confirmed exact-name URLs into the live master index.
+As of the latest pass the master index holds **544 records**:
 
 ```
-TOTAL                    524
-  Music Compilations      117
+TOTAL                    544
+  Music Compilations      120
   Spam/Scraper/Syndic./
     SEO-Poison/Low-Trust   73
   Profiles & Catalogs      63
+  Press & Editorial        56
   Streaming Platforms      52
-  Press & Editorial        53
-  Community/Wiki/Fan       50
-  Official Properties      45
+  Community/Wiki/Fan       51
+  Official Properties      47
   Film, Festivals & Exhib. 41
   Publications & Recogn.   18
+  Directories & Databases  11
   Podcasts & Broadcasts     6
   Video Mirror / Backlink   2
   Music Discography         2
   Lyrics & Music Databases  1
   Search-Engine Index       1
 ```
-Trust tiers: **A** 105 · **B** 159 · **C** 187 · **D** 73 (D = flagged spam/scraper/syndication/mirrors — see below).
-Sources: media_master 132 · link_dump 252 · research 116 · regional_alt_pass 24.
+Trust tiers: **A** 107 · **B** 172 · **C** 192 · **D** 73 (D = flagged spam/scraper/syndication/mirrors — see below).
+Sources: media_master 132 · link_dump 252 · research 116 · regional_alt_pass 24 · web_presence_expansion 20.
 
 > **Pass 10 — Low-Trust & Parasite Watch (2026-09-05).** A dedicated category now consolidates
 > every spam / scraper / syndication / SEO-poisoning / low-trust occurrence of the two exact strings:
@@ -186,6 +187,15 @@ Sources: media_master 132 · link_dump 252 · research 116 · regional_alt_pass 
 - Pass 9 (2026-09-05): regional sweep — Mail.ru = captcha-free Yandex path; 360/Seznam/Yahoo!JP/Walla!/Yep/OceanHero worked; Sogou/Mojeek/Trove/Rambler blocked; BIGLOBE·Excite JP·GiveWater·Stract·BoardReader·Ask·AOL·HotBot·UK-WA dead or down;
 - **+15 Internet Archive full-text records** (zines collection, PD-Day Remix Contest 2026 film, Mystery File Dumps);
 - Full detail: `data/research/search_engine_audit.md` + `registry/regional_alt_engine_pass_2026-09-05/`.
+- **Pass 11 (2026-09-05) — Web-presence blind-spot expansion** (backlinks · visual · social ·
+  entity/machine-readable · historical/deleted · web archaeology). Highlights: the
+  **VisualcontainerTV Winter-2024 press-release PDF** (Tier A, names both forms, Jury Special
+  Mention + Feb 2025 broadcast); the **deleted PVTV Fringe Flicks April-2025 page recovered from
+  Wayback** (Deaf Orphans of Streamcast, Liverpool, 4 Apr 2025); 8 IMDb title IDs + TMDB/IMDb
+  identity split; 5 Discogs releases missing from master; a legitimate 5-post
+  **clongclongmoo.org backlink cluster**; BMC/Levinson spam cluster traced to one unchanged
+  BMC page (Dec 2021) and characterised as a doorway network via Common Crawl. Report:
+  `registry/WEB_PRESENCE_BLIND_SPOTS_EXPANSION.md`; data: `registry/web_presence_expansion/`.
 
 ---
 

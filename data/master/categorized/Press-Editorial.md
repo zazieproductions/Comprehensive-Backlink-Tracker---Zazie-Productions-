@@ -1,6 +1,6 @@
 # Press & Editorial
 
-**53 records.** Independent coverage, features, reviews, press releases and news mentions.
+**56 records.** Independent coverage, features, reviews, press releases and news mentions.
 
 ## allevents.in — 1
 
@@ -144,10 +144,17 @@
 |---|---|---|---|---|---|---|---|
 | [https://open.spotify.com/episode/1fvq4kF8w6ew8IllOLf5yn](https://open.spotify.com/episode/1fvq4kF8w6ew8IllOLf5yn) | Zazie Productions | A |  |  | media_master | unverified |  |
 
-## peopleversus.tv — 1
+## patreon.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
+| [https://www.patreon.com/posts/pvtv-patreon-125656656](https://www.patreon.com/posts/pvtv-patreon-125656656) | Zazie Kanwar-Torge | B | 2026-09-05 | PVTV Patreon Monthly Update – April 2025 | web_presence_expansion | verified | Title-only mention 'Deaf Orphans of Streamcast (US)' in line-up; supporting evidence for PVTV screening, fails exact-name rule (WPX pass) |
+
+## peopleversus.tv — 2
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [http://web.archive.org/web/20260215233256/https://www.peopleversus.tv/fringe-flicks-archiv...](http://web.archive.org/web/20260215233256/https://www.peopleversus.tv/fringe-flicks-archive/april-2025/) | Zazie Kanwar-Torge | A | 2026-09-05 | PVTV Fringe Flicks Archive: April 2025 (Wayback; live page 4 | web_presence_expansion | verified | Programme note: Deaf Orphans of Streamcast – Director: Zazie Kanwar-Torge, screened 4 Apr 2025 DoES Liverpool with Lucifer Rising. Live URL deleted 2026; 6 Wayback captures. achievement_id ACH_PVTV_FRINGE_FLICKS_2025-04-04 (WPX pass) |
 | [https://www.peopleversus.tv/fringe-flicks](https://www.peopleversus.tv/fringe-flicks) | Zazie Productions | A |  |  | link_dump | unverified |  |
 
 ## podcasts.apple.com — 1
@@ -247,6 +254,12 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.viralnation.com/resources/blog/what-creators-want-from-brands](https://www.viralnation.com/resources/blog/what-creators-want-from-brands) | Zazie Productions | A |  |  | media_master | unverified |  |
+
+## visualcontainer.tv — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://www.visualcontainer.tv/wp-content/uploads/2025/01/Winter-2024-Award-Winners_Press-...](https://www.visualcontainer.tv/wp-content/uploads/2025/01/Winter-2024-Award-Winners_Press-Release.pdf) | Zazie Kanwar-Torge | A | 2026-09-05 | VisualcontainerTV – Winter 2024 Award Winners Press Release  | web_presence_expansion | verified | Independent institutional PDF: PHANTOM REQUIEM by Zazie Kanwar-Torge (Zazie Productions) – JURY SPECIAL MENTION; broadcast Feb 1-15 2025. achievement_id ACH_PEBBLES_JURY_SPECIAL_MENTION_2024 – same event as Pebbles record (WPX pass) |
 
 ## vitalentum.net — 1
 

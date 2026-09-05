@@ -1,6 +1,6 @@
 # Community, Wiki & Fan Indexes
 
-**50 records.** Fan quizzes, wikis, forums, charts and community pages.
+**51 records.** Fan quizzes, wikis, forums, charts and community pages.
 
 ## app.notion.com — 2
 
@@ -123,11 +123,12 @@
 | [https://www.quotev.com/quiz/16626763/What-Zazie-Productions-Song-Are-You](https://www.quotev.com/quiz/16626763/What-Zazie-Productions-Song-Are-You) | Zazie Productions | C |  |  | link_dump | unverified |  |
 | [https://www.quotev.com/quiz/16687733/Zazie-Productions-Trivia-IMPOSSIBLE-EDITION](https://www.quotev.com/quiz/16687733/Zazie-Productions-Trivia-IMPOSSIBLE-EDITION) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
-## reddit.com — 1
+## reddit.com — 2
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3](https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3) | Zazie Productions | C |  |  | link_dump | unverified |  |
+| [https://www.reddit.com/r/lastfm/comments/ujng7o/12x12_past_year_please_recommend_me_some_m...](https://www.reddit.com/r/lastfm/comments/ujng7o/12x12_past_year_please_recommend_me_some_music/) | Zazie Productions | C | 2026-09-05 | r/lastfm thread – ManicMolotov recommends Constrained Capaci | web_presence_expansion | verified | Same account as known r/musicsuggestions self-promo thread; cluster CL_REDDIT_MANICMOLOTOV_2022; not independent (WPX pass) |
 
 ## saidit.net — 1
 

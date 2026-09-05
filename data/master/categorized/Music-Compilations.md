@@ -1,6 +1,6 @@
 # Music Compilations
 
-**117 records.** Compilation appearances (Discogs / Bandcamp releases).
+**120 records.** Compilation appearances (Discogs / Bandcamp releases).
 
 ## archive.org — 6
 
@@ -53,13 +53,19 @@
 |---|---|---|---|---|---|---|---|
 | [https://christmasasaurus.bandcamp.com/](https://christmasasaurus.bandcamp.com/) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
+## clongclongmoo.org — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://www.clongclongmoo.org/?s=zazie](https://www.clongclongmoo.org/?s=zazie) | Zazie Productions | B | 2026-09-05 | clongclongmoo.org – 5 netlabel posts crediting/linking Zazie | web_presence_expansion | verified | Independent netlabel news hub; reposts label credit lists with live links to zazieproductions.bandcamp.com / linktr.ee. mention_cluster_id CL_CLONGCLONGMOO_NETLABEL_FEED – count as one cluster (WPX pass) |
+
 ## deliriumpsychosis.bandcamp.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://deliriumpsychosis.bandcamp.com/album/digital-intifada](https://deliriumpsychosis.bandcamp.com/album/digital-intifada) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
-## discogs.com — 60
+## discogs.com — 62
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
@@ -123,6 +129,8 @@
 | [https://www.discogs.com/release/37900812-VA-I-Want-To-Believe-X-files-Tribute](https://www.discogs.com/release/37900812-VA-I-Want-To-Believe-X-files-Tribute) | Zazie Productions | C | 2026 | VA I Want To Believe X files Tribute | media_master | unverified | Discogs release |
 | [https://www.discogs.com/release/38101452-Various-HP-Lovecrafts-Whisperer-In-Darkness](https://www.discogs.com/release/38101452-Various-HP-Lovecrafts-Whisperer-In-Darkness) | Zazie Productions | C | 2026 | Various HP Lovecrafts Whisperer In Darkness | media_master | unverified | Discogs release |
 | [https://www.discogs.com/release/38101530-Various-Arboreal-Telegraph](https://www.discogs.com/release/38101530-Various-Arboreal-Telegraph) | Zazie Productions | C |  | Various Arboreal Telegraph | media_master | unverified | Discogs release |
+| [https://www.discogs.com/release/38112006-Various-They-Came-For-The-Whales](https://www.discogs.com/release/38112006-Various-They-Came-For-The-Whales) | Zazie Productions | C | 2026-09-05 | Various – They Came For The Whales (Camembert Électrique 202 | web_presence_expansion | verified | Discogs TrackAppearance 'Subduction Choir'; new (WPX pass) |
+| [https://www.discogs.com/release/38147292-Various-Doom-A-Creative-Commons-Music-Compilation](https://www.discogs.com/release/38147292-Various-Doom-A-Creative-Commons-Music-Compilation) | Zazie Productions | C | 2026-09-05 | Various – Doom / A Creative Commons Music Compilation (Dawn  | web_presence_expansion | verified | Discogs TrackAppearance '7.4mm Under Orange Lights'; new (WPX pass) |
 
 ## dittanyofcrete.bandcamp.com — 3
 
