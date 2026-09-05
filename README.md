@@ -19,6 +19,7 @@ The repo already contains a **dump of earlier research**. This directory turns t
 - 🧠 **Deep-searching methods & copy-paste queries** ready to prompt agents engine-by-engine.
 - 🗂️ **A seed registry** auto-extracted from the existing dump (the places found so far).
 - ✅ **A verification runbook** for the “double-check that they work later” pass.
+- 📊 **A live master index** of every confirmed exact-name URL discovered by the census sweeps.
 
 > 🚩 **Important framing:** `Zazie Kanwar-Torge` and `Zazie Productions` refer to **one person / one artist project** (composer, film-scorer, experimental/noise musician, filmmaker, writer, and multimedia artist). The census deliberately tracks the *name-as-person/company*, not the unrelated French singer **“Zazie”**, the company **“Zazie Films”**, or other similarly-named entities.
 
@@ -58,7 +59,13 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 - 🥉 **Priority C** — self-issued profiles, own storefronts, catalog/discography rows
 - 🔎 **Lead** — unverified or unresolved (do **not** count in totals)
 
-> **Two-name rule (from the existing “Strict Exact-Name” master):** only the exact strings **`Zazie Productions`** and **`Zazie Kanwar-Torge`** qualify as *countable* evidence. Handles/URL-slugs without the space (e.g. `zazieproductions`, `zazie-kanwar-torge`) are useful **leads** but not counted by themselves.
+> **Two-name rule (from the “Strict Exact-Name” master):** eligible evidence is the exact
+> string **`Zazie Productions`** (the contiguous *Productions* sequence in any spacing/case:
+> `Zazie Productions`, `ZazieProductions`, `Zazie_Productions`, `zazieproductions`,
+> `ZAZIEPRODUCTIONS`, and platform-URL forms like `github.com/zazieproductions`) **or** the
+> exact person string **`Zazie Kanwar-Torge`**. A Productions-sequence hit already counts on
+> its own (it does not need the person's name alongside); the no-space person variant
+> (`ZazieKanwar-Torge`) and en-dash (`Zazie Kanwar–Torge`) do **not** count on their own.
 
 ---
 
@@ -86,7 +93,7 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 | [`docs/06_AGENT_PROMPT_TEMPLATES.md`](docs/06_AGENT_PROMPT_TEMPLATES.md) | **Prompt templates.** Ready-to-send agent briefs per phase with required output format & evidence rules. |
 | [`docs/07_LINK_CHECK_AND_VERIFICATION.md`](docs/07_LINK_CHECK_AND_VERIFICATION.md) | **The “double-check they work later” runbook.** HTTP-status probing, redirect handling, exact-name grep, LIVE/PARTIAL/BROKEN tagging, rate-limit etiquette, tooling. |
 
-### Data & registry
+### Seed registry (extracted from the dump)
 
 | Path | What it is |
 |---|---|
@@ -94,6 +101,19 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 | [`registry/seed/SEED_INDEX_FROM_DUMP.md`](registry/seed/SEED_INDEX_FROM_DUMP.md) | **260 unique URLs** auto-extracted from the dump, clustered by media type. *(Source for the “found so far” starting set.)* |
 | [`registry/seed/seed_unique_urls.csv`](registry/seed/seed_unique_urls.csv) | Machine-readable full list (domain, url, first-seen source file). |
 | [`registry/seed/seed_domain_summary.csv`](registry/seed/seed_domain_summary.csv) | Domain → URL-count summary for eyeballing coverage. |
+
+### Live master index (the deliverable)
+
+| File | What it is |
+|---|---|
+| `data/master/master_index.csv` | **Canonical index.** One row per URL: url · host · target · category · trust_tier · source · date · title · status · notes. Edit/add here. |
+| `data/master/SUMMARY.md` | Auto-generated counts by category, trust tier, source. |
+| `data/master/categorized/` | Auto-generated per-category Markdown references (14 categories). |
+| `data/master/REGISTER_LINK_MAP.md` | Maps the 2026 Accomplishment Register's 203 unlinked features to public links; marks HUNT / AUTH / lead per row. |
+| `data/research/search_engine_audit.md` | Which engines index the name; which block bots; what each surfaced (Pass 1–8). |
+| `docs/METHODOLOGY.md` | Inclusion rules, definition of “counts,” trust tiers, reproducibility. |
+| `docs/PLAN.md` | The week-long roadmap + live checklist. |
+| `scripts/generate_docs.py` | Regenerates the categorized docs + summary from the CSV. |
 
 ### Original source dump (untouched originals at repo root)
 
@@ -106,16 +126,70 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 
 ---
 
+## 📊 Census results (latest pass)
+
+The search sweeps (Pass 1–8) fold confirmed exact-name URLs into the live master index.
+As of the latest pass the master index holds **499 records**:
+
+```
+TOTAL                    499
+  Music Compilations      114
+  Profiles & Catalogs      65
+  Press & Editorial        55
+  Streaming Platforms      54
+  Community/Wiki/Fan       54
+  Video Mirror / Backlink  39
+  Film, Festivals & Exhib. 39
+  Official Properties      36
+  SEO Spam / Link Farm     18
+  Publications & Recogn.   15
+  Podcasts & Broadcasts     6
+  Music Discography         2
+  Lyrics & Music Databases  1
+  Search-Engine Index       1
+```
+Trust tiers: **A** 107 · **B** 166 · **C** 170 · **D** 56 (D = flagged spam/mirrors).
+Sources: media_master 133 · link_dump 252 · research 114.
+
+> **Note on rule evolution:** Pass 7 broadened the inclusion standard to the contiguous
+> “Productions” sequence (any spacing/case, plus platform-URL forms), per the user directive.
+> Pass 8 resolved register **#64** (Infinite Self Pavilion / The Wrong Biennale) and catalogued
+> the DistroKid-family platform artist pages (Spotify, Apple Music, Amazon Music, Deezer,
+> TIDAL, iHeartRadio, Boomplay, Qobuz, Beatport, Shazam, Slaps, **Anghami**, **YouTube Music**,
+> plus TikTok sound pages). Engines still blocked/404 or app-only are marked HUNT.
+
+### Engine findings (one-line)
+- **Indexed everywhere**, including the independent crawler **Marginalia**, which surfaced
+  netlabel/bandcamp track pages the mainstream engines deprioritize.
+- **Yahoo** returned the richest exact-match set; **Brave** and **Marginalia** are directly
+  scrapable. **DuckDuckGo, Startpage, Yandex, Mojeek, searx.be** block bots (captcha /
+  anti-bot) and need a browser or a self-hosted SearXNG instance.
+- Full detail: `data/research/search_engine_audit.md`.
+
+---
+
 ## 📌 Current status & next actions
 
 - [x] **Dump cataloged** — media master read; 260 real URLs extracted into `registry/seed/`.
 - [x] **Operating docs written** — mission, playbook, engine dir, query library, week plan, prompts, verification runbook.
-- [ ] **Pass 1 — CENSUS** (run per `docs/05`): sweep every name through every engine class.
+- [x] **Census run (Pass 1–8)** — 499 confirmed exact-name URLs consolidated into `data/master/master_index.csv`; register link map resolved for most features.
 - [ ] **Pass 2 — VERIFY** (run per `docs/07`): double-check every found link (HTTP status + exact-name evidence) and tag ✅ / 🟡 / ❌.
-- [ ] **Pass 3 — CONSOLIDATE**: fold verified rows into a single registry and reconcile against the known-ground-truth register (accomplishment DOCX) and the 133-record media master.
+- [ ] **Pass 3 — CONSOLIDATE**: reconcile remaining HUNT rows (Pandora, Audiomack, Facebook/TikTok, Claro Música, Saavn/JioSaavn, Snapchat, NetEase, Tencent/QQ/Kugou/Kuwo/WeSing, Pretzel, TouchTunes, JOOX, Kuack, MediaNet, Dubset, Roblox, Soundtrack by Twitch) against the known-ground-truth register.
 
 > **Easy first step for any agent:** open [`docs/01_MISSION_SCOPE_AND_RULES.md`](docs/01_MISSION_SCOPE_AND_RULES.md), then [`docs/05_WEEK_PLAN_AND_CADENCE.md`](docs/05_WEEK_PLAN_AND_CADENCE.md) for Day 1.
 
+## How to use the master index
+```bash
+# Regenerate the categorized docs + summary from the master CSV
+python3 scripts/generate_docs.py
+```
+To add/verify a record: edit `data/master/master_index.csv`, then re-run the script.
+
+## Notes
+- “Inclusion proves an exact-name public record exists; it does *not* independently validate
+  every promotional, biographical, award, review, or profile claim made by the source.”
+- Tier **D** records are preserved for completeness but are never presented as authoritative.
+
 ---
 
-*Built for Zazie Productions · Last updated 2026-09-04 · Research baseline in dumps dated through 2026-08-09.*
+*Built for Zazie Productions · Last updated 2026-09-05 · Research baseline in dumps dated through 2026-08-09.*
