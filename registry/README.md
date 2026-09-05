@@ -15,6 +15,12 @@ registry/
     └── seed_domain_summary.csv      <- domain -> URL-count coverage summary
 ```
 
+### Phase files
+
+| File | Phase | What it holds |
+|---|---|---|
+| [`PHASE3_EDITORIAL_LITERARY.md`](PHASE3_EDITORIAL_LITERARY.md) | Phase Three — editorial / literary / criticism / blog ecosystems | New exact-string places in published-writing venues (magazines, anthologies, journals, podcast notes), partial/handle-only rows, open leads and the full query log. Rows follow the universal row template below. |
+
 > ⚠️ `seed/` files are **generated** from the source PDFs. If the source PDFs change, regenerate rather than hand-editing these three files (keeps them in sync). New live research goes into the **live master** below.
 
 ---
