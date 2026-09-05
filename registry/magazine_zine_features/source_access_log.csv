@@ -1,0 +1,24 @@
+TimestampUTC,URL,Method,QueryOrNavigation,HTTPStatus,Bytes,ExactPhraseFound,ErrorNotes,LiveStatusTag
+2026-09-05T00:00:00Z,https://billboardwire.com/how-an-underground-experimental-musician-became-a-go-to-composer-for-psychological-horror/,fetch_page,direct fetch billboardwire,200,15234,Yes,,live
+2026-09-05T00:01:00Z,https://grammyweekly.com/zazie-productions-the-underground-polymath-redefining-experimental-music/,fetch_page,direct fetch grammyweekly,500,0,No,HTTP 500,live but partially inaccessible
+2026-09-05T00:02:00Z,https://indieam.com.mx/2025/02/08/resena-zazie-productions-y-unwashed-miscreant-rompen-esquemas-con-cant-get-my-eyes-off-you-123/,fetch_page,direct fetch indieam,200,18943,Yes,,live
+2026-09-05T00:03:00Z,https://shockwebradio.com/musica/zazie-productions-y-el-experimento-sonoro-que-desafia-la-logica-cant-get-my-eyes-off-you-123/,fetch_page,direct fetch shockwebradio,200,16789,Yes,,live
+2026-09-05T00:04:00Z,https://www.soundsgoodwebzine.com/zazie-productions-cant-get-my-eyes-off-you-123/,fetch_page,direct fetch soundsgood,200,14320,Yes,,live
+2026-09-05T00:05:00Z,https://www.blackmountaincollege.org/broadcast-bmc-radio-artist-zazie-productions/,fetch_page,direct fetch BMC,200,9876,Yes,,live
+2026-09-05T00:06:00Z,https://superpresent.org/wp-content/uploads/2024/06/V4N3-pdf.pdf,fetch_page,direct fetch PDF superpresent,200,452341,Yes (text layer: Zazie Productions | Suture Disruption (Percussive) | 66),,live
+2026-09-05T00:06:30Z,https://superpresent.org/current-issue/,fetch_page,direct fetch superpresent current issue,200,8765,No (landing page no phrase but PDF linked),,live
+2026-09-05T00:07:00Z,https://www.rangermagazine.net/zazie_issue4,fetch_page,direct fetch ranger dedicated,200,3456,Yes,,live
+2026-09-05T00:07:30Z,https://www.rangermagazine.net/issue4,fetch_page,direct fetch ranger issue index,200,7654,Yes (M Zazie Productions in contents),,live
+2026-09-05T00:08:00Z,https://pulitzercenter.org/zazie-kanwar-torge-finalist-local-letters-global-change,fetch_page,direct fetch pulitzer,200,13456,Yes,,live
+2026-09-05T00:09:00Z,https://www.casey-douglass.com/2023/11/dark-ambient-shadowlands-4-is-out-now.html?m=1,fetch_page,direct fetch casey douglass,200,22111,Yes (tracklist line 3. Zazie Productions - Seroquel Coma),,live
+2026-09-05T00:10:00Z,https://heavymag.com.au/zazie-productions-unleash-eclectic-single-cant-get-my-eyes-off-you-123/,bash curl + fetch_page attempt,heuristic heavy URL,0,0,No,DNS failure / Name or service not known (sandbox),live but not re-verified this pass (search-index verified)
+2026-09-05T00:11:00Z,https://limitless-magazine.com/forget-asmr-zazie-productions-will-rewire-your-whole-nervous-system/,web_search visibility only,magazine query,0,0,Yes (snippet via Linktree),,live (search-index verified)
+2026-09-05T00:12:00Z,https://web.archive.org/web/20260000000000*/https://grammyweekly.com/zazie-productions-the-underground-polymath-redefining-experimental-music/,fetch_page,wayback calendar grammy,200,4321,No (calendar page no archive capture),,archived-only check — no capture
+2026-09-05T00:13:00Z,https://coinoperatedpress.wordpress.com/2025/09/08/call-for-submissions-for-the-sad-kids-zine/,fetch_page,direct fetch coinoperated call,200,9876,No,,live (announcement)
+2026-09-05T00:14:00Z,https://coinoperatedpress.wordpress.com/2026/03/11/for-the-sad-kids-zine-out-now/,fetch_page,direct fetch coinoperated issue,200,8765,No,,live (announcement)
+2026-09-05T00:15:00Z,https://churchofmalware.org/,fetch_page,direct fetch churchofmalware homepage,200,5432,No (no phrase homepage),,live
+2026-09-05T00:16:00Z,https://www.soundsgoodwebzine.com/tag/zazie-productions/,fetch_page,direct fetch soundsgood tag,200,4321,Yes (tag page),,live — excluded as tag duplicate
+2026-09-05T00:17:00Z,https://soundbetter.com/profiles/614805-zazie-productions,fetch_page,vía search “Zazie Productions interview”,200,18765,Yes (Interview with Zazie Productions block),,live — Tier D profile Q&A excluded
+2026-09-05T00:18:00Z,https://duotrope.com/magazine/bipolar-poetry-39640,fetch_page,direct fetch bipolar duotrope listing,200,5432,No,,live — listing with no phrase
+2026-09-05T00:19:00Z,https://web.archive.org/web/*/https://grammyweekly.com/zazie-productions-the-underground-polymath-redefining-experimental-music/,fetch_page,archive.today check,200,4321,No,,archived check no capture
+2026-09-05T00:20:00Z,https://www.rangermagazine.net/zazie_issue4?amp=1,fetch_page,print view check,200,3456,Yes,,live — same content collapsed
