@@ -1,0 +1,18 @@
+system,entity_name,identifier,url,connects_to,record_type,authored_by,status,conflict_or_duplicate,evidence_level,notes,date_checked
+IMDb,Zazie Kanwar-Torge,nm17333332,https://www.imdb.com/name/nm17333332,tt19369318; tt43438100; tt37707793; tt43746773; tt43407807; tt36984141; tt36954700; tt38637541,person,"IMDb (user-submitted, moderated)",live,Name differs from TMDB/MusicBrainz ('Zazie Productions') - identity split across DBs,destination page,8 title credits (person page already in master; titles new).,2026-09-05
+IMDb,(film) Phantom Requiem,tt19369318,https://www.imdb.com/title/tt19369318/,nm17333332; TMDB 1328893,title,IMDb,live,,destination page,,2026-09-05
+IMDb,(titles),tt43438100 | tt37707793 | tt43746773,https://www.imdb.com/title/<id>/fullcredits,nm17333332,title,IMDb,live,,destination page,Full credits verified this pass.,2026-09-05
+IMDb,(titles),tt43407807 | tt36984141 | tt36954700 | tt38637541,https://www.imdb.com/title/<id>/,nm17333332,title,IMDb,live,,DB metadata,Listed on filmography; not individually opened.,2026-09-05
+TMDB,Zazie Productions,person 5112050,https://www.themoviedb.org/person/5112050,movie 1328893; IMDb nm17333332,person,target's own account (ZazieProductionsEnterprises),live,DUPLICATE-IDENTITY: TMDB person named 'Zazie Productions' vs IMDb person 'Zazie Kanwar-Torge' for same credits,destination page,Known; conflict newly documented.,2026-09-05
+TMDB,Phantom Requiem,movie 1328893,https://www.themoviedb.org/movie/1328893,person 5112050; IMDb tt19369318,title,target's own account,live,,destination page,Self-authored entry.,2026-09-05
+MusicBrainz,Zazie Productions,b610b4cb-87da-44d7-a262-2bd65fb8098c,https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c,Discogs 11354435; RYM; Spotify; Bandcamp; Apple,"artist (Person, US)",community,live,Type=Person but name is the project alias; no Wikidata/ISNI/VIAF links,destination page,Known. 7 VA release groups.,2026-09-05
+Discogs,Zazie Productions,artist 11354435,https://www.discogs.com/artist/11354435,64 releases; MusicBrainz,artist,community,live,Profile empty; data_quality 'Needs Major Changes',API JSON,Known artist; API release list read. Master lacked 6 release IDs - added this pass (see reconciliation).,2026-09-05
+GitHub,Zazie Productions (company: Zazie Productions LLC),user 85637520,https://github.com/zazieproductions,linktr.ee/zazieproductions,user,self,live,,API JSON,created 2021-06-09; 38 repos; 31 followers.,2026-09-05
+Substack,Zazie,user 35672413 / @zazieproductions,https://substack.com/@zazieproductions,lakeivan review comment,reader profile,self,live,,destination page,No newsletter.,2026-09-05
+Wikidata,Zazie Productions / Zazie Kanwar-Torge,-,-,-,-,-,NONE,,API search,Searched both names (wbsearchentities + SPARQL) - none - 2026-09-05.,2026-09-05
+VIAF,both names,-,-,-,-,-,INCONCLUSIVE (tool-limited),,API returned empty shell,Do not treat as negative.,2026-09-05
+ISNI,both names,-,-,-,-,-,INCONCLUSIVE (tool-limited),,API returned empty shell,,2026-09-05
+LoC id.loc.gov,both names,-,-,-,-,-,NONE (0 hits),,API search,,2026-09-05
+Common Crawl index (CC-MAIN-2026-34),zazieproductions.com,-,https://index.commoncrawl.org/CC-MAIN-2026-34-index?url=*.zazieproductions.com,-,-,-,NONE,,index API,'No Captures found' - domain never crawled; consistent with Wayback 0 captures.,2026-09-05
+Bluesky search API,both names,-,-,-,-,-,ACCESS-GATED (403),,-,Login-gated lead for manual pass.,2026-09-05
+Mastodon (mastodon.social search),Zazie Productions,-,-,-,-,-,NONE,,API,Only known iyezine dlvr.it automated post exists (mastodon.bida.im).,2026-09-05

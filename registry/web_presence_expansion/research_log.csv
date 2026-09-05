@@ -1,0 +1,37 @@
+date,area,system_or_query,target_phrase,result,outcome,notes
+2026-09-05,4,Wikidata wbsearchentities + SPARQL,Zazie Productions; Zazie Kanwar-Torge,0,negative,
+2026-09-05,4,VIAF / ISNI SRU,both,empty shell,inconclusive - tool-limited,do not retry with this tool
+2026-09-05,4,id.loc.gov search,both,0,negative,
+2026-09-05,4,MusicBrainz artist + relationships,-,7 VA RGs; no Wikidata/ISNI rel,known,ws/2 API 'server busy'
+2026-09-05,4,api.discogs.com artists/11354435/releases,-,64 releases,6 IDs missing from master,added
+2026-09-05,4,IMDb nm17333332 + 4 fullcredits,Zazie Kanwar-Torge,8 titles,new URLs,
+2026-09-05,4,TMDB person/movie,-,self-authored,conflict documented,
+2026-09-05,4,api.github.com/users/zazieproductions,-,created 2021-06-09,new,
+2026-09-05,4,Substack profile 35672413,-,profile only,new,
+2026-09-05,4,Common Crawl CC-MAIN-2026-34 *.zazieproductions.com,-,No captures,negative,
+2026-09-05,3,"web_search ""Zazie Productions"" bsky/mastodon/tumblr/x",-,nothing relevant,negative,
+2026-09-05,3,api.bsky.app searchPosts,-,403,access-gated,manual pass
+2026-09-05,3,mastodon.social api/v2/search statuses,Zazie Productions,0,negative,
+2026-09-05,3,mastodon.bida.im status 113995823411563269,-,dlvr.it automated,known; tagged automated,
+2026-09-05,3,reddit ujng7o / umfnlb / 17c2fsf via redditmedia,-,ManicMolotov cluster,associated account,
+2026-09-05,3,web_search last.fm/tumblr/RYM/sonemic,Zazie Productions,only known RYM song page + reddit,negative for new,
+2026-09-05,3,lakeivan substack comments,-,1 independent critical comment + author reply,new discussion,
+2026-09-05,2,"image_search ""Zazie Productions"" poster/flyer",-,irrelevant,negative,
+2026-09-05,2,image_search Phantom Requiem poster,-,stage32 stills only,negative (self-hosted),
+2026-09-05,2,image_search Pebbles winter 2024,-,VisualcontainerTV collage + generic award graphic,2 supporting visuals,
+2026-09-05,2,visualcontainer PDF 6 chunks,both names,entry present chunk 4,new Tier A PDF,
+2026-09-05,2,horror.zazieproductions.com full read,-,6 YouTube IDs; 8 poster images,self-hosted; Research Only,
+2026-09-05,5,Wayback CDX zazieproductions.com,-,0,negative,
+2026-09-05,5,Wayback availability peopleversus april-2025,-,6 captures; read 2026-02-15,recovered deleted page,
+2026-09-05,5,Wayback availability BMC page,-,14 captures from 2021-12-05,unchanged,
+2026-09-05,5,Wayback bandcamp 2021-09-14 capture,-,read,old bio recovered,
+2026-09-05,5,"Wayback availability linktr.ee (2022), github (2024)",-,none,negative,
+2026-09-05,5,Wayback CDX itch.io / peopleversus,-,IA 'Temporarily Offline',retry later,
+2026-09-05,5,peopleversus.tv ?s=Kanwar-Torge,-,No posts,confirms deletion,
+2026-09-05,5,play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w,-,reel not found,dead link logged,
+2026-09-05,1,"web_search ""linktr.ee/zazieproductions"" -site:linktr.ee",-,"groover, pebbles, IA, clongclongmoo, itch forum",5 backlink sources,
+2026-09-05,1,clongclongmoo.org ?s=zazie,-,5 posts,new backlink cluster,
+2026-09-05,1,"web_search ""Typescript"" magazine ""Zazie Productions""",-,"only self-bios (slaps, soundbetter)",unresolved lead,claimed 2021 playlist feature; no destination found
+2026-09-05,6,Common Crawl index childrenofyemen.org,-,doorway pattern confirmed,cluster characterised,
+2026-09-05,6,fetch 2 BMC cluster members,-,500 / fail,mostly dead,
+2026-09-05,1,"web_search ""Deaf Orphans of Streamcast""",-,"stage32, patreon, reelcrafter(dead), linktree",1 new independent (patreon),

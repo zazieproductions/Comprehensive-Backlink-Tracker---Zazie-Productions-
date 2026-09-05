@@ -1,0 +1,23 @@
+id,year,date,url_or_asset,source,event,status_now,evidence_level,achievement_id,notes
+HR-001,2021,2021-06-09,https://github.com/zazieproductions,GitHub API created_at,GitHub account created (earliest dated self-owned asset found),live,API JSON,,Wayback has no captures before 2024 for this profile.
+HR-002,2021,2021-09-14,http://web.archive.org/web/20210914053312/https://zazieproductions.bandcamp.com/,Wayback (Archive Team),First Bandcamp capture: 4 albums; 2021 'teenage friend' bio; Typescript magazine claim,archived (bio since rewritten),archive,,Old bio text preserved in expansion MD.
+HR-003,2021,2021-12-05,http://web.archive.org/web/20211205210444/https://www.blackmountaincollege.org/broadcast-bmc-radio-artist-zazie-productions/,Wayback,BMC Radio Artist page first captured; still 'Postponed - Date TBD',"live, unchanged (14 captures to 2026-05-09)",archive + live,ACH_BMC_RADIO_ARTIST_2021,Copy source for BMC_LEVINSON_SPAM_CLUSTER.
+HR-004,2022,2022-05-06,https://zazieproductions.bandcamp.com/album/constrained-capacity,Wayback CDX first-seen,Constrained Capacity first archived,live,archive index,, 
+HR-005,2022,2022-05-06 / 2022-05-10,reddit ujng7o; umfnlb,Reddit,ManicMolotov account promotes Constrained Capacity / pyrogenesis,live,destination page (umfnlb) / snippet (ujng7o),,CL_REDDIT_MANICMOLOTOV_2022 - associated account.
+HR-006,2023,2023-03-21,https://zazieproductions.bandcamp.com/album/distant-bells,Wayback CDX first-seen,Distant Bells first archived,live,archive index,,
+HR-007,2023,2023-07-27,https://www.discogs.com/artist/11354435,Discogs image timestamp,Discogs artist image uploaded,live,API metadata,,
+HR-008,2024,2024-06-11,anything-can-happen; interference-archive (bandcamp),Wayback CDX first-seen,Albums first archived,live,archive index,,
+HR-009,2024,2024-12,https://pebblesunderground.art/video/phantom-requiem/,Pebbles Underground,"Jury Special Mention, Winter Screenings 2024",live,destination page,ACH_PEBBLES_JURY_SPECIAL_MENTION_2024,
+HR-010,2024,2024-12-23,https://wfcn.co/profile/zazie.productions,JSON-LD dateCreated,WFCN profile created,live,snippet (JSON-LD in search result),,Lead only.
+HR-011,2025,2025-02-01..15,visualcontainer.tv press-release PDF,VisualcontainerTV,Phantom Requiem broadcast on VisualcontainerTV (winter winners on air Feb 1-15),live PDF,destination page,ACH_PEBBLES_JURY_SPECIAL_MENTION_2024,Same achievement; broadcast leg.
+HR-012,2025,2025-03-24,https://lakeivan.substack.com/p/spinning-in-the-wildness-phantom,Lake Ivan Film Journal,Review published; AI-authenticity debate in comments same day,live,destination page,ACH_LAKE_IVAN_REVIEW_2025,
+HR-013,2025,2025-04-01,https://www.patreon.com/posts/pvtv-patreon-125656656,PVTV Patreon,April line-up announced incl. Deaf Orphans of Streamcast,live,destination page,ACH_PVTV_FRINGE_FLICKS_2025-04-04,
+HR-014,2025,2025-04-04,peopleversus.tv/fringe-flicks-archive/april-2025/,PVTV,Screening at DoES Liverpool with Lucifer Rising,"DEAD (404) - archived 6x, last 2026-02-15",archive,ACH_PVTV_FRINGE_FLICKS_2025-04-04,Disappeared in 2026 site redesign; site search returns nothing for 'Kanwar-Torge'.
+HR-015,2025,2025-04,castingcall.club/zazieproductions,castingcall.club,Profile joined Apr 2025,live,snippet,,Self.
+HR-016,2025,2025-04-26,http://web.archive.org/web/20250426022912/https://filmfreeway.com/ZazieProductions,Wayback availability API,First FilmFreeway profile capture,live,archive index,,
+HR-017,2025,2025-08-15,http://web.archive.org/web/20250815023918/https://zazieproductions.itch.io/,Wayback availability API,First itch.io capture,live,archive index,,
+HR-018,2025,2025-03-03,to-halt-space-adrift (bandcamp),Wayback CDX first-seen,Album first archived,live,archive index,,
+HR-019,2026,2026-01-28,greetings-from-tinsel-time-super-deluxe (bandcamp),Wayback CDX first-seen,Album first archived,live,archive index,,
+HR-020,2026,2026-09-05,https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w,ReelCrafter,Older reel link DEAD ('couldn't find that reel'); newer reel xUXGBP_5Sui1_2ve23fyLg on Linktree,dead,destination page,,Search snippet of dead reel listed credits for Phantom Requiem + Deaf Orphans (2024).
+HR-021,-,-,https://zazieproductions.com,Wayback + Common Crawl,No captures in either system,never archived,index API,,Domain referenced from itch.io/wfcn/groover bios but never crawled.
+HR-022,-,-,https://linktr.ee/zazieproductions,Wayback availability (timestamp 2022),No snapshot near 2022; CDX returned empty shell,unresolved,index API,,Retry when IA stable.

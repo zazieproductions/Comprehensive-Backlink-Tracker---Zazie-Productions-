@@ -1,6 +1,6 @@
 # Community, Wiki & Fan Indexes
 
-**55 records.** Fan quizzes, wikis, forums, charts and community pages.
+**56 records.** Fan quizzes, wikis, forums, charts and community pages.
 
 ## anotepad.com — 1
 
@@ -135,11 +135,12 @@
 |---|---|---|---|---|---|---|---|
 | [https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt...](https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt_space_adrift_2023/) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
-## reddit.com — 1
+## reddit.com — 2
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3](https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3) | Zazie Productions | C |  |  | link_dump | unverified |  |
+| [https://www.reddit.com/r/lastfm/comments/ujng7o/12x12_past_year_please_recommend_me_some_m...](https://www.reddit.com/r/lastfm/comments/ujng7o/12x12_past_year_please_recommend_me_some_music/) | Zazie Productions | C | 2026-09-05 | r/lastfm thread – ManicMolotov recommends Constrained Capaci | web_presence_expansion | verified | Same account as known r/musicsuggestions self-promo thread; cluster CL_REDDIT_MANICMOLOTOV_2022; not independent (WPX pass) |
 
 ## rsssearchhub.com — 1
 
