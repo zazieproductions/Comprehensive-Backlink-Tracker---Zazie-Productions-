@@ -1,6 +1,6 @@
 # Profiles & Catalogs
 
-**66 records.** Artist, composer and professional profiles across industry and creative platforms.
+**63 records.** Artist, composer and professional profiles across industry and creative platforms.
 
 ## 500letters.org — 1
 
@@ -75,12 +75,6 @@
 |---|---|---|---|---|---|---|---|
 | [https://www.castingcall.club/zazieproductions](https://www.castingcall.club/zazieproductions) | Zazie Productions | B |  |  | media_master | unverified |  |
 
-## credits.muso.ai — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://credits.muso.ai/profile/4010f3b7-9a87-4961-8dfd-917de0ba787e](https://credits.muso.ai/profile/4010f3b7-9a87-4961-8dfd-917de0ba787e) | Zazie Productions | B |  |  | media_master | unverified |  |
-
 ## deezer.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -141,12 +135,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://imgur.com/a/M25R5PJ](https://imgur.com/a/M25R5PJ) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## justpaste.it — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://justpaste.it/gepby](https://justpaste.it/gepby) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
 ## linkedin.com — 1
 
@@ -304,12 +292,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://txt.fyi/1e6a35890de43189](https://txt.fyi/1e6a35890de43189) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## viberate.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.viberate.com/artist/zazie-productions/](https://www.viberate.com/artist/zazie-productions/) | Zazie Productions | B |  |  | media_master | unverified |  |
 
 ## vocal.media — 1
 
