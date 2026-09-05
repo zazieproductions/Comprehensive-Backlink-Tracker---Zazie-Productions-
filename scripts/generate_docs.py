@@ -22,15 +22,15 @@ CAT_META = {
  'Podcasts & Broadcasts':            ('Podcasts & Broadcasts', 'Podcast episodes, radio broadcasts and audio features.'),
  'Community, Wiki & Fan Indexes':    ('Community, Wiki & Fan Indexes', 'Fan quizzes, wikis, forums, charts and community pages.'),
  'Search-Engine Index':              ('Search-Engine Index', 'Search-engine result pages (SERPs) that index the target name.'),
- 'Video Mirror / Backlink Sites':    ('Video Mirror / Backlink Sites', 'Third-party video-mirror / backlink surfaces, often auto-generated from a source video.'),
- 'SEO Spam / Link Farm':             ('SEO Spam / Link Farm', 'Low-quality or auto-generated spam / link-farm pages. Flagged as non-authoritative.'),
+ 'Video Mirror / Backlink Sites':    ('Video Mirror / Backlink Sites', 'Video/backlink surfaces still treated as ordinary census records (parasitic mirrors were moved to the low-trust category).'),
+ 'Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust': ('Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust', 'Evidence-preservation register: hacked-site doorways, auto-scraped / auto-generated replicas, RSS & PR republications, mirror/embed parasitism, pastes, search-redirect artifacts. NEVER counted as credible coverage, credits, profiles or biographical fact. Full ledger: registry/spam_scraper_syndication_lowtrust_2026-09-05/.'),
  'Music Discography':                ('Music Discography', 'Discography / catalogue database records (Discogs, RateYourMusic, etc.).'),
  'Lyrics & Music Databases':         ('Lyrics & Music Databases', 'Lyrics and music-metadata database records (Lyrics.com, archived databases).'),
 }
 ORDER = ['Press & Editorial','Film, Festivals & Exhibitions','Publications & Recognition','Profiles & Catalogs',
  'Streaming & Music Platforms','Music Compilations','Official Properties & Channels','Podcasts & Broadcasts',
- 'Community, Wiki & Fan Indexes','Search-Engine Index','Video Mirror / Backlink Sites','SEO Spam / Link Farm',
- 'Music Discography','Lyrics & Music Databases']
+ 'Community, Wiki & Fan Indexes','Search-Engine Index','Video Mirror / Backlink Sites',
+ 'Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust','Music Discography','Lyrics & Music Databases']
 
 def safe(t):
     return re.sub(r'[^A-Za-z0-9-]+', '-', t).strip('-')
@@ -80,7 +80,7 @@ for t in sorted(tier):
 summary += ['', '## By source', '', '| Source | Count |', '|---|---|']
 for s in sorted(src):
     summary.append(f'| {s} | {src[s]} |')
-summary += ['', '**Trust tiers:**  A = strong independent/institutional press & recognition · B = supporting profiles/catalogs · C = compilations/community/lower-priority · D = spam/mirror (flagged, non-authoritative).']
+summary += ['', '**Trust tiers:**  A = strong independent/institutional press & recognition · B = supporting profiles/catalogs · C = compilations/community/lower-priority · D = spam / scraper / syndication / low-trust (flagged, non-authoritative — see the low-trust register).']
 with open(os.path.join(BASE, 'data', 'master', 'SUMMARY.md'), 'w', encoding='utf-8') as f:
     f.write('\n'.join(summary))
 

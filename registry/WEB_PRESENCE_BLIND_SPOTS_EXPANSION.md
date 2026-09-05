@@ -1,4 +1,4 @@
-# Web-Presence Blind-Spot Expansion — Pass 10 (2026-09-05)
+# Web-Presence Blind-Spot Expansion — Pass 11 (2026-09-05)
 
 **Targets:** "Zazie Productions" (contiguous, any case/spacing) · "Zazie Kanwar-Torge" (exact).
 **Baseline deduped against:** `data/master/master_index.csv` (522 rows) + all registry CSV/MD URLs
@@ -11,7 +11,7 @@ redditmedia mirror only.
 **Data files:** `registry/web_presence_expansion/` — `discoveries.csv` (28) · `backlinks.csv` (16) ·
 `entity_map.csv` (17) · `historical_records.csv` (22) · `web_archaeology.csv` (5) ·
 `research_log.csv` (36). **20 canonical records** reconciled into the master index
-(source = `web_presence_expansion`), derived docs regenerated (542 records).
+(source = `web_presence_expansion`), derived docs regenerated (544 records).
 
 Evidence levels used: **destination page** > **DB/API metadata** > **archive** > **index** >
 **snippet (lead only)**. CV value 1–5; "Best use" per the user's list.
@@ -153,9 +153,9 @@ Full table: `web_archaeology.csv`.
 
 ## Reconciliation performed
 
-- `data/master/master_index.csv`: +20 rows (source `web_presence_expansion`, status `verified`), no duplicates against normalised baseline. 522 → 542 records; tiers A 109 · B 180 · C 197 · D 56.
+- `data/master/master_index.csv`: +20 rows (source `web_presence_expansion`, status `verified`), no duplicates against normalised baseline. 524 → 544 records after merging with main's Pass 10 low-trust quarantine; tiers A 107 · B 172 · C 192 · D 73.
 - `scripts/generate_docs.py` re-run → `data/master/SUMMARY.md` + 15 category docs.
-- `README.md` census block and pass history updated (Pass 10).
+- `README.md` census block and pass history updated (Pass 11).
 - Achievement IDs used (events, not URLs): `ACH_PEBBLES_JURY_SPECIAL_MENTION_2024` (Pebbles page + VisualcontainerTV PDF + poster + film card = **one** achievement), `ACH_PVTV_FRINGE_FLICKS_2025-04-04` (Wayback page + Patreon + Eventbrite = **one** screening), `ACH_LAKE_IVAN_REVIEW_2025`, `ACH_BMC_RADIO_ARTIST_2021`, `ACH_FILM_IMDB_CREDITS`, `ACH_COMP_*` per compilation.
 
 ## Not done / carry-forward

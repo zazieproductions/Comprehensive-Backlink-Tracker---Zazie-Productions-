@@ -43,7 +43,7 @@ Include when a unique URL (or unique account/platform entity) publicly displays 
 - 🩵 **Data-studies / analytics / tooling** — AI/Q&A pages about the artist, stats sites, research-style write-ups, community-built studies.
 - 🟢 **Social & community / UGC** — native posts, community threads, fan quizzes/tier-lists, curated playlist credits, meme/blog mentions.
 - 📼 **Mirrors & aggregators** — YouTube-repeater/mirror sites, wiki mirrors (Wikimili/Wikiwand/wiki2/wikigit), RSS scrape pages, video embedding layers. *Secondary, but still logged.*
-- 🖤 **Spam / SEO parasite** — auto-scraped or spun keyword pages. *Log as a separate bucket and cross-check before counting; do not let them inflate “real places.”*
+- 🖤 **Spam / scraper / syndication / SEO-poisoning / low-trust** — auto-scraped or spun keyword pages, doorway/injection pages, RSS & PR republications, mirror embeds, pastes, malformed directories, search-redirect artifacts. *Log **only** in the quarantine category (`Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust` + `registry/spam_scraper_syndication_lowtrust_2026-09-05/`); never count toward “real places.”*
 
 ---
 
@@ -54,7 +54,7 @@ Include when a unique URL (or unique account/platform entity) publicly displays 
 - Other real people/companies coincidentally named “Zazie Productions”.
 - Pages containing only a **near/spelling variant** of the name with no exact match.
 - Mentions of the word “Zazie” alone (e.g., unrelated “Zazie” artists, pets, characters).
-- Generic scraped/spam pages that merely auto-fill the name from a press release and add no real presence — keep them in the 🖤 bucket, flagged, never counted as editorial.
+- Generic scraped/spam pages that merely auto-fill the name from a press release and add no real presence — keep them in the 🖤 low-trust bucket, flagged, never counted as editorial, and never treated as biographical fact (see the low-trust register's safety protocol before touching these pages).
 - Private/paywalled/print-only items **unless** an archived or index-snippet captures the exact name.
 
 ---

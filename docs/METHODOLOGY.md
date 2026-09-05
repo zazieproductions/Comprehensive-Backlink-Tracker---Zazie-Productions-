@@ -44,20 +44,23 @@ contiguous-sequence broadening to the **Productions** name only.
 | **A** | Strong independent / institutional press, film, awards, recognition. |
 | **B** | Supporting profiles, catalogs, official properties, streaming pages. |
 | **C** | Compilations, community/wiki/fan indexes, lower-priority pages. |
-| **D** | Auto-generated mirrors / SEO link-farm spam. Kept for completeness, **flagged**. |
+| **D** | Spam, scraper, syndication, SEO-poisoning, mirror/embed parasitism, pastes — the **low-trust quarantine category** (Pass 10). Kept for completeness, **flagged, never counted**, never authoritative. |
 
 ## Categories
 - Press & Editorial · Film, Festivals & Exhibitions · Publications & Recognition ·
   Profiles & Catalogs · Streaming & Music Platforms · Music Compilations ·
   Official Properties & Channels · Podcasts & Broadcasts · Community, Wiki & Fan Indexes ·
-  Search-Engine Index · Video Mirror / Backlink Sites · SEO Spam / Link Farm
+  Search-Engine Index · Video Mirror / Backlink Sites ·
+  **Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust** (Pass 10; replaces the former
+  `SEO Spam / Link Farm`, which the low-trust register absorbs along with all Tier-D
+  video-mirror rows. Full rules/charter: `registry/spam_scraper_syndication_lowtrust_2026-09-05/README.md`.)
 
 ## Sources
 | `source` value | Origin |
 |---|---|
 | `media_master` | The 133 verified URL-level records in `Zazie_Media_Master (1).pdf`. |
 | `link_dump` | The raw links in `Random Zazie Productions links .pdf`. |
-| `research` | Links discovered during this project's search-engine pass. |
+| `research` | Links discovered during this project's search-engine passes (incl. the 2026-09-05 low-trust pass finds). |
 
 ## Search-engine method
 - Always **exact-phrase** (`"name"`) queries so results contain the literal name.

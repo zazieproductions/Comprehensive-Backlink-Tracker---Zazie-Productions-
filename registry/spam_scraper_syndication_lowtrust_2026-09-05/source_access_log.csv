@@ -1,0 +1,26 @@
+Date,URL,Method,Action,Outcome,ExactPhraseFound,StatusTag,Notes
+2026-09-05,https://www.trendingbot.org/topic/418115_klerksdorp,fetch_page,read attempt,DOWN — host unreachable,no (page unavailable),❌ broken,flagged in seed
+2026-09-05,https://www.rsssearchhub.com/feed/1185189bcc80cd02d670a3aaae58ebf3/city-portland-mercury,fetch_page,read attempt,"site up; ""Unrecoverable error"" (crashed DB); no content rendered",no (currently),❌ broken,flagged in seed
+2026-09-05,https://codex.churchofmalware.org/researchers/ed001/zazie/,fetch_page,read attempt,live net-art codex page,"YES — title ""ZAZIE PRODUCTIONS · Poison, The Well, Adversarial Audio, and Machine Learning""",✅ live+verified,seed orphan; re-judged NOT spam
+2026-09-05,https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt_space_adrift_2023/,fetch_page,read attempt,HTTP 500,no (unreachable),❌ broken,legacy reddit proxy
+2026-09-05,https://justpaste.it/gepby,fetch_page,read attempt,live anonymous paste 2025-02-12,YES — body,✅ live+verified,PR repost w/ fabricated quotes
+2026-09-05,https://anotepad.com/notes/5246g357,fetch_page,read attempt,live paste essay,YES — title + body,✅ live+verified,FABRICATED academic attributions
+2026-09-05,https://songdata.io/search?query=Zazie+Productions+,fetch_page,read attempt,host unreachable,n/a,❌ broken,search-URL record
+2026-09-05,https://box.hitplayer.ru/?s=zazie+productions,fetch_page,read attempt,"live pirate index, 186 results",YES — page title,✅ live+verified,mixed with French singer noise
+2026-09-05,https://thirdeyemusic.co.uk/?name=Zazie_Productions&dir=tracks,fetch_page,read attempt,host unreachable,n/a,❌ broken,auto listing URL
+2026-09-05,https://www.chosic.com/artist/zazie-productions/4UOgvZEOo7xBhFBjJvlMm0/,fetch_page,read attempt,fetch failed (blocked),index-presence per prior passes,⬜ blocked,not bypassed per policy
+2026-09-05,https://getmusic.fm/r/various-artists-moon-musiq-untitled,fetch_page,read attempt,live; exact string not visible in current render,no (visible text),🟡 partial,kept borderline
+2026-09-05,https://comunicati.musicalive.net/c/cant-get-my-eyes-off-you-123,fetch_page,read attempt,redirects to musicalive.net homepage,no (target gone),❌ broken,dead PR-feed republication
+2026-09-05,https://www.viberate.com/artist/zazie-productions/,fetch_page,read attempt,live auto-stats page,YES — title + body,✅ live+verified,"AUTOGEN SEO copy, genre mislabeled"
+2026-09-05,https://www.breakinghits.app/zazieproductions/,fetch_page,read attempt,live invite wall; reCAPTCHA NOT solved,YES — pre-wall text,✅ live+verified (public part only),pay-to-play directory
+2026-09-05,https://mlx.su/paste/view/26990c6b,fetch_page,read attempt,HTTP 410 Gone,n/a — deleted,❌ dead,paste deleted upstream
+2026-09-05,https://www.topsheetmusic.eu/sysmusic/templates/youtube.php?v=UX2kv3G89Jw,fetch_page,read attempt,live bare embed on misused template path,iframe video title only,🟡 partial,hacked-site-embed pattern
+2026-09-05,https://deturl.com/play.php?v=UX2kv3G89Jw,fetch_page,read attempt,live player; scraped YouTube metadata,"YES — ""Zazie Productions"" channel name",✅ live+verified,benign tool mirror
+2026-09-05,https://listenonrepeat.com/watch/?v=UX2kv3G89Jw,fetch_page,read attempt,fetch blocked (anti-bot),prior passes: indexed,⬜ blocked,not bypassed per policy
+2026-09-05,https://gazetaolsztynska.pl/gminaelk/tv/video/youtube/UX2kv3G89Jw,fetch_page,read attempt,HTTP 404,n/a — cleaned up,❌ dead,injected path removed
+2026-09-05,https://clipzag.com/watch?v=UX2kv3G89Jw,fetch_page,read attempt,HTTP 500,n/a,❌ broken,mirror failing
+2026-09-05,https://web.archive.org/cdx/search/cdx?url=bytstav.sk/gDrA/ira-and-ruth-levinson-art-museum-north-carolina&output=json&limit=6,fetch_page,CDX availability,zero captures,n/a,no archive trace,proves transience of doorway pages
+2026-09-05,https://web.archive.org/cdx/search/cdx?url=childrenofyemen.org/zvgw5/black-mountain-college-ira-and-ruth-levinson-museum&output=json&limit=6,fetch_page,CDX availability,zero captures,n/a,no archive trace,proves transience of doorway pages
+2026-09-05,https://web.archive.org/cdx/search/cdx?url=stb.hu/youtube/UX2kv3G89Jw&output=json&limit=6,fetch_page,CDX availability,zero captures,n/a,no archive trace,mirror never archived
+2026-09-05,https://web.archive.org/cdx/search/cdx?url=hribi.net/video_youtube/watch/UX2kv3G89Jw&output=json&limit=6,fetch_page,CDX availability,zero captures,n/a,no archive trace,mirror never archived
+2026-09-05,https://bytstav.sk/gDrA/... | powerkabel.com.pe/love-quotes/... | vidmak.com/fs0vz3/... | wnloveet.click/product_details/105751966.html | juetao.org/yfc/... | agenciesartistiques.com/fiche-artiste/739100-elsa-levy.html | backstage.com/u/audreyjarnagin/ | mlx.su (done) — refused hosts,POLICY,"REFUSED reads (safety policy: known-compromised / malware-adjacent hosts; no visits, no downloads, no scripts)",documented from repo seed + dump only,n/a,⬜ not-probed-safety,7 refused

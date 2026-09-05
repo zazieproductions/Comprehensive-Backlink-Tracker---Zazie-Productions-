@@ -39,7 +39,7 @@ aggregators. This is a research scaffold + live status. Tick items as you go.
 ## 🔲 Verification (suggested days 1–3)
 - [ ] Open each record (or spot-check a sample) and confirm the exact name appears.
 - [ ] Mark `status` as `verified` / `404` / `dead` in `master_index.csv`.
-- [ ] For the 56 Tier-D records, open a sample to confirm they are spam/mirrors, not real.
+- [x] Tier-D sample opened & dispositions recorded (Pass 10, 2026-09-05: 9 surfaces read live (2 string-partial), 9 dead/errored, 2 bot-blocked, 4 Wayback CDX availability probes; doorway hosts left unvisited per safety policy; full results in `registry/spam_scraper_syndication_lowtrust_2026-09-05/source_access_log.csv`).
 - [ ] Re-check the 133 Media Master URLs still resolve and match the Media Master PDF.
 
 ## 🔲 Engine & metadata searches (days 2–4)
