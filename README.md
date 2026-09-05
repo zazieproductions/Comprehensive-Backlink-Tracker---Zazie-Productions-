@@ -128,35 +128,41 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 
 ## 📊 Census results (latest pass)
 
-The search sweeps (Pass 1–8) fold confirmed exact-name URLs into the live master index.
-As of the latest pass the master index holds **499 records**:
+The search sweeps (Pass 1–9) fold confirmed exact-name URLs into the live master index.
+As of the latest pass the master index holds **523 records**:
 
 ```
-TOTAL                    499
-  Music Compilations      114
-  Profiles & Catalogs      65
+TOTAL                    523
+  Music Compilations      117
+  Profiles & Catalogs      67
   Press & Editorial        55
-  Streaming Platforms      54
-  Community/Wiki/Fan       54
-  Video Mirror / Backlink  39
-  Film, Festivals & Exhib. 39
-  Official Properties      36
+  Streaming Platforms      57
+  Community/Wiki/Fan       55
+  Video Mirror / Backlink  40
+  Film, Festivals & Exhib. 41
+  Official Properties      45
+  Publications & Recogn.   18
   SEO Spam / Link Farm     18
-  Publications & Recogn.   15
   Podcasts & Broadcasts     6
   Music Discography         2
   Lyrics & Music Databases  1
   Search-Engine Index       1
 ```
-Trust tiers: **A** 107 · **B** 166 · **C** 170 · **D** 56 (D = flagged spam/mirrors).
-Sources: media_master 133 · link_dump 252 · research 114.
+Trust tiers: **A** 107 · **B** 168 · **C** 192 · **D** 56 (D = flagged spam/mirrors).
+Sources: media_master 133 · link_dump 252 · research 114 · regional_alt_pass 24.
 
 > **Note on rule evolution:** Pass 7 broadened the inclusion standard to the contiguous
 > “Productions” sequence (any spacing/case, plus platform-URL forms), per the user directive.
 > Pass 8 resolved register **#64** (Infinite Self Pavilion / The Wrong Biennale) and catalogued
-> the DistroKid-family platform artist pages (Spotify, Apple Music, Amazon Music, Deezer,
-> TIDAL, iHeartRadio, Boomplay, Qobuz, Beatport, Shazam, Slaps, **Anghami**, **YouTube Music**,
-> plus TikTok sound pages). Engines still blocked/404 or app-only are marked HUNT.
+> the DistroKid-family platform artist pages. **Pass 9** (2026-09-05) swept **62 regional,
+> independent, archival and scholarly engines/interfaces** (Baidu→Leit.is, Yep, Marginalia
+> retry, YaCy, Wiby, meta-veterans, national web archives, scholarly APIs) — full access
+> matrix in `registry/regional_alt_engine_pass_2026-09-05/`. Outcomes: Mail.ru confirmed as
+> a captcha-free **Yandex-index access path**; **+15 Internet Archive records** (incl. the IA
+> Public Domain Day Remix Contest 2026 film, a zines-collection item, and the Mystery File
+> Dumps); OK.ru artist page resolved the "1 Year Anniversary" listen-link; Ghostery Search
+> confirmed discontinued (closed beta 2026-06); clean negatives logged for OpenAlex, Europe
+> PMC, Zenodo, LoC and Arquivo.pt. Blocked / snippet-only hits were classified as leads.
 
 ### Engine findings (one-line)
 - **Indexed everywhere**, including the independent crawler **Marginalia**, which surfaced
@@ -164,7 +170,9 @@ Sources: media_master 133 · link_dump 252 · research 114.
 - **Yahoo** returned the richest exact-match set; **Brave** and **Marginalia** are directly
   scrapable. **DuckDuckGo, Startpage, Yandex, Mojeek, searx.be** block bots (captcha /
   anti-bot) and need a browser or a self-hosted SearXNG instance.
-- Full detail: `data/research/search_engine_audit.md`.
+- Pass 9 (2026-09-05): regional sweep — Mail.ru = captcha-free Yandex path; 360/Seznam/Yahoo!JP/Walla!/Yep/OceanHero worked; Sogou/Mojeek/Trove/Rambler blocked; BIGLOBE·Excite JP·GiveWater·Stract·BoardReader·Ask·AOL·HotBot·UK-WA dead or down;
+- **+15 Internet Archive full-text records** (zines collection, PD-Day Remix Contest 2026 film, Mystery File Dumps);
+- Full detail: `data/research/search_engine_audit.md` + `registry/regional_alt_engine_pass_2026-09-05/`.
 
 ---
 
@@ -172,7 +180,7 @@ Sources: media_master 133 · link_dump 252 · research 114.
 
 - [x] **Dump cataloged** — media master read; 260 real URLs extracted into `registry/seed/`.
 - [x] **Operating docs written** — mission, playbook, engine dir, query library, week plan, prompts, verification runbook.
-- [x] **Census run (Pass 1–8)** — 499 confirmed exact-name URLs consolidated into `data/master/master_index.csv`; register link map resolved for most features.
+- [x] **Census run (Pass 1–9)** — 499 confirmed exact-name URLs consolidated into `data/master/master_index.csv`; register link map resolved for most features.
 - [ ] **Pass 2 — VERIFY** (run per `docs/07`): double-check every found link (HTTP status + exact-name evidence) and tag ✅ / 🟡 / ❌.
 - [ ] **Pass 3 — CONSOLIDATE**: reconcile remaining HUNT rows (Pandora, Audiomack, Facebook/TikTok, Claro Música, Saavn/JioSaavn, Snapchat, NetEase, Tencent/QQ/Kugou/Kuwo/WeSing, Pretzel, TouchTunes, JOOX, Kuack, MediaNet, Dubset, Roblox, Soundtrack by Twitch) against the known-ground-truth register.
 

@@ -1,6 +1,6 @@
 # Community, Wiki & Fan Indexes
 
-**54 records.** Fan quizzes, wikis, forums, charts and community pages.
+**55 records.** Fan quizzes, wikis, forums, charts and community pages.
 
 ## anotepad.com — 1
 
@@ -183,6 +183,12 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://sonicrider.nl/jazzular-element-1-thoughts-about-david-lynch-compilation-sonicrider...](https://sonicrider.nl/jazzular-element-1-thoughts-about-david-lynch-compilation-sonicrider-the-church-of-noisy-goat/) | Zazie Productions | C |  |  | link_dump | unverified |  |
+
+## spacehey.com — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://spacehey.com/profile?id=3044031](https://spacehey.com/profile?id=3044031) | Zazie Productions | C | 2026-09-05 | Zazie Productions's Profile / SpaceHey | regional_alt_pass | search-index verified | Profile page; fetch region-blocked (VA age-verification); title verified in Yep/Brave index (Pass 9) |
 
 ## thesqueakywheel.org — 1
 

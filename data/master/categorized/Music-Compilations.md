@@ -1,13 +1,16 @@
 # Music Compilations
 
-**114 records.** Compilation appearances (Discogs / Bandcamp releases).
+**117 records.** Compilation appearances (Discogs / Bandcamp releases).
 
-## archive.org — 3
+## archive.org — 6
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
+| [https://archive.org/details/arrhythnia-discography](https://archive.org/details/arrhythnia-discography) | Zazie Productions | C | 2026-09-05 | (Label) arrhythNia Discography | regional_alt_pass | verified | Label-discography mirror incl. 'Amnesia X Zazie Productions - Oliver Schoeffler Split (aNr124)' (Pass 9) |
+| [https://archive.org/details/experiments-on-the-witch-house](https://archive.org/details/experiments-on-the-witch-house) | Zazie Productions | C | 2026-09-05 | V/A - Experiments on the Witch House | regional_alt_pass | verified | Archive.org full-album copy; Zazie track in tracklist; IA full-text hit (Pass 9) |
 | [https://archive.org/details/ju-on-the-music-compilation](https://archive.org/details/ju-on-the-music-compilation) | Zazie Productions | B | 2026-09-05 | V/A - Ju-On (呪怨) The music compilation / Internet Archive | research | verified | Links section renders "Zazie Productions: https://zazieproductions.bandcamp.com" exact |
 | [https://archive.org/details/v-a-i-want-to-believe](https://archive.org/details/v-a-i-want-to-believe) | Zazie Productions | B | 2026-09-05 | V/A - I want to Believe (X-files Tribute) / Internet Archive | research | verified | Register #19 Trust No Signal; Links section renders "ZazieProductions: https://zazieproductions.bandcamp.com/" exact (no-space) |
+| [https://archive.org/details/va-doom-a-creative-commons-music-compilation](https://archive.org/details/va-doom-a-creative-commons-music-compilation) | Zazie Productions | C | 2026-09-05 | V/A - DOOM / A Creative Commons Music Compilation | regional_alt_pass | verified | Archive.org copy; track 6 'Zazie Productions - 7.4mm Under Orange Lights' (Pass 9) |
 | [https://archive.org/details/va-music-inspired-on-mulholland-drive](https://archive.org/details/va-music-inspired-on-mulholland-drive) | Zazie Productions | B | 2026-09-05 | VA - Music Inspired by Mulholland Drive / Internet Archive | research | verified | Register #10 Club Silencio Acoustic Survey; tracklist renders exact "- Zazie Productions" (space form); Dawn of Darkness netlabel archive |
 
 ## argalirecordsnetlabel.bandcamp.com — 2

@@ -1,6 +1,6 @@
 # Streaming & Music Platforms
 
-**54 records.** Artist pages on streaming services and music databases.
+**57 records.** Artist pages on streaming services and music databases.
 
 ## beatport.com — 1
 
@@ -88,6 +88,12 @@
 | [https://music.163.com/#/artist?id=52749380](https://music.163.com/#/artist?id=52749380) | Zazie Productions | B |  |  | link_dump | unverified |  |
 | [https://music.163.com/song?id=2083550087](https://music.163.com/song?id=2083550087) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
+## music.yandex.ru — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://music.yandex.ru/artist/17856702/tracks](https://music.yandex.ru/artist/17856702/tracks) | Zazie Productions | C | 2026-09-05 | Zazie Productions - Yandex Music artist | regional_alt_pass | search-index verified | First Yandex Music artist record; region-blocked on fetch, Yandex-index snippet verified via Mail.ru path (Pass 9) |
+
 ## musicgateway.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -105,6 +111,12 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://muzvibe.org/search/Zazie](https://muzvibe.org/search/Zazie) | Zazie Productions | B |  |  | link_dump | unverified |  |
+
+## ok.ru — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://ok.ru/music/artist/122911094866528](https://ok.ru/music/artist/122911094866528) | Zazie Productions | C | 2026-09-05 | Zazie Productions - OK Music artist page | regional_alt_pass | verified | First OK.ru (Odnoklassniki) artist record; also locates '1 YEAR ANNIVERSARY' album at ok.ru/music/album/123001281196995 (previously unresolved listen link); found via Mail.ru/Yandex path (Pass 9) |
 
 ## open.spotify.com — 7
 
@@ -150,10 +162,11 @@
 | [https://www.qobuz.com/de-de/interpreter/zazie-productions/14145610](https://www.qobuz.com/de-de/interpreter/zazie-productions/14145610) | Zazie Productions | B |  |  | link_dump | unverified |  |
 | [https://www.qobuz.com/us-en/album/constrained-capacity-zazie-productions/bvwuboa98rchb](https://www.qobuz.com/us-en/album/constrained-capacity-zazie-productions/bvwuboa98rchb) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
-## reverbnation.com — 1
+## reverbnation.com — 2
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
+| [https://www.reverbnation.com/zazieproductions](https://www.reverbnation.com/zazieproductions) | Zazie Productions | C | 2026-09-05 | Zazie Productions / ReverbNation | regional_alt_pass | search-index verified | Root profile (/songs + /videos already master); snippet via OceanHero/Bing (Pass 9) |
 | [https://www.reverbnation.com/zazieproductions/songs](https://www.reverbnation.com/zazieproductions/songs) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
 ## shazam.com — 3
