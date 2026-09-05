@@ -1,0 +1,236 @@
+# 2026-09-05 Maximum-Depth Research Pass — New Public-Web Locations for "Zazie Productions" (A) and "Zazie Kanwar-Torge" (B)
+
+**Deliverable set (this folder):** `master_directory.csv` · `master_directory.json` (records / leads / search_queries / source_access / duplicate_clusters / search_visibility / methodology) · `discovery_ledger.csv` · `search_queries.csv` · `source_access_log.csv` · this report.
+
+**Date bound:** every search, fetch, and index query was executed on **2026-09-05 (UTC)**. Archive timestamps (Wayback captures, IA `addeddate`, release dates) are cited per record. Nothing here claims to describe the web before or after that date except where such timestamps are explicit.
+
+---
+
+## 1. Executive summary
+
+- **54 new records** entered the master directory: public web locations where Target A ("Zazie Productions") or Target B ("Zazie Kanwar-Torge") appears as an exact string, that are **not already in the repo** (checked against a 437-URL baseline built from `registry/seed/seed_unique_urls.csv` (260), the 133 `/URI` link annotations inside `Zazie_Media_Master (1).pdf`, and the 278 URIs inside `Random Zazie Productions links .pdf`).
+- **11 URLs found during this pass were already in the repo** (they appear in the links-dump/master PDFs). They were re-opened and **re-verified live with the exact string on 2026-09-05**; they are excluded from the new-record count and listed in §5.
+- **20 leads** (including blocked, broken, and unresolved) are logged separately in `discovery_ledger.csv` — none entered the master directory.
+- Biggest new bodies of evidence, in one line each:
+  1. **Two new Bandcamp releases** where the exact name is the artist credit: a **netlabel the artist runs** (The Vanishing Point Syndicate — *Dissonance Index Vol. 1*, 2025-05-02, track 1 "Pyrogenesis" by Zazie Productions, ZP26-001/002) and a **third-party compilation under the personal name** (909 Dead Batteries *Winter 2025*, 2026-01-02, track 7 by **Zazie Kanwar-Torge**, ZP26-003/004 — the only new Target-B-exact music release located).
+  2. **Two new compilation appearances**: Camembert Électrique *SHIPPAI* (ZP26-005, "Grief is a Hot Commodity") and the arrhythNia **aNr124 split** (ZP26-006) — the latter also exists as a new Discogs release record (ZP26-033).
+  3. **14 new album/track URLs on the artist's own Bandcamp store** (ZP26-007…020) — the store root is in the repo, each release page is a distinct occurrence.
+  4. **MusicBrainz**: a Person record "Zazie Productions" (US) exists (ZP26-022) listing **7 Various-Artists compilation releases** with labels/dates (ZP26-023…029) — five of the compilations had no location in the repo before this pass.
+  5. **Discogs**: label record "Not On Label (Zazie Productions Self-released)" (ZP26-031) and release record Constrained Capacity (ZP26-032); the artist page itself (62 appearances) is in the repo.
+  6. **Apple/iTunes Search API**: 25-track exact-name catalog (ZP26-034).
+  7. **Internet Archive full-text index: 19 items** (ZP26-047…065), including the only item matching Target B exactly (*Instructions for Clean Living*, which states "developed and produced by Zazie Kanwar-Torge, working as Zazie Productions") and the self-uploaded *Phantom Requiem* film.
+  8. **Podcast indexing**: a Listen Notes page where **both** exact names appear in the same rendered page (ZP26-045), surfacing the dedicated *BMC Radio Art: Zazie Productions – Cheaper Impressions* episode page (ZP26-046).
+  9. **Variant record**: RYM user profile `~ZazieProductions` (ZP26-042) — concatenated spelling, variant tier.
+  10. **Re-verified identity anchors** (repo URLs, live on 2026-09-05): the Pebbles Underground film page still states "Director, artist, producer: **Zazie Kanwar-Torge (A.K.A Zazie Productions)**" and the Visualcontainer TV awards page still lists "PHANTOM REQUIEM by Zazie Kanwar-Torge (Zazie Productions) | USA (2024) – JURY SPECIAL MENTION".
+- **Negative results (logged, never claimed as exhaustive):** no Wikidata entity, no Wikipedia article, no GitHub repo, no npm/PyPI/HuggingFace/OpenLibrary presence for either exact name; no MusicBrainz record under the personal name.
+- **Limitations:** raw egress is blocked in this sandbox, so general-engine coverage ran through one opaque platform search API (labelled as such); DDG/Mojeek/Marginalia/searx.be served CAPTCHAs/JS gates; LinkedIn and Reddit blocked direct fetch (403). See §6–§7.
+
+---
+
+## 2. Methodology and reproducibility
+
+Full machine-readable methodology: `master_directory.json → methodology`.
+
+1. **Baseline.** 437 normalized URLs (lowercase host, `www.` strip, trailing-slash strip) from the three repo sources above. A candidate is "already in repo" only when its normalized URL equals a baseline entry (one verified redirect equivalence applied: `castingcall.club/zazieproductions` → `/m/zazieproductions`). Different pages on the same domain are **new occurrences**.
+2. **Discovery layers.** (a) general exact-name queries via the platform search API (Q01–Q19); (b) role/work-title pivot queries (composer, film, release titles, film titles, label names, festival names); (c) direct platform searches where the platform exposes one (Bandcamp site search, Discogs search, MusicBrainz WS2, iTunes API, archive.org advancedsearch, Wikidata, Wikipedia, GitHub, npm, PyPI, HuggingFace, Open Library, Common Crawl collinfo, Wayback CDX); (d) variant queries (no-hyphen name, concatenated slug forms); (e) old-web `site:` sweeps (neocities/tumblr/wordpress/weebly).
+3. **Verification.** Every master record required: exact target string observed in (i) fetched rendered content, or (ii) the platform's own structured API response, or (iii) the platform's own search/index page, or (iv) URL+title confirmed on a fetched verified page. Search-engine snippets alone do **not** qualify for the master directory (they produce ledger leads: e.g., the broken ReelCrafter reel, LinkedIn, the Reddit thread).
+4. **Identity rule.** Targets researched independently; relationships recorded only where a source displays them (two public statements located; both cited). No conflation beyond that.
+5. **Exactness rule.** Exact strings with preserved capitalization/hyphenation. Observed punctuation variant: Deezer credit string "Zazie Kanwar- Torge" (space inside the hyphenated credit) — logged, not merged. Concatenated slugs (`ZazieProductions`) are variant-tier. The French singer Zazie, Zazie Beetz, "Goodnight Productions", La Zizanie, Bloodborne's "Milkweed", Payhip's "100subtexts 2" bundle — rejected as other entities (leads ZL26-12…16).
+6. **Conservative attribution.** Where the exact string sits in a sidebar/related module (Listen Notes ZP26-045), confidence is reduced and the evidence note states exactly where the string appears.
+7. **Archive pass.** Wayback CDX checked per new domain/URL (Q35, S25–S29); archive.org items are self-archived (live on IA). Common Crawl: latest crawl identified (CC-MAIN-2026-34) but full-index string search not available from this sandbox — labelled LIMITED, not a negative.
+8. **PII rule.** No addresses/phones/emails stored as deliverable data. One broken page (ReelCrafter) and one public IA metadata field contain a contact address; their existence is noted **without transcription** (see ZL26-01, ZP26-050 notes).
+9. **No exhaustiveness claims.** Zero-result engines are reported as "no record found on 2026-09-05", never as "exists nowhere".
+10. **Reproduce.** Rebuild the 437-URL baseline → run Q01–Q40 (exact query strings in `search_queries.csv`) → fetch each candidate and locate the exact string → re-run the CDX prefix queries. IDs (ZP26-/ZL26-/Q/S/C) are fixed in this deliverable.
+
+---
+
+## 3. Master directory (new records, by target and source category)
+
+Stable IDs in parentheses. Full field set (evidence text, confidence 0–100, source-reliability tier, release dates, archive URLs) in `master_directory.csv` / `.json`.
+
+### 3.1 Target A — "Zazie Productions" (new)
+
+**Music — Bandcamp ecosystem (6 release/track locations)**
+| ID | Location | What is visible | Conf. |
+|---|---|---|---|
+| ZP26-001 | thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists | Netlabel's debut 105-track compilation (2025-05-02); track 1 "Zazie Productions – Pyrogenesis"; label about text | 96 |
+| ZP26-002 | thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis | Track page, H2 "Zazie Productions – Pyrogenesis" | 96 |
+| ZP26-005 | camembertelectrique.bandcamp.com/album/shippai | Track 31 "Zazie Productions – Grief is a Hot Commodity" + credits line with store/linktree URLs | 95 |
+| ZP26-006 | arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124 | aNr124 split with Amnesia (59) & Oliver Schöffler (2024-04-12); track "Gloom" | 96 |
+
+**Music — artist's own store (14 new release URLs; store root ZP26-021 is in repo)**
+ZP26-007 *G7e Torpedo* (2019-10-11, fetched in full) · ZP26-008 *To Halt Space Adrift* (2023-05-02) · ZP26-009 *Constrained Capacity* (2022-05-06) · ZP26-010 *Interference Archive 01010101* (EP) · ZP26-011 *Stutter to stammer* (2019-11-29) · ZP26-012 *Sellotape* (2020-03-20) · ZP26-013 *Vermiform* (2023-07-26) · ZP26-014 *Greetings From Tinsel Time (Super Deluxe Edition)* (2024-12) · ZP26-015 *Stutter to stammer (Super Deluxe Edition)* (2024-03-20) · ZP26-016 *Greetings From Tinsel Time* (2023) · ZP26-017 *A Long Way To Nowhere* · ZP26-018 *Anesthesia for the Signal Age* (2026-05; register cross-check positive) · ZP26-019 *Spectral Ode to Synesthesia* (2025-03) · ZP26-020 *Opaline Lament (Life From The Beyond)* (2025-12). Evidence: Bandcamp search index and/or the 18-release discography block fetched on ZP26-007 (conf. 88–95).
+
+**Structured music databases (9 records)**
+- ZP26-022 MusicBrainz artist `b610b4cb-87da-44d7-a262-2bd65fb8098c` (Person, US) — fetched, exact match score 100 — conf. 97, very_high.
+- ZP26-023…029 MusicBrainz release records (all VA compilations the artist is credited on): Esoterrexus (Slithering Black Records, 2023-10-20) · Shadowlands 4 (Owlripper, 2023-11-10) · Christmasasaurus Unleashed! (2023-12-25) · Late Night Love Letters (Utopia District, 2025-02-14) · ECHOES OF ANCIENT WRATH (Dodendans, DD049, 2025-08-13) · Industrial Halloween 2025 (DSBP, 2025-10-31) · Psych Against Cancer Vol 3 Part 2 (2026-02-27).
+- ZP26-031 Discogs label "Not On Label (Zazie Productions Self-released)" (4317760).
+- ZP26-032 Discogs release 35541229 (Constrained Capacity, 2022, WAV).
+- ZP26-033 Discogs release 36415555 (Amnesia (59) X Zazie Productions, Oliver Schöffler, aNr124, 2024, FLAC).
+- ZP26-034 iTunes Search API catalog (25 tracks, artistId 1623719351).
+
+**Profiles / directories (1 new)**
+- ZP26-042 Rate Your Music user profile `~ZazieProductions` (member since 2020-11-11, #720597) — **variant tier** (concatenated spelling); conf. 70.
+
+**Archival (Internet Archive, 18 items matching Target A)**
+- ZP26-048 *Phantom Requiem (Short Film)* — item page fetched: "by Zazie Productions", CC BY-ND 4.0, added 2025-04-03.
+- ZP26-049 *UNEXPLAINED AERIAL PHENOMENA UFO REPORT – ZAZIE PRODUCTIONS ZP-AEP-0328-MID-FL* (fictional report artifact; event date 2025-03-28).
+- ZP26-050 *Quantum Geometry 3D Emulator* (open-source software; metadata creator = "Zazie Productions", 2019-12-01).
+- ZP26-051 *V/A – Music Inspired by Mulholland Drive* — file-level creator evidence: "03 – Zazie Productions – Club Silencio Acoustic Survey.mp3" (**new track title**).
+- ZP26-052 *V/A – DOOM / A Creative Commons Music Compilation* · ZP26-053 *V/A – I want to Believe (X-files Tribute)* · ZP26-054 *V/A – Ju-On (呪怨) The music compilation* (credit lines in item descriptions).
+- ZP26-055 *(Label) arrhythNia Discography* (full-text match; aNr124 within the catalog).
+- ZP26-056 *NEURAL DYNAMICS SIMULATION — Unfinished Build (v0.7.3a, Zazie Productions, 2022)*.
+- ZP26-057/058 *Zazie Productions Mystery File Dump: Vol 1 / Vol 2* ("Pomegranate Vortex (3)" concept dumps).
+- ZP26-059 *THE SEVENTH SCREEN IS DREAMING IN FRACTALS: A Zazie Productions Archive…* (visual artifact).
+- ZP26-060 *https://www.yyyyyyy.info (lost animation sequence)* — "re-mastered from Zazie Productions" (ties to register entry 110).
+- ZP26-061 *Experiments on the Witch House* (netlabel; exact string via IA full-text index; specific track not yet enumerated — follow-up flag).
+- ZP26-062 *Sepsis (glitch-script title)* (2024 audiovisual; same work as the repo's newmediartspace exhibition URL).
+- ZP26-063 *OBJECT #Δ-NEMEK-77/RA (Codename: THE RHIZOSIGIL)* (zine) · ZP26-064 *TEXTUAL EXHUMATION 5* · ZP26-065 *TEXTUAL EXHUMATIONS UNICODE* (text artifacts).
+
+### 3.2 Target B — "Zazie Kanwar-Torge" (new)
+
+- **ZP26-003 / ZP26-004 — 909 Dead Batteries *Winter 2025*** (909deadbatteries.bandcamp.com, Upland CA; released 2026-01-02): track 7 "Zazie Kanwar-Torge – Frost Directive XIII (Broadcast Leak ID_ BLZRD_-_741)". Track page's own about-section links back to the Zazie Productions store (chain of evidence). Wayback capture 2026-01-07. Conf. 96.
+- **ZP26-047 — archive.org `instructions-for-clean-living`** (Target B's only IA item; also matches Target A): item description ends "These materials were developed and produced by **Zazie Kanwar-Torge, working as Zazie Productions**." 2026 Public Domain Day Film Remix Contest; 233 downloads. Conf. 95.
+- (The Songstats Target-B composer page that surfaced in search — `songstats.com/artist/mljz9dxu/zazie-kanwar-torge` — is **already in the repo**; re-verified live, see §5.)
+
+### 3.3 Both targets on one page (new)
+
+- **ZP26-045 — Listen Notes**, episode-7 page of Black Mountain College Radio: "OTHER EPISODES IN THIS PODCAST" module contains "**BMC Radio Art: Zazie Productions – Cheaper Impressions** … **Zazie Kanwar-Torge** (they/them) is a composer and multi-instrumentalist living in Asheville…". Both exact strings rendered on the fetched page (string location disclosed; conf. 85).
+- **ZP26-046 — Listen Notes** dedicated episode page `bmc-radio-art-zazie-atrX8jsp-6h` ("BMC Radio Art: Zazie Productions – Cheaper Impressions", 2021-12-15): URL+title+description excerpt confirmed on the fetched verified page ZP26-045; dedicated page not independently opened (conf. 80).
+- (The two strongest both-name pages — Pebbles Underground film page and Visualcontainer TV awards page — are in the repo; re-verified live this pass, §5.)
+
+---
+
+## 4. Discovery ledger (all leads, incl. rejected/blocked)
+
+`discovery_ledger.csv` = 54 new-record rows + 11 in-repo rows + 20 leads. Lead highlights:
+
+| ID | Lead | Status | Why not in master |
+|---|---|---|---|
+| ZL26-01 | play.reelcrafter.com/z6vU… ("Zazie Productions Reel") | **broken** (404-equivalent, 2026-09-05) | Snippet (both names + contact data, not transcribed) exists only in the search index; page is deleted. Repo baseline already contained the URL. |
+| ZL26-02 | linkedin.com/in/zazie-kanwar-torge-3b8a98373 | blocked (403) | Name + "Zazie Productions LLC" visible in search snippet/JSON-LD only; URL already in repo. |
+| ZL26-03 | reddit r/noisemusic "New label called The Vanishing Point Syndicate" | blocked (403) | Exact string presumed in post body but not visible in snippet → unverified. |
+| ZL26-04 | 100subtextsmagazine.blogspot.com Issue 31 feature | page fetch empty/JS | Name not confirmed on page. |
+| ZL26-05 | behance.net/zaziediya | variant handle, unfetched | Not an exact-name string. |
+| ZL26-06 | Visualcontainer press-release PDFs (Summer/Winter 2024) | artifact unparsed | Parent page already carries both names; PDF derivative. |
+| ZL26-07 | YouTube channel UCnDTZImCr9MfLF_f7iPav2A (+ video UX2kv3G89Jw) | duplicate cluster (repo domain) | YouTube channel already represented in repo. |
+| ZL26-08 | Spotify playlist 75PxWthUYPOskOU1EjGrFX | duplicate cluster (repo domain) | Surfaced on re-verified Groover profile. |
+| ZL26-09 | listen.tidal.com/artist/33032080 (Target-B sameAs) | unfetched sameAs | From re-verified Songstats page. |
+| ZL26-10 | Discogs "Amnesia (59)" / "Oliver Schöffler" artist pages | context only | No target string. |
+| ZL26-11 | Discogs marketplace counts (152 releases / 16 masters) | index counts | Per-release pages out of scope for this pass. |
+| ZL26-12 | Ars Electronica Sonic Saturday / MEDIUM SONORUM event pages | rejected: no exact name | Register says 2026 selection (Linz); venue noted for follow-up, not claimed. |
+| ZL26-13…16 | Payhip "100subtexts 2" · Bloodborne "Milkweed" · Wikidata La Zizanie · chartsinfrance Zazie interview | rejected: other entity / noise | — |
+| ZL26-17 | Discogs "Tole Ache" (SHIPPAI editor credit) | context only | — |
+| ZL26-18 | 909deadbatteries.bandcamp.com store root | cluster note | No exact name on root. |
+| ZL26-19 | slaps.com/ZazieProd vs /user/ZazieProd | duplicate (repo) | Canonical-URL variant of a repo URL. |
+| ZL26-20 | MusicBrainz release-search query returning 0 | negative result logged | Syntax sensitivity; releases retrieved via the artist entity instead. |
+
+---
+
+## 5. Repo URLs re-verified live on 2026-09-05 (excluded from new count)
+
+These 11 locations were encountered by this pass's searches, **were already in the repo baseline**, and were re-opened and confirmed live with the exact string today:
+
+1. zazieproductions.bandcamp.com/ (store root; 18-release discography now displays 2026 additions) — 200.
+2. groover.co/en/influencer/profile/0.zazie-productions/ — 200.
+3. viberate.com/artist/zazie-productions/ — 200.
+4. bandmix.com/zazieproductions/ — 200.
+5. wfcn.co/profile/zazie.productions — 200.
+6. castingcall.club/zazieproductions (canonical → /m/zazieproductions) — 200.
+7. soundbetter.com/profiles/614805-zazie-productions — 200.
+8. songstats.com/artist/mljz9dxu/zazie-kanwar-torge — 200 (Target B).
+9. discogs.com/artist/11354435-Zazie-Productions — 200 (62 appearances).
+10. pebblesunderground.art/video/phantom-requiem/ — 200 (**"A.K.A" identity statement still live**; Wayback: 5 captures 2025-01-22 → 2026-06-07).
+11. visualcontainer.tv/pebbles-underground-summer-2024-award-winners-winter-2024-award-winners/ — 200 (both names; JURY SPECIAL MENTION).
+
+**Status-change note for the tracker:** no repo URL found broken this pass, except the one that was *already* a repo entry and a known lead — the ReelCrafter reel (ZL26-01), which now 404s in-browser.
+
+---
+
+## 6. Engine visibility matrix (per engine × target, 2026-09-05)
+
+| Engine / index | Target A | Target B | Status |
+|---|---|---|---|
+| platform-search-api (opaque composite general engine) | visible, top-10 for exact name | visible, top-10 | OK |
+| Bandcamp site search | store rank 1; 14 new release URLs | 1 track + 1 album | OK |
+| Discogs (search + DB) | 1 artist, 62 appearances, 1 label, 152 marketplace releases | no separate artist record | OK |
+| MusicBrainz | artist record + 7 releases | **no record found** | OK |
+| Apple/iTunes Search API | 25 tracks | (credit string appears on Deezer pages: "Zazie Kanwar- Torge") | OK |
+| Internet Archive full-text index | 18 items | 1 item (same item) | OK |
+| Wayback Machine CDX | store root 2021-09-14; arrhythnia/camembert domains captured | 909 winter-2025 capture 2026-01-07; pebbles-PR 5 captures | OK (URL-level) |
+| Common Crawl | not string-searchable from sandbox | same | LIMITED |
+| Wikidata / Wikipedia | no entity / 0 hits | no entity / 0 hits | OK (negative) |
+| GitHub repo search | 0 repos | not searched by name (code search auth-gated) | OK (neg) / LIMITED |
+| npm / PyPI / HuggingFace / Open Library | 0 / inconclusive / 0 / 0 | not searched | OK / LIMITED |
+| DuckDuckGo HTML | blocked (image CAPTCHA) | not attempted | BLOCKED |
+| Mojeek | blocked (ALTCHA) | not attempted | BLOCKED |
+| Marginalia | blocked (5s JS gate) | blocked (JS gate) | BLOCKED |
+| SearXNG (searx.be, priv.au) | blocked / JS-empty | not attempted | BLOCKED |
+| Google/Bing/Yahoo/Brave/Startpage/Yandex/Qwant/Ecosia/Swisscows/Kagi/Wiby | not directly reachable (no raw egress); platform-search-api used and labelled as substitute | same | LIMITED |
+
+### Engine comparison notes
+- **Bandcamp** is the single richest new-yield source: its site search resolves both exact names, and release pages carry structured JSON-LD (band id, release dates). Deepest per the brief.
+- **archive.org** yields the widest *distribution* footprint (19 items across netlabels, films, software, zines) — the strongest "obscure/archival" layer this pass.
+- **Discogs/MusicBrainz** provide the authoritative structured backbone (labels, catalog numbers aNr124/DD049, dates).
+- **General web search** surfaced the profile/directory tier (several already in repo) plus the broken reel and LinkedIn leads.
+- **CAPTCHA-gated engines** (DDG/Mojeek/Marginalia/searx.be) contributed nothing; documented as access limitations, not negatives.
+- No engine returned a location for the **personal name** beyond the 909 Dead Batteries release, the IA film item, the (repo) Songstats/LinkedIn/IMDb cluster, and the two festival pages — the personal name is materially less indexed than the artist name.
+
+---
+
+## 7. Appendices
+
+### A. Music (new records)
+ZP26-001…020 (Bandcamp), ZP26-022…029 (MusicBrainz), ZP26-031…034 (Discogs label/releases + iTunes API). New track titles discovered: **Pyrogenesis** (netlabel, 2025), **Frost Directive XIII (Broadcast Leak ID_ BLZRD_-_741)** (personal name, 2026), **Club Silencio Acoustic Survey** (Mulholland Drive VA, 2026), **Gloom** (aNr124 split side, 2024), plus the full 18-release store discography with 2025–2026 titles (Anesthesia for the Signal Age, Opaline Lament, Spectral Ode to Synesthesia, both Super Deluxe Editions). Unresolved music leads: Ecstatic Feedback II / Terminal Future Industries, Drama Recorder (Noise as a Form of Expression Vol. 4), 23SECONDS OV TIME, Elements / Poseidon's Dial Tone, Camembert Électrique August compilation ("Subduction Choir"), Mountains To Sea Vol. 2 — register-confirmed but live pages not located this pass (see §7 E).
+
+### B. Audiovisual (new records)
+ZP26-048 (Phantom Requiem on IA), ZP26-060 (yyyyyyy.info lost animation sequence), ZP26-062 (Sepsis 2024), ZP26-061 (Experiments on the Witch House — audio-visual netlabel), ZP26-059 (Seventh Screen visual archive), ZP26-063/064/065 (text-visual artifacts). Film-credit systems: no new IMDb/TMDB/FilmFreeway/Stage32 records this pass (all in repo); the WFCN profile (repo) re-verified. Unresolved: Beyond The Silken Threads (EXiS 2026 submission), Mike Has a Visitor, The Haunted / Expire / Choleric festival pages — no new public location found beyond repo+IMDb.
+
+### C. Press / institutional (new records)
+ZP26-045/046 (Listen Notes podcast indexing — institutional podcast infrastructure), ZP26-047 (IA Public Domain Day contest item — institutional contest collection). All magazine/press URLs that surfaced (grammyweekly, billboardwire, heavymag, indieam, radioclick, shockwebradio, popfantasma, breakinghits, limitless, suppresent, ranger, maude) are **already in the repo**; none newly located. 100Subtexts blogspot feature page: unresolved (ZL26-04).
+
+### D. Historical web / archives
+- **Wayback:** pebblesunderground.art/video/phantom-requiem/ — captures 2025-01-22, 2025-05-22, 2025-11-16, 2026-01-20, 2026-06-07 (canonical URL, no trailing slash in urlkey). 909deadbatteries winter-2025 album — 2026-01-07. zazieproductions.bandcamp.com root — 2021-09-14 (first capture). thevanishingpointsyndicate — **0 captures**. camembertelectrique — domain captured since 2019-09-28.
+- **Internet Archive:** 19 self-archived items (ZP26-047…065) — these *are* the archival record; earliest added 2019 (quantum geometry), most 2025–2026.
+- **Old-web directories:** no neocities/tumblr/wordpress/weebly pages with the exact name located (Q19); the yyyyyyy.info artifact is preserved on IA (ZP26-060).
+
+### E. Unresolved leads (follow-up queue)
+1. ZL26-03 Reddit thread (fetch from a residential session). 2. ZL26-04 100Subtexts blogspot feature (JS session). 3. ZL26-06 the two press-release PDFs (parse locally if retrieved). 4. ZP26-061 witch-house compilation: enumerate the Zazie track. 5. Register-pivots with no live page found this pass: Ecstatic Feedback II / Terminal Future Industries, Drama Recorder Vol. 4, 23SECONDS OV TIME, Poseidon's Dial Tone (Elements), Camembert Électrique August comp, Mountains To Sea Vol. 2, Sonic Saturday 2026 (Linz) announcement, EXiS 2026, Dark Descent anthology (Dark Holme Publishing), Milkweed Poetry Journal, Thorn In Your Side "Barb" issue 3, The Wrong Biennale catalogue. 6. Tidal artist 33032080 (ZL26-09). 7. Behance zaziediya (ZL26-05). 8. Marginalia/DDG/Mojeek/SearXNG re-runs from a browser session.
+
+---
+
+## 8. Text relationship graph (edges between records/platforms)
+
+Full list in `master_directory.json → relationship_graph` (26 edges). Key edges:
+
+- **Identity statements (the only two public B↔A links located):**
+  - ZP26-043 (repo, re-verified) *states* "Zazie Kanwar-Torge (A.K.A Zazie Productions)" — Pebbles Underground film page.
+  - ZP26-047 *states* "Zazie Kanwar-Torge, working as Zazie Productions" — IA *Instructions for Clean Living*.
+- **Same work:** ZP26-043 ↔ ZP26-044 ↔ ZP26-048 (Phantom Requiem: festival page, awards announcement, IA film item); ZP26-062 ↔ repo newmediartspace Sepsis page; ZP26-046 ↔ repo BMC broadcast page (Cheaper Impressions).
+- **Same release, multiple locations (cluster C7):** ZP26-006 (Bandcamp split) ↔ ZP26-033 (Discogs release) ↔ ZP26-055 (IA arrhythNia discography) ↔ repo SoundBetter credit block.
+- **Same event:** ZP26-044 ↔ ZL26-06 (press-release PDFs); ZP26-044 ↔ ZP26-043 (same festival award).
+- **Cross-target links:** ZP26-004 (Target-B track page) *self-links* to the Target-A store; ZP26-045 (both names) *surfaces* ZP26-046; ZL26-01 (broken reel, both names) *chains* to ZP26-050 (IA uploader field, same contact address, value not transcribed).
+- **Catalogue spine:** ZP26-022 → lists → ZP26-023…029; ZP26-030 (repo) → lists → ZP26-032/033; ZP26-021 (repo) discography block → ZP26-007…020.
+
+---
+
+## 9. Query inventory
+
+40 queries — full strings and per-query results in `search_queries.csv` / `master_directory.json → search_queries`. Summary by layer:
+- **General exact-name (Q01–Q05):** both targets, depth 2–3.
+- **Role/work-title pivots (Q06–Q19):** release titles (Anesthesia, Sellotape, G7e, Opaline, Egregore/Terminal Future, Camembert/Subduction/Suture), netlabel name, film titles (Mike Has a Visitor, Beyond the Silken Threads, Expire/Choleric/The Haunted), literary outlets (Dark Descent, Milkweed, 100Subtexts), podcast/interview, Discogs/MusicBrainz/RYM, no-hyphen variant, site: old-web sweeps.
+- **Direct platform searches (Q20–Q35):** Bandcamp ×2, MusicBrainz WS2, Discogs search, archive.org advancedsearch ×2 (+combined-fields variant), iTunes API, Wikidata ×2, Wikipedia ×2, GitHub, npm, HuggingFace, Open Library, PyPI, Common Crawl collinfo, Wayback CDX ×5.
+- **Blocked/inconclusive (Q36–Q40):** Marginalia, DDG HTML, Mojeek, searx.be, priv.au.
+
+## 10. Source-access log
+
+57 direct fetches — full list (URL, date, status, note) in `source_access_log.csv` / `master_directory.json → source_access`. Statuses: 200 (51), 403 (2: LinkedIn, Reddit), 404-equivalent (1: ReelCrafter), 200-empty (1: 100subtexts), blocked-CAPTCHA (4: DDG, Mojeek, searx.be, Marginalia), partial (1: PyPI).
+
+## 11. Internal QC notes
+
+- All 65 record rows were checked against the 437-URL baseline programmatically (exact normalized URL + one verified redirect equivalence); 11 flagged and demoted to §5.
+- Every master record carries: exact-string evidence note, confidence 0–100, source-reliability tier, ISO date of verification (2026-09-05), and (where applicable) archive URL. No fabricated dates: empty `release_date` = unknown.
+- The two strongest identity links were independently re-opened on 2026-09-05 (both live).
+- Known residual risks: (1) Bandcamp "verified_platform_index" records (ZP26-008…020) rest on the platform's search index + the fetched discography block rather than a per-page fetch; per-page fetches are cheap and recommended for the 2026-09-06 pass. (2) IA items ZP26-055/061/063/064/065 rest on the full-text index match; per-file enumeration pending. (3) The opaque general-search backend is not engine-attributable; its results were cross-checked against at least one directly-reachable source wherever possible.
+
+*This report states the most comprehensive set located through a documented, date-bounded, reproducible search protocol on 2026-09-05. It makes no exhaustiveness or total-coverage claims.*

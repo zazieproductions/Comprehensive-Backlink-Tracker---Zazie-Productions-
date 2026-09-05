@@ -1,0 +1,41 @@
+query_id,engine,query,date,results_summary
+Q01,platform-search-api (opaque backend),"""Zazie Productions""",2026-09-05,"10 results; new: groover.co, viberate.com, bandmix.com, wfcn.co; in-repo: slaps, blackmountaincollege.org, museonline.org, musicians.directory, grammyweekly.com, linktree"
+Q02,platform-search-api,"""Zazie Kanwar-Torge""",2026-09-05,"9 results; new: play.reelcrafter.com, linkedin.com, listennotes.com, visualcontainer.tv, songstats.com/artist/mljz9dxu; in-repo: imdb, hackaday.io, pulitzercenter.org, stage32.com"
+Q03,platform-search-api,"""Zazie Productions"" bandcamp",2026-09-05,"new: castingcall.club, bandcamp album pages (interference-archive, to-halt-space-adrift), camembertelectrique.bandcamp.com/album/shippai; in-repo: itch.io"
+Q04,platform-search-api,"""Zazie Productions"" ""Zazie Kanwar-Torge""",2026-09-05,"new: pebblesunderground.art/video/phantom-requiem (identity 'A.K.A' statement); in-repo: imdb, hackaday, expcinema, reelcrafter (broken)"
+Q05,platform-search-api,"""Zazie Kanwar-Torge"" composer film",2026-09-05,"in-repo: stage32, imdb, pebbles-PR, expcinema, linkedin"
+Q06,platform-search-api,"""Zazie Productions"" ""Anesthesia for the Signal Age""",2026-09-05,"new: zazieproductions.bandcamp.com/album/g7e-torpedo (full page text incl. discography block), stutter-to-stammer album page"
+Q07,platform-search-api,"""Zazie Productions"" ""Egregore Intrasound"" OR ""Terminal Future Industries""",2026-09-05,no new compilation page surfaced; profile re-hits only. Ecstatic Feedback II / Terminal Future Industries live page NOT located this pass (lead retained).
+Q08,platform-search-api,"""Zazie Productions"" ""Camembert"" OR ""Subduction Choir"" OR ""Suture Disruption""",2026-09-05,no new (shippai found via Q03). Drama Recorder / 23SECONDS OV TIME / Elements live pages not located (leads retained).
+Q09,platform-search-api,"""Vanishing Point Syndicate"" ""Zazie"" OR ""Dissonance Index""",2026-09-05,"new: thevanishingpointsyndicate.bandcamp.com album, reddit r/noisemusic thread (blocked)"
+Q10,platform-search-api,"""Zazie Kanwar-Torge"" ""Mike Has a Visitor"" OR ""Beyond the Silken Threads""",2026-09-05,in-repo: stage32 (credits detail)
+Q11,platform-search-api,"""Zazie Kanwar-Torge"" ""Expire"" OR ""Choleric"" OR ""The Haunted""",2026-09-05,"in-repo: imdb name page (credits detail: Expire sound designer, Choleric co-producer, The Haunted composer)"
+Q12,platform-search-api,"""Zazie Kanwar-Torge"" ""Dark Descent"" OR ""Milkweed"" OR ""100Subtexts""",2026-09-05,"rejected: payhip bundle, bloodborne wiki; in-repo: itch.io bio text"
+Q13,platform-search-api,"""Zazie Productions"" podcast OR interview OR ""Sonic Saturday""",2026-09-05,new: soundbetter.com profile (incl. interview block); rejected: chartsinfrance (French singer noise)
+Q14,platform-search-api,"""Zazie Productions"" ""Sellotape"" OR ""Opaline Lament"" OR ""G7e Torpedo""",2026-09-05,"new: g7e-torpedo full text, constrained-capacity, greetings-from-tinsel-time-super-deluxe-edition pages"
+Q15,platform-search-api,"""Zazie Kanwar Torge""",2026-09-05,no hyphen variant: same core set; Deezer snippet shows credit string 'Composers: Zazie Kanwar- Torge' (space inside hyphenated credit) - punctuation-variant evidence logged
+Q16,platform-search-api,"""Zazie Productions"" Discogs OR MusicBrainz OR ""Rate Your Music""",2026-09-05,"new: discogs artist 11354435, rateyourmusic ~ZazieProductions; rejected: wikidata La Zizanie (noise)"
+Q17,platform-search-api,"""Zazie Kanwar-Torge"" ""Sonic Saturday"" OR ""MEDIUM SONORUM"" OR ""Linz""",2026-09-05,no exact-name hits; Sonic Saturday event pages only (lead ZL26-12)
+Q18,platform-search-api,"""Zazie Productions"" ""Red Noise"" OR ""I Could Hear Your Breath Rotting"" OR ""The Triangular Savant""",2026-09-05,reelcrafter snippet only (broken page); no new live pages
+Q19,platform-search-api,"""Zazie Productions"" site:neocities.org OR site:tumblr.com OR site:wordpress.com OR site:weebly.com",2026-09-05,no relevant hits (only French-singer Zazie sites: noise)
+Q20,Bandcamp search (direct),"q=""Zazie Productions""",2026-09-05,"artist store rank 1; albums: Sellotape, Vermiform, Constrained Capacity, Stutter to stammer; NEW: arrhythniarecords split album + track (rank 6-7)"
+Q21,Bandcamp search (direct),"q=""Zazie Kanwar-Torge""",2026-09-05,rank 1: 909deadbatteries.bandcamp.com track 'Frost Directive XIII...' from '909 Dead Batteries Winter 2025' by Zazie Kanwar-Torge (released 2026-01-02). Single result.
+Q22,MusicBrainz WS2 (direct),artist/?query=Zazie+Productions (limit 25),2026-09-05,"1277 candidates; exact match 'Zazie Productions' (Person, US, male) MBID b610b4cb-87da-44d7-a262-2bd65fb8098c score 100; no 'Zazie Kanwar-Torge' artist record found"
+Q23,Discogs search (direct),q=Zazie Productions type=artist,2026-09-05,"1 artist (11354435), 152 releases, 16 masters; label search: 1 label (4317760 Not On Label Zazie Productions Self-released)"
+Q24,archive.org advancedsearch (direct),"""Zazie Productions"" (fl: identifier,title,date,downloads,description)",2026-09-05,19 items (ZP26-047..065)
+Q25,archive.org advancedsearch (direct),"""Zazie Kanwar-Torge""",2026-09-05,1 item: instructions-for-clean-living (matches both targets)
+Q26,iTunes Search API (direct),"term=""Zazie Productions"" media=music limit=25",2026-09-05,"25 tracks, artistId 1623719351 (ZP26-034)"
+Q27,Wikidata wbsearchentities (direct),search=Zazie Productions / Zazie Kanwar-Torge,2026-09-05,0 entities for both names (negative)
+Q28,Wikipedia search API (direct),"list=search ""Zazie Productions"" / ""Zazie Kanwar-Torge""",2026-09-05,0 totalhits both (negative)
+Q29,GitHub repo search API (direct),"repositories?q=""Zazie Productions""",2026-09-05,total_count 0 (negative). Code search requires auth (not attempted - constraint)
+Q30,npm registry search (direct),text=zazie productions,2026-09-05,no Zazie-related packages (fuzzy hits only) (negative)
+Q31,HuggingFace API (direct),models?search=zazie productions,2026-09-05,[] empty (negative)
+Q32,Open Library search API (direct),author=Zazie Productions,2026-09-05,numFound 0 (negative)
+Q33,PyPI search (direct),q=Zazie Productions,2026-09-05,JS-rendered result list not returned by fetch; inconclusive (partial access)
+Q34,Common Crawl index (direct),collinfo.json + CDX prefix queries per known domain,2026-09-05,latest crawl CC-MAIN-2026-34 (2026-08). URL-level CDX checked for key new domains (see source_access S33-S37). Full crawl-index string search not available without CC index full scan (limitation).
+Q35,Wayback CDX (direct),url=zazieproductions.bandcamp.com / thevanishingpointsyndicate.bandcamp.com / 909deadbatteries.bandcamp.com / camembertelectrique.bandcamp.com / pebblesunderground.art/video/phantom-requiem/,2026-09-05,captures: zazie store 2021-09-14; VPS 0; 909 winter-2025 album 2026-01-07; camembert domain widely (2019-09-28+); pebbles phantom-requiem 5 captures 2025-01-22..2026-06-07
+Q36,Marginalia (direct),"""Zazie Productions"" / ""Zazie Kanwar-Torge""",2026-09-05,blocked: 5-second JS bot-gate page served; results not accessible
+Q37,DuckDuckGo HTML (direct),"""Zazie Productions""",2026-09-05,blocked: image CAPTCHA challenge
+Q38,Mojeek (direct),"""Zazie Productions""",2026-09-05,blocked: ALTCHA challenge
+Q39,SearXNG searx.be (direct),"""Zazie Productions""",2026-09-05,blocked: browser-integrity CAPTCHA
+Q40,SearXNG priv.au (direct),"""Zazie Productions""",2026-09-05,instance reachable but results JS-rendered/empty via fetch (no usable results)

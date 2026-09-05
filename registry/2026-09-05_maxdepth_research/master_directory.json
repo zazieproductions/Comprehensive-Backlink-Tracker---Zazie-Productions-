@@ -1,0 +1,2288 @@
+{
+ "meta": {
+  "title": "Comprehensive Backlink Tracker - 2026-09-05 maximum-depth research pass (new findings only + full ledger)",
+  "targets": {
+   "A": "Zazie Productions",
+   "B": "Zazie Kanwar-Torge"
+  },
+  "research_date": "2026-09-05",
+  "repo_baseline_size": 437,
+  "record_count": 54,
+  "lead_count": 20,
+  "query_count": 40,
+  "source_access_count": 57
+ },
+ "records": [
+  {
+   "record_id": "ZP26-001",
+   "target": "A",
+   "url": "https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists",
+   "title": "Dissonance Index Vol. 1 (Various Artists) | The Vanishing Point Syndicate",
+   "platform": "Bandcamp",
+   "category": "music/netlabel_compilation",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. Track 1 listed as 'Zazie Productions - Pyrogenesis' (01:43). Label about: 'Vanishing Point Syndicate is a new netlabel dedicated to experimental sound...'. Released May 2, 2025. 105-track compilation.",
+   "confidence": 96,
+   "source_reliability": "high",
+   "release_date": "2025-05-02",
+   "archive_url": "",
+   "relationship": "Netlabel run by the artist; track 'Pyrogenesis' is a Zazie Productions contribution. Album credits reference PR ON THE GO and telegra.ph writeups (both in repo).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-002",
+   "target": "A",
+   "url": "https://thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis",
+   "title": "Pyrogenesis | Zazie Productions | The Vanishing Point Syndicate",
+   "platform": "Bandcamp",
+   "category": "music/track_page",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. H2: 'Zazie Productions - Pyrogenesis', 'from Dissonance Index Vol. 1 (Various Artists)', released May 2, 2025.",
+   "confidence": 96,
+   "source_reliability": "high",
+   "release_date": "2025-05-02",
+   "archive_url": "",
+   "relationship": "Individual track page for the netlabel's first track; artist credited as Zazie Productions.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-003",
+   "target": "B",
+   "url": "https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+   "title": "909 Dead Batteries Winter 2025 | 909 Dead Batteries",
+   "platform": "Bandcamp",
+   "category": "music/compilation",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. Track 7: 'Zazie Kanwar-Torge - Frost Directive XIII (Broadcast Leak ID_ BLZRD_-_741)' (01:39). Label 909 Dead Batteries, Upland, California; released January 2, 2026. Free-download chiptune/nerdcore/synth compilation.",
+   "confidence": 96,
+   "source_reliability": "high",
+   "release_date": "2026-01-02",
+   "archive_url": "https://web.archive.org/web/20260107204655/https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+   "relationship": "Release under the personal name (Target B), not the artist name (Target A). Wayback capture 2026-01-07 (200).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-004",
+   "target": "B",
+   "url": "https://909deadbatteries.bandcamp.com/track/frost-directive-xiii-broadcast-leak-id-blzrd-741",
+   "title": "Frost Directive XIII (Broadcast Leak ID_ BLZRD_-_741) | Zazie Kanwar-Torge | 909 Dead Batteries",
+   "platform": "Bandcamp",
+   "category": "music/track_page",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. H2: 'Zazie Kanwar-Torge - Frost Directive XIII (Broadcast Leak ID_ BLZRD_-_741)'. About section links zazieproductions.bandcamp.com and linktr.ee/zazieproductions. Released January 2, 2026.",
+   "confidence": 96,
+   "source_reliability": "high",
+   "release_date": "2026-01-02",
+   "archive_url": "https://web.archive.org/web/20260107204655/https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+   "relationship": "Track page; personal-name credit. Page's own links tie it to the Zazie Productions artist ecosystem.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-005",
+   "target": "A",
+   "url": "https://camembertelectrique.bandcamp.com/album/shippai",
+   "title": "SHIPPAI | Various Artists | Camembert Électrique",
+   "platform": "Bandcamp",
+   "category": "music/compilation",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. Bandcamp search (2026-09-05) shows track 31: 'Zazie Productions - Grief is a Hot Commodity' and credits section: 'Zazie Productions (US): https://zazieproductions.bandcamp.com linktr.ee/zazieproductions'. Compiled by Sábila Orbe (2026).",
+   "confidence": 95,
+   "source_reliability": "high",
+   "release_date": "2026",
+   "archive_url": "",
+   "relationship": "Zazie Productions appears as contributing artist on a third-party compilation; track 'Grief is a Hot Commodity' is from 'To Halt Space Adrift' (2023).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-006",
+   "target": "A",
+   "url": "https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124",
+   "title": "Amnesia X Zazie Productions / Oliver Schöffler Split (aNr124)",
+   "platform": "Bandcamp",
+   "category": "music/split_release",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. H2: 'Amnesia X Zazie Productions / Oliver Schöffler Split (aNr124)'; featured track 'Amnesia X Zazie Productions - Gloom'. Label arrhythNia Records (New York), released April 12, 2024.",
+   "confidence": 96,
+   "source_reliability": "high",
+   "release_date": "2024-04-12",
+   "archive_url": "",
+   "relationship": "Split with Amnesia (59) and Oliver Schöffler on arrhythNia Records; same release exists as Discogs release 36415555 (see ZP26-032).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-007",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/g7e-torpedo",
+   "title": "G7e Torpedo | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. 'G7e Torpedo by Zazie Productions', released October 11, 2019; 6 tracks; sample credits listed; about text signed 'Zazie Productions'.",
+   "confidence": 95,
+   "source_reliability": "high",
+   "release_date": "2019-10-11",
+   "archive_url": "",
+   "relationship": "Album page on the artist's own Bandcamp store (store root is in repo; this URL is new). Page also displays the full 18-release discography block used as evidence for ZP26-015..ZP26-021.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-008",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/to-halt-space-adrift",
+   "title": "To Halt Space Adrift | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search index (fetched 2026-09-05) lists 'To Halt Space Adrift by Zazie Productions' (8 tracks, released 02 May 2023); web-search snippet of the page shows full tracklist and 'by Zazie Productions'.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2023-05-02",
+   "archive_url": "",
+   "relationship": "2023 album; track 'Pivot and Deflect' also appears on lessthanone.bandcamp.com (in repo).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-009",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/constrained-capacity",
+   "title": "Constrained Capacity | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search index (2026-09-05): 'Constrained Capacity by Zazie Productions', 10 tracks, released May 6, 2022. Deezer API snippet shows per-track credits 'Composers: Zazie Kanwar-Torge'.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2022-05-06",
+   "archive_url": "",
+   "relationship": "Album page new; also catalogued as Discogs release 35541229 (ZP26-031).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-010",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/interference-archive-01010101",
+   "title": "Interference Archive 01010101 | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/ep",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search + JSON-LD on the page (via search snippet, 2026-09-05): albumRelease 'Interference Archive 01010101', byArtist 'Zazie Productions', datePublished 2021-09-08 / released May 2022; 5 tracks.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2022-05-19",
+   "archive_url": "",
+   "relationship": "EP; iTunes catalog lists the same EP (ZP26-033).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-011",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/stutter-to-stammer",
+   "title": "Stutter to stammer | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/ep",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search index (2026-09-05): 'Stutter to stammer by Zazie Productions', 5 tracks, released November 29, 2019; tags include musique concrete, weirdcore.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2019-11-29",
+   "archive_url": "",
+   "relationship": "Debut EP; 'Cheaper Impressions' track is the Black Mountain College commission (ground truth).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-012",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/sellotape",
+   "title": "Sellotape | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search index (2026-09-05): 'Sellotape by Zazie Productions', 8 tracks, released March 20, 2020; tags chamber music, dark ambient, avant-garde.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2020-03-20",
+   "archive_url": "",
+   "relationship": "2020 album; 2026 Super Deluxe Edition is ground truth in repo register (released 2026-04-16).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-013",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/vermiform",
+   "title": "Vermiform | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search index (2026-09-05): 'Vermiform by Zazie Productions', 8 tracks, released July 26, 2023; Deezer credits 'Composers: Zazie Kanwar-Torge' on its tracks.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2023-07-26",
+   "archive_url": "",
+   "relationship": "2023 album (Deezer shows ℗ 2022 Zazie Productions LLC, 06-05-2022 variant).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-014",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time-super-deluxe-edition",
+   "title": "Greetings From Tinsel Time (Super Deluxe Edition) | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Bandcamp search + discography block on ZP26-007 page (fetched 2026-09-05) list this release (Dec 2024). Viberate (ZP26-034) confirms 2024 release date.",
+   "confidence": 90,
+   "source_reliability": "high",
+   "release_date": "2024-12",
+   "archive_url": "",
+   "relationship": "Super-deluxe reissue of the 2023 album (base album ZP26-016).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-015",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/stutter-to-stammer-super-deluxe-edition",
+   "title": "Stutter to stammer (Super Deluxe Edition) | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05) lists 'Stutter to stammer (Super Deluxe Edition)' (Mar 2024); iTunes API returns tracks from this collection with releaseDate 2024-03-20 (ZP26-033).",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "2024-03-20",
+   "archive_url": "",
+   "relationship": "Reissue of ZP26-011.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-016",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time",
+   "title": "Greetings From Tinsel Time | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05); Viberate (ZP26-034) lists 2023 original.",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "2023",
+   "archive_url": "",
+   "relationship": "Base album of ZP26-014.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-017",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/a-long-way-to-nowhere",
+   "title": "A Long Way To Nowhere | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05) lists the release name and URL.",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Store discography entry; page not independently opened.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-018",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/anesthesia-for-the-signal-age",
+   "title": "Anesthesia for the Signal Age | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/album",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05) lists 'Anesthesia for the Signal Age' (May 2026); matches repo register ground truth (released 2026-05-07, 10-track full-length).",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "2026-05",
+   "archive_url": "",
+   "relationship": "2026 full-length; register cross-check positive.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-019",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/album/spectral-ode-to-synesthesia-2",
+   "title": "Spectral Ode to Synesthesia | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/single",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05) lists 'Spectral Ode to Synesthesia' (Mar 2025); Viberate lists it as a 2025 single.",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "2025-03",
+   "archive_url": "",
+   "relationship": "2025 single.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-020",
+   "target": "A",
+   "url": "https://zazieproductions.bandcamp.com/track/opaline-lament-life-from-the-beyond-2",
+   "title": "Opaline Lament (Life From The Beyond) | Zazie Productions",
+   "platform": "Bandcamp",
+   "category": "music/single",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Discography block on fetched page ZP26-007 (2026-09-05) lists 'Opaline Lament (Life From The Beyond)' (Dec 2025).",
+   "confidence": 88,
+   "source_reliability": "high",
+   "release_date": "2025-12",
+   "archive_url": "",
+   "relationship": "2025 single/track.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-022",
+   "target": "A",
+   "url": "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c",
+   "title": "Zazie Productions - MusicBrainz (artist b610b4cb-87da-44d7-a262-2bd65fb8098c)",
+   "platform": "MusicBrainz",
+   "category": "structured/artist_record",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05. Artist type Person, country United States; releases table lists 7 Various Artists compilation releases the artist is credited on (ZP26-023..029). MB search API returned this artist as exact-name match (score 100).",
+   "confidence": 97,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Primary structured-music record for Target A. No MusicBrainz record found under the personal name 'Zazie Kanwar-Torge' (search returned only the French singer Zazie and unrelated artists).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-023",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/87d86240-0b6a-4974-9c8b-39cf3c086e6d",
+   "title": "Esoterrexus - A Slithering Black Compilation (Various Artists, 2023-10-20, Slithering Black Records)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05) under 'Releases'; 20-track digital release, label Slithering Black Records.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2023-10-20",
+   "archive_url": "",
+   "relationship": "Compilation appearance of Zazie Productions (track not enumerated on the artist page).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-024",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/25dc1579-8eb4-4733-8f99-4014ea72ccbc",
+   "title": "Shadowlands 4 (Various Artists, 2023-11-10, Owlripper Recordings)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 20-track digital release, label Owlripper Recordings.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2023-11-10",
+   "archive_url": "",
+   "relationship": "Compilation appearance; Owlripper also credited on the Dissonance Index credits (ZP26-001).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-025",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/a91fa6a7-587b-4f94-876d-db121489f87d",
+   "title": "Christmasasaurus Unleashed! (Various Artists, 2023-12-25)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 31-track digital release, no label listed.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2023-12-25",
+   "archive_url": "",
+   "relationship": "Compilation appearance.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-026",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/1ff87890-d185-414a-937a-e3ee0980bcc4",
+   "title": "Late Night Love Letters (Various Artists, 2025-02-14, Utopia District)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 46-track digital release, label Utopia District. The Utopia District Bandcamp album page is in the repo seed set; this MusicBrainz release record is new.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2025-02-14",
+   "archive_url": "",
+   "relationship": "Compilation appearance (label page in repo; structured MB record new).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-027",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/d2409b75-b027-4c32-b6a5-08050036aae1",
+   "title": "ECHOES OF ANCIENT WRATH (Various Artists, 2025-08-13, Dodendans, catalog DD049)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 10-track digital release, label Dodendans, catalog number DD049.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2025-08-13",
+   "archive_url": "",
+   "relationship": "Compilation appearance with formal catalog number.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-028",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/64263a77-e4a7-430d-aff9-39deefa6e581",
+   "title": "Industrial Halloween 2025 (Various Artists, 2025-10-31, DSBP)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 34-track digital release, label DSBP.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2025-10-31",
+   "archive_url": "",
+   "relationship": "Compilation appearance.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-029",
+   "target": "A",
+   "url": "https://musicbrainz.org/release/811777b0-f682-411a-869c-7da2f25fc53c",
+   "title": "Psych Against Cancer, Vol 3, Part 2 (Various Artists, 2026-02-27)",
+   "platform": "MusicBrainz",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Listed on fetched MusicBrainz artist page (2026-09-05); 55-track digital release.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2026-02-27",
+   "archive_url": "",
+   "relationship": "2026 compilation appearance.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-031",
+   "target": "A",
+   "url": "https://www.discogs.com/label/4317760-Not-On-Label-Zazie-Productions-Self-released",
+   "title": "Not On Label (Zazie Productions Self-released) | Discogs (label 4317760)",
+   "platform": "Discogs",
+   "category": "structured/label_record",
+   "evidence_class": "verified_live",
+   "evidence": "Discogs label search (fetched 2026-09-05) returns exactly one label: 'Not On Label (Zazie Productions Self-released)'; linked from the artist page's 2022 self-released album.",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Self-release label record.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-032",
+   "target": "A",
+   "url": "https://www.discogs.com/release/35541229-Zazie-Productions-Constrained-Capacity",
+   "title": "Zazie Productions - Constrained Capacity (Discogs release 35541229, 2022)",
+   "platform": "Discogs",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Shown on fetched Discogs artist page ZP26-030 (2026-09-05): 10x File, WAV, Album; Not On Label (Zazie Productions Self-released); 2022; US.",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "2022",
+   "archive_url": "",
+   "relationship": "Structured release record; matches Bandcamp album ZP26-009.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-033",
+   "target": "A",
+   "url": "https://www.discogs.com/release/36415555-Amnesia-59-X-Zazie-Productions-Oliver-Sch%C3%B6ffler-Amnesia-X-Zazie-Productions-Oliver-Sch%C3%B6ffler",
+   "title": "Amnesia (59) X Zazie Productions, Oliver Schöffler - Amnesia X Zazie Productions, Oliver Schöffler (Discogs release 36415555, aNr124, 2024)",
+   "platform": "Discogs",
+   "category": "structured/release_record",
+   "evidence_class": "verified_structured",
+   "evidence": "Shown on fetched Discogs artist page ZP26-030 (2026-09-05): 4x File, FLAC; arrhythNia Records; aNr124; 2024.",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "2024",
+   "archive_url": "",
+   "relationship": "Structured release record; matches Bandcamp split ZP26-006.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-034",
+   "target": "A",
+   "url": "https://itunes.apple.com/search?term=%22Zazie+Productions%22&media=music&limit=25",
+   "title": "Apple/iTunes Search API catalog for exact 'Zazie Productions' (25 tracks returned)",
+   "platform": "Apple Music (iTunes Search API)",
+   "category": "structured/catalog_api",
+   "evidence_class": "verified_structured",
+   "evidence": "API response fetched 2026-09-05: resultCount 25, artistName 'Zazie Productions', artistId 1623719351. Collections observed: 'Stutter to stammer (Super Deluxe Edition)' (2024-03-20), 'Well Meaning Neurotypicals - Single' (2022-07-01), 'Interference Archive 01010101 - EP' (2022-05-19), 'To Halt Space Adrift' (2023-04-28); tracks include 'Treatment Resistant', 'Timeless Retro Splurge', 'Pivot and Deflect'.",
+   "confidence": 95,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Structured streaming catalog evidence. Artist page music.apple.com/us/artist/zazie-productions/1623719351 is in repo; per-track/album API entries are new structured records.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-042",
+   "target": "A",
+   "url": "https://rateyourmusic.com/~ZazieProductions",
+   "title": "Profile: ZazieProductions - Rate Your Music",
+   "platform": "Rate Your Music",
+   "category": "profile/user",
+   "evidence_class": "variant",
+   "evidence": "Page fetched 2026-09-05. User 'ZazieProductions' (member since November 11, 2020, #720597; '20 / Non-binary'). Username is the concatenated variant of 'Zazie Productions' (no space), so this is a variant-tier record, not an exact-string record per the repo two-name rule.",
+   "confidence": 70,
+   "source_reliability": "medium",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Identity attribution probable (taste profile overlaps artist influences) but the visible string is the concatenated variant; recorded separately from exact matches.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-045",
+   "target": "AB",
+   "url": "https://www.listennotes.com/podcasts/black-mountain/episode-7-ruth-asawas-jCOn1up_zYy/",
+   "title": "Episode 7: Ruth Asawa's Radical Universalism with Jason Vartikar | Listen Notes (related-episode module)",
+   "platform": "Listen Notes",
+   "category": "audio/podcast_index",
+   "evidence_class": "verified_live",
+   "evidence": "Page fetched 2026-09-05 (chunk 2). 'OTHER EPISODES IN THIS PODCAST' module contains 'BMC Radio Art: Zazie Productions - Cheaper Impressions' with description 'Zazie Kanwar-Torge (they/them) is a composer and multi-instrumentalist living in Asheville, North Carolina...'. The page itself is a different episode; both names appear in the related-episodes sidebar.",
+   "confidence": 85,
+   "source_reliability": "high",
+   "release_date": "",
+   "archive_url": "",
+   "relationship": "Podcast-index page where both targets are visible; surfaces the dedicated episode page ZP26-046.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-046",
+   "target": "AB",
+   "url": "https://www.listennotes.com/podcasts/black-mountain/bmc-radio-art-zazie-atrX8jsp-6h/",
+   "title": "BMC Radio Art: Zazie Productions - Cheaper Impressions (Listen Notes episode page)",
+   "platform": "Listen Notes",
+   "category": "audio/podcast_episode",
+   "evidence_class": "verified_platform_index",
+   "evidence": "Episode page URL and title 'BMC Radio Art: Zazie Productions - Cheaper Impressions' (Dec. 15, 2021) confirmed on the fetched verified page ZP26-045 (2026-09-05); description excerpt: 'Zazie Kanwar-Torge (they/them) is a composer and multi-instrumentalist...'. Dedicated page not independently opened this pass.",
+   "confidence": 80,
+   "source_reliability": "high",
+   "release_date": "2021-12-15",
+   "archive_url": "",
+   "relationship": "Dedicated episode page for the 2021 Black Mountain College radio-art commission 'Cheaper Impressions'; both names in title+description per the listing.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-047",
+   "target": "AB",
+   "url": "https://archive.org/details/instructions-for-clean-living",
+   "title": "Instructions for Clean Living (Internet Archive item; 2026 Public Domain Day Film Remix Contest)",
+   "platform": "Internet Archive",
+   "category": "archive/film_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org advancedsearch API (fetched 2026-09-05): matches BOTH exact queries. Item description ends: 'These materials were developed and produced by Zazie Kanwar-Torge, working as Zazie Productions.' Collection includes 2026-public-domain-day-film-contest. 233 downloads.",
+   "confidence": 95,
+   "source_reliability": "very_high",
+   "release_date": "2026",
+   "archive_url": "https://archive.org/details/instructions-for-clean-living",
+   "relationship": "The only archive.org item matching Target B's exact string; statement 'Zazie Kanwar-Torge, working as Zazie Productions' is a second direct identity link (besides ZP26-043). Register confirms this film was submitted to the contest (ground truth).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-048",
+   "target": "A",
+   "url": "https://archive.org/details/phantom-requiem-short-film",
+   "title": "Phantom Requiem ( Short Film) : Zazie Productions (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/film_item",
+   "evidence_class": "verified_live",
+   "evidence": "Item page fetched 2026-09-05: 'by Zazie Productions' (creator link), CC BY-ND 4.0, topics film/experimental film/stop motion/claymation, added 2025-04-03. Full-text search matches 'Zazie Productions'.",
+   "confidence": 95,
+   "source_reliability": "very_high",
+   "release_date": "2025-04-03",
+   "archive_url": "https://archive.org/details/phantom-requiem-short-film",
+   "relationship": "Primary film of both targets (Phantom Requiem, 2024) self-uploaded to IA; complements festival records ZP26-043/044.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-049",
+   "target": "A",
+   "url": "https://archive.org/details/unexplained-aerial-phenomena-report-zazie-productions",
+   "title": "UNEXPLAINED AERIAL PHENOMENA UFO REPORT - ZAZIE PRODUCTIONS ZP-AEP-0328-MID-FL (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/document_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title contains 'ZAZIE PRODUCTIONS'; description: 'UNEXPLAINED AERIAL PHENOMENA REPORT - ZAZIE PRODUCTIONS Case ID: ZP-AEP-0328-MID-FL Date of Event: March 28, 2025...' (25 downloads).",
+   "confidence": 92,
+   "source_reliability": "very_high",
+   "release_date": "2025-03-28",
+   "archive_url": "https://archive.org/details/unexplained-aerial-phenomena-report-zazie-productions",
+   "relationship": "Fictional 'UFO report' artifact in the artist's Enigma Labs sighting series (sighting 311344 is in repo).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-050",
+   "target": "A",
+   "url": "https://archive.org/details/quantum-geometry-3-d-emulator",
+   "title": "Quantum Geometry 3D Emulator (Internet Archive item, open_source_software)",
+   "platform": "Internet Archive",
+   "category": "archive/software_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org metadata API (fetched 2026-09-05): metadata.creator = 'Zazie Productions', uploader 'zaziediya@gmail.com', date 2019-12-01, license CC BY-NC-ND 4.0, mediatype software. HTML file 'Quantum Geometry 3D Emulator .html'.",
+   "confidence": 92,
+   "source_reliability": "very_high",
+   "release_date": "2019-12-01",
+   "archive_url": "https://archive.org/details/quantum-geometry-3-d-emulator",
+   "relationship": "Early (2019) creative-coding artifact; uploader email matches the contact address seen on the broken ReelCrafter reel (L-01).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-051",
+   "target": "A",
+   "url": "https://archive.org/details/va-music-inspired-on-mulholland-drive",
+   "title": "V/A - Music Inspired by Mulholland Drive (Internet Archive netlabel item)",
+   "platform": "Internet Archive",
+   "category": "archive/music_compilation_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org metadata API (fetched 2026-09-05): file '03 - Zazie Productions - Club Silencio Acoustic Survey.mp3' with creator='Zazie Productions', title='Club Silencio Acoustic Survey', album='Music inspired by Mulholland Drive', track 3.",
+   "confidence": 92,
+   "source_reliability": "very_high",
+   "release_date": "2026",
+   "archive_url": "https://archive.org/details/va-music-inspired-on-mulholland-drive",
+   "relationship": "Netlabel compilation contribution; NEW track title 'Club Silencio Acoustic Survey' not in repo.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-052",
+   "target": "A",
+   "url": "https://archive.org/details/va-doom-a-creative-commons-music-compilation",
+   "title": "V/A - DOOM / A Creative Commons Music Compilation (Internet Archive netlabel item)",
+   "platform": "Internet Archive",
+   "category": "archive/music_compilation_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): description artist-link list includes 'Zazie Productions: https://zazieproductions.bandcamp.com/'. Compiled by Sábila Orbe.",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "2026",
+   "archive_url": "https://archive.org/details/va-doom-a-creative-commons-music-compilation",
+   "relationship": "Netlabel compilation contribution (credit in item description).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-053",
+   "target": "A",
+   "url": "https://archive.org/details/v-a-i-want-to-believe",
+   "title": "V/A - I want to Believe (X-files Tribute) (Internet Archive netlabel item)",
+   "platform": "Internet Archive",
+   "category": "archive/music_compilation_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): description artist-link list includes 'Zazie Productions: https://zazieproductions.bandcamp.com/'. Compiled by Sábila Orbe. Connects to ground-truth 'Dawn of Darkness X-Files tribute call' submission (register).",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "2026",
+   "archive_url": "https://archive.org/details/v-a-i-want-to-believe",
+   "relationship": "Netlabel compilation contribution.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-054",
+   "target": "A",
+   "url": "https://archive.org/details/ju-on-the-music-compilation",
+   "title": "V/A - Ju-On (呪怨) The music compilation (Internet Archive netlabel item)",
+   "platform": "Internet Archive",
+   "category": "archive/music_compilation_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): description artist-link list includes 'Zazie Productions: https://zazieproductions.bandcamp.com /// https://linktr.ee/zazieproductions' (1073 downloads).",
+   "confidence": 90,
+   "source_reliability": "very_high",
+   "release_date": "2025-07-25",
+   "archive_url": "https://archive.org/details/ju-on-the-music-compilation",
+   "relationship": "Netlabel compilation contribution; horror-compilation circuit consistent with the artist's horror-scoring work.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-055",
+   "target": "A",
+   "url": "https://archive.org/details/arrhythnia-discography",
+   "title": "(Label) arrhythNia Discography (Internet Archive item, discography-archive collection)",
+   "platform": "Internet Archive",
+   "category": "archive/label_discography_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search; description is the arrhythNia label catalog (aNr01-aNr197 range) in which the artist's aNr124 split appears; 46 downloads.",
+   "confidence": 85,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "https://archive.org/details/arrhythnia-discography",
+   "relationship": "Label-discography archive tying ZP26-006/033 into the arrhythNia catalog; exact string located by full-text index within the item.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-056",
+   "target": "A",
+   "url": "https://archive.org/details/neural_dynamics_simulation_by_cascadingforest26294535",
+   "title": "NEURAL DYNAMICS SIMULATION - Unfinished Build (v0.7.3a, Zazie Productions, 2022) (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/software_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title contains 'Zazie Productions'; description describes VIRELAXIS neuro-simulation engine fragment, 'PRION/HERMES' project, Codex Build v0.7.3a.",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2022",
+   "archive_url": "https://archive.org/details/neural_dynamics_simulation_by_cascadingforest26294535",
+   "relationship": "Creative-coding artifact (open_source_software collection).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-057",
+   "target": "A",
+   "url": "https://archive.org/details/data-conversation-01-17675",
+   "title": "Zazie Productions Mystery File Dump: Vol 1 (Internet Archive item, opensource_audio)",
+   "platform": "Internet Archive",
+   "category": "archive/file_dump_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title contains 'Zazie Productions'; description: 'To initiate a deliberate and erratic controlled leak of the Pomegranate Vortex (3) archive-a 1.07 TB stash of uncurated Zazie Productions material...' (17 downloads).",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "https://archive.org/details/data-conversation-01-17675",
+   "relationship": "Artist-concept 'file dump' item; sister item ZP26-058.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-058",
+   "target": "A",
+   "url": "https://archive.org/details/liquid-phosphorus-4-33",
+   "title": "Zazie Productions Mystery File Dump: Vol 2 (Internet Archive item, opensource_audio)",
+   "platform": "Internet Archive",
+   "category": "archive/file_dump_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title contains 'Zazie Productions'; same 'Pomegranate Vortex (3)' description as Vol 1 (50 downloads).",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "https://archive.org/details/liquid-phosphorus-4-33",
+   "relationship": "Second volume of the 'Mystery File Dump' series.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-059",
+   "target": "A",
+   "url": "https://archive.org/details/img-1941_202505",
+   "title": "THE SEVENTH SCREEN IS DREAMING IN FRACTALS: A Zazie Productions Archive of Visual Ontoviruses... (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/visual_artifact_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title contains 'Zazie Productions'; description: 'A lost exo-visual transmission from Zazie Productions, THE SEVENTH SCREEN is an unclassifiable folk-psycho-cybernetic reliquary...' (45 downloads).",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "2020-02-01",
+   "archive_url": "https://archive.org/details/img-1941_202505",
+   "relationship": "Net-art/PDF artifact in the artist's visual-ontology series.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-060",
+   "target": "A",
+   "url": "https://archive.org/details/5-bb-30-b-4-b-a-4-a-0-4-fff-94-cc-22-f-0-fceda-667",
+   "title": "https://www.yyyyyyy.info (lost animation sequence) (Internet Archive item, opensource_movies)",
+   "platform": "Internet Archive",
+   "category": "archive/film_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): title is the URL; description: 'Lost animation sequence from https://www.yyyyyyy.info/ re-mastered from Zazie Productions' (21 downloads).",
+   "confidence": 88,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "https://archive.org/details/5-bb-30-b-4-b-a-4-a-0-4-fff-94-cc-22-f-0-fceda-667",
+   "relationship": "Preservation of the yyyyyyyy.info/ www.yyyyyyy.info net-art artifact (register entry 110 documents the preservation work).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-061",
+   "target": "A",
+   "url": "https://archive.org/details/experiments-on-the-witch-house",
+   "title": "V/A - Experiments on the Witch House (Internet Archive netlabel item)",
+   "platform": "Internet Archive",
+   "category": "archive/music_compilation_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search (netlabels + dawn-of-darkness collections). Per-file metadata reviewed for tracks 1-6 (Messerschmitt, Fox Shade, Emori, pestzone, KΔDΔBRΔ, SOKUSHINBUTSU PROJECT); the Zazie Productions contribution is within the item's indexed text (tracklist continues beyond the reviewed window).",
+   "confidence": 82,
+   "source_reliability": "very_high",
+   "release_date": "2025",
+   "archive_url": "https://archive.org/details/experiments-on-the-witch-house",
+   "relationship": "Netlabel compilation; exact string confirmed by IA full-text index, specific track not yet enumerated - flagged for follow-up.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-062",
+   "target": "A",
+   "url": "https://archive.org/details/sepsis-d-iaa-i3d-iai-i3d-i-ia-i3da-iia-i3di-ia-i3-d-ia-i3d-iia-i3di-ia-i3d",
+   "title": "Sepsis (glitch-script title) (Internet Archive item, opensource_movies)",
+   "platform": "Internet Archive",
+   "category": "archive/film_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search; description: 'Sepsis (2024) is an audiovisual piece that captures the overstimulating nature of media...' (39 downloads). 'Sepsis' also appears as an exhibition piece on newmediartspace.info (in repo).",
+   "confidence": 82,
+   "source_reliability": "very_high",
+   "release_date": "2024-04-11",
+   "archive_url": "https://archive.org/details/sepsis-d-iaa-i3d-iai-i3d-i-ia-i3da-iia-i3di-ia-i3-d-ia-i3d-iia-i3di-ia-i3d",
+   "relationship": "2024 audiovisual work; same title as the 2024 New Media Arts Space exhibition piece (repo URL newmediartspace.info/exhibitions/2024_ripples/sepsis.html).",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-063",
+   "target": "A",
+   "url": "https://archive.org/details/ra-codename-the-rhizosigil",
+   "title": "OBJECT #Δ-NEMEK-77/RA (Codename: THE RHIZOSIGIL) (Internet Archive zine item)",
+   "platform": "Internet Archive",
+   "category": "archive/zine_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search (zines collection); description is a long occult-fiction object-document (50 downloads).",
+   "confidence": 82,
+   "source_reliability": "very_high",
+   "release_date": "2019-01-09",
+   "archive_url": "https://archive.org/details/ra-codename-the-rhizosigil",
+   "relationship": "Zine artifact in the artist's 'OBJECT #Δ-NEMEK' series; exact string within item via full-text index.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-064",
+   "target": "A",
+   "url": "https://archive.org/details/textual-exhumation-5-gnosis-of-the-null-horizon_202504",
+   "title": "TEXTUAL EXHUMATION 5 GNOSIS OF THE NULL HORIZON (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/text_artifact_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search (community/emptyfiles collections).",
+   "confidence": 82,
+   "source_reliability": "very_high",
+   "release_date": "2025",
+   "archive_url": "https://archive.org/details/textual-exhumation-5-gnosis-of-the-null-horizon_202504",
+   "relationship": "Text-artifact in the 'Textual Exhumation' series; sister item ZP26-065.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  },
+  {
+   "record_id": "ZP26-065",
+   "target": "A",
+   "url": "https://archive.org/details/textual-exhumations-unicode",
+   "title": "TEXTUAL EXHUMATIONS UNICODE (Internet Archive item)",
+   "platform": "Internet Archive",
+   "category": "archive/text_artifact_item",
+   "evidence_class": "verified_structured",
+   "evidence": "Archive.org API (fetched 2026-09-05): item matches quoted 'Zazie Productions' full-text search; description: 'TEXTUAL EXHUMATION #4: The Larynx-Vortex Sutra - A Glossolalic Manual...' (21 downloads).",
+   "confidence": 82,
+   "source_reliability": "very_high",
+   "release_date": "",
+   "archive_url": "https://archive.org/details/textual-exhumations-unicode",
+   "relationship": "Unicode text-artifact; part of the same series as ZP26-064.",
+   "last_checked": "2026-09-05",
+   "in_repo": false
+  }
+ ],
+ "records_already_in_repo_excluded": [
+  {
+   "record_id": "ZP26-021",
+   "url": "https://zazieproductions.bandcamp.com/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-030",
+   "url": "https://www.discogs.com/artist/11354435-Zazie-Productions",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-035",
+   "url": "https://groover.co/en/influencer/profile/0.zazie-productions/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-036",
+   "url": "https://www.viberate.com/artist/zazie-productions/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-037",
+   "url": "https://www.bandmix.com/zazieproductions/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-038",
+   "url": "https://www.wfcn.co/profile/zazie.productions",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-039",
+   "url": "https://www.castingcall.club/m/zazieproductions",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-040",
+   "url": "https://soundbetter.com/profiles/614805-zazie-productions",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-041",
+   "url": "https://songstats.com/artist/mljz9dxu/zazie-kanwar-torge",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-043",
+   "url": "https://pebblesunderground.art/video/phantom-requiem/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  },
+  {
+   "record_id": "ZP26-044",
+   "url": "https://www.visualcontainer.tv/pebbles-underground-summer-2024-award-winners-winter-2024-award-winners/",
+   "reason": "matches repo baseline (437 URLs); cluster root noted"
+  }
+ ],
+ "leads": [
+  {
+   "lead_id": "ZL26-01",
+   "url": "https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w",
+   "title": "Zazie Productions Reel (ReelCrafter)",
+   "target": "AB",
+   "source_engine": "platform-search-api",
+   "status": "broken_link",
+   "note": "Search snippet (2026-09-05) contains BOTH exact names: 'Zazie Kanwar-Torge is an award-winning composer... Performing and releasing work under Zazie Productions...' plus email zaziediya@gmail.com and phone number. Direct fetch 2026-09-05: 'Oops, we couldn't find that reel! Looks like this link is no longer available.' => broken live page; evidence survives only in the search index. Recorded as search_index + broken. Sensitive data (email/phone) NOT transcribed into deliverables per repo PII rules; its presence is noted without transcription.",
+   "confidence": 40,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-02",
+   "url": "https://www.linkedin.com/in/zazie-kanwar-torge-3b8a98373/",
+   "title": "Zazie Kanwar-Torge - Zazie Productions LLC (LinkedIn public profile)",
+   "target": "AB",
+   "source_engine": "platform-search-api",
+   "status": "blocked_bot_protection",
+   "note": "Direct fetch 2026-09-05: HTTP 403. Search-engine snippet + embedded JSON-LD show name 'Zazie Kanwar-Torge', worksFor 'Zazie Productions LLC', publications (Phantom Requiem - Mande Literary Journal; Anchor and Ascend - 100Subtexts Magazine; THRESHOLDS; Enigma Labs publication), awards (BMC Radio Art Award, Pulitzer Center finalist, Riviera Art Film Festival, Tromso Arctic Cinema Showcase), projects (Dissonance Index Vol. 1; Phantasm films). Recorded at search-index level only; page not opened.",
+   "confidence": 55,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-03",
+   "url": "https://www.reddit.com/r/noisemusic/comments/1jajm1l/new_label_called_the_vanishing_point_syndicate/",
+   "title": "r/noisemusic: New label called The Vanishing Point Syndicate taking submissions",
+   "target": "A",
+   "source_engine": "platform-search-api",
+   "status": "blocked_bot_protection",
+   "note": "Direct fetch 2026-09-05: HTTP 403 (Reddit bot protection). Matched query 'Vanishing Point Syndicate' 'Zazie' OR 'Dissonance Index' (2025-03-13 post). Exact target string presumed present in post body but not visible in snippet; NOT verified => lead only. Ties to ZP26-001/002 netlabel.",
+   "confidence": 45,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-04",
+   "url": "https://100subtextsmagazine.blogspot.com/2025/03/issue-31feature.html",
+   "title": "100Subtexts Literary Magazine - Issue 31 feature",
+   "target": "B",
+   "source_engine": "referral_from_verified_page",
+   "status": "empty_or_js_page",
+   "note": "Linked from verified Casting Call Club profile (ZP26-039) and from artist's own bio ('featured on... 100Subtexts Literary Magazine'). Fetch 2026-09-05 returned only the title 'Issue 31_feature' (content JS-gated or empty). Name not confirmed on page => unresolved lead. Register ground truth confirms 'Anchor and Ascend' published in 100Subtexts.",
+   "confidence": 40,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-05",
+   "url": "https://www.behance.net/zaziediya",
+   "title": "Behance profile 'zaziediya'",
+   "target": "A",
+   "source_engine": "referral_from_verified_page",
+   "status": "unfetched_variant_handle",
+   "note": "Linked twice from verified Casting Call Club profile (ZP26-039) as the artist's graphic-design portfolio. Handle 'zaziediya' is a variant (not an exact-name string); page not fetched this pass. Lead only.",
+   "confidence": 45,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-06",
+   "url": "https://www.visualcontainer.tv/wp-content/uploads/2025/01/Winter-2024-Award-Winners_Press-Release.pdf",
+   "title": "Pebbles Underground Winter 2024 Award Winners Press Release (PDF)",
+   "target": "AB",
+   "source_engine": "referral_from_verified_page",
+   "status": "artifact_unparsed",
+   "note": "PDF linked from verified page ZP26-044 (2026-09-05). PDF text not parsed this pass (no pdftotext in sandbox; fetch_page is HTML/JSON-oriented). The parent page already contains both exact names; PDF treated as derivative artifact. Companion: Summer-2024-Award-Winners_Press-Release.pdf.",
+   "confidence": 50,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-07",
+   "url": "https://www.youtube.com/channel/UCnDTZImCr9MfLF_f7iPav2A",
+   "title": "YouTube channel UCnDTZImCr9MfLF_f7iPav2A ('Zazie Productions')",
+   "target": "A",
+   "source_engine": "referral_from_verified_page",
+   "status": "duplicate_cluster_repo_domain",
+   "note": "Channel id surfaced on verified WFCN profile (ZP26-038) with 'Zazie Productions 195 subscribers' and video UX2kv3G89Jw 'Phantom Requiem (Short Film)'. youtube.com/@zazieproductions is in repo seed set => duplicate cluster (repo-domain), no new record. Channel ID recorded for the cluster.",
+   "confidence": 85,
+   "disposition": "duplicate_cluster"
+  },
+  {
+   "lead_id": "ZL26-08",
+   "url": "https://open.spotify.com/playlist/75PxWthUYPOskOU1EjGrFX",
+   "title": "Spotify playlist 'Goa Trance/Psy Trance · Zazie Productions'",
+   "target": "A",
+   "source_engine": "referral_from_verified_page",
+   "status": "duplicate_cluster_repo_domain",
+   "note": "Playlist surfaced on verified Groover profile (ZP26-035); 31.4k followers displayed; curator 'Zazie Productions'. Spotify domain in repo seed set => duplicate cluster; playlist id recorded.",
+   "confidence": 85,
+   "disposition": "duplicate_cluster"
+  },
+  {
+   "lead_id": "ZL26-09",
+   "url": "https://listen.tidal.com/artist/33032080/",
+   "title": "Tidal artist 33032080 (sameAs of Songstats Zazie Kanwar-Torge)",
+   "target": "B",
+   "source_engine": "referral_from_verified_page",
+   "status": "unfetched_sameas",
+   "note": "sameAs URL displayed on verified Songstats page ZP26-041 (JSON-LD sameAs). Tidal page not fetched this pass. Lead for Tidal catalog cross-check.",
+   "confidence": 55,
+   "disposition": "ledger_only"
+  },
+  {
+   "lead_id": "ZL26-10",
+   "url": "https://www.discogs.com/artist/14374163-Amnesia-59",
+   "title": "Discogs artist 'Amnesia (59)'",
+   "target": "A",
+   "source_engine": "referral_from_verified_page",
+   "status": "context_only",
+   "note": "Co-artist on the aNr124 split (ZP26-006/033). No target string; context record for the split. Oliver Schöffler artist page (discogs.com/artist/4829028) likewise context-only.",
+   "confidence": 90,
+   "disposition": "context_only"
+  },
+  {
+   "lead_id": "ZL26-11",
+   "url": "https://www.discogs.com/search/?q=Zazie%20Productions",
+   "title": "Discogs search: 152 releases / 16 masters / 1 artist / 1 label matching 'Zazie Productions'",
+   "target": "A",
+   "source_engine": "direct_platform_search",
+   "status": "index_counts_recorded",
+   "note": "Marketplace-wide counts captured 2026-09-05. Per-release marketplace pages not enumerated (would be ~150 fetches; out of scope). The 1 artist + 1 label + 2 artist-page releases are the verified records (ZP26-030..033).",
+   "confidence": 90,
+   "disposition": "index_evidence"
+  },
+  {
+   "lead_id": "ZL26-12",
+   "url": "https://ars.electronica.art/outofthebox/en/sonic-saturday/",
+   "title": "Sonic Saturday - 'Medium Sonorum' (Ars Electronica / Bruckneruni Linz event pages)",
+   "target": "B",
+   "source_engine": "platform-search-api",
+   "status": "rejected_no_exact_name",
+   "note": "Query 'Zazie Kanwar-Torge' 'Sonic Saturday' OR 'MEDIUM SONORUM' OR 'Linz' returned the 2019 and 2024/2025 Sonic Saturday event pages; NONE of the returned snippets contains an exact target string. Register ground truth says the artist was selected for Sonic Saturday 2026 (Linz). Not claimed as verified; event series noted as likely venue for follow-up.",
+   "confidence": 10,
+   "disposition": "rejected"
+  },
+  {
+   "lead_id": "ZL26-13",
+   "url": "https://payhip.com/b/muNBT",
+   "title": "100subtexts 2 (Payhip bundle)",
+   "target": "B",
+   "source_engine": "platform-search-api",
+   "status": "rejected_unrelated",
+   "note": "Top hit for query 'Zazie Kanwar-Torge' 'Dark Descent' OR 'Milkweed' OR '100Subtexts'; title '100subtexts 2' is a Payhip product with no target string visible. Rejected as unverified/unrelated.",
+   "confidence": 5,
+   "disposition": "rejected"
+  },
+  {
+   "lead_id": "ZL26-14",
+   "url": "https://www.chartsinfrance.net/Zazie/interview-123852.html",
+   "title": "French singer Zazie interview (chartsinfrance.net)",
+   "target": "A",
+   "source_engine": "platform-search-api",
+   "status": "rejected_other_entity",
+   "note": "Noise: French pop singer Zazie (excluded entity per repo rules). No 'Zazie Productions' exact string.",
+   "confidence": 5,
+   "disposition": "rejected"
+  },
+  {
+   "lead_id": "ZL26-15",
+   "url": "https://www.bloodborne-wiki.com/2015/11/milkweed.html",
+   "title": "Bloodborne wiki 'Milkweed' rune",
+   "target": "B",
+   "source_engine": "platform-search-api",
+   "status": "rejected_other_entity",
+   "note": "Noise from the 'Milkweed' keyword in the query. Rejected.",
+   "confidence": 5,
+   "disposition": "rejected"
+  },
+  {
+   "lead_id": "ZL26-16",
+   "url": "https://www.wikidata.org/wiki/Q2947605",
+   "title": "La Zizanie (Q2947605) - Wikidata",
+   "target": "A",
+   "source_engine": "platform-search-api",
+   "status": "rejected_other_entity",
+   "note": "Noise hit from the Discogs/MusicBrainz/RYM query (RYM release of French singer Zazie). Not a target.",
+   "confidence": 5,
+   "disposition": "rejected"
+  },
+  {
+   "lead_id": "ZL26-17",
+   "url": "https://www.discogs.com/de/artist/211586-Tole-Ache",
+   "title": "Discogs artist 'Tole Ache' (mentioned in SHIPPAI credits block)",
+   "target": "A",
+   "source_engine": "referral_from_verified_page",
+   "status": "context_only",
+   "note": "Crediting editor in ZP26-005 SHIPPAI credits block. Context only.",
+   "confidence": 90,
+   "disposition": "context_only"
+  },
+  {
+   "lead_id": "ZL26-18",
+   "url": "https://909deadbatteries.bandcamp.com/",
+   "title": "909 Dead Batteries (Bandcamp label store root)",
+   "target": "B",
+   "source_engine": "referral_from_verified_page",
+   "status": "duplicate_cluster_same_record",
+   "note": "Label store that released ZP26-003/004. No target string on the store root itself; the two release/track pages carry the exact name. Cluster note only.",
+   "confidence": 80,
+   "disposition": "duplicate_cluster"
+  },
+  {
+   "lead_id": "ZL26-19",
+   "url": "https://slaps.com/ZazieProd",
+   "title": "Slaps user @ZazieProd ('Zazie Productions')",
+   "target": "A",
+   "source_engine": "platform-search-api",
+   "status": "duplicate_cluster_repo",
+   "note": "Same account as repo seed URL slaps.com/user/ZazieProd (canonical URL differs: /ZazieProd vs /user/ZazieProd). Duplicate cluster; excluded from new records per 'ignore anything already in repo'.",
+   "confidence": 90,
+   "disposition": "duplicate_cluster"
+  },
+  {
+   "lead_id": "ZL26-20",
+   "url": "https://musicbrainz.org/ws/2/release/?query=artist:%22Zazie%20Productions%22",
+   "title": "MusicBrainz release search (count 0)",
+   "target": "A",
+   "source_engine": "direct_platform_search",
+   "status": "negative_result",
+   "note": "Lucene-quoted artist: query returned count=0 on 2026-09-05 (query-syntax sensitivity). The artist's 7 releases WERE retrieved via the artist entity page instead (ZP26-022..029). Logged so the protocol is reproducible.",
+   "confidence": 90,
+   "disposition": "negative_result"
+  }
+ ],
+ "search_queries": [
+  {
+   "query_id": "Q01",
+   "engine": "platform-search-api (opaque backend)",
+   "query": "\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "10 results; new: groover.co, viberate.com, bandmix.com, wfcn.co; in-repo: slaps, blackmountaincollege.org, museonline.org, musicians.directory, grammyweekly.com, linktree"
+  },
+  {
+   "query_id": "Q02",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "9 results; new: play.reelcrafter.com, linkedin.com, listennotes.com, visualcontainer.tv, songstats.com/artist/mljz9dxu; in-repo: imdb, hackaday.io, pulitzercenter.org, stage32.com"
+  },
+  {
+   "query_id": "Q03",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" bandcamp",
+   "date": "2026-09-05",
+   "results_summary": "new: castingcall.club, bandcamp album pages (interference-archive, to-halt-space-adrift), camembertelectrique.bandcamp.com/album/shippai; in-repo: itch.io"
+  },
+  {
+   "query_id": "Q04",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "new: pebblesunderground.art/video/phantom-requiem (identity 'A.K.A' statement); in-repo: imdb, hackaday, expcinema, reelcrafter (broken)"
+  },
+  {
+   "query_id": "Q05",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\" composer film",
+   "date": "2026-09-05",
+   "results_summary": "in-repo: stage32, imdb, pebbles-PR, expcinema, linkedin"
+  },
+  {
+   "query_id": "Q06",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Anesthesia for the Signal Age\"",
+   "date": "2026-09-05",
+   "results_summary": "new: zazieproductions.bandcamp.com/album/g7e-torpedo (full page text incl. discography block), stutter-to-stammer album page"
+  },
+  {
+   "query_id": "Q07",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Egregore Intrasound\" OR \"Terminal Future Industries\"",
+   "date": "2026-09-05",
+   "results_summary": "no new compilation page surfaced; profile re-hits only. Ecstatic Feedback II / Terminal Future Industries live page NOT located this pass (lead retained)."
+  },
+  {
+   "query_id": "Q08",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Camembert\" OR \"Subduction Choir\" OR \"Suture Disruption\"",
+   "date": "2026-09-05",
+   "results_summary": "no new (shippai found via Q03). Drama Recorder / 23SECONDS OV TIME / Elements live pages not located (leads retained)."
+  },
+  {
+   "query_id": "Q09",
+   "engine": "platform-search-api",
+   "query": "\"Vanishing Point Syndicate\" \"Zazie\" OR \"Dissonance Index\"",
+   "date": "2026-09-05",
+   "results_summary": "new: thevanishingpointsyndicate.bandcamp.com album, reddit r/noisemusic thread (blocked)"
+  },
+  {
+   "query_id": "Q10",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\" \"Mike Has a Visitor\" OR \"Beyond the Silken Threads\"",
+   "date": "2026-09-05",
+   "results_summary": "in-repo: stage32 (credits detail)"
+  },
+  {
+   "query_id": "Q11",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\" \"Expire\" OR \"Choleric\" OR \"The Haunted\"",
+   "date": "2026-09-05",
+   "results_summary": "in-repo: imdb name page (credits detail: Expire sound designer, Choleric co-producer, The Haunted composer)"
+  },
+  {
+   "query_id": "Q12",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\" \"Dark Descent\" OR \"Milkweed\" OR \"100Subtexts\"",
+   "date": "2026-09-05",
+   "results_summary": "rejected: payhip bundle, bloodborne wiki; in-repo: itch.io bio text"
+  },
+  {
+   "query_id": "Q13",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" podcast OR interview OR \"Sonic Saturday\"",
+   "date": "2026-09-05",
+   "results_summary": "new: soundbetter.com profile (incl. interview block); rejected: chartsinfrance (French singer noise)"
+  },
+  {
+   "query_id": "Q14",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Sellotape\" OR \"Opaline Lament\" OR \"G7e Torpedo\"",
+   "date": "2026-09-05",
+   "results_summary": "new: g7e-torpedo full text, constrained-capacity, greetings-from-tinsel-time-super-deluxe-edition pages"
+  },
+  {
+   "query_id": "Q15",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "no hyphen variant: same core set; Deezer snippet shows credit string 'Composers: Zazie Kanwar- Torge' (space inside hyphenated credit) - punctuation-variant evidence logged"
+  },
+  {
+   "query_id": "Q16",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" Discogs OR MusicBrainz OR \"Rate Your Music\"",
+   "date": "2026-09-05",
+   "results_summary": "new: discogs artist 11354435, rateyourmusic ~ZazieProductions; rejected: wikidata La Zizanie (noise)"
+  },
+  {
+   "query_id": "Q17",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Kanwar-Torge\" \"Sonic Saturday\" OR \"MEDIUM SONORUM\" OR \"Linz\"",
+   "date": "2026-09-05",
+   "results_summary": "no exact-name hits; Sonic Saturday event pages only (lead ZL26-12)"
+  },
+  {
+   "query_id": "Q18",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" \"Red Noise\" OR \"I Could Hear Your Breath Rotting\" OR \"The Triangular Savant\"",
+   "date": "2026-09-05",
+   "results_summary": "reelcrafter snippet only (broken page); no new live pages"
+  },
+  {
+   "query_id": "Q19",
+   "engine": "platform-search-api",
+   "query": "\"Zazie Productions\" site:neocities.org OR site:tumblr.com OR site:wordpress.com OR site:weebly.com",
+   "date": "2026-09-05",
+   "results_summary": "no relevant hits (only French-singer Zazie sites: noise)"
+  },
+  {
+   "query_id": "Q20",
+   "engine": "Bandcamp search (direct)",
+   "query": "q=\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "artist store rank 1; albums: Sellotape, Vermiform, Constrained Capacity, Stutter to stammer; NEW: arrhythniarecords split album + track (rank 6-7)"
+  },
+  {
+   "query_id": "Q21",
+   "engine": "Bandcamp search (direct)",
+   "query": "q=\"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "rank 1: 909deadbatteries.bandcamp.com track 'Frost Directive XIII...' from '909 Dead Batteries Winter 2025' by Zazie Kanwar-Torge (released 2026-01-02). Single result."
+  },
+  {
+   "query_id": "Q22",
+   "engine": "MusicBrainz WS2 (direct)",
+   "query": "artist/?query=Zazie+Productions (limit 25)",
+   "date": "2026-09-05",
+   "results_summary": "1277 candidates; exact match 'Zazie Productions' (Person, US, male) MBID b610b4cb-87da-44d7-a262-2bd65fb8098c score 100; no 'Zazie Kanwar-Torge' artist record found"
+  },
+  {
+   "query_id": "Q23",
+   "engine": "Discogs search (direct)",
+   "query": "q=Zazie Productions type=artist",
+   "date": "2026-09-05",
+   "results_summary": "1 artist (11354435), 152 releases, 16 masters; label search: 1 label (4317760 Not On Label Zazie Productions Self-released)"
+  },
+  {
+   "query_id": "Q24",
+   "engine": "archive.org advancedsearch (direct)",
+   "query": "\"Zazie Productions\" (fl: identifier,title,date,downloads,description)",
+   "date": "2026-09-05",
+   "results_summary": "19 items (ZP26-047..065)"
+  },
+  {
+   "query_id": "Q25",
+   "engine": "archive.org advancedsearch (direct)",
+   "query": "\"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "1 item: instructions-for-clean-living (matches both targets)"
+  },
+  {
+   "query_id": "Q26",
+   "engine": "iTunes Search API (direct)",
+   "query": "term=\"Zazie Productions\" media=music limit=25",
+   "date": "2026-09-05",
+   "results_summary": "25 tracks, artistId 1623719351 (ZP26-034)"
+  },
+  {
+   "query_id": "Q27",
+   "engine": "Wikidata wbsearchentities (direct)",
+   "query": "search=Zazie Productions / Zazie Kanwar-Torge",
+   "date": "2026-09-05",
+   "results_summary": "0 entities for both names (negative)"
+  },
+  {
+   "query_id": "Q28",
+   "engine": "Wikipedia search API (direct)",
+   "query": "list=search \"Zazie Productions\" / \"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "0 totalhits both (negative)"
+  },
+  {
+   "query_id": "Q29",
+   "engine": "GitHub repo search API (direct)",
+   "query": "repositories?q=\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "total_count 0 (negative). Code search requires auth (not attempted - constraint)"
+  },
+  {
+   "query_id": "Q30",
+   "engine": "npm registry search (direct)",
+   "query": "text=zazie productions",
+   "date": "2026-09-05",
+   "results_summary": "no Zazie-related packages (fuzzy hits only) (negative)"
+  },
+  {
+   "query_id": "Q31",
+   "engine": "HuggingFace API (direct)",
+   "query": "models?search=zazie productions",
+   "date": "2026-09-05",
+   "results_summary": "[] empty (negative)"
+  },
+  {
+   "query_id": "Q32",
+   "engine": "Open Library search API (direct)",
+   "query": "author=Zazie Productions",
+   "date": "2026-09-05",
+   "results_summary": "numFound 0 (negative)"
+  },
+  {
+   "query_id": "Q33",
+   "engine": "PyPI search (direct)",
+   "query": "q=Zazie Productions",
+   "date": "2026-09-05",
+   "results_summary": "JS-rendered result list not returned by fetch; inconclusive (partial access)"
+  },
+  {
+   "query_id": "Q34",
+   "engine": "Common Crawl index (direct)",
+   "query": "collinfo.json + CDX prefix queries per known domain",
+   "date": "2026-09-05",
+   "results_summary": "latest crawl CC-MAIN-2026-34 (2026-08). URL-level CDX checked for key new domains (see source_access S33-S37). Full crawl-index string search not available without CC index full scan (limitation)."
+  },
+  {
+   "query_id": "Q35",
+   "engine": "Wayback CDX (direct)",
+   "query": "url=zazieproductions.bandcamp.com / thevanishingpointsyndicate.bandcamp.com / 909deadbatteries.bandcamp.com / camembertelectrique.bandcamp.com / pebblesunderground.art/video/phantom-requiem/",
+   "date": "2026-09-05",
+   "results_summary": "captures: zazie store 2021-09-14; VPS 0; 909 winter-2025 album 2026-01-07; camembert domain widely (2019-09-28+); pebbles phantom-requiem 5 captures 2025-01-22..2026-06-07"
+  },
+  {
+   "query_id": "Q36",
+   "engine": "Marginalia (direct)",
+   "query": "\"Zazie Productions\" / \"Zazie Kanwar-Torge\"",
+   "date": "2026-09-05",
+   "results_summary": "blocked: 5-second JS bot-gate page served; results not accessible"
+  },
+  {
+   "query_id": "Q37",
+   "engine": "DuckDuckGo HTML (direct)",
+   "query": "\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "blocked: image CAPTCHA challenge"
+  },
+  {
+   "query_id": "Q38",
+   "engine": "Mojeek (direct)",
+   "query": "\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "blocked: ALTCHA challenge"
+  },
+  {
+   "query_id": "Q39",
+   "engine": "SearXNG searx.be (direct)",
+   "query": "\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "blocked: browser-integrity CAPTCHA"
+  },
+  {
+   "query_id": "Q40",
+   "engine": "SearXNG priv.au (direct)",
+   "query": "\"Zazie Productions\"",
+   "date": "2026-09-05",
+   "results_summary": "instance reachable but results JS-rendered/empty via fetch (no usable results)"
+  }
+ ],
+ "source_access": [
+  {
+   "access_id": "S01",
+   "url": "https://itunes.apple.com/search?term=%22Zazie+Productions%22&media=music&limit=25",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "JSON; 25 results"
+  },
+  {
+   "access_id": "S02",
+   "url": "https://bandcamp.com/search?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "search index; artist + albums + arrhythnia split"
+  },
+  {
+   "access_id": "S03",
+   "url": "https://bandcamp.com/search?q=%22Zazie+Kanwar-Torge%22",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "search index; 909 Dead Batteries track"
+  },
+  {
+   "access_id": "S04",
+   "url": "https://musicbrainz.org/ws/2/artist/?query=Zazie+Productions&fmt=json&limit=25",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "JSON; 1277 candidates, exact match first"
+  },
+  {
+   "access_id": "S05",
+   "url": "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "artist page + discography"
+  },
+  {
+   "access_id": "S06",
+   "url": "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c/releases",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "7 VA releases with labels/dates"
+  },
+  {
+   "access_id": "S07",
+   "url": "https://musicbrainz.org/ws/2/release/?query=artist:%22Zazie%20Productions%22&fmt=json&limit=100",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "count 0 (syntax; negative logged)"
+  },
+  {
+   "access_id": "S08",
+   "url": "https://www.discogs.com/search/?q=Zazie%20Productions&type=artist",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "1 artist / 152 releases / 16 masters"
+  },
+  {
+   "access_id": "S09",
+   "url": "https://www.discogs.com/search/?q=Zazie%20Productions&type=label",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "1 label"
+  },
+  {
+   "access_id": "S10",
+   "url": "https://www.discogs.com/artist/11354435-Zazie-Productions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "artist page; 62 appearances"
+  },
+  {
+   "access_id": "S11",
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Zazie%20Productions...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "0 entities (both names)"
+  },
+  {
+   "access_id": "S12",
+   "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "0 totalhits (both names)"
+  },
+  {
+   "access_id": "S13",
+   "url": "https://archive.org/advancedsearch.php?q=%22Zazie+Productions%22...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "19 items"
+  },
+  {
+   "access_id": "S14",
+   "url": "https://archive.org/advancedsearch.php?q=%22Zazie+Kanwar-Torge%22...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "1 item"
+  },
+  {
+   "access_id": "S15",
+   "url": "https://archive.org/details/phantom-requiem-short-film",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "item page; 'by Zazie Productions'"
+  },
+  {
+   "access_id": "S16",
+   "url": "https://archive.org/metadata/quantum-geometry-3-d-emulator",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "creator Zazie Productions"
+  },
+  {
+   "access_id": "S17",
+   "url": "https://archive.org/metadata/va-music-inspired-on-mulholland-drive",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "file-level creator evidence"
+  },
+  {
+   "access_id": "S18",
+   "url": "https://archive.org/metadata/experiments-on-the-witch-house",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "partial tracklist (tracks 1-6)"
+  },
+  {
+   "access_id": "S19",
+   "url": "https://api.github.com/search/repositories?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "0 repos"
+  },
+  {
+   "access_id": "S20",
+   "url": "https://registry.npmjs.org/-/v1/search?text=zazie%20productions&size=20",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "no target packages"
+  },
+  {
+   "access_id": "S21",
+   "url": "https://pypi.org/search/?q=Zazie+Productions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "JS results not fetchable; inconclusive"
+  },
+  {
+   "access_id": "S22",
+   "url": "https://huggingface.co/api/models?search=zazie%20productions&limit=10",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "empty"
+  },
+  {
+   "access_id": "S23",
+   "url": "https://openlibrary.org/search.json?author=Zazie%20Productions...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "0 works"
+  },
+  {
+   "access_id": "S24",
+   "url": "https://index.commoncrawl.org/collinfo.json",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "latest crawl CC-MAIN-2026-34"
+  },
+  {
+   "access_id": "S25",
+   "url": "https://web.archive.org/cdx/search/cdx?url=zazieproductions.bandcamp.com...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "1 capture 2021-09-14"
+  },
+  {
+   "access_id": "S26",
+   "url": "https://web.archive.org/cdx/search/cdx?url=thevanishingpointsyndicate.bandcamp.com...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "0 captures"
+  },
+  {
+   "access_id": "S27",
+   "url": "https://web.archive.org/cdx/search/cdx?url=pebblesunderground.art/video/phantom-requiem/&...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "5 captures"
+  },
+  {
+   "access_id": "S28",
+   "url": "https://web.archive.org/cdx/search/cdx?url=909deadbatteries.bandcamp.com&matchType=domain...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "9 URLs incl. winter-2025 album 2026-01-07"
+  },
+  {
+   "access_id": "S29",
+   "url": "https://web.archive.org/cdx/search/cdx?url=camembertelectrique.bandcamp.com&matchType=domain...",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "25+ URL captures since 2019-09-28"
+  },
+  {
+   "access_id": "S30",
+   "url": "https://www.marginalia-search.com/search?query=...",
+   "date": "2026-09-05",
+   "status": "blocked",
+   "note": "5s JS bot-gate"
+  },
+  {
+   "access_id": "S31",
+   "url": "https://html.duckduckgo.com/html/?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "blocked",
+   "note": "image CAPTCHA"
+  },
+  {
+   "access_id": "S32",
+   "url": "https://www.mojeek.com/search?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "blocked",
+   "note": "ALTCHA"
+  },
+  {
+   "access_id": "S33",
+   "url": "https://searx.be/search?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "blocked",
+   "note": "browser-integrity CAPTCHA"
+  },
+  {
+   "access_id": "S34",
+   "url": "https://priv.au/search?q=%22Zazie+Productions%22",
+   "date": "2026-09-05",
+   "status": "partial",
+   "note": "reachable, JS-rendered results empty via fetch"
+  },
+  {
+   "access_id": "S35",
+   "url": "https://groover.co/en/influencer/profile/0.zazie-productions/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified exact name"
+  },
+  {
+   "access_id": "S36",
+   "url": "https://www.viberate.com/artist/zazie-productions/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S37",
+   "url": "https://www.bandmix.com/zazieproductions/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S38",
+   "url": "https://www.wfcn.co/profile/zazie.productions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S39",
+   "url": "https://www.castingcall.club/zazieproductions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (redirect /m/zazieproductions)"
+  },
+  {
+   "access_id": "S40",
+   "url": "https://soundbetter.com/profiles/614805-zazie-productions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S41",
+   "url": "https://songstats.com/artist/mljz9dxu/zazie-kanwar-torge",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (Target B)"
+  },
+  {
+   "access_id": "S42",
+   "url": "https://rateyourmusic.com/~ZazieProductions",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "variant username verified"
+  },
+  {
+   "access_id": "S43",
+   "url": "https://pebblesunderground.art/video/phantom-requiem/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified both names + A.K.A statement"
+  },
+  {
+   "access_id": "S44",
+   "url": "https://www.visualcontainer.tv/pebbles-underground-summer-2024-award-winners-winter-2024-award-winners/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified both names"
+  },
+  {
+   "access_id": "S45",
+   "url": "https://www.listennotes.com/podcasts/black-mountain/episode-7-ruth-asawas-jCOn1up_zYy/",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified both names in related-episodes module (chunks 0-2)"
+  },
+  {
+   "access_id": "S46",
+   "url": "https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (track 1)"
+  },
+  {
+   "access_id": "S47",
+   "url": "https://thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S48",
+   "url": "https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (track 7, Target B)"
+  },
+  {
+   "access_id": "S49",
+   "url": "https://909deadbatteries.bandcamp.com/track/frost-directive-xiii-broadcast-leak-id-blzrd-741",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (Target B)"
+  },
+  {
+   "access_id": "S50",
+   "url": "https://camembertelectrique.bandcamp.com/album/shippai",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified (track 31 + credits; full credits via Bandcamp search S02)"
+  },
+  {
+   "access_id": "S51",
+   "url": "https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified"
+  },
+  {
+   "access_id": "S52",
+   "url": "https://zazieproductions.bandcamp.com/album/g7e-torpedo",
+   "date": "2026-09-05",
+   "status": "200",
+   "note": "verified + discography block (18 releases)"
+  },
+  {
+   "access_id": "S53",
+   "url": "https://www.linkedin.com/in/zazie-kanwar-torge-3b8a98373/",
+   "date": "2026-09-05",
+   "status": "403",
+   "note": "bot protection; search-index evidence only"
+  },
+  {
+   "access_id": "S54",
+   "url": "https://www.reddit.com/r/noisemusic/comments/1jajm1l/...",
+   "date": "2026-09-05",
+   "status": "403",
+   "note": "bot protection; search-index evidence only"
+  },
+  {
+   "access_id": "S55",
+   "url": "https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w",
+   "date": "2026-09-05",
+   "status": "404-equivalent",
+   "note": "reel deleted; 'couldn't find that reel'"
+  },
+  {
+   "access_id": "S56",
+   "url": "https://100subtextsmagazine.blogspot.com/2025/03/issue-31feature.html",
+   "date": "2026-09-05",
+   "status": "200-empty",
+   "note": "title only; no body rendered"
+  },
+  {
+   "access_id": "S57",
+   "url": "https://www.discogs.com/label/4317760-Not-On-Label-Zazie-Productions-Self-released",
+   "date": "2026-09-05",
+   "status": "200 (via S08/S10)",
+   "note": "label record evidenced via search + artist page"
+  }
+ ],
+ "duplicate_clusters": [
+  {
+   "cluster_id": "C1",
+   "canonical": "https://zazieproductions.bandcamp.com/",
+   "members": [
+    "https://zazieproductions.bandcamp.com/",
+    "https://zazieproductions.bandcamp.com/album/g7e-torpedo",
+    "https://zazieproductions.bandcamp.com/album/to-halt-space-adrift",
+    "https://zazieproductions.bandcamp.com/album/constrained-capacity",
+    "https://zazieproductions.bandcamp.com/album/interference-archive-01010101",
+    "https://zazieproductions.bandcamp.com/album/stutter-to-stammer",
+    "https://zazieproductions.bandcamp.com/album/sellotape",
+    "https://zazieproductions.bandcamp.com/album/vermiform",
+    "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time-super-deluxe-edition",
+    "https://zazieproductions.bandcamp.com/album/stutter-to-stammer-super-deluxe-edition",
+    "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time",
+    "https://zazieproductions.bandcamp.com/album/a-long-way-to-nowhere",
+    "https://zazieproductions.bandcamp.com/album/anesthesia-for-the-signal-age",
+    "https://zazieproductions.bandcamp.com/album/spectral-ode-to-synesthesia-2",
+    "https://zazieproductions.bandcamp.com/track/opaline-lament-life-from-the-beyond-2"
+   ],
+   "note": "Artist's own Bandcamp store (repo-domain root) + 14 new album/track URLs found this pass."
+  },
+  {
+   "cluster_id": "C2",
+   "canonical": "https://pebblesunderground.art/video/phantom-requiem/",
+   "members": [
+    "https://pebblesunderground.art/video/phantom-requiem/",
+    "https://www.visualcontainer.tv/pebbles-underground-summer-2024-award-winners-winter-2024-award-winners/",
+    "https://pebblesunderground.art/award-winners-winter-screenings-2024/ (repo)"
+   ],
+   "note": "Same festival (Pebbles Underground) + co-presenter (Visualcontainer TV) covering the same award (Jury Special Mention, Phantom Requiem). Repo already held one pebblesunderground URL; new pages are distinct occurrences."
+  },
+  {
+   "cluster_id": "C3",
+   "canonical": "https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+   "members": [
+    "https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025",
+    "https://909deadbatteries.bandcamp.com/track/frost-directive-xiii-broadcast-leak-id-blzrd-741",
+    "https://909deadbatteries.bandcamp.com/"
+   ],
+   "note": "Compilation + its track page + label store root (no exact name on root)."
+  },
+  {
+   "cluster_id": "C4",
+   "canonical": "https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists",
+   "members": [
+    "https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists",
+    "https://thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis",
+    "https://www.reddit.com/r/noisemusic/comments/1jajm1l/new_label_called_the_vanishing_point_syndicate/"
+   ],
+   "note": "Netlabel compilation + track page + announcement thread (blocked)."
+  },
+  {
+   "cluster_id": "C5",
+   "canonical": "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c",
+   "members": [
+    "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c",
+    "https://musicbrainz.org/release/87d86240-0b6a-4974-9c8b-39cf3c086e6d",
+    "https://musicbrainz.org/release/25dc1579-8eb4-4733-8f99-4014ea72ccbc",
+    "https://musicbrainz.org/release/a91fa6a7-587b-4f94-876d-db121489f87d",
+    "https://musicbrainz.org/release/1ff87890-d185-414a-937a-e3ee0980bcc4",
+    "https://musicbrainz.org/release/d2409b75-b027-4c32-b6a5-08050036aae1",
+    "https://musicbrainz.org/release/64263a77-e4a7-430d-aff9-39deefa6e581",
+    "https://musicbrainz.org/release/811777b0-f682-411a-869c-7da2f25fc53c"
+   ],
+   "note": "MB artist entity + 7 release records listed on it."
+  },
+  {
+   "cluster_id": "C6",
+   "canonical": "https://www.discogs.com/artist/11354435-Zazie-Productions",
+   "members": [
+    "https://www.discogs.com/artist/11354435-Zazie-Productions",
+    "https://www.discogs.com/label/4317760-Not-On-Label-Zazie-Productions-Self-released",
+    "https://www.discogs.com/release/35541229-Zazie-Productions-Constrained-Capacity",
+    "https://www.discogs.com/release/36415555-Amnesia-59-X-Zazie-Productions-Oliver-Sch%C3%B6ffler-Amnesia-X-Zazie-Productions-Oliver-Sch%C3%B6ffler"
+   ],
+   "note": "Discogs artist + self-release label record + 2 release records shown on the artist page."
+  },
+  {
+   "cluster_id": "C7",
+   "canonical": "https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124",
+   "members": [
+    "https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124",
+    "https://www.discogs.com/release/36415555-Amnesia-59-X-Zazie-Productions-Oliver-Sch%C3%B6ffler-Amnesia-X-Zazie-Productions-Oliver-Sch%C3%B6ffler",
+    "https://archive.org/details/arrhythnia-discography",
+    "https://soundbetter.com/profiles/614805-zazie-productions (credit block)"
+   ],
+   "note": "Same aNr124 split surfaced across Bandcamp, Discogs, IA label archive, and SoundBetter credit list - one physical release, four locations (all distinct records per the per-location rule)."
+  },
+  {
+   "cluster_id": "C8",
+   "canonical": "https://archive.org/details/instructions-for-clean-living",
+   "members": [
+    "https://archive.org/details/instructions-for-clean-living"
+   ],
+   "note": "Both-targets item; single record (only one location found)."
+  },
+  {
+   "cluster_id": "C9",
+   "canonical": "https://www.youtube.com/@zazieproductions",
+   "members": [
+    "https://www.youtube.com/@zazieproductions (repo)",
+    "https://www.youtube.com/channel/UCnDTZImCr9MfLF_f7iPav2A",
+    "https://www.youtube.com/watch?v=UX2kv3G89Jw"
+   ],
+   "note": "YouTube channel + channel-ID + Phantom Requiem video; all surfaced via verified third-party pages. Repo-domain => cluster only, no new master record."
+  },
+  {
+   "cluster_id": "C10",
+   "canonical": "https://open.spotify.com/artist/4UOgvZEOo7xBhFBjJvlMm0",
+   "members": [
+    "https://open.spotify.com/artist/4UOgvZEOo7xBhFBjJvlMm0 (repo)",
+    "https://open.spotify.com/playlist/75PxWthUYPOskOU1EjGrFX",
+    "https://listen.tidal.com/artist/33032080/ (Target B sameAs)"
+   ],
+   "note": "Streaming-catalog cluster; new playlist + Tidal IDs recorded as leads (ZL26-08/09)."
+  },
+  {
+   "cluster_id": "C11",
+   "canonical": "https://slaps.com/user/ZazieProd",
+   "members": [
+    "https://slaps.com/user/ZazieProd (repo)",
+    "https://slaps.com/ZazieProd"
+   ],
+   "note": "Same Slaps account, two URL spellings; excluded as repo duplicate."
+  },
+  {
+   "cluster_id": "C12",
+   "canonical": "https://www.songstats.com/artist/hxc5ipay/zazie-productions",
+   "members": [
+    "https://songstats.com/artist/hxc5ipay/zazie-productions (repo)",
+    "https://songstats.com/artist/mljz9dxu/zazie-kanwar-torge (NEW)"
+   ],
+   "note": "Songstats has BOTH a Target-A artist page (in repo) and a Target-B composer page (NEW record ZP26-041); the new page links the old one."
+  }
+ ],
+ "search_visibility": [
+  {
+   "engine": "platform-search-api (opaque composite)",
+   "target_A": "visible (top-10)",
+   "target_B": "visible (top-10)",
+   "status": "OK"
+  },
+  {
+   "engine": "Bandcamp site search",
+   "target_A": "visible (store rank 1; 14 release pages)",
+   "target_B": "visible (1 track + album)",
+   "status": "OK"
+  },
+  {
+   "engine": "Discogs site search + DB",
+   "target_A": "visible (1 artist, 62 appearances, 1 label, 152 marketplace releases)",
+   "target_B": "not observed as separate artist",
+   "status": "OK"
+  },
+  {
+   "engine": "MusicBrainz",
+   "target_A": "visible (artist record + 7 releases)",
+   "target_B": "no record found",
+   "status": "OK"
+  },
+  {
+   "engine": "Apple/iTunes Search API",
+   "target_A": "visible (25 tracks)",
+   "target_B": "credit 'Zazie Kanwar- Torge' on Deezer pages (not iTunes)",
+   "status": "OK"
+  },
+  {
+   "engine": "archive.org full-text index",
+   "target_A": "visible (18 items)",
+   "target_B": "visible (1 item, same item as A)",
+   "status": "OK"
+  },
+  {
+   "engine": "Wayback Machine CDX",
+   "target_A": "sparse (store root 2021; aNr124 label store; camembert domain)",
+   "target_B": "sparse (909 winter-2025 capture 2026-01-07; pebbles-PR 5 captures)",
+   "status": "OK (URL-level only)"
+  },
+  {
+   "engine": "Common Crawl",
+   "target_A": "not directly string-searched (crawl index not full-text accessible here)",
+   "target_B": "same",
+   "status": "LIMITED"
+  },
+  {
+   "engine": "Wikidata / Wikipedia",
+   "target_A": "no entity / 0 hits",
+   "target_B": "no entity / 0 hits",
+   "status": "OK (negative)"
+  },
+  {
+   "engine": "GitHub (repo search)",
+   "target_A": "0 repos",
+   "target_B": "not searched by name (code search auth-gated)",
+   "status": "OK (negative) / LIMITED"
+  },
+  {
+   "engine": "npm / PyPI / HuggingFace / Open Library",
+   "target_A": "0 / inconclusive / 0 / 0",
+   "target_B": "not searched (low prior)",
+   "status": "OK / LIMITED"
+  },
+  {
+   "engine": "DuckDuckGo HTML",
+   "target_A": "blocked (CAPTCHA)",
+   "target_B": "not attempted",
+   "status": "BLOCKED"
+  },
+  {
+   "engine": "Mojeek",
+   "target_A": "blocked (ALTCHA)",
+   "target_B": "not attempted",
+   "status": "BLOCKED"
+  },
+  {
+   "engine": "Marginalia",
+   "target_A": "blocked (JS gate)",
+   "target_B": "blocked (JS gate)",
+   "status": "BLOCKED"
+  },
+  {
+   "engine": "SearXNG (searx.be, priv.au)",
+   "target_A": "blocked / JS-empty",
+   "target_B": "not attempted",
+   "status": "BLOCKED"
+  },
+  {
+   "engine": "Google/Bing/Yahoo/Brave/Startpage/Yandex/Qwant/Ecosia/Swisscows/Wiby/Kagi",
+   "target_A": "not directly accessible from this sandbox (no raw egress; platform-search-api used as general-engine substitute)",
+   "target_B": "same",
+   "status": "LIMITED"
+  }
+ ],
+ "relationship_graph": [
+  {
+   "source": "ZP26-043",
+   "relation": "states_identity",
+   "target_ref": "ZP26-043 page states 'Director, artist, producer: Zazie Kanwar-Torge (A.K.A Zazie Productions)' -> direct link TargetB -> TargetA"
+  },
+  {
+   "source": "ZP26-047",
+   "relation": "states_identity",
+   "target_ref": "IA item instructions-for-clean-living states 'developed and produced by Zazie Kanwar-Torge, working as Zazie Productions' -> direct link B -> A"
+  },
+  {
+   "source": "ZP26-043",
+   "relation": "same_event_as",
+   "target_ref": "ZP26-044 (Pebbles Underground Winter 2024 Jury Special Mention for Phantom Requiem, co-presented by Visualcontainer TV)"
+  },
+  {
+   "source": "ZP26-044",
+   "relation": "links_artifact",
+   "target_ref": "ZL26-06 (Winter 2024 press release PDF)"
+  },
+  {
+   "source": "ZP26-045",
+   "relation": "surfaces",
+   "target_ref": "ZP26-046 (dedicated Listen Notes episode page for 'BMC Radio Art: Zazie Productions - Cheaper Impressions')"
+  },
+  {
+   "source": "ZP26-046",
+   "relation": "same_work_as",
+   "target_ref": "repo: blackmountaincollege.org/broadcast-bmc-radio-artist-zazie-productions (BMC broadcast page)"
+  },
+  {
+   "source": "ZP26-048",
+   "relation": "same_work_as",
+   "target_ref": "ZP26-043 (Phantom Requiem short film)"
+  },
+  {
+   "source": "ZP26-038",
+   "relation": "links_work",
+   "target_ref": "ZP26-043 (filmography: Phantom Requiem; YouTube video UX2kv3G89Jw = ZL26-07)"
+  },
+  {
+   "source": "ZP26-001",
+   "relation": "has_track",
+   "target_ref": "ZP26-002 (Pyrogenesis)"
+  },
+  {
+   "source": "ZP26-001",
+   "relation": "announced_in",
+   "target_ref": "ZL26-03 (Reddit r/noisemusic thread, blocked)"
+  },
+  {
+   "source": "ZP26-003",
+   "relation": "has_track",
+   "target_ref": "ZP26-004 (Frost Directive XIII)"
+  },
+  {
+   "source": "ZP26-003",
+   "relation": "self_links",
+   "target_ref": "zazieproductions.bandcamp.com (C1) via about section -> B-page points to A-store"
+  },
+  {
+   "source": "ZP26-006",
+   "relation": "same_release_as",
+   "target_ref": "ZP26-033 (Discogs release 36415555, aNr124)"
+  },
+  {
+   "source": "ZP26-033",
+   "relation": "catalogued_in",
+   "target_ref": "ZP26-055 (IA arrhythNia discography)"
+  },
+  {
+   "source": "ZP26-040",
+   "relation": "credit_block",
+   "target_ref": "ZP26-033 (SoundBetter 'Discogs verified credits' lists Amnesia (59) X Zazie Productions, Oliver Schöffler)"
+  },
+  {
+   "source": "ZP26-009",
+   "relation": "same_release_as",
+   "target_ref": "ZP26-032 (Discogs release 35541229 Constrained Capacity)"
+  },
+  {
+   "source": "ZP26-034",
+   "relation": "same_catalog_as",
+   "target_ref": "ZP26-010/015/018 (iTunes entries for Interference Archive, Stutter SDE, To Halt Space Adrift tracks)"
+  },
+  {
+   "source": "ZP26-022",
+   "relation": "lists_release",
+   "target_ref": "ZP26-023..ZP26-029"
+  },
+  {
+   "source": "ZP26-030",
+   "relation": "lists_release",
+   "target_ref": "ZP26-032, ZP26-033"
+  },
+  {
+   "source": "ZP26-021",
+   "relation": "discography_block",
+   "target_ref": "ZP26-007..ZP26-020 (18-release discography block fetched via g7e-torpedo page)"
+  },
+  {
+   "source": "ZP26-039",
+   "relation": "links",
+   "target_ref": "ZL26-04 (100Subtexts feature), ZL26-05 (Behance zaziediya), repo: heavymag/rangermag/indieam/radioclick/shockwebradio/mandeliterary URLs"
+  },
+  {
+   "source": "ZP26-035",
+   "relation": "curates",
+   "target_ref": "ZL26-08 (Spotify playlist 75PxWthUYPOskOU1EjGrFX)"
+  },
+  {
+   "source": "ZP26-041",
+   "relation": "same_as",
+   "target_ref": "ZL26-09 (Tidal artist 33032080) and links repo Songstats A-page (C12)"
+  },
+  {
+   "source": "ZL26-01",
+   "relation": "same_person_page_as",
+   "target_ref": "ZL26-050-contact: ReelCrafter reel email matches IA uploader email (ZP26-050) -> chain of evidence"
+  },
+  {
+   "source": "ZP26-051",
+   "relation": "new_track",
+   "target_ref": "'Club Silencio Acoustic Survey' (track not elsewhere in repo)"
+  },
+  {
+   "source": "ZP26-060",
+   "relation": "preserves",
+   "target_ref": "yyyyyyyy.info net-art artifact (register entry 110)"
+  },
+  {
+   "source": "ZP26-062",
+   "relation": "same_work_as",
+   "target_ref": "repo: newmediartspace.info/exhibitions/2024_ripples/sepsis.html (Sepsis exhibition piece)"
+  },
+  {
+   "source": "ZP26-047",
+   "relation": "ground_truth",
+   "target_ref": "repo register 2026: 'Instructions for Clean Living' submitted to IA Public Domain Film Remix Contest"
+  }
+ ],
+ "methodology": {
+  "scope": "Maximum-depth, reproducible public-web discovery/attribution/archival audit for exactly two targets: Target A = 'Zazie Productions' (exact spaced string), Target B = 'Zazie Kanwar-Torge' (exact spaced hyphenated string).",
+  "date_bound": "All searches, fetches, and index queries executed on 2026-09-05 (UTC). No claims about states before/after that date except where archive timestamps (Wayback captures, IA addeddate, release dates) are explicitly cited.",
+  "exclusion_rule": "Per user instruction 'IGNORE any that are already included on the Repo': every candidate was normalized (lowercase host, www-strip, path-trailing-slash-strip, tracking-param strip) and checked against a 437-URL baseline built from registry/seed/seed_unique_urls.csv (260) + link-annotation URIs of 'Zazie_Media_Master (1).pdf' (133, extracted from /URI annotations) + 'Random Zazie Productions links .pdf' URIs (278). Matches are recorded as duplicate clusters / ledger entries only, never as new master records.",
+  "evidence_standard": "Three-level standard per docs/01: (1) verified live = page fetched this pass and exact target string observed in rendered content; (2) verified structured = public API/structured DB response containing the exact string (iTunes, MusicBrainz WS2, Discogs, archive.org API, Wikidata, GitHub, npm, HF, Open Library); (3) verified platform index = the platform's own search/index page (e.g. Bandcamp search results) displaying the exact name, or a page whose URL+title were confirmed on a fetched verified page. Search-engine snippets alone => 'search index' tier (ledger only, or master only where the page was also fetched). No record entered the master directory without at least platform-index-level evidence.",
+  "identity_rule": "The two targets were researched independently. Relationship statements are recorded ONLY where a source displays the connection: (a) pebblesunderground.art/video/phantom-requiem 'Zazie Kanwar-Torge (A.K.A Zazie Productions)'; (b) archive.org instructions-for-clean-living 'Zazie Kanwar-Torge, working as Zazie Productions'; (c) repo's own README/docs framing (internal ground truth, not a public source). No other conflation performed.",
+  "exactness_rule": "Exact strings with preserved capitalization/hyphenation. Punctuation-variant observed: Deezer credit string 'Zazie Kanwar- Torge' (space after hyphen) logged, not merged. Concatenated variant 'ZazieProductions' (RYM username, BandMix screen name, slugs) => variant-tier records or context only. Spelling variant 'Zazie Kanwar Torge' (no hyphen) queried separately (Q15) - no additional unique locations. French singer Zazie, Zazie Beetz, 'Goodknight Productions', La Zizanie etc. => rejected other-entity.",
+  "conservative_attribution": "Where the exact string sits in a page's related/sidebar module rather than the page's main subject (Listen Notes episode-7 page), the record's confidence is reduced and the evidence note says exactly where the string appears.",
+  "blocked_sources": "Raw egress from this sandbox is blocked (curl fails TLS); ALL web access went through platform tools (web_search opaque composite engine + fetch_page). Engines that serve CAPTCHAs/JS-gates to non-browser clients: DuckDuckGo HTML (image CAPTCHA), Mojeek (ALTCHA), searx.be (browser integrity), Marginalia (5s JS gate), priv.au (JS render empty), Reddit (403), LinkedIn (403), Google/Bing/Brave/Yandex/Startpage/Yahoo/Qwant/Ecosia/Swisscows/Kagi/Wiby (not individually reachable; platform-search-api substituted and labeled). These are limitations, not negative evidence.",
+  "no_claims": "No exhaustiveness claims are made. Where an engine returned zero results (Wikidata, Wikipedia, GitHub, npm, HF, Open Library) that is reported as 'no entity/record found at 2026-09-05', never as 'nowhere on the web'.",
+  "repro_path": "To reproduce: (1) rebuild the 437-URL baseline from the three repo sources listed above; (2) run queries Q01-Q40 (exact text in discovery ledger) through any general search engine + the same direct platform endpoints; (3) verify each candidate by fetching and locating the exact string; (4) re-run Wayback CDX prefix queries. Stable record IDs (ZP26-xxx), lead IDs (ZL26-xx), query IDs (Qxx), access IDs (Sxx) are fixed in this deliverable.",
+  "pii_rule": "No addresses/phones/emails collected or stored as deliverable data. One broken-page snippet (ReelCrafter) and one IA uploader field (quantum-geometry item, email already displayed on the public archive.org metadata endpoint) were noted WITHOUT transcribing the address value; the email's existence is referenced indirectly (matches cross-source contact). LinkedIn/phone values were NOT transcribed.",
+  "confidence_scale": "0-100 attribution confidence (see per-record field). Separate source_reliability tier: very_high = platform's own structured DB or primary self-archive (Discogs, MusicBrainz, iTunes API, IA API, Wayback CDX); high = platform-indexed public page (Bandcamp/Discogs pages, festival sites, Listen Notes); medium = self-asserted profiles (SoundBetter, Groover, Viberate, BandMix, WFCN, Casting Call, Songstats, RYM); low = snippet/blocked evidence."
+ }
+}

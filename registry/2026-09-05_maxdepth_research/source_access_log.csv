@@ -1,0 +1,58 @@
+access_id,url,date,status,note
+S01,https://itunes.apple.com/search?term=%22Zazie+Productions%22&media=music&limit=25,2026-09-05,200,JSON; 25 results
+S02,https://bandcamp.com/search?q=%22Zazie+Productions%22,2026-09-05,200,search index; artist + albums + arrhythnia split
+S03,https://bandcamp.com/search?q=%22Zazie+Kanwar-Torge%22,2026-09-05,200,search index; 909 Dead Batteries track
+S04,https://musicbrainz.org/ws/2/artist/?query=Zazie+Productions&fmt=json&limit=25,2026-09-05,200,"JSON; 1277 candidates, exact match first"
+S05,https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c,2026-09-05,200,artist page + discography
+S06,https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c/releases,2026-09-05,200,7 VA releases with labels/dates
+S07,https://musicbrainz.org/ws/2/release/?query=artist:%22Zazie%20Productions%22&fmt=json&limit=100,2026-09-05,200,count 0 (syntax; negative logged)
+S08,https://www.discogs.com/search/?q=Zazie%20Productions&type=artist,2026-09-05,200,1 artist / 152 releases / 16 masters
+S09,https://www.discogs.com/search/?q=Zazie%20Productions&type=label,2026-09-05,200,1 label
+S10,https://www.discogs.com/artist/11354435-Zazie-Productions,2026-09-05,200,artist page; 62 appearances
+S11,https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Zazie%20Productions...,2026-09-05,200,0 entities (both names)
+S12,https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=...,2026-09-05,200,0 totalhits (both names)
+S13,https://archive.org/advancedsearch.php?q=%22Zazie+Productions%22...,2026-09-05,200,19 items
+S14,https://archive.org/advancedsearch.php?q=%22Zazie+Kanwar-Torge%22...,2026-09-05,200,1 item
+S15,https://archive.org/details/phantom-requiem-short-film,2026-09-05,200,item page; 'by Zazie Productions'
+S16,https://archive.org/metadata/quantum-geometry-3-d-emulator,2026-09-05,200,creator Zazie Productions
+S17,https://archive.org/metadata/va-music-inspired-on-mulholland-drive,2026-09-05,200,file-level creator evidence
+S18,https://archive.org/metadata/experiments-on-the-witch-house,2026-09-05,200,partial tracklist (tracks 1-6)
+S19,https://api.github.com/search/repositories?q=%22Zazie+Productions%22,2026-09-05,200,0 repos
+S20,https://registry.npmjs.org/-/v1/search?text=zazie%20productions&size=20,2026-09-05,200,no target packages
+S21,https://pypi.org/search/?q=Zazie+Productions,2026-09-05,200,JS results not fetchable; inconclusive
+S22,https://huggingface.co/api/models?search=zazie%20productions&limit=10,2026-09-05,200,empty
+S23,https://openlibrary.org/search.json?author=Zazie%20Productions...,2026-09-05,200,0 works
+S24,https://index.commoncrawl.org/collinfo.json,2026-09-05,200,latest crawl CC-MAIN-2026-34
+S25,https://web.archive.org/cdx/search/cdx?url=zazieproductions.bandcamp.com...,2026-09-05,200,1 capture 2021-09-14
+S26,https://web.archive.org/cdx/search/cdx?url=thevanishingpointsyndicate.bandcamp.com...,2026-09-05,200,0 captures
+S27,https://web.archive.org/cdx/search/cdx?url=pebblesunderground.art/video/phantom-requiem/&...,2026-09-05,200,5 captures
+S28,https://web.archive.org/cdx/search/cdx?url=909deadbatteries.bandcamp.com&matchType=domain...,2026-09-05,200,9 URLs incl. winter-2025 album 2026-01-07
+S29,https://web.archive.org/cdx/search/cdx?url=camembertelectrique.bandcamp.com&matchType=domain...,2026-09-05,200,25+ URL captures since 2019-09-28
+S30,https://www.marginalia-search.com/search?query=...,2026-09-05,blocked,5s JS bot-gate
+S31,https://html.duckduckgo.com/html/?q=%22Zazie+Productions%22,2026-09-05,blocked,image CAPTCHA
+S32,https://www.mojeek.com/search?q=%22Zazie+Productions%22,2026-09-05,blocked,ALTCHA
+S33,https://searx.be/search?q=%22Zazie+Productions%22,2026-09-05,blocked,browser-integrity CAPTCHA
+S34,https://priv.au/search?q=%22Zazie+Productions%22,2026-09-05,partial,"reachable, JS-rendered results empty via fetch"
+S35,https://groover.co/en/influencer/profile/0.zazie-productions/,2026-09-05,200,verified exact name
+S36,https://www.viberate.com/artist/zazie-productions/,2026-09-05,200,verified
+S37,https://www.bandmix.com/zazieproductions/,2026-09-05,200,verified
+S38,https://www.wfcn.co/profile/zazie.productions,2026-09-05,200,verified
+S39,https://www.castingcall.club/zazieproductions,2026-09-05,200,verified (redirect /m/zazieproductions)
+S40,https://soundbetter.com/profiles/614805-zazie-productions,2026-09-05,200,verified
+S41,https://songstats.com/artist/mljz9dxu/zazie-kanwar-torge,2026-09-05,200,verified (Target B)
+S42,https://rateyourmusic.com/~ZazieProductions,2026-09-05,200,variant username verified
+S43,https://pebblesunderground.art/video/phantom-requiem/,2026-09-05,200,verified both names + A.K.A statement
+S44,https://www.visualcontainer.tv/pebbles-underground-summer-2024-award-winners-winter-2024-award-winners/,2026-09-05,200,verified both names
+S45,https://www.listennotes.com/podcasts/black-mountain/episode-7-ruth-asawas-jCOn1up_zYy/,2026-09-05,200,verified both names in related-episodes module (chunks 0-2)
+S46,https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists,2026-09-05,200,verified (track 1)
+S47,https://thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis,2026-09-05,200,verified
+S48,https://909deadbatteries.bandcamp.com/album/909-dead-batteries-winter-2025,2026-09-05,200,"verified (track 7, Target B)"
+S49,https://909deadbatteries.bandcamp.com/track/frost-directive-xiii-broadcast-leak-id-blzrd-741,2026-09-05,200,verified (Target B)
+S50,https://camembertelectrique.bandcamp.com/album/shippai,2026-09-05,200,verified (track 31 + credits; full credits via Bandcamp search S02)
+S51,https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124,2026-09-05,200,verified
+S52,https://zazieproductions.bandcamp.com/album/g7e-torpedo,2026-09-05,200,verified + discography block (18 releases)
+S53,https://www.linkedin.com/in/zazie-kanwar-torge-3b8a98373/,2026-09-05,403,bot protection; search-index evidence only
+S54,https://www.reddit.com/r/noisemusic/comments/1jajm1l/...,2026-09-05,403,bot protection; search-index evidence only
+S55,https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w,2026-09-05,404-equivalent,reel deleted; 'couldn't find that reel'
+S56,https://100subtextsmagazine.blogspot.com/2025/03/issue-31feature.html,2026-09-05,200-empty,title only; no body rendered
+S57,https://www.discogs.com/label/4317760-Not-On-Label-Zazie-Productions-Self-released,2026-09-05,200 (via S08/S10),label record evidenced via search + artist page

@@ -94,13 +94,14 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 | [`registry/seed/SEED_INDEX_FROM_DUMP.md`](registry/seed/SEED_INDEX_FROM_DUMP.md) | **260 unique URLs** auto-extracted from the dump, clustered by media type. *(Source for the “found so far” starting set.)* |
 | [`registry/seed/seed_unique_urls.csv`](registry/seed/seed_unique_urls.csv) | Machine-readable full list (domain, url, first-seen source file). |
 | [`registry/seed/seed_domain_summary.csv`](registry/seed/seed_domain_summary.csv) | Domain → URL-count summary for eyeballing coverage. |
+| [`registry/2026-09-05_maxdepth_research/`](registry/2026-09-05_maxdepth_research/REPORT.md) | **2026-09-05 max-depth research pass.** 54 new verified locations (excl. everything already in the repo), full discovery ledger, 40-query inventory, 57-entry source-access log, engine visibility matrix, relationship graph, appendices. Start at its `REPORT.md`. |
 
 ### Original source dump (untouched originals at repo root)
 
 | File | Notes |
 |---|---|
 | `Random Zazie Productions links .pdf` | Raw link dump (the URL-rich source the seed registry was built from). |
-| `Zazie_Media_Master (1).pdf` | Reading edition of the **133-record exact-name master** (Press 25 · Film 11 · Publications 6 · Profiles 31 · Compilations 60), researched through **Aug 9, 2026**. Its URLs are stored as clickable `OPEN` tokens and live in the **companion `.xlsx`/`.csv` which are *not* present in this repo**. |
+| `Zazie_Media_Master (1).pdf` | Reading edition of the **133-record exact-name master** (Press 25 · Film 11 · Publications 6 · Profiles 31 · Compilations 60), researched through **Aug 9, 2026**. Body text stores URLs as `OPEN` tokens, but the PDF's own `/URI` link annotations carry the **133 real URLs** — extracted during the 2026-09-05 pass and used as part of the 437-URL "already in repo" baseline (see `registry/2026-09-05_maxdepth_research/REPORT.md` §2). |
 | `Zazie_2026_Accomplishment_Register_Maximal_Edition.docx` | 2026 external-memory register of releases, press, selections, and professional reach (useful as a **known-ground-truth list** to cross-check the census against). |
 | `resource1` | Note file (`maxintel.org` — an OSINT tool referenced as useful). |
 
@@ -110,12 +111,12 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 
 - [x] **Dump cataloged** — media master read; 260 real URLs extracted into `registry/seed/`.
 - [x] **Operating docs written** — mission, playbook, engine dir, query library, week plan, prompts, verification runbook.
-- [ ] **Pass 1 — CENSUS** (run per `docs/05`): sweep every name through every engine class.
-- [ ] **Pass 2 — VERIFY** (run per `docs/07`): double-check every found link (HTTP status + exact-name evidence) and tag ✅ / 🟡 / ❌.
+- [x] **Pass 1 — CENSUS (deep-research pass, 2026-09-05)** — both names swept through the general-search API, Bandcamp/Discogs/MusicBrainz/iTunes/archive.org/Wikidata/Wikipedia/GitHub/npm/PyPI/HF/OpenLibrary direct indexes, Wayback CDX, and CAPTCHA-gated engines (documented as blocked). **54 new verified locations** (everything already in the repo excluded per instruction; 11 repo URLs re-verified live in the same pass). Results: [`registry/2026-09-05_maxdepth_research/`](registry/2026-09-05_maxdepth_research/REPORT.md).
+- [ ] **Pass 2 — VERIFY** (run per `docs/07`): double-check every found link (HTTP status + exact-name evidence) and tag ✅ / 🟡 / ❌. *(Note: the 2026-09-05 pass already re-verified 11 repo URLs live; full-pass tagging of all 260 seed rows remains.)*
 - [ ] **Pass 3 — CONSOLIDATE**: fold verified rows into a single registry and reconcile against the known-ground-truth register (accomplishment DOCX) and the 133-record media master.
 
 > **Easy first step for any agent:** open [`docs/01_MISSION_SCOPE_AND_RULES.md`](docs/01_MISSION_SCOPE_AND_RULES.md), then [`docs/05_WEEK_PLAN_AND_CADENCE.md`](docs/05_WEEK_PLAN_AND_CADENCE.md) for Day 1.
 
 ---
 
-*Built for Zazie Productions · Last updated 2026-09-04 · Research baseline in dumps dated through 2026-08-09.*
+*Built for Zazie Productions · Last updated 2026-09-05 (max-depth research pass) · Research baseline in dumps dated through 2026-08-09.*
