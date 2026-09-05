@@ -229,6 +229,10 @@ class DirDoc(BaseDocTemplate):
         cv.setFont('Helvetica', 9)
         cv.drawString(LM, PAGE[1] - 35 * mm,
                       'Every catalogued public-web link in one ranked volume — most reputable and impressive first, most spammy last')
+        cv.setFont('Helvetica-Bold', 7.8)
+        cv.drawString(LM, PAGE[1] - 40.5 * mm,
+                      'Includes five headline reading paths:  P1 NETLABEL + COMPILATIONS · P2 MAGAZINES / ZINES · P3 NEWS & MEDIA · '
+                      'P4 EXHIBITIONS & GALLERIES · P5 LITERARY & WRITING')
         cv.setFillColor(SOFT)
         cv.setFont('Helvetica', 7.6)
         cv.drawCentredString(PAGE[0] / 2, BM - 5.5 * mm,
@@ -318,6 +322,50 @@ sections = [s for s in SECTION_ORDER if s in by_section]
 for s in by_section:
     if s not in sections:
         sections.append(s)
+
+# ------------------------------------------------------------ five headline reading paths
+# The reader asked for five thematic cuts of the whole corpus, each complete and each ranked
+# from most reputable/impressive to least. They overlap: one link can appear on several paths.
+READING_PATHS = [
+    {'key': 'path:1', 'name': 'NETLABEL + COMPILATION FEATURES',
+     'colour': '#e8710a',
+     'sub': 'Every compilation, netlabel, split-release and V/A credit found anywhere in the census: Bandcamp '
+            'compilations, independent netlabel catalogues, and the platform/database echoes of the same credits.',
+     'filter': lambda r: r['topic'] == 'Bandcamp & netlabel compilation credits'
+                         or r['category'] == 'Music Compilations',
+     'main': 'Music Compilations'},
+    {'key': 'path:2', 'name': 'MAGAZINE / ZINE FEATURES',
+     'colour': '#c2185b',
+     'sub': 'Dedicated features, reviews, interviews and profiles about the artist in independent magazines, zines '
+            'and journals — the Phase-4 magazine/zine census pass united with every major press feature on record.',
+     'filter': lambda r: any('magazine' in s.lower() for s in r['sources'])
+                         or (r['category'] == 'Press & Editorial'
+                             and r['topic'] == 'Major press features & interviews'),
+     'main': 'Press & Editorial'},
+    {'key': 'path:3', 'name': 'NEWS ARTICLES & MEDIA COVERAGE',
+     'colour': '#d93025',
+     'sub': 'The full news/editorial surface: every press and editorial article, review, report and feature, plus '
+            'radio broadcasts and podcast episodes carrying the exact name.',
+     'filter': lambda r: r['category'] in ('Press & Editorial', 'Podcasts & Broadcasts'),
+     'main': 'Press & Editorial'},
+    {'key': 'path:4', 'name': 'EXHIBITIONS, ART GALLERIES & FILM-FESTIVAL RECOGNITION',
+     'colour': '#6a1b9a',
+     'sub': 'Gallery shows, biennales, exhibitions, screenings and festival selections or awards — every page where '
+            'the work was curated, programmed or honoured in public.',
+     'filter': lambda r: r['category'] == 'Film, Festivals & Exhibitions'
+                         or r['topic'] == 'Award-winning film & festival recognition',
+     'main': 'Film, Festivals & Exhibitions'},
+    {'key': 'path:5', 'name': 'LITERARY PUBLICATIONS & WRITING',
+     'colour': '#00796b',
+     'sub': 'Poems, anthologies, lit-mag issues, essays, bylines, contributor pages, contest placements, honours and '
+            'institutional credit-roll pages — the published-writing record.',
+     'filter': lambda r: r['topic'] == 'Literary, poetry & anthology publications'
+                         or r['category'] == 'Publications & Recognition'
+                         or any('PHASE3' in s for s in r['sources']),
+     'main': 'Publications & Recognition'},
+]
+for p in READING_PATHS:
+    p['rows'] = sorted([r for r in recs if p['filter'](r)], key=lambda r: (-r['raw'], r['host']))
 
 N = len(recs)
 tier_ct = Counter(r['tier'] for r in recs)
@@ -602,6 +650,9 @@ story.append(PageBreak())
 FRONT = [('F', 'Front matter · How to read this volume', 'colour legend: tiers, credibility bands, status chips, integrity flags', 'front:howto', '#5b6674'),
          ('F', 'Front matter · Dashboard', 'what the census contains, per section and per topic, with the credibility ladder', 'front:dash', '#5b6674'),
          ('F', 'Front matter · Hall of Fame', 'the forty strongest individual placements, ranked', 'front:hall', '#5b6674')]
+PATHS_TOC = [(str(i), f'Reading path {i} · {p["name"].title()}', p['sub'],
+              p['key'], ['#e8710a', '#c2185b', '#d93025', '#6a1b9a', '#00796b'][i - 1])
+             for i, p in enumerate(READING_PATHS, 1)]
 APS = [('A', 'Appendix A · Complete alphabetical link register', 'every one of the 715 links in one alphabetical run, two per row', 'app:A', '#0b5d8f'),
        ('B', 'Appendix B · Topic & subject cross-index', 'the same corpus re-cut by what each record is about, with its best rows', 'app:B', '#5e35b1'),
        ('C', 'Appendix C · Quarantine map by domain', 'the 116 quarantined rows grouped by the domain that poisoned them', 'app:C', '#616161'),
@@ -619,28 +670,156 @@ toc_rows += [[para(f'<para alignment="center"><font color="#ffffff" size="6"><b>
              para(f'<b>page {PAGEMAP.get(f"section:{i}", "—")}</b>', 'cell', TA_RIGHT,
                   colour=INK if PAGEMAP.get(f'section:{i}') else SOFT)]
             for i, s in enumerate(sections, 1)] + [
+            [para(f'<para alignment="center"><font color="#ffffff" size="6"><b>P{chip}</b></font></para>',
+                  colour=colors.white),
+             para(f'<b>{esc(title)}</b>', 'cell'),
+             para(esc(blurb[:86]) + ('…' if len(blurb) > 86 else ''), 'cell', colour=SOFT),
+             para(str(len(READING_PATHS[int(chip) - 1]['rows'])), 'cell', TA_RIGHT),
+             para(f'<b>page {PAGEMAP.get(key, "—")}</b>', 'cell', TA_RIGHT, colour=INK if PAGEMAP.get(key) else SOFT)]
+            for chip, title, blurb, key, _c in PATHS_TOC] + [
             [para(f'<para alignment="center"><b>{chip}</b></para>', 'cell', colour=colors.white),
              para(f'<b>{esc(title)}</b>', 'cell'),
              para(esc(blurb), 'cell', colour=SOFT), para('', 'cell'),
              para(f'<b>page {PAGEMAP.get(key, "—")}</b>', 'cell', TA_RIGHT, colour=INK if PAGEMAP.get(key) else SOFT)]
             for chip, title, blurb, key, _c in APS]
-NF, NA, NS = len(FRONT), len(APS), len(sections)
+NF, NA, NS, NP = len(FRONT), len(APS), len(sections), len(PATHS_TOC)
 toc_extra = [('BACKGROUND', (0, 1), (-1, NF), colors.HexColor('#eef2f7')),
-             ('BACKGROUND', (0, NF + NS + 1), (-1, NF + NS + NA), colors.HexColor('#eef2f7')),
+             ('BACKGROUND', (0, NF + NS + NP + 1), (-1, NF + NS + NP + NA), colors.HexColor('#eef2f7')),
              ('BACKGROUND', (0, 1), (0, NF), colors.HexColor('#5b6674')),
              ('LINEABOVE', (0, NF + 1), (-1, NF + 1), 0.7, INK),
-             ('LINEABOVE', (0, NF + NS + 1), (-1, NF + NS + 1), 0.7, INK),
+             ('LINEABOVE', (0, NF + NS + 1), (-1, NF + NS + 1), 0.7, colors.HexColor('#3949ab')),
+             ('LINEABOVE', (0, NF + NS + NP + 1), (-1, NF + NS + NP + 1), 0.7, INK),
              ('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
              ('TOPPADDING', (0, 1), (-1, -1), 3), ('BOTTOMPADDING', (0, 1), (-1, -1), 3)]
 toc_extra += [('BACKGROUND', (0, NF + 1 + i), (0, NF + 1 + i), colors.HexColor(CAT_COLOR[sec]))
               for i, sec in enumerate(sections)]
 toc_extra += [('BACKGROUND', (0, NF + NS + 1 + k), (0, NF + NS + 1 + k), colors.HexColor(c))
+              for k, (_chip, _t, _b, _key, c) in enumerate(PATHS_TOC)]
+toc_extra += [('BACKGROUND', (0, NF + NS + NP + 1 + k), (0, NF + NS + NP + 1 + k), colors.HexColor(c))
               for k, (_chip, _t, _b, _key, c) in enumerate(APS)]
 story += [banner('CONTENTS', size=11,
-                 sub='the fourteen sections run from the most reputable kind of placement to the quarantine bucket, and the four '
-                     'appendices re-sort the same 715 links by domain, by subject, by quarantine cluster and by method'),
+                 sub='the fourteen sections run from the most reputable kind of placement to the quarantine bucket; the five '
+                     'reading paths (P1-P5) cut the same corpus into the requested themes; the four appendices re-sort every one '
+                     'of the 715 links by domain, by subject, by quarantine cluster and by method'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [7 * mm, 62 * mm, CW - 141 * mm, 16 * mm, 24 * mm], zebra=True, font=7.4, extra=toc_extra)]
+story.append(PageBreak())
+
+# =========================================================== FIVE HEADLINE READING PATHS
+# complete, self-contained, ranked ledgers for the five requested themes. Every row repeats
+# (in richer form) inside the main numbered sections; these paths exist so each requested
+# topic can be read start-to-finish without hunting across the volume.
+story += [Marker('path:0', 'Five headline reading paths — the requested thematic cuts'),
+          banner('FIVE HEADLINE READING PATHS', colour='#263238', size=12,
+                 sub='the master directory is organized by media type; these five paths re-cut the same 715 records into the '
+                     'requested themes — netlabel + compilation features, magazine / zine features, news articles & media, '
+                     'exhibitions & art galleries, literary publications & writing. Each path is COMPLETE for its theme and '
+                     'ranked from the most reputable and impressive placement to the least. Every row below also appears with '
+                     'full evidence notes in the numbered section named in its banner.',
+                 right=f'{sum(len(p["rows"]) for p in READING_PATHS)} path rows (with overlap) · {N} unique links in the volume')]
+
+overview_rows = []
+for i, p in enumerate(READING_PATHS, 1):
+    prs = p['rows']
+    tc = Counter(x['tier'] for x in prs)
+    overview_rows.append([para(f'<para alignment="center"><font color="#ffffff" size="8"><b>P{i}</b></font></para>',
+                               colour=colors.white),
+                          para(f'<b>{esc(p["name"])}</b><br/><font color="#5b6674" size="5.8">{esc(p["sub"][:120])}…</font>',
+                               'cell'),
+                          para(f'<b>{len(prs)}</b>', 'cell', TA_RIGHT),
+                          para(f'A {tc["A"]} · B {tc["B"]} · C {tc["C"]} · D {tc["D"]}', 'cell', colour=SOFT),
+                          para(f'{sum(1 for x in prs if x["status"] in ("verified", "live", "search-index verified"))}',
+                               'cell', TA_RIGHT),
+                          para(f'page {PAGEMAP.get(p["key"], "—")}', 'cell', TA_RIGHT, colour=SOFT)])
+story += [Spacer(1, 2.5 * mm),
+          grid(overview_rows, [10 * mm, CW - 148 * mm, 14 * mm, 52 * mm, 16 * mm, 24 * mm],
+               header=['PATH', 'THEME (complete cut — every link in the corpus matching it)', 'LINKS', 'TIER SPLIT · A best, D quarantine',
+                       'LIVE', 'STARTS'],
+               zebra=True, font=6.8,
+               extra=[('BACKGROUND', (0, i), (0, i), colors.HexColor(p_['colour']))
+                      for i, p_ in enumerate(READING_PATHS, 1)] +
+                     [('TOPPADDING', (0, 0), (-1, -1), 2.6), ('BOTTOMPADDING', (0, 0), (-1, -1), 2.6),
+                      ('VALIGN', (0, 0), (0, -1), 'MIDDLE')])]
+story.append(PageBreak())
+
+PATH_COLW = [10 * mm, 36 * mm, 79 * mm, 8 * mm, 11 * mm, 14 * mm, CW - 158 * mm]
+sec_no = {s: i for i, s in enumerate(sections, 1)}
+for pi, p in enumerate(READING_PATHS, 1):
+    if pi > 1:
+        story.append(PageBreak())
+    prs = p['rows']
+    tc = Counter(x['tier'] for x in prs)
+    live_n = sum(1 for x in prs if x['status'] in ('verified', 'live', 'search-index verified'))
+    main_page = PAGEMAP.get(f'section:{sec_no.get(p["main"], 0)}', '—')
+    story.append(Marker(p['key'], f'Path {pi} — {p["name"].title()}'))
+    story.append(banner(f'PATH P{pi} · {p["name"]}', colour=p['colour'], size=12,
+                        sub=p['sub'],
+                        right=f'{len(prs)} links · A {tc["A"]} · B {tc["B"]} · C {tc["C"]} · D {tc["D"]} · live {live_n}'))
+    story.append(Spacer(1, 1.6 * mm))
+    story.append(para(f'<font color="#5b6674">complete ranked cut for this theme — most reputable and impressive first. '
+                       f'The bold number is the position inside this path; the small <i>vol</i> number under it is the row\'s '
+                       f'rank in the whole volume; CRED is the 0-100 credibility index. Full evidence rows for these links: '
+                       f'§{sec_no.get(p["main"], "?")} <b>{esc(p["main"])}</b> (page {main_page}); quarantined rows are '
+                       f'expanded again by domain in Appendix C.</font>', 'legend'))
+    story.append(Spacer(1, 1.6 * mm))
+    # outlet cluster line for long paths
+    if len(prs) > 24:
+        hc = Counter(x['host'] for x in prs)
+        chips = '  ·  '.join(f'<b>{esc(h)}</b> ({n})' for h, n in hc.most_common(16))
+        more = len(hc) - 16
+        story.append(Table([[para('OUTLETS / HOSTS ON THIS PATH:  ' + chips + (f'  ·  +{more} more' if more > 0 else ''),
+                                   'legend', colour=SOFT)]], colWidths=[CW],
+                           style=TableStyle([('BACKGROUND', (0, 0), (-1, -1), BAND),
+                                             ('BOX', (0, 0), (-1, -1), 0.3, RULE),
+                                             ('LEFTPADDING', (0, 0), (-1, -1), 5), ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+                                             ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3)])))
+        story.append(Spacer(1, 2.4 * mm))
+    data = [[para('<b>#</b>', 'th', colour=colors.white, align=TA_CENTER),
+             para('<b>OUTLET · HOST</b>', 'th', colour=colors.white),
+             para('<b>FEATURE / APPEARANCE</b>', 'th', colour=colors.white),
+             para('<b>TIER</b>', 'th', colour=colors.white, align=TA_CENTER),
+             para('<b>CRED</b>', 'th', colour=colors.white, align=TA_CENTER),
+             para('<b>STATUS</b>', 'th', colour=colors.white, align=TA_CENTER),
+             para('<b>FULL LINK (clickable)</b>', 'th', colour=colors.white)]]
+    styles = [('BACKGROUND', (0, 0), (-1, 0), colors.HexColor(p['colour'])),
+              ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+              ('GRID', (0, 0), (-1, -1), 0.25, colors.HexColor('#dde4ea')),
+              ('LINEBELOW', (0, 0), (-1, 0), 0.6, HEADBG),
+              ('LEFTPADDING', (0, 0), (-1, -1), 2.4), ('RIGHTPADDING', (0, 0), (-1, -1), 2.4),
+              ('TOPPADDING', (0, 0), (-1, -1), 1.9), ('BOTTOMPADDING', (0, 0), (-1, -1), 1.9)]
+    for i, r in enumerate(prs, start=1):
+        tier = r['tier'] if r['tier'] in TIER else 'C'
+        cfill, ctext = heat(r['score'])
+        sfill, slab = STATUS.get(r['status'], (SOFT, (r['status'] or '?').upper()))
+        title_bits = []
+        if r['title']:
+            title_bits.append(f'<b>{esc(r["title"][:120])}</b>')
+        if r['date']:
+            title_bits.append(f'<font color="#78909c">{esc(r["date"][:10])}</font>')
+        ctx = r['category'] if r['category'] != p['main'] else None
+        if ctx:
+            title_bits.append(f'<font color="#8a6d3b">also filed under: {esc(ctx[:60])}</font>')
+        if r.get('flag_reasons'):
+            title_bits.append('<font color="#8c1d18"><b>FLAG</b> ' + esc(r['flag_reasons'][0][:110]) + '</font>')
+        data.append([para(f'<para alignment="right"><font color="#263238" size="6.8"><b>{i}</b></font><br/>'
+                          f'<font color="#9aa7b2" size="5">vol {r["rank"]}</font></para>'),
+                     para(f'<b>{esc(r["host"])}</b>', 'cell'),
+                     para(' · '.join(title_bits) if title_bits else '<font color="#b0bac4">—</font>'),
+                     para(f'<para alignment="center"><font color="#ffffff" size="7"><b>{tier}</b></font></para>',
+                          colour=colors.white),
+                     para(f'<para alignment="center"><font color="{ctext}" size="6.6"><b>{r["score"]}</b></font></para>'),
+                     para(f'<para alignment="center"><font color="#ffffff" size="5.4"><b>{slab}</b></font></para>',
+                          colour=colors.white),
+                     para(f'<a href="{esc(r["url"])}" color="#1a3d8f">{esc(r["url"])}</a>', 'url')])
+        styles += [('BACKGROUND', (0, i), (-1, i), TIER[tier][1]),
+                   ('BACKGROUND', (3, i), (3, i), TIER[tier][0]),
+                   ('BACKGROUND', (4, i), (4, i), cfill),
+                   ('BACKGROUND', (5, i), (5, i), sfill),
+                   ('LINEBEFORE', (0, i), (0, i), 2.2, colors.HexColor(p['colour']))]
+    tbl = Table(data, colWidths=PATH_COLW, repeatRows=1)
+    tbl.setStyle(TableStyle(styles))
+    story.append(tbl)
+
 story.append(PageBreak())
 # =========================================================== SECTIONS
 for si, s in enumerate(sections, 1):
