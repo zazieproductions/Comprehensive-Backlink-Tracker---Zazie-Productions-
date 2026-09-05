@@ -89,7 +89,7 @@ already in the master. **14 self-issued + 2 compilation mirrors + 1 lead** added
 | `…/arrhythnia-discography` (incl. **Amnesia X Zazie Productions** split aNr124) | ✅ file listing | Compilations |
 | `…/sepsis-d-…` (unicode-titled Sepsis video copy) | IA full-text hit | Video Mirror |
 
-### Profiles / platforms / storefronts — 9 new records
+### Profiles / platforms / storefronts — 8 new records + 1 evidence upgrade
 - `metapsychosis.com/creative-agents/zazie-productions/` — ✅ fetched (Tier B, edited literary profile)
 - `getheard.fm/producers/zazie-productions` — ✅ fetched (contact/submission database)
 - `ok.ru/music/artist/122911094866528` — ✅ fetched; **also resolves the previously
@@ -99,7 +99,7 @@ already in the master. **14 self-issued + 2 compilation mirrors + 1 lead** added
 - `reverbnation.com/zazieproductions` (root; sub-pages already master) — index-verified
 - `music.yandex.ru/artist/17856702/tracks` — 🟡 region-blocked; Yandex-index snippet verified (**first Yandex Music record**)
 - `spacehey.com/profile?id=3044031` — 🟡 region-blocked (VA age-verification); title verified in Yep/Brave index
-- `arthive.com/zazieproductions/biography` — 🟡 bot-gated on fetch; snippet-verified via both the Bing (OceanHero) and Yandex (Mail.ru) paths (RU twin: `artchive.ru/zazieproductions/biography`)
+- `arthive.com/zazieproductions/biography` — **already in master (dump-era, unverified) → evidence UPGRADED this pass**: 🟡 bot-gated on fetch; snippet-verified via both the Bing (OceanHero) and Yandex (Mail.ru) paths (RU twin: `artchive.ru/zazieproductions/biography`). Row status raised to `search-index verified`; not a new record.
 
 ### Leads recorded but NOT counted (snippet-only / redirect-only)
 - Facebook group comment by `Zazie Kanwar-Torge` (film-composer thread) — login-walled, snippet-only → lead (RAN-026).

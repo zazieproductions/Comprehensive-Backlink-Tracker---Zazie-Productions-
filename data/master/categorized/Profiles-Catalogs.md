@@ -42,7 +42,7 @@
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
-| [https://arthive.com/zazieproductions/biography](https://arthive.com/zazieproductions/biography) | Zazie Productions | B |  |  | link_dump | unverified |  |
+| [https://arthive.com/zazieproductions/biography](https://arthive.com/zazieproductions/biography) | Zazie Productions | B | 2026-09-05 |  | link_dump | search-index verified | Upgraded by Pass 9: snippet-verified via Yandex (Mail.ru path) + Bing (OceanHero) paths; direct fetch bot-gated ("Automatic query check"); RU twin artchive.ru/zazieproductions/biography |
 
 ## artvee.com — 1
 
