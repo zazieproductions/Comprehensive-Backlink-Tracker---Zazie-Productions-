@@ -1,6 +1,6 @@
 # Master Directory — Summary
 
-**523 records** across 14 categories.
+**522 records** across 14 categories.
 
 ## By category
 
@@ -9,7 +9,7 @@
 | Press & Editorial | 55 |
 | Film, Festivals & Exhibitions | 41 |
 | Publications & Recognition | 18 |
-| Profiles & Catalogs | 67 |
+| Profiles & Catalogs | 66 |
 | Streaming & Music Platforms | 57 |
 | Music Compilations | 117 |
 | Official Properties & Channels | 45 |
@@ -26,7 +26,7 @@
 | Tier | Count |
 |---|---|
 | A | 107 |
-| B | 168 |
+| B | 167 |
 | C | 192 |
 | D | 56 |
 
@@ -35,7 +35,7 @@
 | Source | Count |
 |---|---|
 | link_dump | 252 |
-| media_master | 133 |
+| media_master | 132 |
 | regional_alt_pass | 24 |
 | research | 114 |
 

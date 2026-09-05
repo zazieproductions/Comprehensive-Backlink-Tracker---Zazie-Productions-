@@ -1,6 +1,6 @@
 # Profiles & Catalogs
 
-**67 records.** Artist, composer and professional profiles across industry and creative platforms.
+**66 records.** Artist, composer and professional profiles across industry and creative platforms.
 
 ## 500letters.org — 1
 
@@ -208,12 +208,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://perchance.org/zazieproductions](https://perchance.org/zazieproductions) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## play.reelcrafter.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w](https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w) | Zazie Productions | B |  |  | media_master | unverified |  |
 
 ## promptbase.com — 1
 
