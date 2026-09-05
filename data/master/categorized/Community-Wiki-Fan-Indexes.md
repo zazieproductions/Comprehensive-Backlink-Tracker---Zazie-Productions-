@@ -1,12 +1,6 @@
 # Community, Wiki & Fan Indexes
 
-**55 records.** Fan quizzes, wikis, forums, charts and community pages.
-
-## anotepad.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://anotepad.com/notes/5246g357](https://anotepad.com/notes/5246g357) | Zazie Productions | C |  |  | link_dump | unverified |  |
+**50 records.** Fan quizzes, wikis, forums, charts and community pages.
 
 ## app.notion.com — 2
 
@@ -26,6 +20,12 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.clongclongmoo.org/category/locate/chile/](https://www.clongclongmoo.org/category/locate/chile/) | Zazie Productions | C |  |  | link_dump | unverified |  |
+
+## codex.churchofmalware.org — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://codex.churchofmalware.org/researchers/ed001/zazie/](https://codex.churchofmalware.org/researchers/ed001/zazie/) | Zazie Productions | C | 2026-09-05 | ZAZIE PRODUCTIONS · Poison, The Well, Adversarial Audio, and | research | verified | [LOWTRUST REVIEW] Seed "suspected spam" orphan; reviewed 2026-09-05 = net-art collective codex page (exact string in title); NOT parasitic — restored to Community, never counted as editorial. |
 
 ## commie.io — 1
 
@@ -98,12 +98,6 @@
 |---|---|---|---|---|---|---|---|
 | [https://www.metal-tracker.com/torrents/356412.html](https://www.metal-tracker.com/torrents/356412.html) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
-## mlx.su — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://mlx.su/paste/view/26990c6b](https://mlx.su/paste/view/26990c6b) | Zazie Productions | C |  |  | link_dump | unverified |  |
-
 ## musicbrainz.org — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -129,23 +123,11 @@
 | [https://www.quotev.com/quiz/16626763/What-Zazie-Productions-Song-Are-You](https://www.quotev.com/quiz/16626763/What-Zazie-Productions-Song-Are-You) | Zazie Productions | C |  |  | link_dump | unverified |  |
 | [https://www.quotev.com/quiz/16687733/Zazie-Productions-Trivia-IMPOSSIBLE-EDITION](https://www.quotev.com/quiz/16687733/Zazie-Productions-Trivia-IMPOSSIBLE-EDITION) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
-## r.darrennathanael.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt...](https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt_space_adrift_2023/) | Zazie Productions | C |  |  | link_dump | unverified |  |
-
 ## reddit.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3](https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3) | Zazie Productions | C |  |  | link_dump | unverified |  |
-
-## rsssearchhub.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.rsssearchhub.com/feed/1185189bcc80cd02d670a3aaae58ebf3/city-portland-mercury](https://www.rsssearchhub.com/feed/1185189bcc80cd02d670a3aaae58ebf3/city-portland-mercury) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
 ## saidit.net — 1
 
@@ -201,18 +183,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://tiermaker.com/categories/music/zazie-productions-releases-tier-list-15405489](https://tiermaker.com/categories/music/zazie-productions-releases-tier-list-15405489) | Zazie Productions | C |  |  | link_dump | unverified |  |
-
-## tiktok.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.tiktok.com/@usery..y..yulles/video/7453287097533746450](https://www.tiktok.com/@usery..y..yulles/video/7453287097533746450) | Zazie Productions | C |  |  | link_dump | unverified |  |
-
-## trendingbot.org — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.trendingbot.org/topic/418115_klerksdorp](https://www.trendingbot.org/topic/418115_klerksdorp) | Zazie Productions | C |  |  | link_dump | unverified |  |
 
 ## tvtropes.org — 1
 

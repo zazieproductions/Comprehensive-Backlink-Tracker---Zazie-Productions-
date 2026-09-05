@@ -1,6 +1,6 @@
 # Press & Editorial
 
-**55 records.** Independent coverage, features, reviews, press releases and news mentions.
+**53 records.** Independent coverage, features, reviews, press releases and news mentions.
 
 ## allevents.in — 1
 
@@ -50,12 +50,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://cincymusic.com/blog/2025/12/lo-fi-city-drops-2025-comp-in-time-for-bandcamp-friday](https://cincymusic.com/blog/2025/12/lo-fi-city-drops-2025-comp-in-time-for-bandcamp-friday) | Zazie Productions | A |  | Lo Fi City Drops 2025 Comp In Time for Bandcamp Friday | research | unverified | CincyMusic article naming Zazie Productions; found via Marginalia |
-
-## comunicati.musicalive.net — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://comunicati.musicalive.net/c/cant-get-my-eyes-off-you-123](https://comunicati.musicalive.net/c/cant-get-my-eyes-off-you-123) | Zazie Productions | A |  |  | link_dump | unverified |  |
 
 ## creators.spotify.com — 1
 
@@ -202,12 +196,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.rangermagazine.net/zazie_issue4](https://www.rangermagazine.net/zazie_issue4) | Zazie Productions | A |  |  | media_master | unverified |  |
-
-## rant.li — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://rant.li/scienceinnovation/zazie-productions-researcher-sonic-engineer-and-theorist...](https://rant.li/scienceinnovation/zazie-productions-researcher-sonic-engineer-and-theorist-of) | Zazie Productions | A |  |  | link_dump | unverified |  |
 
 ## rockculture.es — 1
 

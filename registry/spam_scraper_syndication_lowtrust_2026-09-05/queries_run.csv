@@ -1,0 +1,12 @@
+QueryID,ExactQuery,TargetPreserved,Engine,Date,HitsOfInterest,Disposition
+LT-Q01,"""Zazie Productions"" spam doorway scrape",Zazie Productions,"web_search (general index), depth 2",2026-09-05,1 result — slaps.com profile (legit); no new doorway hits,No new spam; current index has de-listed the old doorway cluster
+LT-Q02,"""Zazie Kanwar-Torge""",Zazie Kanwar-Torge,web_search depth 2,2026-09-05,"ReelCrafter share link, IMDb, LinkedIn, ListenNotes, Hackaday — all legit/self",No new low-trust hits
+LT-Q03,"""Zazie Productions"" ""Guru Meditation Error""",Zazie Productions,web_search depth 2,2026-09-05,Bandcamp track pages (official),Established the string is a real track title spoofed by the 单曲 doorway titles
+LT-Q04,"""Zazie Productions"" black-mountain-college-ira-and-ruth-levinson-museum",Zazie Productions,web_search depth 2,2026-09-05,Only legit blackmountaincollege.org/museonline.org results,Doorway cluster no longer indexed on current engine
+LT-Q05,"""Zazie Productions"" 单曲",Zazie Productions,web_search depth 2,2026-09-05,Deezer/Apple/Spotify/linktr/bandcamp only,Chinese-doorway remnants not indexed
+LT-Q06,"""Zazie Productions"" lyrics -bandcamp -discogs -spotify",Zazie Productions,web_search depth 2,2026-09-05,boomplay.com/lyrics/151661449 + deezer + slaps + viberate,NEW: boomplay lyrics republication
+LT-Q07,"""Zazie Productions"" ""press release"" -prfree.org -linktr.ee -bandcamp.com",Zazie Productions,web_search depth 2,2026-09-05,bandmix profile text; no fresh PR-farm,Negative
+LT-Q08,"""Zazie Productions"" rsssearchhub OR trendingbot OR ""deturl"" OR ""UX2kv3G89Jw""",Zazie Productions,web_search depth 1,2026-09-05,bandmix (carries video id UX2kv3G89Jw — feed source of mirror cluster),No NEW mirror hosts
+LT-Q09,"""Zazie Productions"" muso.ai OR boomplay OR ""soundunwound"" OR sndup",Zazie Productions,web_search depth 1,2026-09-05,"boomplay album page 66891844 (""Download ... for FREE"")",NEW (register-only) + lyrics page promoted
+LT-Q10,"""Zazie Productions"" ""free download"" mp3 -bandcamp -soundclick",Zazie Productions,web_search depth 1,2026-09-05,official bandcamp only,No new pirate index beyond hitplayer/boomplay
+LT-Q11,"""Zazie Kanwar-Torge"" paste OR pastebin OR anotepad OR telegra",Zazie Kanwar-Torge,web_search depth 1,2026-09-05,paste2.org/zgjMW539 backlink list (LEAD); telegra.ph generic malware-adjacent articles,"Lead LT-lead-01 logged, never counted"

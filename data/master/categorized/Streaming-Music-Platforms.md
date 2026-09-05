@@ -1,6 +1,6 @@
 # Streaming & Music Platforms
 
-**57 records.** Artist pages on streaming services and music databases.
+**52 records.** Artist pages on streaming services and music databases.
 
 ## beatport.com — 1
 
@@ -13,24 +13,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://www.boomplay.com/artists/46971970](https://www.boomplay.com/artists/46971970) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## box.hitplayer.ru — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://box.hitplayer.ru/?s=zazie](https://box.hitplayer.ru/?s=zazie) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## breakinghits.app — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.breakinghits.app/zazieproductions/](https://www.breakinghits.app/zazieproductions/) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## chosic.com — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://www.chosic.com/artist/zazie-productions/4UOgvZEOo7xBhFBjJvlMm0/](https://www.chosic.com/artist/zazie-productions/4UOgvZEOo7xBhFBjJvlMm0/) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
 ## deezer.com — 1
 
@@ -183,12 +165,6 @@
 |---|---|---|---|---|---|---|---|
 | [https://slaps.com/user/ZazieProd](https://slaps.com/user/ZazieProd) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
-## songdata.io — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://songdata.io/search?query=Zazie+Productions+](https://songdata.io/search?query=Zazie+Productions+) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
 ## songstats.com — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -212,12 +188,6 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://soundgasm.net/u/ZazieProductions](https://soundgasm.net/u/ZazieProductions) | Zazie Productions | B |  |  | link_dump | unverified |  |
-
-## thirdeyemusic.co.uk — 1
-
-| URL | Target | Tier | Date | Title | Source | Status | Notes |
-|---|---|---|---|---|---|---|---|
-| [https://thirdeyemusic.co.uk/?name=Zazie_Productions&dir=tracks](https://thirdeyemusic.co.uk/?name=Zazie_Productions&dir=tracks) | Zazie Productions | B |  |  | link_dump | unverified |  |
 
 ## tidal.com — 1
 

@@ -20,6 +20,7 @@ registry/
 | File | Phase | What it holds |
 |---|---|---|
 | [`PHASE3_EDITORIAL_LITERARY.md`](PHASE3_EDITORIAL_LITERARY.md) | Phase Three — editorial / literary / criticism / blog ecosystems | New exact-string places in published-writing venues (magazines, anthologies, journals, podcast notes), partial/handle-only rows, open leads and the full query log. Rows follow the universal row template below. |
+| [`spam_scraper_syndication_lowtrust_2026-09-05/`](spam_scraper_syndication_lowtrust_2026-09-05/README.md) | Pass Ten — low-trust & parasite watch | 🖤 The quarantine register itself: charter, safety protocol, 89-row ledger (all pre-existing repo spam/scraper/syndication instances folded in + new finds), query log, access log. |
 
 > ⚠️ `seed/` files are **generated** from the source PDFs. If the source PDFs change, regenerate rather than hand-editing these three files (keeps them in sync). New live research goes into the **live master** below.
 
@@ -55,7 +56,7 @@ Example:
 1. **Append; never edit or delete** existing rows unless you're correcting a verified error (and then note the change).
 2. **One unique page = one row.** A mirror/aggregator of an original is *not* a new row — record the mirror separately in the 📼 bucket if you log it at all.
 3. **Evidence is mandatory.** No snippet / no found-on / no date = it's a 🔎 Lead, not a result. Don't pad totals with leads.
-4. **Don't count 🖤 spam or 📼 mirrors** toward “real places”; keep them visible but clearly separate.
+4. **Don't count 🖤 spam or 📼 mirrors** toward “real places”; keep them visible but clearly separate — since Pass 10 they live in the single quarantine category `Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust` with the register in `spam_scraper_syndication_lowtrust_2026-09-05/`.
 5. Run the [`docs/07`](../docs/07_LINK_CHECK_AND_VERIFICATION.md) runbook before promoting any `⬜` to `✅`.
 6. Follow the color legend in the root [`README.md`](../README.md) so statuses and types stay consistent across the whole repo.
 

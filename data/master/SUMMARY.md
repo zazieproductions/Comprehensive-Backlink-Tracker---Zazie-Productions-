@@ -1,23 +1,23 @@
 # Master Directory — Summary
 
-**522 records** across 14 categories.
+**524 records** across 14 categories.
 
 ## By category
 
 | Category | Count |
 |---|---|
-| Press & Editorial | 55 |
+| Press & Editorial | 53 |
 | Film, Festivals & Exhibitions | 41 |
 | Publications & Recognition | 18 |
-| Profiles & Catalogs | 66 |
-| Streaming & Music Platforms | 57 |
+| Profiles & Catalogs | 63 |
+| Streaming & Music Platforms | 52 |
 | Music Compilations | 117 |
 | Official Properties & Channels | 45 |
 | Podcasts & Broadcasts | 6 |
-| Community, Wiki & Fan Indexes | 55 |
+| Community, Wiki & Fan Indexes | 50 |
 | Search-Engine Index | 1 |
-| Video Mirror / Backlink Sites | 40 |
-| SEO Spam / Link Farm | 18 |
+| Video Mirror / Backlink Sites | 2 |
+| Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust | 73 |
 | Music Discography | 2 |
 | Lyrics & Music Databases | 1 |
 
@@ -25,10 +25,10 @@
 
 | Tier | Count |
 |---|---|
-| A | 107 |
-| B | 167 |
-| C | 192 |
-| D | 56 |
+| A | 105 |
+| B | 159 |
+| C | 187 |
+| D | 73 |
 
 ## By source
 
@@ -37,6 +37,6 @@
 | link_dump | 252 |
 | media_master | 132 |
 | regional_alt_pass | 24 |
-| research | 114 |
+| research | 116 |
 
-**Trust tiers:**  A = strong independent/institutional press & recognition · B = supporting profiles/catalogs · C = compilations/community/lower-priority · D = spam/mirror (flagged, non-authoritative).
+**Trust tiers:**  A = strong independent/institutional press & recognition · B = supporting profiles/catalogs · C = compilations/community/lower-priority · D = spam / scraper / syndication / low-trust (flagged, non-authoritative — see the low-trust register).

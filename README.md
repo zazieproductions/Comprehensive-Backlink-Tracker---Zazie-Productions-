@@ -41,7 +41,7 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 | 🩵 | **Data-studies / Analytics / Tooling** | `#0f9d8f` | Stats sites, analytics dashboards, AI/research pages about the work |
 | 🟢 | **Social & Community** | `#188038` | Native social posts, community pages, UGC, fan-made content |
 | 📼 | **Mirrors / Aggregators** | `#607d8b` | YouTube mirrors, video aggr., RSS scrape/index mirrors (secondary) |
-| 🖤 | **Spam / SEO parasite** | `#616161` | Auto-scraped/spun pages — *cross-check before counting* |
+| 🖤 | **Spam / scraper / syndication / SEO-poisoning / low-trust** | `#616161` | Hacked-site doorways, scraped/auto-gen clones, RSS & PR republications, mirror embeds, pastes — *evidence-preservation bucket, never counted* (`registry/spam_scraper_syndication_lowtrust_2026-09-05/`) |
 
 ### Status (used during the verification pass)
 
@@ -99,6 +99,7 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 |---|---|
 | [`registry/README.md`](registry/README.md) | How the live registry is structured and how to add rows. |
 | [`registry/seed/SEED_INDEX_FROM_DUMP.md`](registry/seed/SEED_INDEX_FROM_DUMP.md) | **260 unique URLs** auto-extracted from the dump, clustered by media type. *(Source for the “found so far” starting set.)* |
+| [`registry/spam_scraper_syndication_lowtrust_2026-09-05/`](registry/spam_scraper_syndication_lowtrust_2026-09-05/LOWTRUST_REGISTER.md) | **🖤 Low-Trust Register (Pass 10).** Charter + 89-row ledger for every spam / scraper / syndication / SEO-poisoning / text-injection occurrence of the exact strings; safety protocol; reclassification log for all pre-existing instances. |
 | [`registry/seed/seed_unique_urls.csv`](registry/seed/seed_unique_urls.csv) | Machine-readable full list (domain, url, first-seen source file). |
 | [`registry/seed/seed_domain_summary.csv`](registry/seed/seed_domain_summary.csv) | Domain → URL-count summary for eyeballing coverage. |
 
@@ -128,28 +129,40 @@ Colors carry **meaning** in every table below. If a viewer does not render color
 
 ## 📊 Census results (latest pass)
 
-The search sweeps (Pass 1–9) fold confirmed exact-name URLs into the live master index.
-As of the latest pass the master index holds **523 records**:
+The search sweeps (Pass 1–10) fold confirmed exact-name URLs into the live master index.
+As of the latest pass the master index holds **524 records**:
 
 ```
-TOTAL                    523
+TOTAL                    524
   Music Compilations      117
-  Profiles & Catalogs      67
-  Press & Editorial        55
-  Streaming Platforms      57
-  Community/Wiki/Fan       55
-  Video Mirror / Backlink  40
-  Film, Festivals & Exhib. 41
+  Spam/Scraper/Syndic./
+    SEO-Poison/Low-Trust   73
+  Profiles & Catalogs      63
+  Streaming Platforms      52
+  Press & Editorial        53
+  Community/Wiki/Fan       50
   Official Properties      45
+  Film, Festivals & Exhib. 41
   Publications & Recogn.   18
-  SEO Spam / Link Farm     18
   Podcasts & Broadcasts     6
+  Video Mirror / Backlink   2
   Music Discography         2
   Lyrics & Music Databases  1
   Search-Engine Index       1
 ```
-Trust tiers: **A** 107 · **B** 168 · **C** 192 · **D** 56 (D = flagged spam/mirrors).
-Sources: media_master 133 · link_dump 252 · research 114 · regional_alt_pass 24.
+Trust tiers: **A** 105 · **B** 159 · **C** 187 · **D** 73 (D = flagged spam/scraper/syndication/mirrors — see below).
+Sources: media_master 132 · link_dump 252 · research 116 · regional_alt_pass 24.
+
+> **Pass 10 — Low-Trust & Parasite Watch (2026-09-05).** A dedicated category now consolidates
+> every spam / scraper / syndication / SEO-poisoning / low-trust occurrence of the two exact strings:
+> `registry/spam_scraper_syndication_lowtrust_2026-09-05/` (charter, 89-entry ledger, query log,
+> access log). The former `SEO Spam / Link Farm` category and all 38 Tier-D rows of
+> `Video Mirror / Backlink Sites` were folded into it, together with 16 misfiled rows pulled out of
+> Community/Profiles/Streaming/Press (incl. two A-tier PR-republication demotions), plus new finds
+> (boomplay auto-lyrics page; live hacked-site-embed sampling; Wayback CDX transience checks;
+> safety-quarantined doorway hosts left documented-but-unvisited). Nothing in Tier D ever counts
+> as credible coverage, credit, profile, release, official presence, press mention, or biography.
+
 
 > **Note on rule evolution:** Pass 7 broadened the inclusion standard to the contiguous
 > “Productions” sequence (any spacing/case, plus platform-URL forms), per the user directive.
@@ -180,7 +193,8 @@ Sources: media_master 133 · link_dump 252 · research 114 · regional_alt_pass 
 
 - [x] **Dump cataloged** — media master read; 260 real URLs extracted into `registry/seed/`.
 - [x] **Operating docs written** — mission, playbook, engine dir, query library, week plan, prompts, verification runbook.
-- [x] **Census run (Pass 1–9)** — 499 confirmed exact-name URLs consolidated into `data/master/master_index.csv`; register link map resolved for most features.
+- [x] **Census run (Pass 1–10)** — 524 confirmed/flagged exact-name URLs consolidated into `data/master/master_index.csv`; register link map resolved for most features.
+- [x] **Pass 10 — LOW-TRUST QUARANTINE (2026-09-05)**: every spam / scraper / syndication / SEO-poisoning / doorway / text-injection occurrence of the exact strings folded into `registry/spam_scraper_syndication_lowtrust_2026-09-05/` + master category of the same kind (73 Tier-D rows); safety protocol enforced (unsafe hosts documented, never visited).
 - [ ] **Pass 2 — VERIFY** (run per `docs/07`): double-check every found link (HTTP status + exact-name evidence) and tag ✅ / 🟡 / ❌.
 - [ ] **Pass 3 — CONSOLIDATE**: reconcile remaining HUNT rows (Pandora, Audiomack, Facebook/TikTok, Claro Música, Saavn/JioSaavn, Snapchat, NetEase, Tencent/QQ/Kugou/Kuwo/WeSing, Pretzel, TouchTunes, JOOX, Kuack, MediaNet, Dubset, Roblox, Soundtrack by Twitch) against the known-ground-truth register.
 
