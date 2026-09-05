@@ -1,0 +1,3 @@
+# PDF builder page-number cache (regenerated on every build)
+data/master/.pdf_pagemap.json
+__pycache__/
