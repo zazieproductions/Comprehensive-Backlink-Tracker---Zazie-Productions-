@@ -1,8 +1,20 @@
 # Official Properties & Channels
 
-**36 records.** Self-owned channels: storefronts, Bandcamp, itch.io, YouTube, Linktree.
+**45 records.** Self-owned channels: storefronts, Bandcamp, itch.io, YouTube, Linktree.
 
-## github.com — 7
+## archive.org — 7
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://archive.org/details/5-bb-30-b-4-b-a-4-a-0-4-fff-94-cc-22-f-0-fceda-667](https://archive.org/details/5-bb-30-b-4-b-a-4-a-0-4-fff-94-cc-22-f-0-fceda-667) | Zazie Productions | C | 2026-09-05 | https://www.yyyyyyy.info (lost animation sequence) | regional_alt_pass | verified | IA archival record; creator 'Zazie Productions, yyyyyyy.info' (Pass 9) |
+| [https://archive.org/details/data-conversation-01-17675](https://archive.org/details/data-conversation-01-17675) | Zazie Productions | C | 2026-09-05 | Zazie Productions Mystery File Dump: Vol 1 | regional_alt_pass | verified | Self-issued audio dump of 'Pomegranate Vortex' archive; IA full-text hit (Pass 9) |
+| [https://archive.org/details/img-1941_202505](https://archive.org/details/img-1941_202505) | Zazie Productions | C | 2026-09-05 | THE SEVENTH SCREEN IS DREAMING IN FRACTALS: A Zazie Producti | regional_alt_pass | verified | Self-issued visual-art archive; creator Zazie Productions (Pass 9) |
+| [https://archive.org/details/liquid-phosphorus-4-33](https://archive.org/details/liquid-phosphorus-4-33) | Zazie Productions | C | 2026-09-05 | Zazie Productions Mystery File Dump: Vol 2 | regional_alt_pass | search-index verified | IA full-text title match (Pass 9); Bandcamp Liquid Phosphorus track is a separate known record |
+| [https://archive.org/details/neural_dynamics_simulation_by_cascadingforest26294535](https://archive.org/details/neural_dynamics_simulation_by_cascadingforest26294535) | Zazie Productions | C | 2026-09-05 | NEURAL DYNAMICS SIMULATION - Unfinished Build (v0.7.3a, Zazi | regional_alt_pass | verified | Self-issued unfinished software build; creator Zazie Productions (Pass 9) |
+| [https://archive.org/details/quantum-geometry-3-d-emulator](https://archive.org/details/quantum-geometry-3-d-emulator) | Zazie Productions | C | 2026-09-05 | Quantum Geometry 3D Emulator | regional_alt_pass | verified | Self-issued open-source software; creator Zazie Productions (Pass 9) |
+| [https://archive.org/details/unexplained-aerial-phenomena-report-zazie-productions](https://archive.org/details/unexplained-aerial-phenomena-report-zazie-productions) | Zazie Productions | C | 2026-09-05 | UNEXPLAINED AERIAL PHENOMENA UFO REPORT - ZAZIE PRODUCTIONS  | regional_alt_pass | verified | Self-issued IA text item; creator Zazie Productions; found via IA full-text search (Pass 9) |
+
+## github.com — 8
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
@@ -13,6 +25,13 @@
 | [https://github.com/zazieproductions/interactive-harsh-noise-generator](https://github.com/zazieproductions/interactive-harsh-noise-generator) | Zazie Productions | A | 2026-09-04 | Interactive Harsh Noise Generator (NOISE WALL) / zazieproduc | research | verified | Register #109 built project; org renders "Zazie Productions" |
 | [https://github.com/zazieproductions/spectra-lab](https://github.com/zazieproductions/spectra-lab) | Zazie Productions | A | 2026-09-04 | SPECTRA//LAB / zazieproductions | research | verified | Register #107 SPECTRA//LAB built project; org renders "Zazie Productions" |
 | [https://github.com/zazieproductions/void-oculus](https://github.com/zazieproductions/void-oculus) | Zazie Productions | A | 2026-09-04 | VOID//OCULUS / zazieproductions | research | verified | Register #108 built project; 19 stars; live at zazieproductions.github.io/void-oculus; org renders "Zazie Productions" |
+| [https://github.com/zazieproductions/zazieproductions](https://github.com/zazieproductions/zazieproductions) | Zazie Productions | C | 2026-09-05 | GitHub - zazieproductions/zazieproductions | regional_alt_pass | verified | Profile README repo ('ZAZIE PRODUCTIONS // EXPERIMENTAL SOFTWARE FOR UNSTABLE SIGNALS'); found via Mail.ru/Yandex path (Pass 9) |
+
+## gumroad.com — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://zazieproductions.gumroad.com/l/plugin](https://zazieproductions.gumroad.com/l/plugin) | Zazie Productions | C | 2026-09-05 | World's Strangest Plug-in Mega-Vault: 200+ Banned, Cursed, a | regional_alt_pass | verified | Gumroad storefront product page ('A Final Note from Zazie Productions'); found via Walla! (Pass 9) |
 
 ## hackaday.io — 1
 

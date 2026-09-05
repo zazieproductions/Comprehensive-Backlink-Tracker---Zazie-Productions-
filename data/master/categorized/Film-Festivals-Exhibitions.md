@@ -1,6 +1,13 @@
 # Film, Festivals & Exhibitions
 
-**39 records.** Film credits, festival selections, awards and exhibition listings.
+**41 records.** Film credits, festival selections, awards and exhibition listings.
+
+## archive.org — 2
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://archive.org/details/instructions-for-clean-living](https://archive.org/details/instructions-for-clean-living) | Zazie Productions | B | 2026-09-05 | Instructions for Clean Living - Public Domain Day Remix Cont | regional_alt_pass | verified | Internet Archive institutional contest entry (internetarchivepresents collection); creator Zazie Productions (Pass 9) |
+| [https://archive.org/details/phantom-requiem-short-film](https://archive.org/details/phantom-requiem-short-film) | Zazie Productions | C | 2026-09-05 | Phantom Requiem (Short Film) : Zazie Productions | regional_alt_pass | verified | Official IA upload; creator Zazie Productions; CC BY-ND 4.0 (Pass 9) |
 
 ## artrabbit.com — 1
 

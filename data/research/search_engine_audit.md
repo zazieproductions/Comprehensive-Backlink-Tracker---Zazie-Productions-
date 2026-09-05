@@ -391,3 +391,46 @@ Bario lead documentation). REGISTER_LINK_MAP updated: #64 linked, #94 lead, #57�
 - `www.tiktok.com/music/Well-Meaning-Neurotypicals-7116236683321821186` — TikTok sound page (non-instrumental
   variant) indexed as "ZazieProductions" exact. **Added.**
 - `www.jiosaavn.com/search/zazie-productions` — returns **no-match** (no artist page). JioSaavn remains HUNT.
+
+## Pass 9 — Regional, independent, archival & scholarly engine sweep [2026-09-05]
+
+Goal: extend the census beyond the usual engines per the extended-discovery brief. 62
+engine/interface access tests + 31 logged queries, exact quoted phrases only. Full detail:
+`registry/regional_alt_engine_pass_2026-09-05/` (ENGINE_ACCESS_MATRIX, query_inventory,
+candidate_ledger, source_access_log, PASS_REPORT).
+
+### Working regional paths
+- **360/So.com (zh)** — own CN index; surfaced Douyin/汽水音乐 track pages ("Subliminal Failures",
+  "Stokes Diapir") — leads (redirect URLs).
+- **Seznam (cs)** — own crawler, full organic SERP; all hits already master (independent confirmation).
+- **Yahoo! JAPAN (ja)** and **Walla! (he)** — Google-index regional interfaces; page 1 all known.
+- **Mail.ru Search (ru) = captcha-free Yandex-index access path** (replaces blocked yandex.com/rambler):
+  surfaced ok.ru artist, Yandex Music artist, artchive.ru/arthive bio, github profile-repo.
+- **Blocked/captcha:** Sogou (antispider), Rambler/Yandex (SmartCaptcha), Mojeek (ALTCHA), Trove (Anubis).
+- **Dead/retired:** BIGLOBE endpoint, Excite Japan web search, GiveWater, Stract, BoardReader /search,
+  Ask /web, AOL /aol/search, HotBot (AI pivot), Egerin legacy search, UK Web Archive (BL incident).
+- **Ghostery Private Search → closed beta (2026-06)**; Kagi/Million Short = login-gated.
+
+### Independent/alt-web
+- **Yep (Ahrefs)** surfaced `metapsychosis.com` creative-agents profile + `spacehey.com` profile (region-blocked, index-verified).
+- **OceanHero (Bing)** surfaced `getheard.fm`, `arthive.com` bio, `reverbnation.com` root.
+- **Marginalia (retry OK)** re-confirmed its unique Bandcamp tail + one new lead (Noisy Goat "Post-Carbon Signal Rot").
+- **Wiby / YaCy node** executed with zero results (independent-crawler negatives). MetaGer drops GET query;
+  Qwant/Swisscows/Ekoru render server-side only partially. Info.com = sole healthy Google-fed meta veteran.
+
+### Internet Archive full-text — the pass's main win (+15 IA records)
+19 items matched `"Zazie Productions"` full-text; 16 were URL-level-new: UFO report
+(ZP-AEP-0328-MID-FL), Mystery File Dumps Vol 1 + Vol 2, Phantom Requiem official upload,
+**Instructions for Clean Living (IA Public Domain Day Remix Contest 2026)**, Quantum Geometry
+3D Emulator, NEURAL DYNAMICS SIMULATION, Textual Exhumation 5 + Textual Exhumations UNICODE,
+RA (Codename: THE RHIZOSIGIL) in IA's zines collection, THE SEVENTH SCREEN, the yyyyyyy.info
+lost-animation recovery, archive.org copies of DOOM CC comp / Experiments on the Witch House /
+arrhythNia discography (incl. Amnesia X Zazie Productions split) / Sepsis video.
+
+### Scholarly/archival negatives & blocks
+OpenAlex 0 (both names) · Europe PMC 0 · Zenodo 0 · LoC 0 · Arquivo.pt 0 · Crossref = fuzzy-only
+(Queneau/Malle). Wayback CDX 500×3 (availability API: no root snapshot); archive.today reCAPTCHA;
+Memento unreachable; Common Crawl index unreachable from sandbox egress.
+
+### Master count after Pass 9
+**523** (was 499; +24 verified/index-verified canonical rows, source `regional_alt_pass`).

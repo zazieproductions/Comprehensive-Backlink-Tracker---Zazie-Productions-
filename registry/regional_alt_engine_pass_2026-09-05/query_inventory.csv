@@ -1,0 +1,32 @@
+QueryID,Engine,ExactQuery,Language,Date,PaginationDepth,ResultsVisible,NewCanonicalFound,Outcome,Notes
+Q01,Baidu,"""Zazie Productions""",zh-CN,2026-09-05,1 (attempted),0 extractable,No,Partial - chrome only,organic rows not in server render
+Q02,360/So.com,"""Zazie Productions""",zh-CN,2026-09-05,1,2,No (leads),Worked,2 Douyin/Qishui track pages
+Q03,Sogou,"""Zazie Productions""",zh-CN,2026-09-05,-,0,No,Blocked,antispider captcha
+Q04,Naver,"""Zazie Productions""",ko,2026-09-05,1,0,No,Worked - no hits,AI briefing: no direct info
+Q05,Daum,"""Zazie Productions""",ko,2026-09-05,1,0,No,Worked - no hits,
+Q06,Nate,"""Zazie Productions""",ko,2026-09-05,1,0,No,Worked - no hits,
+Q07,Seznam,"""Zazie Productions""",cs,2026-09-05,1 of 3,10,No (all known/known-adjacent),Worked,own-index full organic SERP
+Q08,Yahoo! JAPAN,"""Zazie Productions""",ja,2026-09-05,1 of 4,10,No (thetalentmanager already master),Worked,Google-backed
+Q09,Walla!,"""Zazie Productions""",he,2026-09-05,1 of n,10,Yes - gumroad /l/plugin,Worked,Google-backed; Hebrew UI
+Q10,Search.ch,"""Zazie Productions""",en/de/fr/it,2026-09-05,1,3,No,Worked - no relevant hits,tel directory empty
+Q11,Mail.ru (Yandex path),"""Zazie Productions""",ru,2026-09-05,1 of n,10,"Yes - ok.ru, music.yandex.ru, artchive.ru, github profile-repo",Worked,Yandex index access
+Q12,Mojeek,"""Zazie Productions""",en,2026-09-05,-,0,No,Blocked,ALTCHA
+Q13,Marginalia,"""Zazie Kanwar-Torge""",en,2026-09-05,-,0,No,Throttled,5s bot-wait banner
+Q14,Marginalia (retry),"""Zazie Productions""",en,2026-09-05,1 of n,8+,Lead: noisy-goat Comunion V.2.3 track,Worked (throttle banner),independent crawler
+Q15,Wiby,"""Zazie Productions""",en,2026-09-05,1,0,No,Worked - zero results,classic-web index
+Q16,Brave,"""Zazie Productions""",en,2026-09-05,1,7,No,Worked,own crawler
+Q17,Yep,"""Zazie Productions""",en,2026-09-05,1,10,"Yes - spacehey, metapsychosis (equipboard/tinnitist known)",Worked,Ahrefs crawler
+Q18,Qwant,"""Zazie Productions""",en,2026-09-05,1,0 extractable,No,JS-gated,
+Q19,Swisscows,"""Zazie Productions""",en,2026-09-05,1 of n,10 (snippets only),No,Worked - snippets only,Bing-backed
+Q20,Kagi,"""Zazie Productions""",en,2026-09-05,-,0,No,Login-gated,
+Q21,YaCy searchlab.eu,"""Zazie Productions""",en,2026-09-05,1,0,No,Worked - zero results,P2P node
+Q22,SearXNG opnxng,"""Zazie Kanwar-Torge""",en,2026-09-05,1 of 3,10,No (fb-group + tickettailor = known/lead),Worked,google cse backend
+Q23,OceanHero,"""Zazie Productions""",en,2026-09-05,1,10,"Yes - arthive.com, getheard.fm, reverbnation root",Worked,Bing-backed
+Q24,Info.com,"""Zazie Productions""",en,2026-09-05,1 of 5,6,No,Worked,Google-fed; known surfaces
+Q25,Dogpile/WebCrawler/AOL/Ask/Lycos/HotBot/Excite.com,"""Zazie Productions""",en,2026-09-05,-,0,No,Degraded family,errors/404s/AI pivot
+Q26,IA advancedsearch (full text),"""Zazie Productions""",en,2026-09-05,1 of 1 (19 docs),19,Yes - 16 new IA items,Worked,numFound=19
+Q27,Arquivo.pt textsearch,"""Zazie Productions""",pt/en,2026-09-05,1,0,No,Worked - zero,confirmed negative
+Q28,LoC JSON API,"""Zazie Productions""",en,2026-09-05,1,0,No,Worked - zero,hits=0
+Q29,OpenAlex,"""Zazie Productions"" / ""Zazie Kanwar-Torge""",en,2026-09-05,1,0,No,Worked - zero,both names count=0
+Q30,Europe PMC / Zenodo,"""Zazie Productions""",en,2026-09-05,1,0,No,Worked - zero,
+Q31,Crossref,"""Zazie Productions"" (query.bibliographic)",en,2026-09-05,1,10 fuzzy,No,Worked - fuzzy only,Queneau/Malle scholarship

@@ -1,6 +1,6 @@
 # Profiles & Catalogs
 
-**65 records.** Artist, composer and professional profiles across industry and creative platforms.
+**66 records.** Artist, composer and professional profiles across industry and creative platforms.
 
 ## 500letters.org — 1
 
@@ -42,7 +42,7 @@
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
-| [https://arthive.com/zazieproductions/biography](https://arthive.com/zazieproductions/biography) | Zazie Productions | B |  |  | link_dump | unverified |  |
+| [https://arthive.com/zazieproductions/biography](https://arthive.com/zazieproductions/biography) | Zazie Productions | B | 2026-09-05 |  | link_dump | search-index verified | Upgraded by Pass 9: snippet-verified via Yandex (Mail.ru path) + Bing (OceanHero) paths; direct fetch bot-gated ("Automatic query check"); RU twin artchive.ru/zazieproductions/biography |
 
 ## artvee.com — 1
 
@@ -106,6 +106,12 @@
 |---|---|---|---|---|---|---|---|
 | [https://filmfreeway.com/ZazieProductions](https://filmfreeway.com/ZazieProductions) | Zazie Productions | B |  |  | media_master | unverified |  |
 
+## getheard.fm — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://getheard.fm/producers/zazie-productions](https://getheard.fm/producers/zazie-productions) | Zazie Productions | C | 2026-09-05 | Zazie Productions - Music Producer contact & submission info | regional_alt_pass | verified | Industry contact database page w/ services & credits; found via OceanHero/Bing (Pass 9) |
+
 ## groover.co — 1
 
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
@@ -159,6 +165,12 @@
 | URL | Target | Tier | Date | Title | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|
 | [https://medium.com/@catgirlthyme/weird-music-recap-2024-3f86badc3650](https://medium.com/@catgirlthyme/weird-music-recap-2024-3f86badc3650) | Zazie Productions | B |  |  | link_dump | unverified |  |
+
+## metapsychosis.com — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://metapsychosis.com/creative-agents/zazie-productions/](https://metapsychosis.com/creative-agents/zazie-productions/) | Zazie Productions | B | 2026-09-05 | Zazie Productions / Metapsychosis | regional_alt_pass | verified | Edited literary-magazine creative-agent profile; found via Yep (Pass 9) |
 
 ## museonline.org — 1
 

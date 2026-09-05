@@ -1,6 +1,12 @@
 # Video Mirror / Backlink Sites
 
-**39 records.** Third-party video-mirror / backlink surfaces, often auto-generated from a source video.
+**40 records.** Third-party video-mirror / backlink surfaces, often auto-generated from a source video.
+
+## archive.org — 1
+
+| URL | Target | Tier | Date | Title | Source | Status | Notes |
+|---|---|---|---|---|---|---|---|
+| [https://archive.org/details/sepsis-d-iaa-i3d-iai-i3d-i-ia-i3da-iia-i3di-ia-i3-d-ia-i3d-iia...](https://archive.org/details/sepsis-d-iaa-i3d-iai-i3d-i-ia-i3da-iia-i3di-ia-i3-d-ia-i3d-iia-i3di-ia-i3d) | Zazie Productions | C | 2026-09-05 | Sepsis (unicode-styled title) - IA video item | regional_alt_pass | search-index verified | IA full-text hit; exhibition page (newmediartspace) already master (Pass 9) |
 
 ## canal50.com — 1
 
