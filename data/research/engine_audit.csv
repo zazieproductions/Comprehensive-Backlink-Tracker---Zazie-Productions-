@@ -1,0 +1,15 @@
+Pass,Engine,AccessMethod,Accessible,Notes
+1-8,Google,arena web_search aggregator,✅,"Confirms the major surfaces (IMDb, LinkedIn, MUSE, Groover, SoundBetter, Slaps, Viberate, Bandcamp, FilmFreeway, Stage32, ReelCrafter, WFCN, Musicians.Directory)."
+1-8,Bing,"bing.com/search?q=""...""",⚠️ partial,"Returned AI-generated, largely off-topic pages for the exact query (visa/immigration results — wrong match). Bing's index clearly holds the name (Yahoo runs on Bing's index), but its direct SERP was not useful."
+1-8,Yahoo,"search.yahoo.com/search?p=""...""",✅,"Best exact-match set. Surfaced: itch.io, Musicians.Directory, youtube.com/@zazieproductions, Linktree, instagram.com/zazieproductionsofficial/ (12K followers) and pro.soundclick.com/ZazieProductions."
+1-8,DuckDuckGo (HTML),html.duckduckgo.com/html/,❌ blocked,"Returns the ""select all squares with a duck"" bot challenge."
+1-8,Startpage,startpage.com/sp/search,❌ blocked,"""Anubis"" JavaScript proof-of-work verification."
+1-8,Yandex,yandex.com/search/,❌ blocked,"""Please confirm you are not a robot"" (SmartCaptcha)."
+1-8,Mojeek,mojeek.com/search,❌ blocked,"Altcha ""I'm not a robot"" challenge."
+1-8,SearXNG (searx.be),searx.be/search,❌ blocked,"""Cap"" self-hosted captcha / browser verification."
+1-8,SearXNG (searx.tiekoetter.com),searx.tiekoetter.com/search,❌ blocked,"Captcha / ""Checking request""."
+1-8,SearXNG (opnxng.com),opnxng.com/search,✅ WORKED,"Best SearXNG workhorse. Found label/compilation listen URLs (GhostNun, Owlripper, The Hills Are Dead, Gelombang, Vanishing Point Syndicate, Dittany of Crete, Z-Dimension, Plataforma Recs, Camembert, Psych Lovers, Terminal Future Industries, etc.)."
+1-8,SearXNG (baresearch.org),baresearch.org/search,✅ WORKED,Fallback SearXNG; confirmed GhostNun result.
+1-8,SearXNG (search.inetol.net),search.inetol.net/search,⚠️ reachable,"Returned ""no results"" for most exact-title queries (Weak coverage for niche netlabel titles)."
+1-8,Brave Search,search.brave.com/search,✅,"Surfaced: Bandcamp, SoundBetter, FilmFreeway, itch.io, Apple Music, Slaps (all already in master)."
+1-8,Marginalia,marginalia-search.com/search,✅ (but rate-limited),"Independent crawler. Surfaced track-level Bandcamp pages: Synthetic Dystopia's Slippage Beneath the Hyperlink, Petroglyph Music's Moving in Perpetual Slumber, Institute For Alien Research Liquid Phosphorus / movimiento diez 'Oscillographia', Camembert Électrique Isochamber Drift, Argali Records Vibroscriptorium, plus FilmFreeway sub-pages — and non-Bandcamp obscure wins (CJSW radio, Breezewiki/Analog-Horror, CincyMusic, Tinnitist article, Broken Zen). Starts throttling after ~3 requests; query in spaced bursts or self-host."

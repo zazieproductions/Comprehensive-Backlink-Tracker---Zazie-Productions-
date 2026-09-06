@@ -653,9 +653,9 @@ FRONT = [('F', 'Front matter · How to read this volume', 'colour legend: tiers,
 PATHS_TOC = [(str(i), f'Reading path {i} · {p["name"].title()}', p['sub'],
               p['key'], ['#e8710a', '#c2185b', '#d93025', '#6a1b9a', '#00796b'][i - 1])
              for i, p in enumerate(READING_PATHS, 1)]
-APS = [('A', 'Appendix A · Complete alphabetical link register', 'every one of the 715 links in one alphabetical run, two per row', 'app:A', '#0b5d8f'),
+APS = [('A', 'Appendix A · Complete alphabetical link register', f'every one of the {N} links in one alphabetical run, two per row', 'app:A', '#0b5d8f'),
        ('B', 'Appendix B · Topic & subject cross-index', 'the same corpus re-cut by what each record is about, with its best rows', 'app:B', '#5e35b1'),
-       ('C', 'Appendix C · Quarantine map by domain', 'the 116 quarantined rows grouped by the domain that poisoned them', 'app:C', '#616161'),
+       ('C', 'Appendix C · Quarantine map by domain', f'the {tier_ct["D"]} quarantined rows grouped by the domain that poisoned them', 'app:C', '#616161'),
        ('D', 'Appendix D · Method, provenance & limits', 'how the census was built and scored, engines used, and what it does not claim', 'app:D', '#00695c')]
 toc_rows = [[para(f'<para alignment="center"><b>{chip}</b></para>', 'cell', colour=colors.white),
              para(f'<b>{esc(title)}</b>', 'cell'),
@@ -700,7 +700,7 @@ toc_extra += [('BACKGROUND', (0, NF + NS + NP + 1 + k), (0, NF + NS + NP + 1 + k
 story += [banner('CONTENTS', size=11,
                  sub='the fourteen sections run from the most reputable kind of placement to the quarantine bucket; the five '
                      'reading paths (P1-P5) cut the same corpus into the requested themes; the four appendices re-sort every one '
-                     'of the 715 links by domain, by subject, by quarantine cluster and by method'),
+                     f'of the {N} links by domain, by subject, by quarantine cluster and by method'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [7 * mm, 62 * mm, CW - 141 * mm, 16 * mm, 24 * mm], zebra=True, font=7.4, extra=toc_extra)]
 story.append(PageBreak())
@@ -711,7 +711,7 @@ story.append(PageBreak())
 # topic can be read start-to-finish without hunting across the volume.
 story += [Marker('path:0', 'Five headline reading paths — the requested thematic cuts'),
           banner('FIVE HEADLINE READING PATHS', colour='#263238', size=12,
-                 sub='the master directory is organized by media type; these five paths re-cut the same 715 records into the '
+                 sub=f'the master directory is organized by media type; these five paths re-cut the same {N} records into the '
                      'requested themes — netlabel + compilation features, magazine / zine features, news articles & media, '
                      'exhibitions & art galleries, literary publications & writing. Each path is COMPLETE for its theme and '
                      'ranked from the most reputable and impressive placement to the least. Every row below also appears with '
@@ -929,7 +929,7 @@ story.append(tA)
 story.append(PageBreak())
 story.append(Marker('app:B', 'Appendix B — topic & subject cross-index'))
 story.append(banner('APPENDIX B — TOPIC & SUBJECT CROSS-INDEX', size=11, colour='#5e35b1',
-                    sub='the same 715 links re-cut by what they are about rather than where they live: each topic shows its '
+                    sub=f'the same {N} links re-cut by what they are about rather than where they live: each topic shows its '
                         'tier mix, the sections it spans and its strongest individual records',
                     right=f'{len(topic_ct)} topics'))
 story.append(Spacer(1, 3 * mm))
@@ -1004,12 +1004,12 @@ METHOD = (
     'spellings are kept only where the source itself prints the exact string.'
     '<br/><br/><b>SOURCES MERGED FOR THIS PDF.</b> {nsrc} source files contributed: the curated '
     '<font face="Courier">data/master/master_index.csv</font> (authoritative tier, category, status, date, notes), the '
-    'structured <font face="Courier">Zazie_Media_Master (1).pdf</font> table rows (priority, publication, headline, '
-    'exact-name field), the raw <font face="Courier">Random Zazie Productions links .pdf</font> annotations and text '
+    'structured <font face="Courier">sources/Zazie_Media_Master.pdf</font> table rows (priority, publication, headline, '
+    'exact-name field), the raw <font face="Courier">sources/Random_Zazie_Productions_links.pdf</font> annotations and text '
     'lines, the 2026 Accomplishment Register docx hyperlinks, the low-trust quarantine ledger, the magazine/zine feature '
-    'directory, the regional and alt-engine pass, the web-presence expansion files, the phase-three editorial tables, '
-    'the listen-link CSV and every registry markdown index. URLs that a registry had truncated for display were folded '
-    'back into their full form rather than counted twice.'
+    'directory, the regional and alt-engine pass, the max-depth pass and the web-presence expansion registries (all '
+    'machine-readable CSV under <font face="Courier">registry/</font>). URLs that a registry had truncated for display were '
+    'folded back into their full form rather than counted twice.'
     '<br/><br/><b>RANKING.</b> credibility = 46 + tier weight (A 42 / B 26 / C 10 / D -34) + section weight + '
     'host-authority weight + verification-status weight + exact-name-target weight - integrity-flag penalties, then '
     'min-max mapped onto 0-100 for the coloured cell. Sections run in credibility-ladder order (independent editorial '
@@ -1035,6 +1035,7 @@ story.append(Spacer(1, 4 * mm))
 
 ROLE_NOTE = {
     'master_index': 'authoritative bucket, tier, status and evidence notes for every row it holds',
+    'data/master/master_index.csv': 'same canonical index read by the CSV harvester (deduplicated with master_index)',
     'media_master_pdf': 'supplies Priority A/B/C, dates and publication headlines for the verified 133-record master',
     'link_dump_pdf': 'raw research dump: adds links the curated master never kept, and is where the quarantine material starts',
     'accomplishment_register_docx': 'register hyperlinks: relationship and outlet confirmations',
@@ -1112,7 +1113,7 @@ def write_outline():
         d.set_toc(toc)
         d.set_metadata({'title': 'Zazie Productions / Zazie Kanwar-Torge — Colour-Coded Master Directory of Media Features',
                         'author': 'Zazie Productions backlink census',
-                        'subject': 'Exact-name public-web census, 715 links ranked by credibility',
+                        'subject': f'Exact-name public-web census, {N} links ranked by credibility',
                         'keywords': 'backlinks, media features, credibility ranking, press, quarantine'})
         tmp = OUT + '.tmp'
         d.save(tmp, garbage=3, deflate=True)

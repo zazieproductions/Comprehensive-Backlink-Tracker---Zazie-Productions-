@@ -3,16 +3,20 @@
 
 Output: `data/master/consolidated_directory.json` (consumed by `scripts/build_master_directory_pdf.py`).
 
-Sources ingested
-  data/master/master_index.csv                              curated master (544 rows, authoritative)
-  Zazie_Media_Master (1).pdf                                133 verified URL-level records (+leads), structured rows
-  Random Zazie Productions links .pdf                       raw link dump (annotations + text lines)
-  Zazie_2026_Accomplishment_Register_Maximal_Edition.docx   docx relationship hyperlinks
-  data/master/listen_links.csv / LISTEN_LINKS.md            one listen link per compilation appearance
-  data/master/REGISTER_LINK_MAP.md                          register entry -> public link map
-  registry/**.csv                                           feature directory, low-trust ledger, regional pass, expansion
-  registry/**.md                                            seed index, phase-3, magazine/zine, blind spots, register map
-  "aximum-Depth Research Pass"                              maximum-depth research report
+Sources ingested — machine-readable files only; the repository keeps no markdown note files.
+Every record that once lived in a markdown research note was backfilled into
+`data/master/master_index.csv` (the canonical index) or into a registry CSV before the
+notes were retired, so this script needs nothing else.
+
+  data/master/master_index.csv                              canonical master index (authoritative row per URL)
+  data/master/listen_links.csv                              one listen link per compilation appearance
+  data/master/register_link_map.csv                         2026 Accomplishment Register entry -> public link map
+  data/research/engine_audit.csv                            Pass 1-8 engine access audit (no record URLs)
+  registry/**.csv                                           feature directory, low-trust ledger, regional pass,
+                                                            max-depth pass, phase-3 ledger, web-presence expansion, seed
+  sources/Zazie_Media_Master.pdf                            133 verified URL-level records (+leads), structured rows
+  sources/Random_Zazie_Productions_links.pdf                raw link dump (annotations + text lines)
+  sources/Zazie_2026_Accomplishment_Register_Maximal_Edition.docx   docx relationship hyperlinks
 
 Usage:  python3 scripts/ingest_all_links.py
 """
@@ -302,48 +306,6 @@ with open(os.path.join(BASE, 'data', 'master', 'master_index.csv'), encoding='ut
 
 
 # --------------------------------------------------------------------------- 2. generic harvesters
-def harvest_md(path, label):
-    if not os.path.exists(path):
-        return
-    for line in open(path, encoding='utf-8', errors='replace').read().split('\n'):
-        urls = URL_RE.findall(line)
-        if not urls:
-            continue
-        low = line.lower()
-        tier = ''
-        for pat, val in (('🥇', 'A'), ('tier a', 'A'), ('priority a', 'A'), ('🥈', 'B'), ('tier b', 'B'),
-                         ('priority b', 'B'), ('🥉', 'C'), ('tier c', 'C'), ('priority c', 'C'),
-                         ('🖤', 'D'), ('tier d', 'D')):
-            if pat in low:
-                tier = val
-                break
-        status = ''
-        for pat, val in (('✅', 'verified'), ('live verified', 'verified'), ('verified-live', 'verified'),
-                         ('search-index verified', 'search-index verified'), ('🟡', 'partial'),
-                         ('❌', 'broken'), ('⬜', 'unverified'), ('🔎', 'lead')):
-            if pat in low:
-                status = val
-                break
-        cat = ''
-        for pat, val in (('🔴', 'Press & Editorial'), ('🌸', 'Film, Festivals & Exhibitions'),
-                         ('🟣', 'Publications & Recognition'), ('🔵', 'Profiles & Catalogs'),
-                         ('🟠', 'Music Compilations'), ('🩵', 'Search-Engine Index'),
-                         ('🟢', 'Community, Wiki & Fan Indexes'), ('📼', 'Video Mirror / Backlink Sites'),
-                         ('🖤', SPAM)):
-            if pat in low:
-                cat = val
-                break
-        cells = [c.strip() for c in line.strip().strip('|').split('|')] if line.strip().startswith('|') else []
-        plain = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', line)
-        plain = re.sub(r'https?://\S+', '', plain)
-        plain = re.sub(r'[`*|]', '', plain).strip()
-        for u in urls:
-            store.add(u, label, tier=tier, status=status, category=cat,
-                      notes=(plain[:340] if len(plain) > 8 else ''),
-                      title=(cells[1][:240] if len(cells) > 3 and not cells[1].lower().startswith('http')
-                             and re.search(r'[A-Za-z]{4}', cells[1]) else ''))
-
-
 def harvest_csv(path, label):
     if not os.path.exists(path):
         return
@@ -384,14 +346,10 @@ for f in sorted(glob.glob(os.path.join(BASE, 'registry', '**', '*.csv'), recursi
     harvest_csv(f, os.path.relpath(f, BASE))
 for f in sorted(glob.glob(os.path.join(BASE, 'data', '**', '*.csv'), recursive=True)):
     harvest_csv(f, os.path.relpath(f, BASE))
-for f in (sorted(glob.glob(os.path.join(BASE, 'registry', '**', '*.md'), recursive=True))
-          + sorted(glob.glob(os.path.join(BASE, 'data', '**', '*.md'), recursive=True))
-          + [os.path.join(BASE, 'aximum-Depth Research Pass')]):
-    harvest_md(f, os.path.relpath(f, BASE))
 
 
 # --------------------------------------------------------------------------- 3. docx hyperlinks
-DOCX = os.path.join(BASE, 'Zazie_2026_Accomplishment_Register_Maximal_Edition.docx')
+DOCX = os.path.join(BASE, 'sources', 'Zazie_2026_Accomplishment_Register_Maximal_Edition.docx')
 if os.path.exists(DOCX):
     try:
         z = zipfile.ZipFile(DOCX)
@@ -433,12 +391,12 @@ def harvest_pdf(path, label):
                 store.add(u, label, title=tail[:200])
 
 
-harvest_pdf(os.path.join(BASE, 'Random Zazie Productions links .pdf'), 'link_dump_pdf')
-harvest_pdf(os.path.join(BASE, 'Zazie_Media_Master (1).pdf'), 'media_master_pdf')
+harvest_pdf(os.path.join(BASE, 'sources', 'Random_Zazie_Productions_links.pdf'), 'link_dump_pdf')
+harvest_pdf(os.path.join(BASE, 'sources', 'Zazie_Media_Master.pdf'), 'media_master_pdf')
 
 # Media Master structured rows: Priority / Date / Publication / Title / Exact-name field
-if pymupdf and os.path.exists(os.path.join(BASE, 'Zazie_Media_Master (1).pdf')):
-    d = pymupdf.open(os.path.join(BASE, 'Zazie_Media_Master (1).pdf'))
+if pymupdf and os.path.exists(os.path.join(BASE, 'sources', 'Zazie_Media_Master.pdf')):
+    d = pymupdf.open(os.path.join(BASE, 'sources', 'Zazie_Media_Master.pdf'))
     for page in d:
         try:
             tables = page.find_tables().tables

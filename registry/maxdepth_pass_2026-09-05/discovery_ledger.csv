@@ -1,0 +1,18 @@
+LeadID,Lead,LeadURL,Status,WhyNotInMaster,CountsAsRecord
+ZL26-01,"play.reelcrafter.com/z6vU… (""Zazie Productions Reel"")",https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w,"broken (404-equivalent, 2026-09-05)","Snippet (both names + contact data, not transcribed) exists only in the search index; page is deleted. Repo baseline already contained the URL.",no
+ZL26-02,linkedin.com/in/zazie-kanwar-torge-3b8a98373,https://linkedin.com/in/zazie-kanwar-torge-3b8a98373,blocked (403),"Name + ""Zazie Productions LLC"" visible in search snippet/JSON-LD only; URL already in repo.",no
+ZL26-03,"reddit r/noisemusic ""New label called The Vanishing Point Syndicate""",,blocked (403),Exact string presumed in post body but not visible in snippet → unverified.,no
+ZL26-04,100subtextsmagazine.blogspot.com Issue 31 feature,https://100subtextsmagazine.blogspot.com,page fetch empty/JS,Name not confirmed on page.,no
+ZL26-05,behance.net/zaziediya,https://behance.net/zaziediya,"variant handle, unfetched",Not an exact-name string.,no
+ZL26-06,Visualcontainer press-release PDFs (Summer/Winter 2024),,artifact unparsed,Parent page already carries both names; PDF derivative.,no
+ZL26-07,YouTube channel UCnDTZImCr9MfLF_f7iPav2A (+ video UX2kv3G89Jw),,duplicate cluster (repo domain),YouTube channel already represented in repo.,no
+ZL26-08,Spotify playlist 75PxWthUYPOskOU1EjGrFX,,duplicate cluster (repo domain),Surfaced on re-verified Groover profile.,no
+ZL26-09,listen.tidal.com/artist/33032080 (Target-B sameAs),https://listen.tidal.com/artist/33032080,unfetched sameAs,From re-verified Songstats page.,no
+ZL26-10,"Discogs ""Amnesia (59)"" / ""Oliver Schöffler"" artist pages",,context only,No target string.,no
+ZL26-11,Discogs marketplace counts (152 releases / 16 masters),,index counts,Per-release pages out of scope for this pass.,no
+ZL26-12,Ars Electronica Sonic Saturday / MEDIUM SONORUM event pages,,rejected: no exact name,"Register says 2026 selection (Linz); venue noted for follow-up, not claimed.",no
+ZL26-13…16,"Payhip ""100subtexts 2"" · Bloodborne ""Milkweed"" · Wikidata La Zizanie · chartsinfrance Zazie interview",,rejected: other entity / noise,—,no
+ZL26-17,"Discogs ""Tole Ache"" (SHIPPAI editor credit)",,context only,—,no
+ZL26-18,909deadbatteries.bandcamp.com store root,https://909deadbatteries.bandcamp.com,cluster note,No exact name on root.,no
+ZL26-19,slaps.com/ZazieProd vs /user/ZazieProd,https://slaps.com/ZazieProd,duplicate (repo),Canonical-URL variant of a repo URL.,no
+ZL26-20,MusicBrainz release-search query returning 0,,negative result logged,Syntax sensitivity; releases retrieved via the artist entity instead.,no

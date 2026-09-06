@@ -1,0 +1,17 @@
+Engine,TargetA,TargetB,Status
+platform-search-api (opaque composite general engine),"visible, top-10 for exact name","visible, top-10",OK
+Bandcamp site search,store rank 1; 14 new release URLs,1 track + 1 album,OK
+Discogs (search + DB),"1 artist, 62 appearances, 1 label, 152 marketplace releases",no separate artist record,OK
+MusicBrainz,artist record + 7 releases,no record found,OK
+Apple/iTunes Search API,25 tracks,"(credit string appears on Deezer pages: ""Zazie Kanwar- Torge"")",OK
+Internet Archive full-text index,18 items,1 item (same item),OK
+Wayback Machine CDX,store root 2021-09-14; arrhythnia/camembert domains captured,909 winter-2025 capture 2026-01-07; pebbles-PR 5 captures,OK (URL-level)
+Common Crawl,not string-searchable from sandbox,same,LIMITED
+Wikidata / Wikipedia,no entity / 0 hits,no entity / 0 hits,OK (negative)
+GitHub repo search,0 repos,not searched by name (code search auth-gated),OK (neg) / LIMITED
+npm / PyPI / HuggingFace / Open Library,0 / inconclusive / 0 / 0,not searched,OK / LIMITED
+DuckDuckGo HTML,blocked (image CAPTCHA),not attempted,BLOCKED
+Mojeek,blocked (ALTCHA),not attempted,BLOCKED
+Marginalia,blocked (5s JS gate),blocked (JS gate),BLOCKED
+"SearXNG (searx.be, priv.au)",blocked / JS-empty,not attempted,BLOCKED
+Google/Bing/Yahoo/Brave/Startpage/Yandex/Qwant/Ecosia/Swisscows/Kagi/Wiby,not directly reachable (no raw egress); platform-search-api used and labelled as substitute,same,LIMITED
