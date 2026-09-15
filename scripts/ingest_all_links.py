@@ -13,7 +13,8 @@ notes were retired, so this script needs nothing else.
   data/master/register_link_map.csv                         2026 Accomplishment Register entry -> public link map
   data/research/engine_audit.csv                            Pass 1-8 engine access audit (no record URLs)
   registry/**.csv                                           feature directory, low-trust ledger, regional pass,
-                                                            max-depth pass, phase-3 ledger, web-presence expansion, seed
+                                                            max-depth pass, phase-3 ledger, web-presence expansion,
+                                                            user-supplied backlink pass (2026-09-15), seed
   sources/Zazie_Media_Master.pdf                            133 verified URL-level records (+leads), structured rows
   sources/Random_Zazie_Productions_links.pdf                raw link dump (annotations + text lines)
   sources/Zazie_2026_Accomplishment_Register_Maximal_Edition.docx   docx relationship hyperlinks
@@ -177,13 +178,16 @@ FLAG_RULES = [
      'proxy player built to farm a backlink to one video', -36),
     ('PASTE / SELF-SERVE HOSTING', re.compile(r'(anotepad|justpaste|txt\.fyi|hackmd|scrapbox|writexo|perchance|websim|replit|telegra\.ph|medium\.com|write\.as|vocal\.media|imgur|commie\.io|saidit\.net|xoyondo|paste2| notion)', re.I),
      'anonymous paste or self-serve page: provenance not established', -16),
-    ('AUTO-GENERATED METADATA', re.compile(r'(hitplayer|chosic|gnoosic|songdata|sonichits|soundgasm|playlost|paroles-musique|zvu4no|gequbao|fangpi|musicstax|getmusic|muzvibe|x-minusovka|ligaudio|breakinghits|viberate|boomplay|163\.com|kkbox|anghami|douyin|ok\.ru|thirdeyemusic|lyricsplayground|muso\.ai|rave\.dj)', re.I),
+    ('AUTO-GENERATED METADATA', re.compile(r'(hitplayer|chosic|gnoosic|songdata|sonichits|soundgasm|playlost|paroles-musique|zvu4no|gequbao|fangpi|musicstax|getmusic|muzvibe|x-minusovka|ligaudio|breakinghits|viberate|boomplay|163\.com|kkbox|anghami|douyin|ok\.ru|thirdeyemusic|lyricsplayground|muso\.ai|gaana\.com|flickchart\.com|rave\.dj)', re.I),
      'algorithmically built artist/metadata page, not curated coverage', -16),
+    ('AI ESSAY-MILL SAMPLE LIBRARY', re.compile(r'(samples\.eduwriter\.ai|eduwriter\.ai)', re.I),
+     'commercial AI essay-writing service publishing user-generated "sample papers" as SEO bait - the page is generated '
+     'advertising about the artist, not coverage of them', -20),
     ('SEO DOORWAY ON HIJACKED SITE', re.compile(r'(black-mountain-college-ira|ira-and-ruth-levinson|/gDrA/|/zvgw5/|/KmDEB/|/PxyL/|/MNNiI/|/ac-valhalla/|/fs0vz3/|persuasive-speech/|love-quotes/|/4o5ct9/|bidirectional-lstm|\.modules/)', re.I),
      'injected doorway on a compromised, unrelated site using the artist name as bait', -42),
     ('USER-GENERATED LIST / QUIZ / CHART', re.compile(r'(quotev|tiermaker|icebergcharts|coolmindmaps|isitagoodplaylist|urbanpoll|purwana|sequencer\.party|spacehey|tvtropes|senscritique)', re.I),
      'community-made list, quiz or chart: mentions rather than journalism', -10),
-    ('SOCIAL / FORUM MENTION', re.compile(r'(reddit\.com|stevehoffman|mastodon|bsky|tumblr|facebook\.com|instagram\.com|x\.com|twitter\.com|tiktok\.com)', re.I),
+    ('SOCIAL / FORUM MENTION', re.compile(r'(reddit\.com|stevehoffman|mastodon|bsky|tumblr|facebook\.com|instagram\.com|(?<![a-z0-9])x\.com|twitter\.com|tiktok\.com)', re.I),
      'social or forum mention - reach without editorial review', -6),
     ('ARCHIVE SNAPSHOT', re.compile(r'(web\.archive\.org|archive\.ph|mementoweb|commoncrawl|timetravel)', re.I),
      'archival snapshot of a primary record, not an independent placement', -8),
@@ -571,6 +575,9 @@ AUTH = {
     'pw.org': 20, 'duotrope.com': 14, 'goodreads.com': 8, 'eventbrite.co.uk': 4, 'upwork.com': 4,
     'gamedevmarket.net': 6, 'samplefocus.com': 8, 'opensea.io': 0, 'promptbase.com': 0, 'pixabay.com': 4,
     'enigmalabs.io': 6, 'greenville.k12.sc.us': 10, 'experiment.com': 8, 'smashwords.com': 2,
+    # hosts added by the user-supplied backlink pass of 2026-09-15
+    'flickchart.com': 2, 'gaana.com': 4, 'exibart.com': 8, 'standaardboekhandel.be': 6,
+    'mywebar.com': 0, 'clananalogue.bandcamp.com': 12,
     'artfacts.net': 14, 'arthive.com': -2, 'artvee.com': 2, 'art.kunstmatrix.com': 8, 'artrabbit.com': 0,
     'castingcall.club': 6, 'backstage.com': 8, 'thetalentmanager.com': 6, 'soundbetter.com': 6,
     'stage32.com': 8, 'getheard.fm': 2, 'viberate.com': 0, 'reverbnation.com': 8, 'bandzoogle': 4,
@@ -665,7 +672,7 @@ for e in engine_rows:
     e['sources'] = sorted(e['sources'])
 
 with open(OUT, 'w', encoding='utf-8') as fh:
-    json.dump({'generated_from_repo_date': '2026-09-05',
+    json.dump({'generated_from_repo_date': '2026-09-15',
                'counts': {'records': len(rows), 'engine_endpoints': len(engine_rows)},
                'records': rows, 'engine_endpoints': engine_rows}, fh, indent=1, ensure_ascii=False)
 
