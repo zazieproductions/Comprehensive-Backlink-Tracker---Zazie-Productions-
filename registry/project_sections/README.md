@@ -3,7 +3,7 @@
 The Master Directory prints the census by media type, which is the right shape for a directory and the
 wrong shape for a reader: one commission, compilation or anthology ends up spread across a museum page,
 three podcast directories, a Discogs release, an archive copy, a netlabel news repost and a lyric
-database. This register re-cuts the same 727 records by **project** — the thing the links are actually
+database. This register re-cuts the same 743 records by **project** — the thing the links are actually
 about — and drives **PART I** of `Zazie_Master_Directory_COLOUR_CODED.pdf`.
 
 ```
@@ -66,6 +66,9 @@ One CSV row per project. Columns:
    outside every project**: that list is the curation backlog.
 3. Rebuild the volumes: `python3 scripts/build_master_directory_pdf.py` (it runs the pass itself) and
    `python3 scripts/build_research_annex_pdf.py`.
+
+Current state: **102 projects carry more than one link (400 links in total), 22 carry one, and 338 links
+belong to no project at all.**
 
 Links that faithfully describe the **artist** rather than one project (platform profiles, streaming pages,
 the artist's own catalogue, artist-level press, community and quiz pages, metadata scrapers) are

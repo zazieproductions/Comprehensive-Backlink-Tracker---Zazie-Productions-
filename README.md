@@ -7,7 +7,7 @@ syndication and archival records. Every link is **tier-ranked**, **status-checke
 
 📅 Research baseline through **2026-09-05** · extended by user-submitted intake passes through **2026-09-15**
 
-[![records 727](https://img.shields.io/badge/records-727-0b6e4f?style=flat-square)](data/master/consolidated_directory.json)
+[![records 743](https://img.shields.io/badge/records-743-0b6e4f?style=flat-square)](data/master/consolidated_directory.json)
 [![engine endpoints 73](https://img.shields.io/badge/engine%20endpoints-73-1a73e8?style=flat-square)](Zazie_Research_Annex_COLOUR_CODED.pdf)
 [![media types 14](https://img.shields.io/badge/media%20types-14-7b1fa2?style=flat-square)](Zazie_Master_Directory_COLOUR_CODED.pdf)
 [![baseline 2026-09-05](https://img.shields.io/badge/baseline-2026--09--05-b06000?style=flat-square)](Zazie_Research_Annex_COLOUR_CODED.pdf)
@@ -15,9 +15,9 @@ syndication and archival records. Every link is **tier-ranked**, **status-checke
 
 > [!TIP]
 > ### 🧭 The 30-second map
-> - **Want one thing at a time — a commission, a compilation, an anthology, a film?** → 📕 Master Directory **PART I · Project sections**: 102 projects, every link about the same project side by side (its own page first, the scraped copies of it walled off last).
-> - **Just want to read the links?** → open 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) — 727 clickable links: 102 project sections (PART I), 5 thematic reading paths (PART II), 14 colour-coded media-type sections (PART III), 4 appendices.
-> - **Want the method and the evidence?** → open 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) — 13 colour-coded research sections + appendix.
+> - **Want one thing at a time — a commission, a compilation, an anthology, a film?** → 📕 Master Directory **PART I · Project sections**: 102 projects, 400 links — every link about the same project side by side (its own page first, the scraped copies of it walled off last).
+> - **Just want to read the links?** → open 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) — 743 clickable links, organised three ways: 102 project sections (PART I), 5 thematic reading paths (PART II), 14 colour-coded media-type sections (PART III), 4 appendices.
+> - **Want the method and the evidence?** → open 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) — 15 colour-coded research sections + appendix.
 > - **Want to use the data?** → `data/master/` (CSV/JSON — the source of truth).
 > - **Colour question?** → jump to [Reading the colour code](#reading-the-colour-code): the legend below uses the **exact hex values** from both PDFs.
 
@@ -50,8 +50,8 @@ Pick your goal — each row is a complete route, no archaeology needed:
 
 | | Volume | What it is |
 |---|---|---|
-| <span style="background-color:#37424e; color:#ffffff;"> MASTER </span> | 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) | **The directory itself** — 727 catalogued links, organised three ways: **PART I project sections** (102 projects: every link about the same commission, compilation, anthology, film, exhibition or press wave in one place), **PART II five thematic reading paths**, **PART III the 14 colour-coded media-type sections**. Tier-ranked A–D, every URL clickable, role bands inside every project, per-category stats, 4 appendices. |
-| <span style="background-color:#0b5d8f; color:#ffffff;"> ANNEX </span> | 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) | **The research record behind it** — 13 colour-coded sections + endpoint appendix: census rules, 12 engine/discovery passes (audits, evidence ledgers, query inventories, access logs), the quarantine register with its safety charter, the 2026 Accomplishment Register → public-link map, listen-link appearance table, seed-index coverage, and every tool/query template used. |
+| <span style="background-color:#37424e; color:#ffffff;"> MASTER </span> | 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) | **The directory itself** — 743 catalogued links, organised three ways: **PART I project sections** (102 projects: every link about the same commission, compilation, anthology, film, exhibition or press wave in one place), **PART II five thematic reading paths**, **PART III the 14 colour-coded media-type sections**. Tier-ranked A–D, every URL clickable, role bands inside every project, per-category stats, 4 appendices. |
+| <span style="background-color:#0b5d8f; color:#ffffff;"> ANNEX </span> | 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) | **The research record behind it** — 15 colour-coded sections + endpoint appendix: census rules, 14 engine/discovery passes (audits, evidence ledgers, query inventories, access logs), the quarantine register with its safety charter, the 2026 Accomplishment Register → public-link map, listen-link appearance table, seed-index coverage, the project-section pass, and every tool/query template used. |
 
 ### 🗺️ Inside the Research Annex — every section has its own banner colour
 
@@ -70,24 +70,25 @@ Pick your goal — each row is a complete route, no archaeology needed:
 | <span style="background-color:#2e7d32; color:#ffffff;"> 11 </span> | 🌱 Seed Index & Domain Coverage | `#2e7d32` |
 | <span style="background-color:#8a6d3b; color:#ffffff;"> 12 </span> | 🧾 Query Inventories & Source-Access Logs | `#8a6d3b` |
 | <span style="background-color:#6d4c41; color:#ffffff;"> 13 </span> | 📥 User-Submitted Intake Pass (2026-09-15) | `#6d4c41` |
-| <span style="background-color:#0b6e4f; color:#ffffff;"> 14 </span> | 🧩 Project-Section Pass — Grouping the Census by Project | `#0b6e4f` |
+| <span style="background-color:#d84315; color:#ffffff;"> 14 </span> | 📥 Second User-Supplied Backlink Pass (2026-09-15) | `#d84315` |
+| <span style="background-color:#0b6e4f; color:#ffffff;"> 15 </span> | 🧩 Project-Section Pass — Grouping the Census by Project | `#0b6e4f` |
 | <span style="background-color:#0b5d8f; color:#ffffff;"> A </span> | 🧰 Appendix — Tools, Endpoints & Query Templates | `#0b5d8f` |
 
 ## 🔢 At a glance
 
 | | Figure | What it counts |
 |---|---|---|
-| <span style="background-color:#0b6e4f; color:#ffffff;"> 727 </span> | catalogued links | every public exact-name appearance (all records, all tiers) |
+| <span style="background-color:#0b6e4f; color:#ffffff;"> 743 </span> | catalogued links | every public exact-name appearance (all records, all tiers) |
 | <span style="background-color:#1a73e8; color:#ffffff;"> 73 </span> | engine endpoints | discovery/search endpoints, printed in Annex appendix A |
 | <span style="background-color:#7b1fa2; color:#ffffff;"> 14 </span> | media types | the colour-coded sections of the Master Directory |
-| <span style="background-color:#0b6e4f; color:#ffffff;"> 102 </span> | project sections | PART I — projects carrying more than one catalogued link (398 links) |
-| <span style="background-color:#0b6e4f; color:#ffffff;"> 21 </span> | single-link projects | named in the register, one verified public page each |
-| <span style="background-color:#8a6d3b; color:#ffffff;"> 325 </span> | links with no project | artist-level profiles, catalogues, community pages and scrapers — deliberately left out of PART I |
-| <span style="background-color:#37424e; color:#ffffff;"> 13 + 1 </span> | Annex sections | research sections 1–13 plus the tools/endpoint appendix |
-| <span style="background-color:#1a73e8; color:#ffffff;"> 12 </span> | engine passes | engine/discovery passes documented in the Annex |
-| <span style="background-color:#039be5; color:#ffffff;"> 60 </span> | listen links | compilation appearances — 31 confirmed · 28 label pages · 1 unresolved |
-| <span style="background-color:#e8710a; color:#ffffff;"> 54 </span> | register links | 2026 Accomplishment Register entries mapped to public links (of 203 register records) |
-| <span style="background-color:#7b1fa2; color:#ffffff;"> 8 </span> | pass registries | machine passes under `registry/` |
+| <span style="background-color:#0b6e4f; color:#ffffff;"> 102 </span> | project sections | PART I — projects carrying more than one catalogued link (400 links) |
+| <span style="background-color:#0b6e4f; color:#ffffff;"> 22 </span> | single-link projects | named in the register, one verified public page each |
+| <span style="background-color:#8a6d3b; color:#ffffff;"> 338 </span> | links with no project | artist-level profiles, catalogues, community pages and scrapers — deliberately left out of PART I |
+| <span style="background-color:#37424e; color:#ffffff;"> 15 + 1 </span> | Annex sections | research sections 1–15 plus the tools/endpoint appendix |
+| <span style="background-color:#1a73e8; color:#ffffff;"> 14 </span> | engine passes | engine/discovery passes documented in the Annex |
+| <span style="background-color:#039be5; color:#ffffff;"> 61 </span> | listen links | compilation appearances — 32 confirmed · 28 label pages · 1 unresolved |
+| <span style="background-color:#e8710a; color:#ffffff;"> 55 </span> | register links | 2026 Accomplishment Register entries mapped to public links (of 203 register records) |
+| <span style="background-color:#7b1fa2; color:#ffffff;"> 9 </span> | pass registries | machine passes under `registry/` |
 | <span style="background-color:#b06000; color:#ffffff;"> 3 </span> | source files | original inputs under `sources/` |
 
 ## 🎨 Reading the colour code
@@ -98,20 +99,20 @@ Pick your goal — each row is a complete route, no archaeology needed:
 
 ### 1 · 🏷️ Media types — the 14 sections of the Master Directory
 
-In PDF order. The bar shows each section's share of the 727 records.
+In PDF order. The bar shows each section's share of the 743 records.
 
-| # | Swatch | Section (PDF order) | Hex | Count | Share of 727 |
+| # | Swatch | Section (PDF order) | Hex | Count | Share of 743 |
 |---|---|---|---|---|---|
-| 1 | <span style="background-color:#d93025;">&nbsp;&nbsp;&nbsp;</span> | 📰 Press & Editorial | `#d93025` | 95 | ██████ |
-| 2 | <span style="background-color:#7b1fa2;">&nbsp;&nbsp;&nbsp;</span> | 🏆 Publications & Recognition | `#7b1fa2` | 24 | ██ |
-| 3 | <span style="background-color:#d81b60;">&nbsp;&nbsp;&nbsp;</span> | 🎬 Film, Festivals & Exhibitions | `#d81b60` | 52 | ███ |
+| 1 | <span style="background-color:#d93025;">&nbsp;&nbsp;&nbsp;</span> | 📰 Press & Editorial | `#d93025` | 97 | ██████ |
+| 2 | <span style="background-color:#7b1fa2;">&nbsp;&nbsp;&nbsp;</span> | 🏆 Publications & Recognition | `#7b1fa2` | 28 | ██ |
+| 3 | <span style="background-color:#d81b60;">&nbsp;&nbsp;&nbsp;</span> | 🎬 Film, Festivals & Exhibitions | `#d81b60` | 55 | ███ |
 | 4 | <span style="background-color:#3949ab;">&nbsp;&nbsp;&nbsp;</span> | 🎙️ Podcasts & Broadcasts | `#3949ab` | 7 | █ |
-| 5 | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | 📇 Profiles & Catalogs | `#1a73e8` | 105 | ███████ |
+| 5 | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | 📇 Profiles & Catalogs | `#1a73e8` | 106 | ███████ |
 | 6 | <span style="background-color:#c2185b;">&nbsp;&nbsp;&nbsp;</span> | 💿 Music Discography | `#c2185b` | 1 | █ |
-| 7 | <span style="background-color:#039be5;">&nbsp;&nbsp;&nbsp;</span> | 🎧 Streaming & Music Platforms | `#039be5` | 55 | ███ |
+| 7 | <span style="background-color:#039be5;">&nbsp;&nbsp;&nbsp;</span> | 🎧 Streaming & Music Platforms | `#039be5` | 57 | ████ |
 | 8 | <span style="background-color:#00897b;">&nbsp;&nbsp;&nbsp;</span> | 📖 Lyrics & Music Databases | `#00897b` | 1 | █ |
-| 9 | <span style="background-color:#e8710a;">&nbsp;&nbsp;&nbsp;</span> | 📦 Music Compilations | `#e8710a` | 159 | ██████████ |
-| 10 | <span style="background-color:#2e7d32;">&nbsp;&nbsp;&nbsp;</span> | 🏛️ Official Properties & Channels | `#2e7d32` | 50 | ███ |
+| 9 | <span style="background-color:#e8710a;">&nbsp;&nbsp;&nbsp;</span> | 📦 Music Compilations | `#e8710a` | 162 | ██████████ |
+| 10 | <span style="background-color:#2e7d32;">&nbsp;&nbsp;&nbsp;</span> | 🏛️ Official Properties & Channels | `#2e7d32` | 51 | ███ |
 | 11 | <span style="background-color:#188038;">&nbsp;&nbsp;&nbsp;</span> | 👥 Community, Wiki & Fan Indexes | `#188038` | 54 | ███ |
 | 12 | <span style="background-color:#0f9d8f;">&nbsp;&nbsp;&nbsp;</span> | 🔍 Search-Engine Index | `#0f9d8f` | 3 | █ |
 | 13 | <span style="background-color:#607d8b;">&nbsp;&nbsp;&nbsp;</span> | 🪞 Video Mirror / Backlink Sites | `#607d8b` | 5 | █ |
@@ -157,16 +158,16 @@ Inside every project section of the Master Directory the rows are grouped by rol
 
 | # | Role group | Swatch | Hex | Links | What it means |
 |---|---|---|---|---|---|
-| 1 | 🏠 Project page | <span style="background-color:#0b6e4f;">&nbsp;&nbsp;&nbsp;</span> | `#0b6e4f` | 121 | the project's own home: label page, publisher page, broadcaster page, festival page, register entry |
+| 1 | 🏠 Project page | <span style="background-color:#0b6e4f;">&nbsp;&nbsp;&nbsp;</span> | `#0b6e4f` | 122 | the project's own home: label page, publisher page, broadcaster page, festival page, register entry |
 | 2 | ✍️ Artist credit | <span style="background-color:#2e7d32;">&nbsp;&nbsp;&nbsp;</span> | `#2e7d32` | 8 | the artist's own page for the work — a release, track, book, score or tool carrying the credit |
-| 3 | 🗃️ Catalogue record | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | `#1a73e8` | 60 | database records of the same project: Discogs, IMDb, RateYourMusic, Beatport, lyrics and metadata DBs |
+| 3 | 🗃️ Catalogue record | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | `#1a73e8` | 69 | database records of the same project: Discogs, IMDb, RateYourMusic, Beatport, lyrics and metadata DBs |
 | 4 | ▶️ Distribution / listen | <span style="background-color:#039be5;">&nbsp;&nbsp;&nbsp;</span> | `#039be5` | 19 | platform mirrors carrying the same project: streaming services, podcast directories, retail listings |
 | 5 | 🎬 Media / embed | <span style="background-color:#7b1fa2;">&nbsp;&nbsp;&nbsp;</span> | `#7b1fa2` | 4 | the project itself as audio/video: official uploads, trailers, screeners, embeds |
 | 6 | 📰 Press & reviews | <span style="background-color:#d93025;">&nbsp;&nbsp;&nbsp;</span> | `#d93025` | 33 | independent coverage OF this project: features, reviews, interviews, news items |
 | 7 | 🎟️ Event / screening | <span style="background-color:#e8710a;">&nbsp;&nbsp;&nbsp;</span> | `#e8710a` | 9 | listings, tickets, screening and performance pages for the project |
-| 8 | 📚 Reference / directory | <span style="background-color:#188038;">&nbsp;&nbsp;&nbsp;</span> | `#188038` | 42 | wikis, community pages, profiles and directories that describe the project |
+| 8 | 📚 Reference / directory | <span style="background-color:#188038;">&nbsp;&nbsp;&nbsp;</span> | `#188038` | 43 | wikis, community pages, profiles and directories that describe the project |
 | 9 | 🪞 Mirror / syndication | <span style="background-color:#607d8b;">&nbsp;&nbsp;&nbsp;</span> | `#607d8b` | 19 | legitimate-but-derived copies: netlabel news reposts, archive.org copies, aggregator mirrors |
-| 10 | 🗄️ Archive snapshot | <span style="background-color:#8a6d3b;">&nbsp;&nbsp;&nbsp;</span> | `#8a6d3b` | 7 | Wayback / archive captures of a page that also exists live |
+| 10 | 🗄️ Archive snapshot | <span style="background-color:#8a6d3b;">&nbsp;&nbsp;&nbsp;</span> | `#8a6d3b` | 3 | Wayback / archive captures of a page that also exists live |
 | 11 | ⛔ Quarantine — do not cite | <span style="background-color:#616161;">&nbsp;&nbsp;&nbsp;</span> | `#616161` | 71 | scraped clones, SEO doorways and syndication spam carrying the project — evidence of contamination only |
 
 ## 🗂️ Repository map
@@ -180,16 +181,16 @@ Inside every project section of the Master Directory the rows are grouped by rol
 
 ```
 📦 Comprehensive Backlink Tracker
-├── 📕 Zazie_Master_Directory_COLOUR_CODED.pdf      ← READ: the directory (727 links, 14 sections)
-├── 📓 Zazie_Research_Annex_COLOUR_CODED.pdf        ← READ: the method (13 sections + appendix)
+├── 📕 Zazie_Master_Directory_COLOUR_CODED.pdf      ← READ: the directory (743 links, 14 sections)
+├── 📓 Zazie_Research_Annex_COLOUR_CODED.pdf        ← READ: the method (14 sections + appendix)
 ├── 📥 sources/                                     ← raw original inputs (3 files)
 │   ├── Random_Zazie_Productions_links.pdf          raw link dump
 │   ├── Zazie_Media_Master.pdf                      133 verified URL-level records (+leads)
 │   └── Zazie_2026_Accomplishment_Register_Maximal_Edition.docx
 ├── 📊 data/master/                                 ← CANONICAL (source of truth)
-│   ├── consolidated_directory.json                 727 records + 73 engine endpoints
+│   ├── consolidated_directory.json                 743 records + 73 engine endpoints
 │   ├── master_index.csv                            canonical index, one row per URL
-│   ├── listen_links.csv                            60 compilation appearances
+│   ├── listen_links.csv                            61 compilation appearances
 │   ├── register_link_map.csv                       Accomplishment Register → public links
 │   ├── project_clusters.json                       🧩 projects + their links, roles and page-ready sections
 │   └── project_clusters.csv                        the same, flattened: one row per link with its project + role
@@ -204,6 +205,7 @@ Inside every project section of the Master Directory the rows are grouped by rol
 │   ├── phase3_editorial_literary/                  editorial & literary evidence ledger
 │   ├── web_presence_expansion/                     pass 11: backlinks, discoveries, entity map
 │   ├── user_submitted_pass_2026-09-15/             intake ledgers & duplicate map
+│   ├── user_supplied_backlinks_2026-09-15/         second user-supplied pass: submission ledger & access log
 │   └── project_sections/
 │       ├── projects.csv                            🧩 THE PROJECT REGISTER — one row per project + its match rules
 │       └── README.md                               how to add a project, an alias or an exclusion
@@ -211,7 +213,7 @@ Inside every project section of the Master Directory the rows are grouped by rol
     ├── ingest_all_links.py                         registries → data/master/*
     ├── build_project_sections.py                   clusters → data/master/project_clusters.*  (run by the master build)
     ├── build_master_directory_pdf.py               → Master Directory PDF (PART I uses the clusters)
-    └── build_research_annex_pdf.py                 → Research Annex PDF (§14 = the project pass)
+    └── build_research_annex_pdf.py                 → Research Annex PDF (§15 = the project pass)
 ```
 
 | Path | Colour | Role in the pipeline |
@@ -219,7 +221,7 @@ Inside every project section of the Master Directory the rows are grouped by rol
 | `sources/` | <span style="background-color:#b06000; color:#ffffff;"> raw </span> | original inputs — never edited downstream |
 | `registry/` | <span style="background-color:#7b1fa2; color:#ffffff;"> evidence </span> | per-pass machine registers — the proof trail |
 | `scripts/` | <span style="background-color:#e8710a; color:#ffffff;"> build </span> | rebuilds the canonical data and both PDFs |
-| `data/master/` | <span style="background-color:#0b6e4f; color:#ffffff;"> canonical </span> | **source of truth** — 727 records + 73 endpoints |
+| `data/master/` | <span style="background-color:#0b6e4f; color:#ffffff;"> canonical </span> | **source of truth** — 743 records + 73 endpoints |
 | `data/research/` | <span style="background-color:#0f9d8f; color:#ffffff;"> audit </span> | engine access results for passes 1–8 |
 | root PDFs | <span style="background-color:#37424e; color:#ffffff;"> reading </span> | the organised, permanent reading editions |
 
@@ -232,7 +234,7 @@ Requirements: Python 3 + `reportlab` (and `pymupdf`) — a local `.venv/` is git
 | <span style="background-color:#e8710a; color:#ffffff;"> 1 </span> | `python scripts/ingest_all_links.py` | rebuilds `data/master/*` from all the registries |
 | <span style="background-color:#0b6e4f; color:#ffffff;"> 2 </span> | `python scripts/build_project_sections.py --report` | rebuilds the 🧩 project clusters and prints the curation report (what matched, what is still loose) |
 | <span style="background-color:#37424e; color:#ffffff;"> 3 </span> | `python scripts/build_master_directory_pdf.py` | rebuilds the 📕 Master Directory PDF (it runs step 2 itself, so the PDF can never drift from the register) |
-| <span style="background-color:#0b5d8f; color:#ffffff;"> 4 </span> | `python scripts/build_research_annex_pdf.py` | rebuilds the 📓 Research Annex PDF (§14 documents the project pass) |
+| <span style="background-color:#0b5d8f; color:#ffffff;"> 4 </span> | `python scripts/build_research_annex_pdf.py` | rebuilds the 📓 Research Annex PDF (§15 documents the project pass) |
 
 > [!TIP]
 > Run steps 1 → 2 → 3 → 4 in order. Page-number caches (`data/master/.pdf_pagemap.json`, `.annex_pagemap.json`) are regenerated on every build and are git-ignored.
