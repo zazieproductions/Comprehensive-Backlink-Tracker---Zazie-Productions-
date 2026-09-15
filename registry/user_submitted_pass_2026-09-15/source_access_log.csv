@@ -1,0 +1,13 @@
+TimestampUTC,FetchedURL,Method,QueryOrNavigation,HTTPStatus,ExactPhraseFound,ErrorNotes,LiveStatusTag
+2026-09-15T00:00:00Z,https://60secondesradio.com/tableau-dhonneur/,fetch_page,direct fetch of submitted URL,200,"Yes — ""Zazie Productions-USA""", ,live
+2026-09-15T00:00:00Z,https://60secondesradio.com/index.php/tableau-dhonneur,web_search (engine snapshot),"engine result for ""Zazie Productions"" 60 Secondes Radio",200,Yes — same snippet text,search-index variant of the same page,live
+2026-09-15T00:01:00Z,https://www.radiopanik.org/emissions/l-heure-de-pointe/60-secondes-radio-une-retrospective-2015-2022/,web_search,corroboration of what 60 Sec Radio is,200,n/a — third-party description, ,live
+2026-09-15T00:02:00Z,https://samples.eduwriter.ai/236649204/sonic-absurdity-and-cognitive-dissonance-how-zazie,fetch_page,direct fetch of submitted URL,200,Yes, ,live
+2026-09-15T00:03:00Z,https://www.clananalogue.org/artists/zazie-productions/,fetch_page,direct fetch of submitted URL,200 (challenge page),No,"Anubis proof-of-work anti-bot wall returned ""Making sure you're not a bot!"" instead of the artist page",blocked — bot wall
+2026-09-15T00:04:00Z,https://www.clananalogue.org/artists/,fetch_page,parent index fetch to test whether the wall is site-wide,200 (challenge page),No,"same Anubis challenge — wall is site-wide, not URL-specific",blocked — bot wall
+2026-09-15T00:05:00Z,https://web.archive.org/web/2026/https://www.clananalogue.org/artists/zazie-productions/,fetch_page,Wayback lookup,200,No,"""The Wayback Machine has not archived that URL.""",no capture
+2026-09-15T00:06:00Z,https://web.archive.org/cdx/search/cdx?url=clananalogue.org/artists/zazie-productions/,fetch_page,Wayback CDX API,200,No,CDX returned an empty array [] — zero captures,no capture
+2026-09-15T00:07:00Z,https://www.clananalogue.org/artists/zaziz/,web_search,control: a Clan Analogue artist page that IS indexed,200,n/a,"readable and indexed, confirming the /artists/<slug>/ pattern is real",live
+2026-09-15T00:08:00Z,https://www.beatport.com/pt/release/1-year-anniversary/5558734,fetch_page,"direct fetch of submitted URL, srsltid tracking param stripped",200,Yes — release artist list + page title, ,live
+2026-09-15T00:09:00Z,https://www.beatport.com/artist/zazie-productions/1440962/tracks,web_search,resolve the track credit behind the release,200,"Yes — ""Dome Collapse / Zazie Productions / 2025-11-18""", ,live
+2026-09-15T00:10:00Z,https://manicworldmagazine.com/zazie-kanwar-torge/,fetch_page,direct fetch of submitted URL,200,Yes — title + bio, ,live
