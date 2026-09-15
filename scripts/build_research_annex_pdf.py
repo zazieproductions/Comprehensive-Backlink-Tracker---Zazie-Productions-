@@ -499,7 +499,7 @@ story = []
 stat_cells = [
     (str(N_LINKS), 'links in the master volume'),
     (str(len(ENGINE_AUDIT) + len(ENGINE_MATRIX) + len(MX_VISIBILITY)), 'engine probes logged'),
-    ('15', 'research passes & submitted batches'),
+    ('16', 'research passes & submitted batches'),
     (str(len(MD_FEATURES)), 'magazine / zine features'),
     (str(len(P3_LEDGER)), 'editorial-literary ledger rows'),
     (str(len(LT_LEDGER)), 'quarantine register rows'),
@@ -522,12 +522,12 @@ WHAT = (
     'literary evidence ledger, the web-presence expansion (backlinks, entity records, historical pages, web archaeology), '
     'the complete low-trust quarantine register with its safety charter, the map from the 2026 Accomplishment Register '
     'to public links, a listen link for every compilation credit, the seed-domain coverage of the original link dump, '
-    'and every query and source-access log the passes produced. Sections 13-15 report the three batches of '
-    'URLs handed in on 2026-09-15 and how each one was tested.'
+    'and every query and source-access log the passes produced. Sections 13, 14 and 16 report the three batches of '
+    'URLs handed in on 2026-09-15; section 15 re-cuts the whole census by the project each link belongs to.'
     '<br/><br/><b>HOW IT IS ORGANISED.</b> One colour-coded section per research register, ordered from method (rules, '
     'engine audits) through the discovery passes in the order they ran, to the cross-cutting registers (quarantine, '
     'link map, listen links, seed coverage), the process appendices (queries, access logs, endpoints) and the '
-    'three user-submitted batches of 2026-09-15. Chips carry '
+    'the project-section re-cut of the census (§15) and the three user-submitted batches of 2026-09-15 (§13, §14, §16). Chips carry '
     'status: <font color="#188038"><b>green = worked / live</b></font>, <font color="#b06000"><b>amber = partial</b></font>, '
     '<font color="#b3261e"><b>red = blocked / broken</b></font>, <font color="#7b8794"><b>grey = unreach­able / uncheck­ed</b></font>, '
     '<font color="#546e7a"><b>slate = lead or archive-only</b></font>. Every URL is printed in full and clickable.'
@@ -552,7 +552,8 @@ TOC = [
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
     ('13', 'User-submitted intake pass — 2026-09-15', f'{len(USP_INTAKE)} URLs handed in after the baseline: what each one turned out to be, what counted, what did not, and why', 'sec:13', '#6d4c41'),
     ('14', 'Second user-supplied backlink pass — 2026-09-15', 'ten hand-found URLs fetched and tested: submission ledger, evidence read on each page, five derived discoveries, four rows corrected', 'sec:14', '#d84315'),
-    ('15', 'User-submitted link batch — 2026-09-15 (third batch)', 'eleven reader-found/adjacent URLs, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log — incl. the Ars Electronica 2026 work credit', 'sec:15', '#ad1457'),
+    ('15', 'Project-section pass — grouping the census by project', 'the census re-cut one project at a time — every commission, compilation, anthology and film with all of its links in one place, own page first, scraped copies last', 'sec:15', '#0b6e4f'),
+    ('16', 'User-submitted link batch — 2026-09-15 (third batch)', 'eleven reader-found/adjacent URLs, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log — incl. the Ars Electronica 2026 work credit', 'sec:16', '#ad1457'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -564,7 +565,7 @@ for i, (num, title, blurb, key, col) in enumerate(TOC, start=1):
                      para(f'<b>page {PAGEMAP.get(key, "-")}</b>', 'cell', TA_RIGHT,
                           colour=INK if PAGEMAP.get(key) else SOFT)])
     toc_extra.append(('BACKGROUND', (0, i), (0, i), colors.HexColor(col)))
-story += [banner('CONTENTS', size=11, sub='fifteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
+story += [banner('CONTENTS', size=11, sub='sixteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [9 * mm, 74 * mm, CW - 111 * mm, 28 * mm], zebra=True, font=7.2,
                extra=toc_extra + [('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
@@ -1520,8 +1521,124 @@ story.append(grid(rows, [46 * mm, CW - 46 * mm], header=['RULE', 'HOW IT WAS APP
                   zebra=True, font=5.6))
 story.append(PageBreak())
 
-# =========================================================== §15 USER-SUBMITTED LINK BATCH (THIRD BATCH)
-section('15', 'USER-SUBMITTED LINK BATCH — 2026-09-15 (THIRD BATCH)', '#ad1457',
+# =========================================================== §15 PROJECT-SECTION PASS
+PROJ_FILE = os.path.join(BASE, 'data', 'master', 'project_clusters.json')
+PROJ = json.load(open(PROJ_FILE, encoding='utf-8')) if os.path.exists(PROJ_FILE) else None
+PROJ_LIST = (PROJ or {}).get('multi_link_projects', [])
+PROJ_SINGLE = (PROJ or {}).get('single_link_projects', [])
+PROJ_COUNTS = (PROJ or {}).get('counts', {})
+PROJ_ROLES = (PROJ or {}).get('roles', [])
+REGISTER_ROWS = read_csv('registry', 'project_sections', 'projects.csv')
+
+section('15', 'PROJECT-SECTION PASS — GROUPING THE CENSUS BY PROJECT', '#0b6e4f',
+        'the master volume prints the census by media type, which scatters one project across many sections. This pass re-cuts '
+        'the same records by the thing they are actually about — one section per commission, compilation, anthology, film, '
+        'exhibition or press wave — using a curated, auditable rule register',
+        right=f'{PROJ_COUNTS.get("multi_link_projects", 0)} multi-link projects · '
+              f'{PROJ_COUNTS.get("links_in_multi_link_projects", 0)} links organised')
+
+story.append(notebox(
+    '<b>WHY THE PASS EXISTS.</b> The Black Mountain College commission alone sits in four different media-type sections (Press &amp; '
+    'Editorial, Podcasts &amp; Broadcasts, Community/Wiki and the quarantine bucket), and a compilation appearance is split across a '
+    'label page, a Discogs release, an archive copy, a netlabel news repost and a lyric database. That is the correct shape for a '
+    'media-type directory and the wrong shape for a reader who wants one thing. This pass adds the missing cut: every link about '
+    'the same real-world thing, in one place, ordered by what the link <i>is</i> in that project — its own page first, scraped copies last.'
+    '<br/><br/><b>RULE REGISTER, NOT A HEURISTIC.</b> Matching is driven by '
+    '<font face="Courier">registry/project_sections/projects.csv</font> and executed by '
+    '<font face="Courier">scripts/build_project_sections.py</font>. Each register row carries the project name, its kind, the artist '
+    'credit, explicit aliases, exclusions, the hosts that count as the project’s own page or as its press, and — where a page is '
+    'stored in the census with a truncated URL — an explicit URL pin. A link joins a project only when one of those rules fires: an '
+    'alias string found in the URL or title, a documented URL pin, or, for a small number of hosts whose titles never name the '
+    'project, a phrase in the record’s evidence note. No fuzzy similarity, no machine guessing: every membership can be traced back '
+    'to one register line and re-checked by hand. Compilations that appear in the listen-link table are also given a project row '
+    'automatically, pinned to the Discogs release and listen URL recorded there, so a compilation whose pages never print its own '
+    'name in a title still collects its own links.', '#eaf6ef'))
+story.append(Spacer(1, 2.5 * mm))
+
+story.append(para('<b>15.1 — The role vocabulary</b> — how a link is described inside its project, and the order the groups '
+                  'are printed in (the PDF uses the same labels and colours)', 'legend'))
+story.append(Spacer(1, 1.4 * mm))
+rows, role_tint = [], []
+for i, r in enumerate(PROJ_ROLES, 1):
+    n = sum(p['role_counts'].get(r['key'], 0) for p in PROJ_LIST)
+    cpara, cfill = chip(r['label'], r['colour'])
+    role_tint.append(cfill)
+    rows.append([para(f'<para alignment="center"><font color="#ffffff" size="6"><b>{i}</b></font></para>', 'tiny',
+                      colour=colors.white),
+                 cpara,
+                 para(esc(r['blurb']), 'tiny', colour=SOFT),
+                 para(f'<b>{n}</b>', 'tiny', TA_RIGHT)])
+story.append(grid(rows, [8 * mm, 46 * mm, CW - 70 * mm, 16 * mm],
+                  header=['#', 'ROLE GROUP', 'WHAT THE GROUP MEANS', 'LINKS'],
+                  zebra=True, font=5.8,
+                  extra=[('BACKGROUND', (1, i), (1, i), colors.HexColor(t)) for i, t in enumerate(role_tint, 1)] +
+                        [('VALIGN', (1, 1), (1, -1), 'MIDDLE')]))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>15.2 — Every project section, largest first</b> — the same table the master volume prints as PART I, '
+                  'with the project’s own starting page and its role mix', 'legend'))
+story.append(Spacer(1, 1.4 * mm))
+rows = []
+for i, p in enumerate(PROJ_LIST, 1):
+    role_txt = ' · '.join(f'{r["key"]} {p["role_counts"][r["key"]]}' for r in PROJ_ROLES if p['role_counts'].get(r['key']))
+    site = p['links'][0]['url'] if p['links'] else (p.get('anchor') or '')
+    rows.append([para(f'<para alignment="center"><b>{i:02d}</b></para>', 'tiny', colour=colors.white),
+                 para(f'<b>{esc(p["name"][:96])}</b><br/><font color="#5b6674" size="5.4">{esc(p["kind"])}'
+                      f'{(" · " + esc(p["year"])) if p.get("year") else ""}'
+                      f'{(" — " + esc(p["artist_role"][:100])) if p.get("artist_role") else ""}</font>', 'tiny'),
+                 para(str(p['link_count']), 'tiny', TA_RIGHT),
+                 para(' · '.join(f'{t} {n}' for t, n in sorted(p['tier_counts'].items())), 'tiny', colour=SOFT),
+                 para(esc(role_txt), 'tiny', colour=SOFT),
+                 para(f'{p["live"]}', 'tiny', TA_RIGHT),
+                 para(f'{p["quarantined"] or "—"}', 'tiny', TA_RIGHT, colour=RED if p['quarantined'] else SOFT),
+                 para(f'<a href="{esc(site)}" color="#1a3d8f">{esc(site[:70])}</a>', 'tiny')])
+story.append(grid(rows, [7 * mm, 92 * mm, 9 * mm, 20 * mm, 66 * mm, 10 * mm, 10 * mm, CW - 214 * mm],
+                  header=['#', 'PROJECT · KIND · ARTIST CREDIT', 'N', 'TIERS', 'ROLE MIX (page counts per role)',
+                          'LIVE', 'QUAR', 'PROJECT PAGE / START HERE (clickable)'],
+                  zebra=True, font=5.6,
+                  extra=[('BACKGROUND', (0, i), (0, i), colors.HexColor('#0b6e4f'))
+                         for i in range(1, len(rows) + 1)] +
+                        [('VALIGN', (0, 1), (0, -1), 'MIDDLE')]))
+story.append(PageBreak())
+
+story.append(para('<b>15.3 — Projects with a single catalogued link</b> — named in the register, but only one public page has '
+                  'been found and verified for each; they are printed in the master volume as a list rather than a section',
+                  'legend'))
+story.append(Spacer(1, 1.4 * mm))
+rows = [[para(f'<b>{esc(p["name"][:90])}</b>', 'tiny'),
+         para(esc(f'{p["kind"]}{(" · " + p["year"]) if p.get("year") else ""}'), 'tiny', colour=SOFT),
+         para(esc(p['artist_role'][:110]), 'tiny', colour=SOFT),
+         para(f'<a href="{esc(p["links"][0]["url"])}" color="#1a3d8f">{esc(p["links"][0]["url"][:110])}</a>', 'tiny')]
+        for p in PROJ_SINGLE]
+story.append(grid(rows, [58 * mm, 30 * mm, 56 * mm, CW - 144 * mm],
+                  header=['PROJECT', 'KIND', 'ARTIST CREDIT', 'THE ONE CATALOGUED LINK (clickable)'], zebra=True, font=5.6))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>15.4 — What the pass deliberately does not do</b> — limits a reader should know before quoting any '
+                  'project count', 'legend'))
+story.append(Spacer(1, 1.4 * mm))
+story.append(notebox(
+    f'<b>NO RECORD CHANGES.</b> The project view changes no tier, no status and no credibility score; it is a second index over '
+    f'the same {N_LINKS} records, and the master volume’s media-type sections remain the authority on each link.'
+    f'<br/><br/><b>LINKS WITHOUT A PROJECT ({PROJ_COUNTS.get("unassigned_links", 0)}).</b> These describe the artist rather than '
+    f'one project: platform profiles, streaming and catalogue pages, the artist’s own Bandcamp catalogue, artist-level press, '
+    f'community, quiz and chart pages, and the metadata scrapers that assemble an artist page from a name. Forcing them into a '
+    f'project would have made the sections less true, so they are left out and remain fully visible in the media-type sections and '
+    f'Appendix A.'
+    f'<br/><br/><b>LINKS IN SEVERAL PROJECTS ({PROJ_COUNTS.get("links_in_several_projects", 0)}).</b> A screening programme and the '
+    f'film it carried, a magazine feature and the issue it ran in, a press wave and the release that caused it: a link can honestly '
+    f'belong to more than one project. Each occurrence keeps its own role in its own section, and Appendix A still prints each URL '
+    f'exactly once.'
+    f'<br/><br/><b>QUARANTINED ROWS STAY QUARANTINED.</b> Scraped clones, embed farms and SEO doorways are grouped last inside the '
+    f'project they copy, under their own role band, and are never treated as coverage. Grouping them by project makes the '
+    f'contamination pattern visible — the Phantom Requiem section shows at a glance that roughly thirty proxy players exist around a '
+    f'single video ID — which is exactly the material a takedown or correction request needs.'
+    f'<br/><br/><b>MAINTENANCE.</b> The register is the human-editable surface: adding a project, an alias or an exclusion means '
+    f'editing one CSV row and re-running the build. The pass prints its own curation backlog — which hosts with two or more links '
+    f'are still outside every project — so the register can be extended deliberately rather than guessed at.', '#f7f9fc'))
+
+# =========================================================== §16 USER-SUBMITTED LINK BATCH (THIRD BATCH)
+section('16', 'USER-SUBMITTED LINK BATCH — 2026-09-15 (THIRD BATCH)', '#ad1457',
         'nine reader-found URLs plus three adjacent surfaces they led to — every one opened, exact-name checked and dispositioned the same day; the third and largest batch handed in on 2026-09-15',
         right=f'{len(USER_LEDGER)} URLs dispositioned · {len(USER_ACCESS)} fetches logged · {len(USER_LEADS)} leads queued')
 
@@ -1544,7 +1661,7 @@ story.append(notebox(
     '#f3e5f0'))
 story.append(Spacer(1, 3 * mm))
 
-story.append(para('<b>15.1 — Submission ledger: verdict per URL</b> (cross-registered rows: ZKT4-021, WPX-029/030, LT-090…094)', 'legend'))
+story.append(para('<b>16.1 — Submission ledger: verdict per URL</b> (cross-registered rows: ZKT4-021, WPX-029/030, LT-090…094)', 'legend'))
 story.append(Spacer(1, 1.2 * mm))
 rows, extra = [], []
 CATCOL = {'Press & Editorial': '#c2185b', 'Film, Festivals & Exhibitions': '#6a1b9a',
@@ -1568,7 +1685,7 @@ story.append(grid(rows, [15 * mm, 46 * mm, 62 * mm, 22 * mm, 30 * mm, 10 * mm, 1
                   zebra=True, font=5.7, extra=extra))
 story.append(Spacer(1, 3 * mm))
 
-story.append(para('<b>15.2 — Adjacent leads queued for the next pass</b> (seen this batch, pages not yet opened — leads never count as records)', 'legend'))
+story.append(para('<b>16.2 — Adjacent leads queued for the next pass</b> (seen this batch, pages not yet opened — leads never count as records)', 'legend'))
 story.append(Spacer(1, 1.2 * mm))
 rows = []
 for r in USER_LEADS:
@@ -1582,7 +1699,7 @@ story.append(grid(rows, [15 * mm, 62 * mm, 70 * mm, CW - 15 * mm - 62 * mm - 70 
                   zebra=True, font=5.7))
 story.append(Spacer(1, 3 * mm))
 
-story.append(para('<b>15.3 — Fetch log (all 2026-09-15 accesses)</b>', 'legend'))
+story.append(para('<b>16.3 — Fetch log (all 2026-09-15 accesses)</b>', 'legend'))
 story.append(Spacer(1, 1.2 * mm))
 rows, extra = [], []
 for i, r in enumerate(USER_ACCESS):

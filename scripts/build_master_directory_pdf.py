@@ -231,8 +231,9 @@ class DirDoc(BaseDocTemplate):
                       'Every catalogued public-web link in one ranked volume — most reputable and impressive first, most spammy last')
         cv.setFont('Helvetica-Bold', 7.8)
         cv.drawString(LM, PAGE[1] - 40.5 * mm,
-                      'Includes five headline reading paths:  P1 NETLABEL + COMPILATIONS · P2 MAGAZINES / ZINES · P3 NEWS & MEDIA · '
-                      'P4 EXHIBITIONS & GALLERIES · P5 LITERARY & WRITING')
+                      'Organised three ways:  PART I PROJECT SECTIONS (every link about one project in one place) ·  '
+                      'PART II FIVE READING PATHS (P1 COMPILATIONS · P2 MAGAZINES / ZINES · P3 NEWS & MEDIA · P4 EXHIBITIONS · P5 LITERARY) ·  '
+                      'PART III THE 14 MEDIA-TYPE SECTIONS')
         cv.setFillColor(SOFT)
         cv.setFont('Helvetica', 7.6)
         cv.drawCentredString(PAGE[0] / 2, BM - 5.5 * mm,
@@ -313,6 +314,28 @@ def grid(rows, widths, header=None, header_bg=HEADBG, zebra=True, font=6.5, alig
 payload = json.load(open(DATA, encoding='utf-8'))
 recs = payload['records']
 engines = payload['engine_endpoints']
+
+# ------------------------------------------------------------ project sections (PART I)
+# The same census re-cut by PROJECT instead of by media type: one section per compilation appearance,
+# broadcast commission, anthology, film, exhibition or press wave. scripts/build_project_sections.py
+# holds the rule set and the curated register; it is executed here so the PDF and the data files can
+# never drift apart.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    import build_project_sections as PROJBUILD
+
+    PROJECTS_DATA = PROJBUILD.write_outputs(PROJBUILD.build_projects())
+except Exception as _exc:                                        # never break the directory build
+    PROJECTS_DATA = None
+    print('project sections unavailable:', _exc)
+PROJ_LIST = (PROJECTS_DATA or {}).get('multi_link_projects', [])
+SINGLE_PROJ = (PROJECTS_DATA or {}).get('single_link_projects', [])
+PROJ_COUNTS = (PROJECTS_DATA or {}).get('counts', {})
+ROLE_DEF = {r['key']: r for r in (PROJECTS_DATA or {}).get('roles', [])}
+PROJ_BY_RANK = defaultdict(list)
+for _p in PROJ_LIST + SINGLE_PROJ:
+    for _lk in _p['links']:
+        PROJ_BY_RANK[_lk['rank']].append(_p)
 by_section = defaultdict(list)
 for r in recs:
     by_section[r['category']].append(r)
@@ -395,6 +418,10 @@ def rec_row(r):
     if r.get('flag_reasons'):
         parts.append('<font color="#8c1d18"><b>FLAG</b> ' + esc(' · '.join(r['flag_reasons'])[:300]) + '</font>')
     parts.append(f'<font color="#78909c">topic: {esc(r["topic"])} · in {len(r["sources"])} source file(s)</font>')
+    for _p in PROJ_BY_RANK.get(r['rank'], [])[:2]:
+        _pg = PAGEMAP.get(f"project:{_p['id']}")
+        parts.append(f'<font color="#0b6e4f">» project: <b>{esc(_p["name"][:58])}</b>'
+                     + (f' · page {_pg}' if _pg else '') + '</font>')
     url = r['url']
     return ([para(f'<para alignment="right"><font color="#78909c" size="6">{r["rank"]}</font></para>'),
              para(f'<para alignment="center"><font color="#ffffff" size="7.4"><b>{tier}</b></font></para>', colour=colors.white),
@@ -488,9 +515,33 @@ for t in ['A', 'B', 'C', 'D']:
                                'C': 'bulk context: compilations, community pages, self-published surfaces',
                                'D': 'printed last, in the quarantine section only'}[t], 'cell', colour=SOFT)])
 story += [banner('HOW TO READ THIS VOLUME', size=11,
-                 sub='colour is data: each cell colour encodes one ranked dimension of the record'),
+                 sub='colour is data: each cell colour encodes one ranked dimension of the record. Three parts, one corpus: '
+                     'PART I by PROJECT, PART II by REQUESTED THEME, PART III by MEDIA TYPE'),
           Marker('front:howto', 'How to read this volume'),
-          Spacer(1, 3 * mm)]
+          Spacer(1, 2.4 * mm)]
+if PROJ_LIST:
+    story += [grid([[para(f'<para alignment="center"><font color="#ffffff" size="7"><b>{p_}</b></font></para>', 'cell',
+                          colour=colors.white), para(f'<b>{t}</b>', 'cell'), para(d, 'cell', colour=SOFT)]
+                    for p_, t, d in [
+                        ('I', 'Project sections — by the thing the links are about',
+                         f'{PROJ_COUNTS.get("multi_link_projects", 0)} sections. A broadcast commission, a compilation, an anthology, '
+                         'a film, an exhibition or a press wave: its own page first, then catalogue records, distribution mirrors, '
+                         'media, press, events, references, benign mirrors and archive snapshots — and last, walled off, the scraped '
+                         'copies of the same project. Every row still carries its § and rank so it can be found in PART III.'),
+                        ('II', 'Reading paths — the requested thematic cuts',
+                         'P1 netlabel + compilation features · P2 magazine / zine features · P3 news articles & media coverage · '
+                         'P4 exhibitions, galleries & festival recognition · P5 literary publications & writing. Complete for each theme.'),
+                        ('III', 'Media-type sections 1-14 — the full corpus by kind of placement',
+                         'Press & editorial, publications & recognition, film & festivals, podcasts, profiles, discography, streaming, '
+                         'lyrics databases, compilations, official channels, community indexes, search-engine index, video mirrors and '
+                         'the quarantine bucket. Rows ranked by the credibility index inside every section.')]],
+                   [10 * mm, 88 * mm, CW - 98 * mm],
+                   header=['PART', 'WHAT IT IS', 'HOW TO USE IT'], zebra=True, font=6.8,
+                   extra=[('BACKGROUND', (0, 1), (0, 1), colors.HexColor('#0b6e4f')),
+                          ('BACKGROUND', (0, 2), (0, 2), colors.HexColor('#263238')),
+                          ('BACKGROUND', (0, 3), (0, 3), colors.HexColor('#3949ab')),
+                          ('VALIGN', (0, 1), (0, -1), 'MIDDLE')]),
+              Spacer(1, 3 * mm)]
 
 
 story.append(Spacer(1, 3 * mm))
@@ -657,7 +708,25 @@ APS = [('A', 'Appendix A · Complete alphabetical link register', f'every one of
        ('B', 'Appendix B · Topic & subject cross-index', 'the same corpus re-cut by what each record is about, with its best rows', 'app:B', '#5e35b1'),
        ('C', 'Appendix C · Quarantine map by domain', f'the {tier_ct["D"]} quarantined rows grouped by the domain that poisoned them', 'app:C', '#616161'),
        ('D', 'Appendix D · Method, provenance & limits', 'how the census was built and scored, engines used, and what it does not claim', 'app:D', '#00695c')]
-toc_rows = [[para(f'<para alignment="center"><b>{chip}</b></para>', 'cell', colour=colors.white),
+PARTS = [('I', 'PART I · Project sections — links grouped by the project they belong to',
+          f'{PROJ_COUNTS.get("multi_link_projects", 0)} projects, one section each: every link about a commission, a compilation, '
+          f'an anthology, a film, an exhibition or a press wave in one place, from its own page to its scraped copies',
+          'part:projects', '#0b6e4f'),
+         ('I', 'PART I · Projects with one link, and what is not a project',
+          'the register rows too thin to be a section, plus a note on the links that describe the artist rather than one project',
+          'part:projects-single', '#0b6e4f'),
+         ('II', 'PART II · The five headline reading paths', 'the requested thematic cuts of the whole corpus, complete and ranked',
+          'path:0', '#263238'),
+         ('III', 'PART III · Media-type sections 1-14', 'the full corpus by kind of placement, credibility-ranked inside each section',
+          'section:1', '#3949ab')]
+toc_rows = [[para(f'<para alignment="center"><font color="#ffffff" size="7"><b>{chip}</b></font></para>', 'cell',
+                  colour=colors.white),
+             para(f'<b>{esc(title)}</b>', 'cell'),
+             para(esc(blurb), 'cell', colour=SOFT), para('', 'cell'),
+             para(f'<b>page {PAGEMAP.get(key, "—")}</b>', 'cell', TA_RIGHT, colour=INK if PAGEMAP.get(key) else SOFT)]
+            for chip, title, blurb, key, _c in PARTS]
+NPART = len(PARTS)
+toc_rows += [[para(f'<para alignment="center"><b>{chip}</b></para>', 'cell', colour=colors.white),
              para(f'<b>{esc(title)}</b>', 'cell'),
              para(esc(blurb), 'cell', colour=SOFT), para('', 'cell'),
              para(f'<b>page {PAGEMAP.get(key, "—")}</b>', 'cell', TA_RIGHT, colour=INK if PAGEMAP.get(key) else SOFT)]
@@ -683,28 +752,221 @@ toc_rows += [[para(f'<para alignment="center"><font color="#ffffff" size="6"><b>
              para(f'<b>page {PAGEMAP.get(key, "—")}</b>', 'cell', TA_RIGHT, colour=INK if PAGEMAP.get(key) else SOFT)]
             for chip, title, blurb, key, _c in APS]
 NF, NA, NS, NP = len(FRONT), len(APS), len(sections), len(PATHS_TOC)
-toc_extra = [('BACKGROUND', (0, 1), (-1, NF), colors.HexColor('#eef2f7')),
-             ('BACKGROUND', (0, NF + NS + NP + 1), (-1, NF + NS + NP + NA), colors.HexColor('#eef2f7')),
-             ('BACKGROUND', (0, 1), (0, NF), colors.HexColor('#5b6674')),
-             ('LINEABOVE', (0, NF + 1), (-1, NF + 1), 0.7, INK),
-             ('LINEABOVE', (0, NF + NS + 1), (-1, NF + NS + 1), 0.7, colors.HexColor('#3949ab')),
-             ('LINEABOVE', (0, NF + NS + NP + 1), (-1, NF + NS + NP + 1), 0.7, INK),
+PF = NPART                                  # rows taken by the PART I-III summary at the top
+toc_extra = [('BACKGROUND', (0, 1), (-1, NPART), colors.HexColor('#e7f0ea')),
+             ('BACKGROUND', (0, 1), (0, NPART), colors.HexColor('#0b6e4f')),
+             ('BACKGROUND', (0, NPART + 1), (-1, NPART + NF), colors.HexColor('#eef2f7')),
+             ('BACKGROUND', (0, NPART + 1), (0, NPART + NF), colors.HexColor('#5b6674')),
+             ('BACKGROUND', (0, NPART + NF + NS + NP + 1), (-1, NPART + NF + NS + NP + NA), colors.HexColor('#eef2f7')),
+             ('LINEABOVE', (0, NPART + 1), (-1, NPART + 1), 0.7, INK),
+             ('LINEABOVE', (0, NPART + NF + 1), (-1, NPART + NF + 1), 0.7, colors.HexColor('#3949ab')),
+             ('LINEABOVE', (0, NPART + NF + NS + 1), (-1, NPART + NF + NS + 1), 0.7, colors.HexColor('#3949ab')),
+             ('LINEABOVE', (0, NPART + NF + NS + NP + 1), (-1, NPART + NF + NS + NP + 1), 0.7, INK),
              ('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
              ('TOPPADDING', (0, 1), (-1, -1), 3), ('BOTTOMPADDING', (0, 1), (-1, -1), 3)]
-toc_extra += [('BACKGROUND', (0, NF + 1 + i), (0, NF + 1 + i), colors.HexColor(CAT_COLOR[sec]))
+toc_extra += [('BACKGROUND', (0, PF + NF + 1 + i), (0, PF + NF + 1 + i), colors.HexColor(CAT_COLOR[sec]))
               for i, sec in enumerate(sections)]
-toc_extra += [('BACKGROUND', (0, NF + NS + 1 + k), (0, NF + NS + 1 + k), colors.HexColor(c))
+toc_extra += [('BACKGROUND', (0, PF + NF + NS + 1 + k), (0, PF + NF + NS + 1 + k), colors.HexColor(c))
               for k, (_chip, _t, _b, _key, c) in enumerate(PATHS_TOC)]
-toc_extra += [('BACKGROUND', (0, NF + NS + NP + 1 + k), (0, NF + NS + NP + 1 + k), colors.HexColor(c))
+toc_extra += [('BACKGROUND', (0, PF + NF + NS + NP + 1 + k), (0, PF + NF + NS + NP + 1 + k), colors.HexColor(c))
               for k, (_chip, _t, _b, _key, c) in enumerate(APS)]
 story += [banner('CONTENTS', size=11,
-                 sub='the fourteen sections run from the most reputable kind of placement to the quarantine bucket; the five '
-                     'reading paths (P1-P5) cut the same corpus into the requested themes; the four appendices re-sort every one '
-                     f'of the {N} links by domain, by subject, by quarantine cluster and by method'),
+                 sub=f'PART I groups the {N} links by the PROJECT they belong to — one section per commission, compilation, '
+                     'anthology, film, exhibition or press wave, its own page first and its scraped copies last. PART II holds '
+                     'the five requested thematic reading paths; PART III is the media-type directory whose fourteen sections run '
+                     f'from the most reputable kind of placement to the quarantine bucket; the four appendices re-sort every one '
+                     f'of the {N} links by domain, by subject, by quarantine cluster and by method.'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [7 * mm, 62 * mm, CW - 141 * mm, 16 * mm, 24 * mm], zebra=True, font=7.4, extra=toc_extra)]
-story.append(PageBreak())
+# =========================================================== PART I — PROJECT SECTIONS
+# Every link that belongs to the same thing - a broadcast commission, a compilation appearance, an
+# anthology, a film, an exhibition, a press wave - is gathered into one section here, so a reader can
+# read a project start to finish without hunting across the media-type sections. Inside a section the
+# links are grouped by ROLE: the project's own page first, then the artist's credit, catalogue records,
+# distribution mirrors, media, press, events, references, benign mirrors and archive snapshots - and,
+# clearly separated at the bottom, the scraped clones that exist only because of the project.
+SEC_NO = {s: i for i, s in enumerate(sections, 1)}
+PROJ_COLW = [13 * mm, 27 * mm, 77 * mm, 8 * mm, 11 * mm, 15 * mm, CW - 151 * mm]
+PROJ_HEADERS = ['RANK · §', 'OUTLET · HOST', 'WHAT THIS PAGE IS  ·  EVIDENCE NOTE', 'TIER', 'CRED',
+                'STATUS', 'FULL LINK (clickable)']
+KIND_COLOUR = {'Film': '#d81b60', 'Radio commission': '#3949ab', 'Screening programme': '#d81b60',
+               'Screening series': '#d81b60', 'Exhibition': '#6a1b9a', 'Exhibition / biennale': '#6a1b9a',
+               'Anthology': '#7b1fa2', 'Literary magazine': '#7b1fa2', 'Poetry platform': '#7b1fa2',
+               'Zine': '#c2185b', 'Press feature': '#d93025', 'Press / commentary': '#d93025',
+               'Press / satire': '#d93025', 'Industry report': '#d93025', 'Institutional recognition': '#0b6e4f',
+               'Security credit': '#0b6e4f', 'Software': '#1a73e8', 'Software / SFX pack': '#1a73e8',
+               'Software / storefront': '#1a73e8', 'Software / community': '#1a73e8', 'Hardware project': '#1a73e8',
+               'Label / own platform': '#2e7d32', 'Live performance': '#e8710a', 'Film score': '#d81b60'}
 
+
+def proj_colour(kind):
+    return KIND_COLOUR.get(kind, '#e8710a')
+
+
+def project_section(idx, pr):
+    """One project = one banner, a role-grouped table of its links and a cross-reference line."""
+    kind = pr.get('kind') or 'Project'
+    year = f" · {esc(pr['year'])}" if pr.get('year') else ''
+    tiers = ' · '.join(f'{t} {n}' for t, n in sorted(pr['tier_counts'].items()))
+    right = f"{pr['link_count']} links · {tiers} · live {pr['live']}"
+    if pr['quarantined']:
+        right += f" · {pr['quarantined']} quarantined"
+    block = [Marker(f"project:{pr['id']}", f"PROJ {idx:02d} · {pr['name'][:70]}"),
+             banner(f'PROJ {idx:02d}  {pr["name"]}', colour=proj_colour(kind), size=11.5,
+                    sub=f'{kind}{year} — {pr["summary"]}', right=right),
+             Spacer(1, 1.4 * mm)]
+    meta = []
+    if pr.get('artist_role'):
+        meta.append(f'<b>Artist credit:</b> {esc(pr["artist_role"])}')
+    if pr.get('anchor'):
+        meta.append(f'<b>Start here:</b> <a href="{esc(pr["anchor"])}" color="#1a3d8f">{esc(pr["anchor"])}</a>')
+    meta.append('<b>Roles in this section:</b> ' + ' · '.join(
+        f'{ROLE_DEF[k]["label"].lower()} {v}' for k, v in pr['role_counts'].items() if k in ROLE_DEF))
+    block.append(Table([[para('  '.join(meta), 'legend', colour=SOFT)]], colWidths=[CW],
+                       style=TableStyle([('BACKGROUND', (0, 0), (-1, -1), BAND), ('BOX', (0, 0), (-1, -1), 0.3, RULE),
+                                         ('LEFTPADDING', (0, 0), (-1, -1), 5), ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+                                         ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3)])))
+    block.append(Spacer(1, 1.6 * mm))
+
+    data = [[para(f'<b>{h}</b>', 'th', colour=colors.white,
+                  align=TA_CENTER if i in (0, 3, 4, 5) else TA_LEFT) for i, h in enumerate(PROJ_HEADERS)]]
+    styles = [('BACKGROUND', (0, 0), (-1, 0), colors.HexColor(proj_colour(kind))),
+              ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+              ('GRID', (0, 0), (-1, -1), 0.25, colors.HexColor('#dde4ea')),
+              ('LINEBELOW', (0, 0), (-1, 0), 0.6, HEADBG),
+              ('LEFTPADDING', (0, 0), (-1, -1), 2.4), ('RIGHTPADDING', (0, 0), (-1, -1), 2.4),
+              ('TOPPADDING', (0, 0), (-1, -1), 1.9), ('BOTTOMPADDING', (0, 0), (-1, -1), 1.9)]
+    r_i = 0
+    for role in [r['key'] for r in (PROJECTS_DATA or {}).get('roles', [])]:
+        rows = [x for x in pr['links'] if x['role'] == role]
+        if not rows:
+            continue
+        rd = ROLE_DEF[role]
+        warn = ''
+        if role == 'quarantine':
+            warn = (' <b>— scraped copies of the same project. Evidence of contamination only: do not cite, '
+                    'quote or treat as coverage.</b>')
+        data.append([para(f'<para alignment="left"><font color="#ffffff" size="6.6"><b>{esc(rd["label"])}'
+                          f'  ({len(rows)})</b></font><font color="#e8eef4" size="5.8">  {esc(rd["blurb"])}</font>{warn}</para>')])
+        r_i += 1
+        styles += [('SPAN', (0, r_i), (-1, r_i)),
+                   ('BACKGROUND', (0, r_i), (-1, r_i), colors.HexColor(rd['colour'])),
+                   ('TOPPADDING', (0, r_i), (-1, r_i), 2.6), ('BOTTOMPADDING', (0, r_i), (-1, r_i), 2.6)]
+        for lk in rows:
+            tier = lk['tier'] if lk['tier'] in TIER else 'C'
+            cfill, ctext = heat(lk['score'])
+            sfill, slab = STATUS.get(lk['status'], (SOFT, (lk['status'] or '?').upper()))
+            bits = []
+            if lk['title']:
+                bits.append(f'<b>{esc(lk["title"][:150])}</b>')
+            if lk['date']:
+                bits.append(f'<font color="#78909c">{esc(lk["date"][:10])}</font>')
+            if lk['flags']:
+                bits.append('<font color="#8c1d18"><b>' + esc(' · '.join(lk['flags'])[:90]) + '</b></font>')
+            if lk['notes']:
+                bits.append(f'<font color="#4a5563">{esc(lk["notes"][:230])}</font>')
+            data.append([para(f'<para alignment="center"><font color="#78909c" size="5.8">§{SEC_NO.get(lk["category"], "?")}'
+                              f' · {lk["rank"]}</font></para>'),
+                         para(f'<b>{esc(lk["host"])}</b>'),
+                         para(' · '.join(bits) if bits else '<font color="#b0bac4">—</font>'),
+                         para(f'<para alignment="center"><font color="#ffffff" size="7"><b>{tier}</b></font></para>',
+                              colour=colors.white),
+                         para(f'<para alignment="center"><font color="{ctext}" size="6.6"><b>{lk["score"]}</b></font></para>'),
+                         para(f'<para alignment="center"><font color="#ffffff" size="5.4"><b>{slab}</b></font></para>',
+                              colour=colors.white),
+                         para(f'<a href="{esc(lk["url"])}" color="#1a3d8f">{esc(lk["url"])}</a>', 'url')])
+            r_i += 1
+            styles += [('BACKGROUND', (0, r_i), (-1, r_i), TIER[tier][1]),
+                       ('BACKGROUND', (3, r_i), (3, r_i), TIER[tier][0]),
+                       ('BACKGROUND', (4, r_i), (4, r_i), cfill),
+                       ('BACKGROUND', (5, r_i), (5, r_i), sfill),
+                       ('LINEBEFORE', (0, r_i), (0, r_i), 2.2, colors.HexColor(rd['colour']))]
+            if role == 'quarantine':
+                styles.append(('TEXTCOLOR', (6, r_i), (6, r_i), colors.HexColor('#8a6d3b')))
+    tbl = Table(data, colWidths=PROJ_COLW, repeatRows=1)
+    tbl.setStyle(TableStyle(styles))
+    block.append(tbl)
+    block.append(Spacer(1, 6 * mm))
+    return block
+
+
+if PROJ_LIST:
+    story.append(Marker('part:projects', 'PART I — Project sections (links grouped by the thing they are about)'))
+    story.append(banner('PART I · PROJECT SECTIONS — one section per project, not per media type',
+                        colour='#0b6e4f', size=12,
+                        sub=f'{PROJ_COUNTS.get("multi_link_projects", 0)} projects carry more than one catalogued link; '
+                            f'they gather {PROJ_COUNTS.get("links_in_multi_link_projects", 0)} of the {N} links in this volume. '
+                            'Each section runs from the project’s own page to the scraped copies of it, and every row keeps its '
+                            'media-type rank (§) so it can still be found in PART III.',
+                        right=f'{PROJ_COUNTS.get("projects_matched", 0)} projects in the register · '
+                              f'{PROJ_COUNTS.get("unassigned_links", 0)} links belong to the artist rather than to one project'))
+    story.append(Spacer(1, 2.4 * mm))
+    story.append(para(
+        '<b>HOW TO USE THIS PART.</b> If you are looking for everything about one thing — the Black Mountain College '
+        'commission, a compilation a track appeared on, an anthology that ran a story, a film and its festival run — read '
+        'the section for that project instead of hunting through fourteen media-type sections. The role band above each '
+        'group of links says what kind of page it is; the tier, credibility and status columns are the same colour code as '
+        'everywhere else in the volume; § and the small number are the row’s home section and rank in PART III. '
+        'Quarantined groups are printed last, inside their own project, because that is where a reader will actually meet '
+        'them: they are what search engines return for these names, and they are never evidence of coverage.', 'legend'))
+    story.append(Spacer(1, 3 * mm))
+
+    # ---- project index: every multi-link project with its size, mix and page
+    idx_rows = []
+    for i, pr in enumerate(PROJ_LIST, 1):
+        idx_rows.append([para(f'<para alignment="center"><font color="#ffffff" size="6.4"><b>{i:02d}</b></font></para>',
+                              colour=colors.white),
+                         para(f'<b>{esc(pr["name"][:88])}</b><br/><font color="#5b6674" size="5.8">'
+                              f'{esc(pr["kind"])}{(" · " + esc(pr["year"])) if pr.get("year") else ""}'
+                              f'{(" — " + esc(pr["artist_role"][:80])) if pr.get("artist_role") else ""}</font>', 'cell'),
+                         para(str(pr['link_count']), 'cell', TA_RIGHT),
+                         para(' · '.join(f'{t} {n}' for t, n in sorted(pr['tier_counts'].items())), 'cell', colour=SOFT),
+                         para(' · '.join(f'{ROLE_DEF[k]["label"].split(" ")[0].lower()} {v}'
+                                         for k, v in pr['role_counts'].items() if k in ROLE_DEF), 'cell', colour=SOFT),
+                         para(f'<b>{pr["best_score"]}</b>', 'cell', TA_RIGHT),
+                         para(f'page {PAGEMAP.get("project:" + pr["id"], "—")}', 'cell', TA_RIGHT,
+                              colour=INK if PAGEMAP.get('project:' + pr['id']) else SOFT)])
+    story.append(para('<b>PROJECT INDEX</b> — every project section in this part, largest first: use it to jump '
+                      'straight to a project instead of scanning the volume.', 'legend'))
+    story.append(Spacer(1, 2 * mm))
+    story.append(grid(idx_rows, [7 * mm, CW - 118 * mm, 13 * mm, 22 * mm, 52 * mm, 10 * mm, 14 * mm],
+                      header=['PROJ', 'PROJECT · KIND · ARTIST CREDIT', 'N', 'TIERS', 'ROLE MIX', 'CRED', 'PAGE'],
+                      zebra=True, font=6.3))
+    story.append(PageBreak())
+
+    for i, pr in enumerate(PROJ_LIST, 1):
+        story.extend(project_section(i, pr))
+
+    # ---- named projects with a single catalogued link, and what is not a project at all
+    story.append(PageBreak())
+    story.append(Marker('part:projects-single', 'Project sections — single-link projects & the rest of the corpus'))
+    story.append(banner('PROJECTS WITH ONE CATALOGUED LINK, AND WHAT IS NOT A PROJECT',
+                        colour='#0b6e4f', size=11,
+                        sub='the register names these projects too, but only one public page for each has been found and '
+                            'verified: they are listed here so the project record stays complete without pretending to be a section',
+                        right=f'{len(SINGLE_PROJ)} single-link projects'))
+    story.append(Spacer(1, 2.6 * mm))
+    single_rows = [[para(f'<b>{esc(pr["name"][:84])}</b>', 'cell'),
+                    para(f'{esc(pr["kind"])}{(" · " + esc(pr["year"])) if pr.get("year") else ""}', 'cell', colour=SOFT),
+                    para(esc(pr['artist_role'][:90]), 'cell', colour=SOFT),
+                    para(f'<a href="{esc(pr["links"][0]["url"])}" color="#1a3d8f">{esc(pr["links"][0]["url"])}</a>', 'url')]
+                   for pr in SINGLE_PROJ]
+    if single_rows:
+        story.append(grid(single_rows, [58 * mm, 34 * mm, 46 * mm, CW - 138 * mm],
+                          header=['PROJECT', 'KIND', 'ARTIST CREDIT', 'THE ONE CATALOGUED LINK'], zebra=True, font=6.4))
+        story.append(Spacer(1, 5 * mm))
+    story.append(para(
+        f'<b>WHAT SITS OUTSIDE THE PROJECTS.</b> {PROJ_COUNTS.get("unassigned_links", 0)} of the {N} links describe the '
+        'artist rather than one project: platform profiles and streaming pages, the artist’s own Bandcamp catalogue, '
+        'press pages about the artist as a whole, community and quiz pages, and the scrapers that assemble an artist page '
+        'from metadata. They are not forced into a project here — a project section means a link is about that thing — and '
+        'they remain in full in PART III (their media-type sections) and in Appendix A. '
+        f'{PROJ_COUNTS.get("links_in_several_projects", 0)} links legitimately appear in more than one project (a screening '
+        'programme and the film it carried, a magazine feature and the issue it ran in); each occurrence keeps its own role '
+        'band, and the alphabetical register in Appendix A still lists every URL once.', 'legend'))
+    story.append(Spacer(1, 5 * mm))
+
+story.append(PageBreak())
 # =========================================================== FIVE HEADLINE READING PATHS
 # complete, self-contained, ranked ledgers for the five requested themes. Every row repeats
 # (in richer form) inside the main numbered sections; these paths exist so each requested
@@ -945,6 +1207,10 @@ for t, rs in sorted(by_topic.items(), key=lambda kv: -len(kv[1])):
     tier_html = '  '.join(f'<font color="{TIER[k][0].hexval().replace("0x", "#")[:7]}"><b>{k} {v}</b></font>'
                           for k, v in sorted(c.items()))
     sec_html = '<br/>'.join(f'<font color="#5b6674">{esc(k[:34])} <b>{v}</b></font>' for k, v in secs.most_common(5))
+    proj_here = Counter(pp['name'] for x in rs for pp in PROJ_BY_RANK.get(x['rank'], []))
+    if proj_here:
+        sec_html += '<br/>' + '<br/>'.join(f'<font color="#0b6e4f">PROJ {esc(n[:44])} <b>{v}</b></font>'
+                                           for n, v in proj_here.most_common(4))
     best = rs[0]
     links_html = []
     for x in rs[:8]:
@@ -1015,6 +1281,22 @@ METHOD = (
     'min-max mapped onto 0-100 for the coloured cell. Sections run in credibility-ladder order (independent editorial '
     'press first, quarantine last) and rows inside every section are re-ranked by the same score, so the volume reads '
     'top-down from most impressive to most spammy.'
+    '<br/><br/><b>PROJECT SECTIONS (PART I).</b> The corpus is also re-cut by PROJECT rather than by media type, so that the '
+    'links about one thing can be read together. The rule set is a curated register, <font face="Courier">'
+    'registry/project_sections/projects.csv</font> (one row per project: aliases, exclusions, canonical hosts, URL pins), read by '
+    '<font face="Courier">scripts/build_project_sections.py</font>, which also derives one project per compilation in the '
+    'listen-link table. Matching is deliberately conservative and deterministic — a phrase must appear in the URL or the record '
+    'title, or the record must be pinned to the project by a documented URL — never by fuzzy similarity, so a project section can '
+    'be audited from the register alone. Inside a section every link is classified by role (project page, artist credit, catalogue '
+    'record, distribution/listen, media/embed, press, event, reference, mirror, archive snapshot, quarantine) and quarantined rows '
+    'are grouped last. '
+    f'{PROJ_COUNTS.get("links_in_multi_link_projects", 0)} links belong to a multi-link project, '
+    f'{PROJ_COUNTS.get("links_in_single_link_projects", 0)} to a project with a single found page, and '
+    f'{PROJ_COUNTS.get("unassigned_links", 0)} to no project at all (artist-level profiles, streaming pages, catalogues, community '
+    f'pages and metadata scrapers — they describe the artist, not one project). '
+    f'{PROJ_COUNTS.get("links_in_several_projects", 0)} links legitimately appear under more than one project; Appendix A still '
+    'prints each URL once. The project view is a reading aid built on top of the same records: it changes no tier, no status and no '
+    'credibility score.'
     '<br/><br/><b>QUARANTINE.</b> Tier D rows come from the repository\u2019s own low-trust register: hacked-site doorways, '
     'scraped clones, auto-generated metadata, paste reposts, embed farms and pirate mirrors. They are printed with their '
     'URLs so the contamination is documented and reportable; the text of those pages is never treated as information '
