@@ -447,6 +447,10 @@ MX_LEADS = read_csv('registry', 'maxdepth_pass_2026-09-05', 'discovery_ledger.cs
 REGISTER_MAP = read_csv('data', 'master', 'register_link_map.csv')
 LISTEN = read_csv('data', 'master', 'listen_links.csv')
 SEED_DOMAINS = read_csv('registry', 'seed', 'seed_domain_summary.csv')
+USP_INTAKE = read_csv('registry', 'user_submitted_pass_2026-09-15', 'intake_ledger.csv')
+USP_ACCESS = read_csv('registry', 'user_submitted_pass_2026-09-15', 'source_access_log.csv')
+USP_LEADS = read_csv('registry', 'user_submitted_pass_2026-09-15', 'discovery_ledger.csv')
+USP_DUPES = read_csv('registry', 'user_submitted_pass_2026-09-15', 'duplicate_map.csv')
 
 story = []
 
@@ -454,7 +458,7 @@ story = []
 stat_cells = [
     (str(N_LINKS), 'links in the master volume'),
     (str(len(ENGINE_AUDIT) + len(ENGINE_MATRIX) + len(MX_VISIBILITY)), 'engine probes logged'),
-    ('11', 'research passes reported'),
+    ('12', 'research passes reported'),
     (str(len(MD_FEATURES)), 'magazine / zine features'),
     (str(len(P3_LEDGER)), 'editorial-literary ledger rows'),
     (str(len(LT_LEDGER)), 'quarantine register rows'),
@@ -503,6 +507,7 @@ TOC = [
     ('10', 'Listen links — every compilation appearance', 'one listen link per compilation credit, confirmed / label-root / unresolved', 'sec:10', '#039be5'),
     ('11', 'Seed index & domain coverage', 'the original raw-dump seed: 260 URLs across 230 domains', 'sec:11', '#2e7d32'),
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
+    ('13', 'User-submitted intake pass — 2026-09-15', 'five URLs handed in after the baseline: what each one turned out to be, what counted, what did not, and why', 'sec:13', '#6d4c41'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -514,7 +519,7 @@ for i, (num, title, blurb, key, col) in enumerate(TOC, start=1):
                      para(f'<b>page {PAGEMAP.get(key, "-")}</b>', 'cell', TA_RIGHT,
                           colour=INK if PAGEMAP.get(key) else SOFT)])
     toc_extra.append(('BACKGROUND', (0, i), (0, i), colors.HexColor(col)))
-story += [banner('CONTENTS', size=11, sub='twelve colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
+story += [banner('CONTENTS', size=11, sub='thirteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [9 * mm, 74 * mm, CW - 111 * mm, 28 * mm], zebra=True, font=7.2,
                extra=toc_extra + [('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
@@ -1209,6 +1214,142 @@ for r in WP_LOG:
 story.append(grid(rows, [16 * mm, 20 * mm, 78 * mm, 24 * mm, 62 * mm, 36 * mm, CW - 236 * mm],
                   header=['DATE', 'AREA', 'SYSTEM / QUERY (clickable)', 'TARGET', 'RESULT', 'OUTCOME', 'NOTES'],
                   zebra=True, font=5.5))
+story.append(PageBreak())
+
+# =========================================================== §13 USER-SUBMITTED INTAKE
+USP_NEW = [r for r in USP_INTAKE if (r.get('Verdict') or '').upper().startswith('NEW')]
+USP_DUP = [r for r in USP_INTAKE if 'ALREADY CATALOGUED' in (r.get('Verdict') or '').upper()]
+USP_LEAD = [r for r in USP_INTAKE if (r.get('Verdict') or '').upper().startswith('LEAD')]
+
+section('13', 'USER-SUBMITTED INTAKE PASS — 2026-09-15', '#6d4c41',
+        'five URLs handed in ten days after the 2026-09-05 baseline. Each one was opened, its exact-name evidence read or its '
+        'inaccessibility recorded, and then tested against the Pass-7 evidence standard — two entered the master volume, two were '
+        'already in it, one could not be verified at all and stayed a lead',
+        right=f'{len(USP_NEW)} new records · {len(USP_DUP)} re-verified · {len(USP_LEAD)} lead')
+
+story.append(notebox(
+    '<b>OUTCOME.</b> Two genuinely new records joined the master volume. <b>60 Secondes Radio — Tableau d\'honneur</b> '
+    '(Podcasts &amp; Broadcasts, Tier B): the live page was opened and the exact string <font face="Courier">Zazie '
+    'Productions-USA</font> read inside the <b>2025</b> block of the honor roll, which credits every artist whose '
+    'one-minute radio-art piece the project has broadcast — 2150 works from 76 countries since 2015. That makes it a '
+    'broadcast credit, not a directory listing. <b>Beatport release 5558734</b> (Streaming &amp; Music Platforms, Tier B): '
+    'the release page for the 11-artist VA <i>1 YEAR ANNIVERSARY</i>, catalogue <b>ETB085</b> on The Elements Of Tech &amp; '
+    'Bass Recordings, released 2025-11-18, with the exact name in the release artist list; the paired artist page resolves '
+    'the track credit as <i>Dome Collapse</i> (Original Mix, Progressive House, 124 BPM, F minor). The compilation itself '
+    'was already known from Discogs 35696575 and ok.ru, so what is new here is the Beatport surface, the catalogue number '
+    'and the genre/BPM/key metadata — the underlying credit is not double-counted.'
+    '<br/><br/><b>TWO WERE ALREADY IN THE CENSUS</b> and were re-verified rather than re-added. '
+    '<i>manicworldmagazine.com/zazie-kanwar-torge</i> (catalogued 2026-09-04 from Pass 9) is still live with its bio and '
+    'socials intact. <i>samples.eduwriter.ai/236649204</i> (from the original seed link dump) was still sitting at '
+    '<i>unverified</i> with no title and no notes; opening it showed what it actually is — the public "sample paper" '
+    'library of <b>eduwriter.ai, a commercial AI essay-writing service</b>. The page is a one-page user-generated '
+    'Research Paper brief and body, "Uploaded by ivucoxe60", "Date Posted: 2025-02-06", ending in a "Generate Free '
+    'Research Paper" call to action. It is now marked verified, titled, and carries a new integrity flag — '
+    '<b>AI ESSAY-MILL SAMPLE LIBRARY</b> — so the score reflects that the page is generated advertising <i>about</i> the '
+    'artist rather than coverage <i>of</i> them. It remains Tier C community context, not press.'
+    '<br/><br/><b>ONE COULD NOT BE VERIFIED AND IS NOT CLAIMED.</b> <i>clananalogue.org/artists/zazie-productions</i> '
+    'follows the real per-artist URL pattern of the Australian electronic collective Clan Analogue (Sydney, 1992), but the '
+    'whole site now sits behind an <b>Anubis proof-of-work anti-bot wall</b>. Fetching the page and its parent '
+    '<font face="Courier">/artists/</font> index both returned the "Making sure you\'re not a bot!" challenge; the Wayback '
+    'CDX API returned an empty array, so there is no capture; and no search engine has the URL indexed. Under the evidence '
+    'standard the exact string was neither read on the page, nor returned by a structured response, nor confirmed in an '
+    'index snapshot — all three conditions fail, so it is logged as a lead and does <b>not</b> appear in the master '
+    'volume. Re-test it in a real browser, or look for a Clan Analogue release carrying the credit.', '#f3efe9'))
+story.append(Spacer(1, 2.5 * mm))
+
+story.append(para('<b>13.1 — Intake ledger: every submitted URL and its verdict</b>', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(USP_INTAKE, start=1):
+    v = (r.get('Verdict') or '').upper()
+    fill = LGREEN if v.startswith('NEW') else (LBLUE if 'ALREADY' in v else LAMBER)
+    url = (r.get('SubmittedURL') or '').strip()
+    rows.append([para(f'<b>{esc(r.get("IntakeID", ""))}</b>', 'cell'),
+                 para(f'<a href="{esc(url)}" color="#1a3d8f">{esc(url)}</a>', 'url'),
+                 para(esc(r.get('Target', '')), 'cell'),
+                 para(f'<b>{esc(r.get("Verdict", ""))}</b>', 'cell'),
+                 para(esc(r.get('ExactNameFound', '')), 'cell', colour=SOFT),
+                 para(esc(r.get('MasterAction', '')), 'cell', colour=SOFT),
+                 para(esc(r.get('AccessResult', '')), 'tiny', colour=SOFT)])
+    extra.append(('BACKGROUND', (0, i), (-1, i), fill))
+story.append(grid(rows, [15 * mm, 62 * mm, 24 * mm, 30 * mm, 32 * mm, 42 * mm, CW - 205 * mm],
+                  header=['ID', 'SUBMITTED URL (clickable)', 'TARGET', 'VERDICT', 'EXACT NAME FOUND?', 'ACTION ON THE MASTER INDEX', 'ACCESS RESULT'],
+                  zebra=False, font=5.8, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.2 — Evidence notes per submission</b>', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in USP_INTAKE:
+    rows.append([para(f'<b>{esc(r.get("IntakeID", ""))}</b>', 'cell'),
+                 para(f'<b>{esc(r.get("Host", ""))}</b>', 'cell'),
+                 para(esc(r.get('PageTitle', '')), 'cell', colour=SOFT),
+                 para(linkify(r.get('EvidenceNote', '')), 'tiny')])
+story.append(grid(rows, [15 * mm, 34 * mm, 56 * mm, CW - 105 * mm],
+                  header=['ID', 'HOST', 'PAGE TITLE AS READ', 'WHAT THE PAGE ACTUALLY IS — EVIDENCE NOTE'],
+                  zebra=True, font=5.8))
+story.append(PageBreak())
+
+story.append(para('<b>13.3 — Source-access log for the pass</b> (every fetch, probe and archive lookup, with its outcome)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(USP_ACCESS, start=1):
+    st = (r.get('HTTPStatus') or '').strip()
+    tag = (r.get('LiveStatusTag') or '').lower()
+    fill = LRED if ('blocked' in tag or 'no capture' in tag) else (LGREEN if st.startswith('200') else LGREY)
+    url = (r.get('FetchedURL') or '').strip()
+    rows.append([para(esc(r.get('TimestampUTC', '')[:10]), 'tiny', colour=SOFT),
+                 para(f'<a href="{esc(url)}" color="#1a3d8f">{esc(url)}</a>', 'url'),
+                 para(esc(r.get('Method', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('QueryOrNavigation', '')), 'tiny'),
+                 para(f'<b>{esc(st)}</b>', 'tiny'),
+                 para(esc(r.get('ExactPhraseFound', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('ErrorNotes', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('LiveStatusTag', '')), 'tiny')])
+    extra.append(('BACKGROUND', (0, i), (-1, i), fill))
+story.append(grid(rows, [17 * mm, 58 * mm, 20 * mm, 44 * mm, 17 * mm, 22 * mm, 44 * mm, CW - 222 * mm],
+                  header=['DATE', 'URL FETCHED (clickable)', 'METHOD', 'QUERY / NAVIGATION', 'HTTP', 'EXACT PHRASE?', 'ERROR NOTES', 'STATE'],
+                  zebra=False, font=5.4, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.4 — Lead not counted</b> (fails all three Pass-7 evidence conditions — logged, never promoted to a record)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(USP_LEADS, start=1):
+    url = (r.get('LeadURL') or '').strip()
+    rows.append([para(f'<b>{esc(r.get("LeadID", ""))}</b>', 'cell'),
+                 para(linkify(r.get('Lead', '')), 'cell'),
+                 para(f'<a href="{esc(url)}" color="#1a3d8f">{esc(url)}</a>', 'url') if url.startswith('http') else para('', 'cell'),
+                 para(f'<b>{esc(r.get("Status", ""))}</b>', 'cell'),
+                 para(esc(r.get('WhyNotInMaster', '')), 'cell', colour=SOFT),
+                 para(f'<para alignment="center"><font size="6" color="#8c1d18"><b>{esc((r.get("CountsAsRecord", "") or "").upper())}</b></font></para>')])
+    extra.append(('BACKGROUND', (0, i), (-1, i), LAMBER))
+story.append(grid(rows, [16 * mm, 56 * mm, 62 * mm, 34 * mm, CW - 186 * mm, 18 * mm],
+                  header=['LEAD ID', 'LEAD', 'URL (clickable)', 'STATUS', 'WHY IT IS NOT IN THE MASTER DIRECTORY', 'COUNTS?'],
+                  zebra=False, font=5.9, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.5 — Duplicate and tracking-parameter collapse</b> (what was folded rather than counted twice)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in USP_DUPES:
+    rows.append([para(f'<b>{esc(r.get("ClusterID", ""))}</b>', 'cell'),
+                 para(linkify(r.get('Canonical', '')), 'cell'),
+                 para(esc(r.get('Variants', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('Type', '')), 'tiny'),
+                 para(f'<b>{esc(r.get("Status", ""))}</b>', 'tiny'),
+                 para(esc(r.get('Notes', '')), 'tiny', colour=SOFT)])
+story.append(grid(rows, [16 * mm, 56 * mm, 60 * mm, 34 * mm, 26 * mm, CW - 192 * mm],
+                  header=['CLUSTER', 'CANONICAL URL (clickable)', 'VARIANTS SEEN', 'TYPE', 'TREATMENT', 'NOTES'],
+                  zebra=True, font=5.6))
+story.append(Spacer(1, 2.5 * mm))
+story.append(notebox(
+    '<b>ONE INTEGRITY FIX CAME OUT OF THIS PASS.</b> Credibility flagging matched the bare pattern '
+    '<font face="Courier">x.com</font> anywhere in a record\'s text, so any host ending in the letters '
+    '"x.com" — <font face="Courier">kunstmatrix.com, musicstax.com, kkbox.com, ivoox.com, bandmix.com, '
+    'thepromptindex.com</font> — was wrongly stamped <b>SOCIAL / FORUM MENTION</b> and docked six points. The pattern now '
+    'requires a real host boundary. Across the volume the flag drops from <b>41 records to 30</b>; eleven records lose a '
+    'flag they should never have carried, and no genuine x.com / twitter.com surface loses its flag.', '#fdf4e5'))
 story.append(PageBreak())
 
 # =========================================================== APPENDIX — ENDPOINTS & TOOLS
