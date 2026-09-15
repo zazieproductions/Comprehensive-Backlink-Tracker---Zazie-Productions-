@@ -1,7 +1,7 @@
 {
- "generated_from_repo_date": "2026-09-05",
+ "generated_from_repo_date": "2026-09-15",
  "counts": {
-  "records": 720,
+  "records": 725,
   "engine_endpoints": 73
  },
  "records": [
@@ -2668,6 +2668,78 @@
    "rank": 104
   },
   {
+   "url": "https://www.frauhofer.at/item/79115498",
+   "norm": "frauhofer.at/item/79115498",
+   "host": "frauhofer.at",
+   "sources": [
+    "data/master/master_index.csv",
+    "master_index"
+   ],
+   "target": "Zazie Kanwar-Torge",
+   "category": "Publications & Recognition",
+   "tier": "B",
+   "status": "verified",
+   "date": "2026",
+   "title": "Are you really awake? — ebook retail listing (Frauhofer, Austria)",
+   "notes": "Austrian ebook (EPUB w/ DRM, €1.99) listing of \"Are you really awake?\" ISBN 9798233909306, \"Distributed Via Draft2digital\" (2026); author list names Zazie Kanwar-Torge. Same anthology as the Amazon / Mighty Ape listings. Name-on-page verified 2026-09-15.",
+   "primary": true,
+   "topic": "Literary, poetry & anthology publications",
+   "flags": [],
+   "flag_reasons": [],
+   "flag_adj": 0,
+   "raw": 108,
+   "score": 87,
+   "rank": 105
+  },
+  {
+   "url": "https://www.mightyape.co.nz/mn/buy/mighty-ape-books-are-you-really-awake-9798233777622",
+   "norm": "mightyape.co.nz/mn/buy/mighty-ape-books-are-you-really-awake-9798233777622",
+   "host": "mightyape.co.nz",
+   "sources": [
+    "data/master/master_index.csv",
+    "master_index"
+   ],
+   "target": "Zazie Kanwar-Torge",
+   "category": "Publications & Recognition",
+   "tier": "B",
+   "status": "verified",
+   "date": "2026-04-30",
+   "title": "Are you really awake? — anthology retail listing (Mighty Ape NZ)",
+   "notes": "New Zealand retail listing (Mighty Ape Books) of the anthology \"Are you really awake?\" ISBN 9798233777622, 190pp, release 2026-04-30; contributor list names Zazie Kanwar-Torge. Same work as amazon.com/Are-really-awake-Aiden-Messer/dp/B0GSVBXBGS (eds./compilers Aiden E. Messer, Chisto & Boe Healy). Name-on-page verified 2026-09-15.",
+   "primary": true,
+   "topic": "Literary, poetry & anthology publications",
+   "flags": [],
+   "flag_reasons": [],
+   "flag_adj": 0,
+   "raw": 108,
+   "score": 87,
+   "rank": 106
+  },
+  {
+   "url": "https://store.pothi.com/book/ebook-parth-sarathi-chakraborty-editor-flash-dead-halloween-25",
+   "norm": "store.pothi.com/book/ebook-parth-sarathi-chakraborty-editor-flash-dead-halloween-25",
+   "host": "store.pothi.com",
+   "sources": [
+    "data/master/master_index.csv",
+    "master_index"
+   ],
+   "target": "Zazie Kanwar-Torge",
+   "category": "Publications & Recognition",
+   "tier": "B",
+   "status": "verified",
+   "date": "2025",
+   "title": "Flash of the Dead: Halloween ’25 — horror anthology (Wicked Shadow Press)",
+   "notes": "eBook horror anthology (73 stories, 250pp, ISBN 9789349467743), ed. Parth Sarathi Chakraborty, Wicked Shadow Press; \"About the Author\" contributor list closes \"...Val Roberts AND Zazie Kanwar-Torge\". Distributed via Pothi.com. Name-on-page verified 2026-09-15.",
+   "primary": true,
+   "topic": "Major press features & interviews",
+   "flags": [],
+   "flag_reasons": [],
+   "flag_adj": 0,
+   "raw": 108,
+   "score": 87,
+   "rank": 107
+  },
+  {
    "url": "https://popfantasma.com.br/radar-shape-samuel-james-e-outros-sons-que-chegaram-pelo-groover",
    "norm": "popfantasma.com.br/radar-shape-samuel-james-e-outros-sons-que-chegaram-pelo-groover",
    "host": "popfantasma.com.br",
@@ -2697,7 +2769,7 @@
    "flag_adj": -16,
    "raw": 107,
    "score": 86,
-   "rank": 105
+   "rank": 108
   },
   {
    "url": "https://www.blackmountaincollege.org/2021-black-mountain-college-radio-art",
@@ -2720,7 +2792,7 @@
    "flag_adj": 0,
    "raw": 105,
    "score": 86,
-   "rank": 106
+   "rank": 109
   },
   {
    "url": "https://www.podcasts-online.org/es/black-mountain-college-radio1-1538618362",
@@ -2745,7 +2817,7 @@
    "flag_adj": 0,
    "raw": 104,
    "score": 85,
-   "rank": 107
+   "rank": 110
   },
   {
    "url": "https://www.radioclickdigital.com.ar/zazie-productions-desafia-los-limites-con-su-nuevo-sonido-en-cant-get-my-eyes-off-you-123",
@@ -2775,7 +2847,7 @@
    "flag_adj": -6,
    "raw": 104,
    "score": 85,
-   "rank": 108
+   "rank": 111
   },
   {
    "url": "https://archive.org/details/ra-codename-the-rhizosigil",
@@ -2801,7 +2873,7 @@
    "flag_adj": 0,
    "raw": 104,
    "score": 85,
-   "rank": 109
+   "rank": 112
   },
   {
    "url": "https://archive.org/details/textual-exhumation-5-gnosis-of-the-null-horizon_202504",
@@ -2827,7 +2899,7 @@
    "flag_adj": 0,
    "raw": 104,
    "score": 85,
-   "rank": 110
+   "rank": 113
   },
   {
    "url": "https://archive.org/details/textual-exhumations-unicode",
@@ -2853,7 +2925,7 @@
    "flag_adj": 0,
    "raw": 104,
    "score": 85,
-   "rank": 111
+   "rank": 114
   },
   {
    "url": "https://disconecta.com.br/resenhas/resenhas-de-discos/playlist-autoral-15-rock-jazz/#gsc.tab=0",
@@ -2884,7 +2956,7 @@
    "flag_adj": -6,
    "raw": 103,
    "score": 85,
-   "rank": 112
+   "rank": 115
   },
   {
    "url": "https://www.listennotes.com/podcasts/black-mountain/bmc-radio-art-zazie-atrX8jsp-6h",
@@ -2908,7 +2980,7 @@
    "flag_adj": 0,
    "raw": 103,
    "score": 85,
-   "rank": 113
+   "rank": 116
   },
   {
    "url": "https://samplefocus.com/users/zazie-productions",
@@ -2932,7 +3004,7 @@
    "flag_adj": 0,
    "raw": 103,
    "score": 85,
-   "rank": 114
+   "rank": 117
   },
   {
    "url": "https://www.legateaugallery.com/zazie-productions.html",
@@ -2956,7 +3028,7 @@
    "flag_adj": 0,
    "raw": 102,
    "score": 85,
-   "rank": 115
+   "rank": 118
   },
   {
    "url": "https://www.discogs.com/artist/11354435-Zazie-Productions",
@@ -2984,7 +3056,7 @@
    "flag_adj": 0,
    "raw": 102,
    "score": 85,
-   "rank": 116
+   "rank": 119
   },
   {
    "url": "http://www.art-squat.com/articles11",
@@ -3010,7 +3082,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 117
+   "rank": 120
   },
   {
    "url": "https://codex.churchofmalware.org/editions/ed001",
@@ -3038,7 +3110,7 @@
    "flag_adj": -10,
    "raw": 101,
    "score": 84,
-   "rank": 118
+   "rank": 121
   },
   {
    "url": "https://coinoperatedpress.bigcartel.com",
@@ -3062,7 +3134,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 119
+   "rank": 122
   },
   {
    "url": "https://equipboard.com/pros/zazie-productions",
@@ -3086,7 +3158,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 120
+   "rank": 123
   },
   {
    "url": "https://www.gamedevmarket.net/member/zazieproductions",
@@ -3110,7 +3182,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 121
+   "rank": 124
   },
   {
    "url": "https://music.apple.com/us/artist/zazie-productions/1623719351",
@@ -3137,7 +3209,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 122
+   "rank": 125
   },
   {
    "url": "https://thevanishingpointsyndicate.bandcamp.com/album/dissonance-index-vol-1-various-artists",
@@ -3162,7 +3234,7 @@
    "flag_adj": 0,
    "raw": 101,
    "score": 84,
-   "rank": 123
+   "rank": 126
   },
   {
    "url": "https://www.greenville.k12.sc.us/stone/Upload/uploads/generic",
@@ -3192,7 +3264,7 @@
    "flag_adj": -16,
    "raw": 101,
    "score": 84,
-   "rank": 124
+   "rank": 127
   },
   {
    "url": "https://archive.org/details/phantom-requiem-short-film",
@@ -3218,7 +3290,7 @@
    "flag_adj": 0,
    "raw": 100,
    "score": 84,
-   "rank": 125
+   "rank": 128
   },
   {
    "url": "https://stayhappening.com/e/bmc-radio-artist-listening-session-E2ISU3XHU9F",
@@ -3243,7 +3315,7 @@
    "flag_adj": 0,
    "raw": 100,
    "score": 84,
-   "rank": 126
+   "rank": 129
   },
   {
    "url": "https://www.imdb.com/title/<id",
@@ -3266,7 +3338,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 127
+   "rank": 130
   },
   {
    "url": "https://www.imdb.com/title/<id>/fullcredits",
@@ -3289,7 +3361,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 128
+   "rank": 131
   },
   {
    "url": "https://hackaday.io/project/204427-photon-flux-analyzer-v2-reverse-bias-led-sensor",
@@ -3313,7 +3385,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 129
+   "rank": 132
   },
   {
    "url": "https://music.youtube.com/browse/UCeYo8Y6ocrsQzscw158u-tw",
@@ -3337,7 +3409,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 130
+   "rank": 133
   },
   {
    "url": "https://open.spotify.com/artist/4UOgvZEOo7xBhFBjJvlMm0",
@@ -3362,7 +3434,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 131
+   "rank": 134
   },
   {
    "url": "https://open.spotify.com/playlist/37i9dQZF1E4wLqQSg8MWKD",
@@ -3387,7 +3459,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 132
+   "rank": 135
   },
   {
    "url": "https://archive.transformativeworks.org/works/56506408/chapters/143816134",
@@ -3413,7 +3485,7 @@
    "flag_adj": 0,
    "raw": 99,
    "score": 84,
-   "rank": 133
+   "rank": 136
   },
   {
    "url": "https://filmfreeway.com/deaf-orphans-of-streamcast",
@@ -3437,7 +3509,7 @@
    "flag_adj": 0,
    "raw": 98,
    "score": 83,
-   "rank": 134
+   "rank": 137
   },
   {
    "url": "https://filmfreeway.com/phantom-requiem-1",
@@ -3461,7 +3533,7 @@
    "flag_adj": 0,
    "raw": 98,
    "score": 83,
-   "rank": 135
+   "rank": 138
   },
   {
    "url": "https://podcast365.ro/episoade/black-mountain-college-radio/bmc-radio-art-zazie-productions-cheaper-impressions-XCIxLKgUQq",
@@ -3487,7 +3559,7 @@
    "flag_adj": 0,
    "raw": 98,
    "score": 83,
-   "rank": 136
+   "rank": 139
   },
   {
    "url": "https://www.amazon.com/Fearful-Symmetries-Anthology-Psychedelic-Anthologies/dp/B0GFXWQ5YB",
@@ -3511,7 +3583,7 @@
    "flag_adj": 0,
    "raw": 98,
    "score": 83,
-   "rank": 137
+   "rank": 140
   },
   {
    "url": "https://www.podbean.com/site/EpisodeDownload/DIR13ED53E7JIB76",
@@ -3536,7 +3608,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 138
+   "rank": 141
   },
   {
    "url": "https://tunein.com/podcasts/Arts--Culture-Podcasts/Black-Mountain-College-Radio-p2041208",
@@ -3561,7 +3633,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 139
+   "rank": 142
   },
   {
    "url": "https://killthedj.com/irish-bambie-eurovision-ouija-pop",
@@ -3591,7 +3663,7 @@
    "flag_adj": -24,
    "raw": 97,
    "score": 83,
-   "rank": 140
+   "rank": 143
   },
   {
    "url": "https://ogre.red/issues/2024-10/2024-10-introduction",
@@ -3615,7 +3687,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 141
+   "rank": 144
   },
   {
    "url": "https://churchofmalware.org/codex",
@@ -3643,7 +3715,7 @@
    "flag_adj": -10,
    "raw": 97,
    "score": 83,
-   "rank": 142
+   "rank": 145
   },
   {
    "url": "https://filmfreeway.com/ZazieProductions",
@@ -3670,7 +3742,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 143
+   "rank": 146
   },
   {
    "url": "https://git.churchofmalware.org",
@@ -3698,7 +3770,7 @@
    "flag_adj": -10,
    "raw": 97,
    "score": 83,
-   "rank": 144
+   "rank": 147
   },
   {
    "url": "https://www.linkedin.com/in/zazie-kanwar-torge-3b8a98373",
@@ -3723,7 +3795,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 145
+   "rank": 148
   },
   {
    "url": "https://www.slated.com/people/134406",
@@ -3747,7 +3819,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 146
+   "rank": 149
   },
   {
    "url": "https://www.shazam.com/song/1894640537/rhapsody-of-the-unplayable-hand",
@@ -3771,7 +3843,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 147
+   "rank": 150
   },
   {
    "url": "https://www.shazam.com/song/6771371302/crt-204-bone-static",
@@ -3795,7 +3867,7 @@
    "flag_adj": 0,
    "raw": 97,
    "score": 83,
-   "rank": 148
+   "rank": 151
   },
   {
    "url": "https://musicbrainz.org/artist/b610b4cb-87da-44d7-a262-2bd65fb8098c",
@@ -3820,7 +3892,7 @@
    "flag_adj": 0,
    "raw": 96,
    "score": 83,
-   "rank": 149
+   "rank": 152
   },
   {
    "url": "https://archive.org/details/v-a-i-want-to-believe",
@@ -3844,7 +3916,7 @@
    "flag_adj": 0,
    "raw": 96,
    "score": 83,
-   "rank": 150
+   "rank": 153
   },
   {
    "url": "https://archive.org/details/va-music-inspired-on-mulholland-drive",
@@ -3868,7 +3940,7 @@
    "flag_adj": 0,
    "raw": 96,
    "score": 83,
-   "rank": 151
+   "rank": 154
   },
   {
    "url": "https://vitalentum.net/post/110-how-one-musical-prodigy-is-outpacing-the-world-s-most-advanced-music-ais-and-how-this-happens.html",
@@ -3898,7 +3970,7 @@
    "flag_adj": -24,
    "raw": 96,
    "score": 83,
-   "rank": 152
+   "rank": 155
   },
   {
    "url": "https://www.media-match.com/usa/cv/Zazie-Productions",
@@ -3928,7 +4000,7 @@
    "flag_adj": -14,
    "raw": 95,
    "score": 82,
-   "rank": 153
+   "rank": 156
   },
   {
    "url": "https://shockwebradio.com/musica/zazie-productions-y-el-experimento-sonoro-que-desafia-la-logica-cant-get-my-eyes-off-you-123",
@@ -3962,7 +4034,7 @@
    "flag_adj": -30,
    "raw": 95,
    "score": 82,
-   "rank": 154
+   "rank": 157
   },
   {
    "url": "https://a2b2.org/users/ZazieProductions",
@@ -3986,7 +4058,31 @@
    "flag_adj": 0,
    "raw": 95,
    "score": 82,
-   "rank": 155
+   "rank": 158
+  },
+  {
+   "url": "https://avlfilm.com/directory",
+   "norm": "avlfilm.com/directory",
+   "host": "avlfilm.com",
+   "sources": [
+    "data/master/master_index.csv",
+    "master_index"
+   ],
+   "target": "Zazie Kanwar-Torge",
+   "category": "Profiles & Catalogs",
+   "tier": "B",
+   "status": "verified",
+   "date": "",
+   "title": "AVL Film — Filmmaker Directory (Asheville)",
+   "notes": "Directory entry: \"Zazie Kanwar-Torge — Composer, Producer, Sound Designer, Creative Director\", company \"Zazie Productions LLC\" (company link to play.reelcrafter.com/xUXGBP_5Sui1_2ve23fyLg). One of 72 filmmakers in the AVL Film (Asheville) directory. Name-on-page verified 2026-09-15.",
+   "primary": true,
+   "topic": "Award-winning film & festival recognition",
+   "flags": [],
+   "flag_reasons": [],
+   "flag_adj": 0,
+   "raw": 95,
+   "score": 82,
+   "rank": 159
   },
   {
    "url": "https://www.deezer.com/us/artist/170543657",
@@ -4011,7 +4107,7 @@
    "flag_adj": 0,
    "raw": 95,
    "score": 82,
-   "rank": 156
+   "rank": 160
   },
   {
    "url": "https://hackaday.io/ZazieProductions",
@@ -4036,7 +4132,7 @@
    "flag_adj": 0,
    "raw": 95,
    "score": 82,
-   "rank": 157
+   "rank": 161
   },
   {
    "url": "https://www.shazam.com/song/6771371298/vibroscriptorium",
@@ -4060,7 +4156,7 @@
    "flag_adj": 0,
    "raw": 94,
    "score": 82,
-   "rank": 158
+   "rank": 162
   },
   {
    "url": "https://pebblesunderground.art/award-winners-winter-screenings-2024",
@@ -4091,7 +4187,7 @@
    "flag_adj": -30,
    "raw": 93,
    "score": 82,
-   "rank": 159
+   "rank": 163
   },
   {
    "url": "https://www.setlist.fm/setlists/zazie-productions-2bf83c62.html",
@@ -4121,7 +4217,7 @@
    "flag_adj": -16,
    "raw": 93,
    "score": 82,
-   "rank": 160
+   "rank": 164
   },
   {
    "url": "https://archive.org/details/ju-on-the-music-compilation",
@@ -4145,7 +4241,7 @@
    "flag_adj": 0,
    "raw": 93,
    "score": 82,
-   "rank": 161
+   "rank": 165
   },
   {
    "url": "https://grammyweekly.com",
@@ -4169,7 +4265,7 @@
    "flag_adj": 0,
    "raw": 93,
    "score": 82,
-   "rank": 162
+   "rank": 166
   },
   {
    "url": "https://www.instagram.com/p/DGp310vszdo",
@@ -4197,7 +4293,7 @@
    "flag_adj": -6,
    "raw": 93,
    "score": 82,
-   "rank": 163
+   "rank": 167
   },
   {
    "url": "https://thesqueakywheel.org/dissociation-support-group-to-hold-meeting-attendees-plan-to-show-up-in-spirit",
@@ -4221,7 +4317,7 @@
    "flag_adj": 0,
    "raw": 93,
    "score": 82,
-   "rank": 164
+   "rank": 168
   },
   {
    "url": "https://thesqueakywheel.org/doctor-asks-man-who-has-been-in-coma-for-45-years-if-he-ever-considered-it-might-just-be-anxiety",
@@ -4245,7 +4341,7 @@
    "flag_adj": 0,
    "raw": 93,
    "score": 82,
-   "rank": 165
+   "rank": 169
   },
   {
    "url": "https://museonline.org/profile/zazie-kanwar-torge",
@@ -4272,7 +4368,7 @@
    "flag_adj": 0,
    "raw": 93,
    "score": 82,
-   "rank": 166
+   "rank": 170
   },
   {
    "url": "https://artfacts.net/artist/zazie-kanwar-torge",
@@ -4296,7 +4392,7 @@
    "flag_adj": 0,
    "raw": 92,
    "score": 81,
-   "rank": 167
+   "rank": 171
   },
   {
    "url": "https://www.ivoox.com/en/bmc-radio-art-zazie-productions-cheaper-impressions-audios-mp3_rf_122698439_1.html",
@@ -4325,7 +4421,7 @@
    "flag_adj": -6,
    "raw": 91,
    "score": 81,
-   "rank": 168
+   "rank": 172
   },
   {
    "url": "https://allpoetry.com/poem/17245444-The-Microbe--by-Zazie-Productions",
@@ -4349,7 +4445,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 169
+   "rank": 173
   },
   {
    "url": "https://allpoetry.com/poem/17245942-By-Daybreak-s-Dawn-by-Zazie-Productions",
@@ -4373,7 +4469,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 170
+   "rank": 174
   },
   {
    "url": "https://allpoetry.com/poem/18284408-3-Untitled-Micro-Haikus-by-Zazie-Productions",
@@ -4397,7 +4493,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 171
+   "rank": 175
   },
   {
    "url": "https://allpoetry.com/poem/18318896-Entry-00-%CE%B4-the-Spalled-Vestibule-or-Where-the-Bylaws-Go-to-Rot-by-Zazie-Productions",
@@ -4421,7 +4517,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 172
+   "rank": 176
   },
   {
    "url": "https://amazingradio.com/profile/zazie-productions",
@@ -4451,7 +4547,7 @@
    "flag_adj": -24,
    "raw": 91,
    "score": 81,
-   "rank": 173
+   "rank": 177
   },
   {
    "url": "https://podcasts.apple.com/au/podcast/bmc-radio-art-zazie-productions-cheaper-impressions",
@@ -4475,7 +4571,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 174
+   "rank": 178
   },
   {
    "url": "https://www.rockculture.es/noticias--zazie-productions-",
@@ -4499,7 +4595,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 175
+   "rank": 179
   },
   {
    "url": "https://www.behance.net/zaziediya",
@@ -4524,7 +4620,7 @@
    "flag_adj": 0,
    "raw": 91,
    "score": 81,
-   "rank": 176
+   "rank": 180
   },
   {
    "url": "https://www.rangermagazine.net/issue4",
@@ -4548,7 +4644,7 @@
    "flag_adj": 0,
    "raw": 90,
    "score": 80,
-   "rank": 177
+   "rank": 181
   },
   {
    "url": "https://enigmalabs.io/sighting/311344",
@@ -4581,7 +4677,7 @@
    "flag_adj": -26,
    "raw": 90,
    "score": 80,
-   "rank": 178
+   "rank": 182
   },
   {
    "url": "https://z-dimension.org/shards-vol-1",
@@ -4605,7 +4701,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 179
+   "rank": 183
   },
   {
    "url": "http://web.archive.org/web/20210914053312/https://zazieproductions.bandcamp.com",
@@ -4635,7 +4731,7 @@
    "flag_adj": -8,
    "raw": 89,
    "score": 80,
-   "rank": 180
+   "rank": 184
   },
   {
    "url": "https://cjsw.com/program/noise/episode/20251113",
@@ -4659,7 +4755,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 181
+   "rank": 185
   },
   {
    "url": "https://www.whitelight-whiteheat.com/wl-wh-weekly-shoegaze-dreampop-psychedelic-indie-tips36-25",
@@ -4684,7 +4780,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 182
+   "rank": 186
   },
   {
    "url": "https://www.500letters.org/form_15.php?naam=kanwar-torge_zazie",
@@ -4710,7 +4806,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 183
+   "rank": 187
   },
   {
    "url": "https://www.castingcall.club/zazieproductions",
@@ -4735,7 +4831,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 184
+   "rank": 188
   },
   {
    "url": "https://equipboard.com/pros-index/z",
@@ -4760,7 +4856,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 185
+   "rank": 189
   },
   {
    "url": "https://play.reelcrafter.com/z6vU_hn4T76AE0kv4rtd9w",
@@ -4784,7 +4880,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 186
+   "rank": 190
   },
   {
    "url": "https://soundbetter.com/profiles/614805-zazie-productions",
@@ -4810,7 +4906,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 187
+   "rank": 191
   },
   {
    "url": "https://www.themoviedb.org/movie/1328893",
@@ -4836,7 +4932,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 188
+   "rank": 192
   },
   {
    "url": "https://open.spotify.com/playlist/0wYL2MV2jiz5yqXTSCJBTw?si=BXh9LzN_S2qoSeisIzYpNA&pi=IFlsbkRvS-iP2",
@@ -4862,7 +4958,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 189
+   "rank": 193
   },
   {
    "url": "https://open.spotify.com/playlist/3Q2LNnQPClJHAmuavudX3T?si=RI3n61xbR62LQvYQdnaJwQ&pi=g4xukX8eSnC-H",
@@ -4888,7 +4984,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 190
+   "rank": 194
   },
   {
    "url": "https://open.spotify.com/playlist/4zNDI7kTKxDNBbzoJmA0VG?si=JpixnZyQQmybn_QNVv__qA&pi=mQjKbcHxSU6qB",
@@ -4914,7 +5010,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 191
+   "rank": 195
   },
   {
    "url": "https://open.spotify.com/playlist/5seknEmy1VW3eapTpjIIzF?si=U2zmHkTqRQuVMPTovUDzZg&pi=2UOzxG96TLKFB",
@@ -4940,7 +5036,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 192
+   "rank": 196
   },
   {
    "url": "https://open.spotify.com/playlist/75PxWthUYPOskOU1EjGrFX?si=fnqhO6APRsesyPPZvRCaOg&pi=_vZkDlbsQ8Ge9",
@@ -4966,7 +5062,7 @@
    "flag_adj": 0,
    "raw": 89,
    "score": 80,
-   "rank": 193
+   "rank": 197
   },
   {
    "url": "https://mycommunitycinema.org.uk/screening/fringe-flicks-kenneth-angers-lucifer-rising-1972-short-films",
@@ -4996,7 +5092,7 @@
    "flag_adj": -30,
    "raw": 88,
    "score": 80,
-   "rank": 194
+   "rank": 198
   },
   {
    "url": "https://www.behance.net/zaziediya?locale=en_US",
@@ -5022,7 +5118,7 @@
    "flag_adj": 0,
    "raw": 88,
    "score": 80,
-   "rank": 195
+   "rank": 199
   },
   {
    "url": "https://x.com/zazieoverlord",
@@ -5050,7 +5146,7 @@
    "flag_adj": -6,
    "raw": 88,
    "score": 80,
-   "rank": 196
+   "rank": 200
   },
   {
    "url": "https://open.spotify.com/artist/4UOgvZEOo7xBhFBjJvlMm0?si=Mr95tIjiQD6V7mLbTZdCb",
@@ -5076,7 +5172,7 @@
    "flag_adj": 0,
    "raw": 88,
    "score": 80,
-   "rank": 197
+   "rank": 201
   },
   {
    "url": "https://open.spotify.com/playlist/6KvWN7SWNoEtpwtK1rdXtG",
@@ -5102,7 +5198,7 @@
    "flag_adj": 0,
    "raw": 88,
    "score": 80,
-   "rank": 198
+   "rank": 202
   },
   {
    "url": "https://mycommunitycinema.org.uk/cinema/pvtv-fringe-flicks-2",
@@ -5132,7 +5228,7 @@
    "flag_adj": -30,
    "raw": 87,
    "score": 79,
-   "rank": 199
+   "rank": 203
   },
   {
    "url": "https://www.clongclongmoo.org/?s=zazie",
@@ -5159,7 +5255,7 @@
    "flag_adj": -10,
    "raw": 87,
    "score": 79,
-   "rank": 200
+   "rank": 204
   },
   {
    "url": "https://github.com/zazieproductions/Conic-Vortex",
@@ -5187,7 +5283,7 @@
    "flag_adj": -10,
    "raw": 87,
    "score": 79,
-   "rank": 201
+   "rank": 205
   },
   {
    "url": "https://www.listennotes.com/podcasts/black-mountain/episode-7-ruth-asawas-jCOn1up_zYy",
@@ -5211,7 +5307,7 @@
    "flag_adj": 0,
    "raw": 87,
    "score": 79,
-   "rank": 202
+   "rank": 206
   },
   {
    "url": "https://www.rangermagazine.net/zazie_issue4?amp=1",
@@ -5234,7 +5330,7 @@
    "flag_adj": 0,
    "raw": 87,
    "score": 79,
-   "rank": 203
+   "rank": 207
   },
   {
    "url": "https://songstats.com/artist/mljz9dxu/zazie-kanwar-torge",
@@ -5259,7 +5355,7 @@
    "flag_adj": 0,
    "raw": 87,
    "score": 79,
-   "rank": 204
+   "rank": 208
   },
   {
    "url": "https://www.beatport.com/artist/zazie-productions/1440962/tracks",
@@ -5283,7 +5379,7 @@
    "flag_adj": 0,
    "raw": 87,
    "score": 79,
-   "rank": 205
+   "rank": 209
   },
   {
    "url": "https://www.clongclongmoo.org/2025/10/31/various-artist-%e2%96%bc-experiments-on-the-witch-house-%e2%96%b2",
@@ -5306,7 +5402,7 @@
    "flag_adj": 0,
    "raw": 86,
    "score": 79,
-   "rank": 206
+   "rank": 210
   },
   {
    "url": "https://www.clongclongmoo.org/2026/07/17/various-artist-%f0%9f%91%bd-i-want-to-believe-x-files-tribute%f0%9f%94%8d",
@@ -5329,7 +5425,7 @@
    "flag_adj": 0,
    "raw": 86,
    "score": 79,
-   "rank": 207
+   "rank": 211
   },
   {
    "url": "https://www.clongclongmoo.org/2026/08/14/various-artist-doom-a-creative-commons-music-compilation",
@@ -5352,7 +5448,7 @@
    "flag_adj": 0,
    "raw": 86,
    "score": 79,
-   "rank": 208
+   "rank": 212
   },
   {
    "url": "https://www.soundsgoodwebzine.com/tag/zazie-productions",
@@ -5376,7 +5472,7 @@
    "flag_adj": 0,
    "raw": 86,
    "score": 79,
-   "rank": 209
+   "rank": 213
   },
   {
    "url": "https://telegra.ph/Zazie-Productions-Unleashes-The-Vanishing-Point-Syndicate-with-Dissonance-Index-Compilation-03-17",
@@ -5405,7 +5501,7 @@
    "flag_adj": -16,
    "raw": 86,
    "score": 79,
-   "rank": 210
+   "rank": 214
   },
   {
    "url": "https://itch.io/c/5777018/zazie-productions-collection-vol-2",
@@ -5429,7 +5525,7 @@
    "flag_adj": 0,
    "raw": 85,
    "score": 79,
-   "rank": 211
+   "rank": 215
   },
   {
    "url": "https://zazieproductions.itch.io/unholyanatomy",
@@ -5453,7 +5549,7 @@
    "flag_adj": 0,
    "raw": 85,
    "score": 79,
-   "rank": 212
+   "rank": 216
   },
   {
    "url": "https://www.stage32.com/profile/1164424/about",
@@ -5484,7 +5580,7 @@
    "flag_adj": -6,
    "raw": 85,
    "score": 79,
-   "rank": 213
+   "rank": 217
   },
   {
    "url": "https://www.deezer.com/en/artist/170543657",
@@ -5510,7 +5606,7 @@
    "flag_adj": 0,
    "raw": 84,
    "score": 78,
-   "rank": 214
+   "rank": 218
   },
   {
    "url": "https://www.themoviedb.org/person/5112050-zazie-productions?language=ko-KR",
@@ -5541,7 +5637,7 @@
    "flag_adj": -30,
    "raw": 83,
    "score": 78,
-   "rank": 215
+   "rank": 219
   },
   {
    "url": "https://archive.org/details/data-conversation-01-17675",
@@ -5567,7 +5663,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 216
+   "rank": 220
   },
   {
    "url": "https://archive.org/details/img-1941_202505",
@@ -5593,7 +5689,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 217
+   "rank": 221
   },
   {
    "url": "https://archive.org/details/neural_dynamics_simulation_by_cascadingforest26294535",
@@ -5619,7 +5715,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 218
+   "rank": 222
   },
   {
    "url": "https://archive.org/details/quantum-geometry-3-d-emulator",
@@ -5645,7 +5741,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 219
+   "rank": 223
   },
   {
    "url": "https://archive.org/details/unexplained-aerial-phenomena-report-zazie-productions",
@@ -5671,7 +5767,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 220
+   "rank": 224
   },
   {
    "url": "https://www.imdb.com/name/nm17333332/bio",
@@ -5695,7 +5791,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 221
+   "rank": 225
   },
   {
    "url": "https://musicians.directory/profile-zazie-productions",
@@ -5722,7 +5818,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 222
+   "rank": 226
   },
   {
    "url": "https://rateyourmusic.com/song/zazie-productions/i-love-everything-about-you",
@@ -5751,7 +5847,7 @@
    "flag_adj": -14,
    "raw": 83,
    "score": 78,
-   "rank": 223
+   "rank": 227
   },
   {
    "url": "https://www.wfcn.co/profile/zazie.productions",
@@ -5777,7 +5873,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 224
+   "rank": 228
   },
   {
    "url": "https://ogre.red/press/anthologies/2025-anthology",
@@ -5801,7 +5897,7 @@
    "flag_adj": 0,
    "raw": 83,
    "score": 78,
-   "rank": 225
+   "rank": 229
   },
   {
    "url": "https://www.discogs.com/release/38112006-Various-They-Came-For-The-Whales",
@@ -5825,7 +5921,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 226
+   "rank": 230
   },
   {
    "url": "https://www.discogs.com/release/38147292-Various-Doom-A-Creative-Commons-Music-Compilation",
@@ -5849,7 +5945,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 227
+   "rank": 231
   },
   {
    "url": "https://www.soundshiva.net/release/various-artists-i-want-to-believe-x-files-tribute",
@@ -5873,7 +5969,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 228
+   "rank": 232
   },
   {
    "url": "https://www.soundshiva.net/release/various-artists-music-inspired-by-mulholland-drive",
@@ -5897,7 +5993,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 229
+   "rank": 233
   },
   {
    "url": "https://plataformarecs.bandcamp.com/track/zazie-productions-pyrogenesis",
@@ -5921,7 +6017,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 230
+   "rank": 234
   },
   {
    "url": "https://news.prfree.org/@noisemusicnewsdaily/zazie-productions-launches-the-vanishing-point-syndicate-a-bold-new-netlabel-with-dissonance-index-vol-1-a-global-underground-compilation-krmhmvbx1u59",
@@ -5950,7 +6046,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 231
+   "rank": 235
   },
   {
    "url": "https://news.prfree.org/@zazieproductions/zazie-productions-unveils-phantom-requiem-2024-a-haunting-five-minute-stop-motion-avant-garde-masterpiece-q85vaihvx2hk",
@@ -5979,7 +6075,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 232
+   "rank": 236
   },
   {
    "url": "https://pronthego.com/pages/blog/art-PR-expanding-artistic-reach-through-digital-exhibitions",
@@ -6011,7 +6107,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 233
+   "rank": 237
   },
   {
    "url": "https://pronthego.com/pages/blog/indie-film-PR-how-film-festivals-can-help-a-film-attract-media-attention-and-get-distribution-deals",
@@ -6040,7 +6136,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 234
+   "rank": 238
   },
   {
    "url": "https://pronthego.com/pages/blog/indie-music-PR-sights-and-sounds-aesthetic-identities-of-indie-musicians",
@@ -6069,7 +6165,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 235
+   "rank": 239
   },
   {
    "url": "https://pronthego.com/pages/blog/this-is-how-rebellious-alternative-fashion-is-making-its-way-back-into-society",
@@ -6102,7 +6198,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 236
+   "rank": 240
   },
   {
    "url": "https://pronthego.com/pages/blog/when-algorithms-imitate-art-the-rise-of-ghibli-style-ai-and-what-it-means-for-creators",
@@ -6135,7 +6231,7 @@
    "flag_adj": -24,
    "raw": 82,
    "score": 78,
-   "rank": 237
+   "rank": 241
   },
   {
    "url": "https://allpoetry.com/Zazie_Productions",
@@ -6161,7 +6257,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 238
+   "rank": 242
   },
   {
    "url": "https://art.kunstmatrix.com/en/artist/zazie-productions",
@@ -6191,7 +6287,7 @@
    "flag_adj": -6,
    "raw": 82,
    "score": 78,
-   "rank": 239
+   "rank": 243
   },
   {
    "url": "https://www.last.fm/music/Zazie+Productions/+tracks",
@@ -6217,7 +6313,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 240
+   "rank": 244
   },
   {
    "url": "https://www.shazam.com/en-us/artist/zazie-productions/1623719351",
@@ -6243,7 +6339,7 @@
    "flag_adj": 0,
    "raw": 82,
    "score": 78,
-   "rank": 241
+   "rank": 245
   },
   {
    "url": "https://www.concertarchives.org/concerts/flesh-eating-vinyl-and-the-smell-of-monochrome-tour2019",
@@ -6268,7 +6364,7 @@
    "flag_adj": 0,
    "raw": 81,
    "score": 77,
-   "rank": 242
+   "rank": 246
   },
   {
    "url": "https://github.com/zazieproductions/zazieproductions",
@@ -6294,7 +6390,7 @@
    "flag_adj": 0,
    "raw": 81,
    "score": 77,
-   "rank": 243
+   "rank": 247
   },
   {
    "url": "https://getheard.fm/producers/zazie-productions",
@@ -6320,7 +6416,7 @@
    "flag_adj": 0,
    "raw": 81,
    "score": 77,
-   "rank": 244
+   "rank": 248
   },
   {
    "url": "https://rateyourmusic.com/~ZazieProductions",
@@ -6344,7 +6440,7 @@
    "flag_adj": 0,
    "raw": 81,
    "score": 77,
-   "rank": 245
+   "rank": 249
   },
   {
    "url": "https://archive.org/details/arrhythnia-discography",
@@ -6370,7 +6466,7 @@
    "flag_adj": 0,
    "raw": 80,
    "score": 77,
-   "rank": 246
+   "rank": 250
   },
   {
    "url": "https://archive.org/details/experiments-on-the-witch-house",
@@ -6396,7 +6492,7 @@
    "flag_adj": 0,
    "raw": 80,
    "score": 77,
-   "rank": 247
+   "rank": 251
   },
   {
    "url": "https://archive.org/details/va-doom-a-creative-commons-music-compilation",
@@ -6422,7 +6518,7 @@
    "flag_adj": 0,
    "raw": 80,
    "score": 77,
-   "rank": 248
+   "rank": 252
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/sellotape-super-deluxe-edition",
@@ -6447,7 +6543,7 @@
    "flag_adj": 0,
    "raw": 80,
    "score": 77,
-   "rank": 249
+   "rank": 253
   },
   {
    "url": "http://web.archive.org/web/20250426022912/https://filmfreeway.com/ZazieProductions",
@@ -6474,7 +6570,7 @@
    "flag_adj": -8,
    "raw": 80,
    "score": 77,
-   "rank": 250
+   "rank": 254
   },
   {
    "url": "http://web.archive.org/web/20250815023918/https://zazieproductions.itch.io",
@@ -6501,7 +6597,7 @@
    "flag_adj": -8,
    "raw": 80,
    "score": 77,
-   "rank": 251
+   "rank": 255
   },
   {
    "url": "https://www.academia.edu/127699196/Essentially_Isometric_Invertibility_For_Co_countably_Unique_Canonically_Bounded_Systems",
@@ -6530,7 +6626,7 @@
    "flag_adj": -16,
    "raw": 80,
    "score": 77,
-   "rank": 252
+   "rank": 256
   },
   {
    "url": "https://www.thetalentmanager.com/talent/214007/zazie-productions",
@@ -6562,7 +6658,7 @@
    "flag_adj": -30,
    "raw": 79,
    "score": 77,
-   "rank": 253
+   "rank": 257
   },
   {
    "url": "https://archive.org/details/liquid-phosphorus-4-33",
@@ -6588,7 +6684,7 @@
    "flag_adj": 0,
    "raw": 79,
    "score": 77,
-   "rank": 254
+   "rank": 258
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/constrained-capacity",
@@ -6613,7 +6709,7 @@
    "flag_adj": 0,
    "raw": 79,
    "score": 77,
-   "rank": 255
+   "rank": 259
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/distant-bells-for-surgical-minds",
@@ -6638,7 +6734,7 @@
    "flag_adj": 0,
    "raw": 79,
    "score": 77,
-   "rank": 256
+   "rank": 260
   },
   {
    "url": "https://zazieproductions.gumroad.com/?_gl=1*n00hfe*_ga*MjA1NDM2MTg2LjE3Mzg3MjU3MzQ.*_ga_6LJN6D94N6*MTczODc5OTg3NS41LjEuMTczODgwNDQ1MS4wLjAuMA",
@@ -6664,7 +6760,7 @@
    "flag_adj": 0,
    "raw": 79,
    "score": 77,
-   "rank": 257
+   "rank": 261
   },
   {
    "url": "https://allpoetry.com/poem/17227437-Special-Edition--by-Zazie-Productions",
@@ -6688,7 +6784,7 @@
    "flag_adj": 0,
    "raw": 79,
    "score": 77,
-   "rank": 258
+   "rank": 262
   },
   {
    "url": "https://linktr.ee/ZazieProductions",
@@ -6718,7 +6814,7 @@
    "flag_adj": -10,
    "raw": 79,
    "score": 77,
-   "rank": 259
+   "rank": 263
   },
   {
    "url": "https://www.instagram.com/zazieproductionsofficial",
@@ -6746,7 +6842,7 @@
    "flag_adj": -6,
    "raw": 78,
    "score": 76,
-   "rank": 260
+   "rank": 264
   },
   {
    "url": "https://www.stage32.com/media/3838211664293930413",
@@ -6771,7 +6867,7 @@
    "flag_adj": 0,
    "raw": 78,
    "score": 76,
-   "rank": 261
+   "rank": 265
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/a-long-way-to-nowhere",
@@ -6795,7 +6891,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 262
+   "rank": 266
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/anesthesia-for-the-signal-age",
@@ -6819,7 +6915,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 263
+   "rank": 267
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/anything-can-happen-on-an-electric-day",
@@ -6843,7 +6939,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 264
+   "rank": 268
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/g7e-torpedo",
@@ -6867,7 +6963,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 265
+   "rank": 269
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time",
@@ -6891,7 +6987,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 266
+   "rank": 270
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/greetings-from-tinsel-time-super-deluxe-edition",
@@ -6915,7 +7011,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 267
+   "rank": 271
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/interference-archive-01010101",
@@ -6939,7 +7035,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 268
+   "rank": 272
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/sellotape",
@@ -6963,7 +7059,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 269
+   "rank": 273
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/spectral-ode-to-synesthesia-2",
@@ -6987,7 +7083,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 270
+   "rank": 274
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/stutter-to-stammer",
@@ -7011,7 +7107,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 271
+   "rank": 275
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/stutter-to-stammer-super-deluxe-edition",
@@ -7035,7 +7131,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 272
+   "rank": 276
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/to-halt-space-adrift",
@@ -7059,7 +7155,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 273
+   "rank": 277
   },
   {
    "url": "https://zazieproductions.bandcamp.com/album/vermiform",
@@ -7083,7 +7179,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 274
+   "rank": 278
   },
   {
    "url": "https://zazieproductions.bandcamp.com/track/miraculously-unhurt",
@@ -7107,7 +7203,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 275
+   "rank": 279
   },
   {
    "url": "https://zazieproductions.bandcamp.com/track/opaline-lament-life-from-the-beyond-2",
@@ -7131,7 +7227,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 276
+   "rank": 280
   },
   {
    "url": "https://zazieproductions.gumroad.com/l/plugin",
@@ -7157,7 +7253,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 277
+   "rank": 281
   },
   {
    "url": "http://www.lynnesachs.com/category/sections/page/6",
@@ -7181,7 +7277,7 @@
    "flag_adj": 0,
    "raw": 77,
    "score": 76,
-   "rank": 278
+   "rank": 282
   },
   {
    "url": "https://www.reverbnation.com/zazieproductions/videos",
@@ -7210,7 +7306,7 @@
    "flag_adj": -14,
    "raw": 77,
    "score": 76,
-   "rank": 279
+   "rank": 283
   },
   {
    "url": "https://www.clongclongmoo.org/2025/07/26/various-artists-on-%e5%91%aa%e6%80%a8-the-music-compilation",
@@ -7237,7 +7333,7 @@
    "flag_adj": -10,
    "raw": 76,
    "score": 76,
-   "rank": 280
+   "rank": 284
   },
   {
    "url": "https://www.instagram.com/church.of.malware",
@@ -7265,7 +7361,7 @@
    "flag_adj": -6,
    "raw": 76,
    "score": 76,
-   "rank": 281
+   "rank": 285
   },
   {
    "url": "https://www.eventbrite.co.uk/e/pvtv-fringe-flicks-kenneth-angers-lucifer-rising-short-films-tickets-1266128637839",
@@ -7288,7 +7384,7 @@
    "flag_adj": 0,
    "raw": 76,
    "score": 76,
-   "rank": 282
+   "rank": 286
   },
   {
    "url": "https://www.artrabbit.com/people/zazie-kanwartorge/artist",
@@ -7318,7 +7414,7 @@
    "flag_adj": -30,
    "raw": 75,
    "score": 75,
-   "rank": 283
+   "rank": 287
   },
   {
    "url": "https://www.lyrics.com/lyric-lf/16514291/Zazie+Productions/Well+Meaning+Neurotypicals",
@@ -7342,7 +7438,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 284
+   "rank": 288
   },
   {
    "url": "https://arrhythniarecords.bandcamp.com/album/amnesia-x-zazie-productions-oliver-sch-ffler-split-anr124",
@@ -7366,7 +7462,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 285
+   "rank": 289
   },
   {
    "url": "https://brutalizerecs.bandcamp.com/album/frequ-ncias-cadav-ricas-volume-i-compila-o",
@@ -7391,7 +7487,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 286
+   "rank": 290
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/album/shippai",
@@ -7415,7 +7511,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 287
+   "rank": 291
   },
   {
    "url": "https://dittanyofcrete.bandcamp.com/album/summoning-1",
@@ -7440,7 +7536,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 288
+   "rank": 292
   },
   {
    "url": "https://dittanyofcrete.bandcamp.com/album/summoning-2",
@@ -7465,7 +7561,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 289
+   "rank": 293
   },
   {
    "url": "https://dittanyofcrete.bandcamp.com/album/summoning-3",
@@ -7490,7 +7586,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 290
+   "rank": 294
   },
   {
    "url": "https://gelombangaudiozine.bandcamp.com/album/issue-51-field-recording-vol-3",
@@ -7515,7 +7611,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 291
+   "rank": 295
   },
   {
    "url": "https://gelombangaudiozine.bandcamp.com/album/issue-52-field-recording-vol-4",
@@ -7540,7 +7636,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 292
+   "rank": 296
   },
   {
    "url": "https://internetdaemon.bandcamp.com/album/doom-a-creative-commons-music-compilation",
@@ -7564,7 +7660,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 293
+   "rank": 297
   },
   {
    "url": "https://internetdaemon.bandcamp.com/album/experiments-on-the-witch-house-selected-tracks",
@@ -7588,7 +7684,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 294
+   "rank": 298
   },
   {
    "url": "https://internetdaemon.bandcamp.com/album/music-inspired-by-mulholland-drive",
@@ -7612,7 +7708,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 295
+   "rank": 299
   },
   {
    "url": "https://plataformarecs.bandcamp.com/album/v-a-frida-kahlo",
@@ -7636,7 +7732,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 296
+   "rank": 300
   },
   {
    "url": "https://psychlovers.bandcamp.com/album/psych-against-cancer-vol-3-part-2",
@@ -7661,7 +7757,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 297
+   "rank": 301
   },
   {
    "url": "https://terminalfutureindustries.bandcamp.com/album/ecstatic-feedback-ii-a-terminal-future-industries-compilation-part-1",
@@ -7686,7 +7782,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 298
+   "rank": 302
   },
   {
    "url": "https://thehillsaredead.bandcamp.com/album/its-only-hnw-but-i-like-it-ix",
@@ -7710,7 +7806,7 @@
    "flag_adj": 0,
    "raw": 75,
    "score": 75,
-   "rank": 299
+   "rank": 303
   },
   {
    "url": "https://zazieproductions.gumroad.com",
@@ -7739,7 +7835,7 @@
    "flag_adj": -16,
    "raw": 75,
    "score": 75,
-   "rank": 300
+   "rank": 304
   },
   {
    "url": "https://youtu.be/J9q7lgaz5-o?si=GFmMtYHpV8eIps4Z",
@@ -7765,7 +7861,7 @@
    "flag_adj": 0,
    "raw": 74,
    "score": 75,
-   "rank": 301
+   "rank": 305
   },
   {
    "url": "https://youtu.be/qTFV8IoF3X4?si=7spslQnFx0RAZzYV",
@@ -7790,7 +7886,7 @@
    "flag_adj": 0,
    "raw": 74,
    "score": 75,
-   "rank": 302
+   "rank": 306
   },
   {
    "url": "https://telegra.ph/Zazie-Productions-The-Eccentric-Savant-Who-Is-Redefining-Sound-and-Vision-02-12",
@@ -7822,7 +7918,7 @@
    "flag_adj": -26,
    "raw": 74,
    "score": 75,
-   "rank": 303
+   "rank": 307
   },
   {
    "url": "https://thesqueakywheel.org/author/zazieproductions",
@@ -7846,7 +7942,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 304
+   "rank": 308
   },
   {
    "url": "https://www.octopusmarquee.com/octomarqiff",
@@ -7876,7 +7972,7 @@
    "flag_adj": -30,
    "raw": 73,
    "score": 75,
-   "rank": 305
+   "rank": 309
   },
   {
    "url": "https://www.discogs.com/master/4006543-Various-Harsh-Noise-Corpus-Vol4-International-Harsh-Noise-Compilation",
@@ -7902,7 +7998,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 306
+   "rank": 310
   },
   {
    "url": "https://www.discogs.com/release/23533040-Various-Plosives-An-Introduction-To-Ghost-Nun",
@@ -7929,7 +8025,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 307
+   "rank": 311
   },
   {
    "url": "https://www.discogs.com/release/27529131-Various-Harsh-Noise-Wall-Means-Fight-Back-Smash-Gay-Oppression",
@@ -7955,7 +8051,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 308
+   "rank": 312
   },
   {
    "url": "https://www.discogs.com/release/28653841-Various-Esoterrexus-A-Slithering-Black-Compilation",
@@ -7981,7 +8077,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 309
+   "rank": 313
   },
   {
    "url": "https://www.discogs.com/release/28865734-Various-Shadowlands-4",
@@ -8007,7 +8103,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 310
+   "rank": 314
   },
   {
    "url": "https://www.discogs.com/release/29280184-Various-Warm-Music-For-Cold-Weather-For-the-Muscular-Dystrophy-Association",
@@ -8033,7 +8129,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 311
+   "rank": 315
   },
   {
    "url": "https://www.discogs.com/release/30238304-Various-ArrhythNia-Digital-Net-Label-Compilation-4-Experimental-Music-And-Noise",
@@ -8059,7 +8155,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 312
+   "rank": 316
   },
   {
    "url": "https://www.discogs.com/release/32706429-Various-42-Seconds-7",
@@ -8085,7 +8181,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 313
+   "rank": 317
   },
   {
    "url": "https://www.discogs.com/release/32869101-Various-LSD100",
@@ -8111,7 +8207,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 314
+   "rank": 318
   },
   {
    "url": "https://www.discogs.com/release/33220155-Various-Who-Is-The-Dreamer-A-Tribute-To-David-Lynch",
@@ -8137,7 +8233,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 315
+   "rank": 319
   },
   {
    "url": "https://www.discogs.com/release/33603147-Various-Christmasasaurus-Unleashed",
@@ -8163,7 +8259,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 316
+   "rank": 320
   },
   {
    "url": "https://www.discogs.com/release/33641268-Various-Thirteenth-Quarterly-Report-Of-Argali-Records-Netlabel-%C3%86ther-Corruption",
@@ -8189,7 +8285,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 317
+   "rank": 321
   },
   {
    "url": "https://www.discogs.com/release/33707496-Divergent-Artists-77",
@@ -8215,7 +8311,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 318
+   "rank": 322
   },
   {
    "url": "https://www.discogs.com/release/33736134-Various-Solidarity-A-Benefit-Compilation-for-the-ACLU",
@@ -8241,7 +8337,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 319
+   "rank": 323
   },
   {
    "url": "https://www.discogs.com/release/33883035-Various-Exquisite-Tones-For-Oozing-Ears-Vol-II",
@@ -8267,7 +8363,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 320
+   "rank": 324
   },
   {
    "url": "https://www.discogs.com/release/33889353-Various-Toxic-T",
@@ -8293,7 +8389,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 321
+   "rank": 325
   },
   {
    "url": "https://www.discogs.com/release/33890583-Various-Dissonance-Index-Vol-1",
@@ -8319,7 +8415,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 322
+   "rank": 326
   },
   {
    "url": "https://www.discogs.com/release/34073494-Various-Synthetic-Dystopia",
@@ -8345,7 +8441,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 323
+   "rank": 327
   },
   {
    "url": "https://www.discogs.com/release/34128706-Various-Beyond-The-Body",
@@ -8371,7 +8467,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 324
+   "rank": 328
   },
   {
    "url": "https://www.discogs.com/release/34195165-Various-LSD666",
@@ -8397,7 +8493,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 325
+   "rank": 329
   },
   {
    "url": "https://www.discogs.com/release/34207969-Various-Fourteenth-Quarterly-Report-Of-Argali-Records-Netlabel-The-Great-Reconnection",
@@ -8423,7 +8519,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 326
+   "rank": 330
   },
   {
    "url": "https://www.discogs.com/release/34647799-Various-Ju-On-%E5%91%AA%E6%80%A8-The-Music-Compilation",
@@ -8449,7 +8545,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 327
+   "rank": 331
   },
   {
    "url": "https://www.discogs.com/release/34708917-Various-Make-a-Change-A-Compilation-of-Skankin-Pickle-Covers",
@@ -8475,7 +8571,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 328
+   "rank": 332
   },
   {
    "url": "https://www.discogs.com/release/34846487-Various-NYOTGRINDER-NOISE-COMPILATION-vol2",
@@ -8501,7 +8597,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 329
+   "rank": 333
   },
   {
    "url": "https://www.discogs.com/release/34852574-Various-Kosmische-L%E1%B4%A7%C3%ABm-Volume-001",
@@ -8527,7 +8623,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 330
+   "rank": 334
   },
   {
    "url": "https://www.discogs.com/release/34981730-Various-1985",
@@ -8553,7 +8649,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 331
+   "rank": 335
   },
   {
    "url": "https://www.discogs.com/release/35109107-TSHN-Productions-StonewallNoisewall-Volume-1",
@@ -8579,7 +8675,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 332
+   "rank": 336
   },
   {
    "url": "https://www.discogs.com/release/35511685-Various-Vampires-A-Sounds-For-The-Soul-Compilation",
@@ -8605,7 +8701,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 333
+   "rank": 337
   },
   {
    "url": "https://www.discogs.com/release/35531737-Various-Experiments-on-the-Witch-House",
@@ -8631,7 +8727,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 334
+   "rank": 338
   },
   {
    "url": "https://www.discogs.com/release/35645056-EFSPACM-One-String",
@@ -8657,7 +8753,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 335
+   "rank": 339
   },
   {
    "url": "https://www.discogs.com/release/35667886-Various-Aspirin-Age-Vol-5-A-Shoegaze-Compilation",
@@ -8683,7 +8779,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 336
+   "rank": 340
   },
   {
    "url": "https://www.discogs.com/release/35696575-Various-1-Year-Anniversary",
@@ -8709,7 +8805,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 337
+   "rank": 341
   },
   {
    "url": "https://www.discogs.com/release/35745076-Various-One-World",
@@ -8735,7 +8831,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 338
+   "rank": 342
   },
   {
    "url": "https://www.discogs.com/release/35850694-Various-Noisembryowl-5",
@@ -8761,7 +8857,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 339
+   "rank": 343
   },
   {
    "url": "https://www.discogs.com/release/35943793-Various-Sixteenth-Quarterly-Report-Our-Just-Desserts",
@@ -8787,7 +8883,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 340
+   "rank": 344
   },
   {
    "url": "https://www.discogs.com/release/36016036-Various-Icelock-Continuum",
@@ -8813,7 +8909,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 341
+   "rank": 345
   },
   {
    "url": "https://www.discogs.com/release/36147124-Various-Harsh-Noise-Corpus-Vol5",
@@ -8839,7 +8935,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 342
+   "rank": 346
   },
   {
    "url": "https://www.discogs.com/release/36241024-Various-Two-Years",
@@ -8865,7 +8961,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 343
+   "rank": 347
   },
   {
    "url": "https://www.discogs.com/release/36350866-Various-Frida-Kahlo",
@@ -8891,7 +8987,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 344
+   "rank": 348
   },
   {
    "url": "https://www.discogs.com/release/36381970-Various-Tavern-Synth-Vol-II",
@@ -8917,7 +9013,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 345
+   "rank": 349
   },
   {
    "url": "https://www.discogs.com/release/36430204-Various-Summoning-1",
@@ -8943,7 +9039,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 346
+   "rank": 350
   },
   {
    "url": "https://www.discogs.com/release/36641662-Various-Noise-Around-The-World-14",
@@ -8969,7 +9065,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 347
+   "rank": 351
   },
   {
    "url": "https://www.discogs.com/release/36690658-Various-Psych-Against-Cancer-Vol-3-Part-2-",
@@ -8995,7 +9091,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 348
+   "rank": 352
   },
   {
    "url": "https://www.discogs.com/release/36703675-Various-Twenty-Three-Seconds-Ov-Time-Volume-15--Thee-Awakening-",
@@ -9021,7 +9117,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 349
+   "rank": 353
   },
   {
    "url": "https://www.discogs.com/release/36836716-Various-SHARDS--Vol-1",
@@ -9047,7 +9143,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 350
+   "rank": 354
   },
   {
    "url": "https://www.discogs.com/release/36906384-Various-Music-Inspired-By-Mulholland-Drive",
@@ -9073,7 +9169,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 351
+   "rank": 355
   },
   {
    "url": "https://www.discogs.com/release/36959898-Various-Summoning-2",
@@ -9099,7 +9195,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 352
+   "rank": 356
   },
   {
    "url": "https://www.discogs.com/release/36973218-Various-Frequ%C3%AAncias-Cadav%C3%A9ricas-Volume-I-Compila%C3%A7%C3%A3o",
@@ -9125,7 +9221,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 353
+   "rank": 357
   },
   {
    "url": "https://www.discogs.com/release/37181856-Various-Field-Recording-Vol-3",
@@ -9151,7 +9247,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 354
+   "rank": 358
   },
   {
    "url": "https://www.discogs.com/release/37333392-Various-Late-Night-Love-Letters",
@@ -9177,7 +9273,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 355
+   "rank": 359
   },
   {
    "url": "https://www.discogs.com/release/37511712-Various-Its-Only-HNW-But-I-Like-It-IX",
@@ -9203,7 +9299,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 356
+   "rank": 360
   },
   {
    "url": "https://www.discogs.com/release/37565460-Various-Summoning-3",
@@ -9229,7 +9325,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 357
+   "rank": 361
   },
   {
    "url": "https://www.discogs.com/release/37644762-Various-Field-Recording-Vol-4",
@@ -9255,7 +9351,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 358
+   "rank": 362
   },
   {
    "url": "https://www.discogs.com/release/37767543-Various-Echoes-Of-Ancient-Wrath",
@@ -9281,7 +9377,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 359
+   "rank": 363
   },
   {
    "url": "https://www.discogs.com/release/37824543-Various-Ecstatic-Feedback-II-A-Terminal-Future-Industries-Compilation",
@@ -9307,7 +9403,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 360
+   "rank": 364
   },
   {
    "url": "https://www.discogs.com/release/37900812-VA-I-Want-To-Believe-X-files-Tribute",
@@ -9333,7 +9429,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 361
+   "rank": 365
   },
   {
    "url": "https://www.discogs.com/release/38101452-Various-HP-Lovecrafts-Whisperer-In-Darkness",
@@ -9359,7 +9455,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 362
+   "rank": 366
   },
   {
    "url": "https://archive.org/details/5-bb-30-b-4-b-a-4-a-0-4-fff-94-cc-22-f-0-fceda-667",
@@ -9389,7 +9485,7 @@
    "flag_adj": -10,
    "raw": 73,
    "score": 75,
-   "rank": 363
+   "rank": 367
   },
   {
    "url": "https://substack.com/@zazieproductions",
@@ -9415,7 +9511,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 364
+   "rank": 368
   },
   {
    "url": "https://pronthego.com/pages/blog/how-film-festivals-can-help-a-film-attract-media-attention",
@@ -9443,7 +9539,7 @@
    "flag_adj": -24,
    "raw": 73,
    "score": 75,
-   "rank": 365
+   "rank": 369
   },
   {
    "url": "https://pronthego.com/pages/blog/sights-and-sounds-aesthetic-identities-of-indie-musicians",
@@ -9471,7 +9567,7 @@
    "flag_adj": -24,
    "raw": 73,
    "score": 75,
-   "rank": 366
+   "rank": 370
   },
   {
    "url": "https://arthive.com/zazieproductions/biography",
@@ -9503,7 +9599,7 @@
    "flag_adj": -16,
    "raw": 73,
    "score": 75,
-   "rank": 367
+   "rank": 371
   },
   {
    "url": "https://duotrope.com/magazine/bipolar-poetry-39640",
@@ -9526,7 +9622,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 368
+   "rank": 372
   },
   {
    "url": "https://www.iheart.com/artist/zazie-productions-38017001",
@@ -9552,7 +9648,7 @@
    "flag_adj": 0,
    "raw": 73,
    "score": 75,
-   "rank": 369
+   "rank": 373
   },
   {
    "url": "https://internetdaemon.bandcamp.com/track/74mm-under-orange-lights",
@@ -9576,7 +9672,7 @@
    "flag_adj": 0,
    "raw": 72,
    "score": 74,
-   "rank": 370
+   "rank": 374
   },
   {
    "url": "https://plataformarecs.bandcamp.com/album/v-a-noise-around-the-world-14",
@@ -9600,7 +9696,7 @@
    "flag_adj": 0,
    "raw": 72,
    "score": 74,
-   "rank": 371
+   "rank": 375
   },
   {
    "url": "https://soundsforthesoul.bandcamp.com/album/the-undead",
@@ -9624,7 +9720,7 @@
    "flag_adj": 0,
    "raw": 72,
    "score": 74,
-   "rank": 372
+   "rank": 376
   },
   {
    "url": "https://zazieproductions.bandcamp.com",
@@ -9655,7 +9751,7 @@
    "flag_adj": -10,
    "raw": 72,
    "score": 74,
-   "rank": 373
+   "rank": 377
   },
   {
    "url": "https://allevents.in/event/100001021724965877",
@@ -9678,7 +9774,7 @@
    "flag_adj": 0,
    "raw": 72,
    "score": 74,
-   "rank": 374
+   "rank": 378
   },
   {
    "url": "https://www.discogs.com/release/38101530-Various-Arboreal-Telegraph",
@@ -9704,7 +9800,7 @@
    "flag_adj": 0,
    "raw": 71,
    "score": 74,
-   "rank": 375
+   "rank": 379
   },
   {
    "url": "https://play.anghami.com/artist/14553637",
@@ -9732,7 +9828,7 @@
    "flag_adj": -16,
    "raw": 71,
    "score": 74,
-   "rank": 376
+   "rank": 380
   },
   {
    "url": "https://www.goodreads.com/book/show/241165826-thresholds",
@@ -9756,7 +9852,7 @@
    "flag_adj": 0,
    "raw": 70,
    "score": 74,
-   "rank": 377
+   "rank": 381
   },
   {
    "url": "https://sketchfab.com/zazieproductions/models",
@@ -9786,7 +9882,7 @@
    "flag_adj": -16,
    "raw": 70,
    "score": 74,
-   "rank": 378
+   "rank": 382
   },
   {
    "url": "https://pro.soundclick.com/ZazieProductions",
@@ -9810,7 +9906,7 @@
    "flag_adj": 0,
    "raw": 70,
    "score": 74,
-   "rank": 379
+   "rank": 383
   },
   {
    "url": "https://www.amazon.com/music/player/artists/B0B14FFGFV/zazie-productions",
@@ -9843,7 +9939,7 @@
    "flag_adj": -22,
    "raw": 69,
    "score": 73,
-   "rank": 380
+   "rank": 384
   },
   {
    "url": "https://www.bandmix.com/zazieproductions",
@@ -9872,7 +9968,7 @@
    "flag_adj": -6,
    "raw": 69,
    "score": 73,
-   "rank": 381
+   "rank": 385
   },
   {
    "url": "https://youtube.com/@zazieproductions?si=T9Zc5jsMttuG3n-e",
@@ -9902,7 +9998,7 @@
    "flag_adj": -14,
    "raw": 68,
    "score": 73,
-   "rank": 382
+   "rank": 386
   },
   {
    "url": "https://www.thepromptindex.com/prompt.php?id=1040",
@@ -9930,7 +10026,7 @@
    "flag_adj": -6,
    "raw": 68,
    "score": 73,
-   "rank": 383
+   "rank": 387
   },
   {
    "url": "https://www.qobuz.com/us-en/album/constrained-capacity-zazie-productions/bvwuboa98rchb",
@@ -9960,7 +10056,7 @@
    "flag_adj": -16,
    "raw": 68,
    "score": 73,
-   "rank": 384
+   "rank": 388
   },
   {
    "url": "https://tidal.com/browse/artist/32246195",
@@ -9990,7 +10086,7 @@
    "flag_adj": -16,
    "raw": 68,
    "score": 73,
-   "rank": 385
+   "rank": 389
   },
   {
    "url": "https://zazieproductions.itch.io",
@@ -10021,7 +10117,7 @@
    "flag_adj": -16,
    "raw": 67,
    "score": 72,
-   "rank": 386
+   "rank": 390
   },
   {
    "url": "https://www.tiktok.com/music/Well-Meaning-Neurotypicals-7116236683321821186",
@@ -10049,7 +10145,7 @@
    "flag_adj": -6,
    "raw": 67,
    "score": 72,
-   "rank": 387
+   "rank": 391
   },
   {
    "url": "https://www.tiktok.com/music/Well-Meaning-Neurotypicals-Low-Sensory-Instrumental-7116236683586062338",
@@ -10077,7 +10173,7 @@
    "flag_adj": -6,
    "raw": 67,
    "score": 72,
-   "rank": 388
+   "rank": 392
   },
   {
    "url": "https://www.youtube.com/watch?v=7fR5Ps12xvs",
@@ -10107,7 +10203,7 @@
    "flag_adj": -16,
    "raw": 66,
    "score": 72,
-   "rank": 389
+   "rank": 393
   },
   {
    "url": "https://opensea.io/ZazieProductions",
@@ -10137,7 +10233,7 @@
    "flag_adj": -26,
    "raw": 66,
    "score": 72,
-   "rank": 390
+   "rank": 394
   },
   {
    "url": "https://promptbase.com/profile/zazieproductions",
@@ -10167,7 +10263,7 @@
    "flag_adj": -26,
    "raw": 66,
    "score": 72,
-   "rank": 391
+   "rank": 395
   },
   {
    "url": "https://thehug.xyz/artists/zazieproductions/portfolio/item/032ce1d7-ee38-4c5c-83a8-70db54218d3",
@@ -10193,7 +10289,7 @@
    "flag_adj": 0,
    "raw": 66,
    "score": 72,
-   "rank": 392
+   "rank": 396
   },
   {
    "url": "https://www.shazam.com/artist/zazie-productions/1623719351",
@@ -10223,7 +10319,7 @@
    "flag_adj": -16,
    "raw": 66,
    "score": 72,
-   "rank": 393
+   "rank": 397
   },
   {
    "url": "https://909deadbatteries.bandcamp.com/album/winter-2025",
@@ -10247,7 +10343,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 394
+   "rank": 398
   },
   {
    "url": "https://open.spotify.com/playlist/5hy3SZN9SNkgbHgWx4UwSO",
@@ -10271,7 +10367,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 395
+   "rank": 399
   },
   {
    "url": "https://rateyourmusic.com/release/comp/various-artists/warm-music-for-cold-weather-for-the-muscular-dystrophy-association",
@@ -10296,7 +10392,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 396
+   "rank": 400
   },
   {
    "url": "https://coinoperatedpress.wordpress.com/2025/09/08/call-for-submissions-for-the-sad-kids-zine",
@@ -10319,7 +10415,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 397
+   "rank": 401
   },
   {
    "url": "https://coinoperatedpress.wordpress.com/2026/03/11/for-the-sad-kids-zine-out-now",
@@ -10342,7 +10438,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 398
+   "rank": 402
   },
   {
    "url": "https://www.creativemornings.com/individuals/zaziekanwartorge",
@@ -10366,7 +10462,7 @@
    "flag_adj": 0,
    "raw": 65,
    "score": 72,
-   "rank": 399
+   "rank": 403
   },
   {
    "url": "https://medium.com/@catgirlthyme/weird-music-recap-2024-3f86badc3650",
@@ -10396,7 +10492,7 @@
    "flag_adj": -16,
    "raw": 65,
    "score": 72,
-   "rank": 400
+   "rank": 404
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com/track/zazie-productions-post-carbon-signal-rot-comunion-v2-3",
@@ -10420,7 +10516,7 @@
    "flag_adj": 0,
    "raw": 63,
    "score": 71,
-   "rank": 401
+   "rank": 405
   },
   {
    "url": "https://www.prfree.org/@zazieproductions/zazie-productions-unveils-phantom-requiem-2024-a-haunting-five-minute-stop-motion-avant-garde-masterpiece-q85vaihvx2h",
@@ -10451,7 +10547,7 @@
    "flag_adj": -40,
    "raw": 63,
    "score": 71,
-   "rank": 402
+   "rank": 406
   },
   {
    "url": "https://radioreach.us",
@@ -10476,7 +10572,7 @@
    "flag_adj": 0,
    "raw": 63,
    "score": 71,
-   "rank": 403
+   "rank": 407
   },
   {
    "url": "https://www.upwork.com/freelancers/~010411a0e4129d9d14",
@@ -10500,7 +10596,7 @@
    "flag_adj": 0,
    "raw": 63,
    "score": 71,
-   "rank": 404
+   "rank": 408
   },
   {
    "url": "https://zazieproductions.com",
@@ -10523,7 +10619,7 @@
    "flag_adj": 0,
    "raw": 63,
    "score": 71,
-   "rank": 405
+   "rank": 409
   },
   {
    "url": "https://voterrecords.com/voter/127892431/zazie-kanwar-torge",
@@ -10547,7 +10643,7 @@
    "flag_adj": 0,
    "raw": 63,
    "score": 71,
-   "rank": 406
+   "rank": 410
   },
   {
    "url": "https://www.lyrics.com/artist/Zazie-Productions/2138620235",
@@ -10571,7 +10667,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 407
+   "rank": 411
   },
   {
    "url": "https://soundcloud.com/spirit-of-possibility/sets/kosmische-l-m-volume-001?ref=clipboard&p=a&c=1&si=25e29b7bdac24771b474c1bdce000afb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
@@ -10598,7 +10694,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 408
+   "rank": 412
   },
   {
    "url": "https://www.youtube.com",
@@ -10622,7 +10718,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 409
+   "rank": 413
   },
   {
    "url": "https://imgur.com/a/M25R5PJ",
@@ -10652,7 +10748,7 @@
    "flag_adj": -16,
    "raw": 62,
    "score": 71,
-   "rank": 410
+   "rank": 414
   },
   {
    "url": "https://indd.adobe.com/view/a12d7d20-c73e-43c6-9d35-93f19613af14",
@@ -10675,7 +10771,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 411
+   "rank": 415
   },
   {
    "url": "https://payhip.com/b/XVlRA",
@@ -10699,7 +10795,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 412
+   "rank": 416
   },
   {
    "url": "https://sites.google.com/view/freshwordsmagazine/issues",
@@ -10723,7 +10819,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 413
+   "rank": 417
   },
   {
    "url": "https://archive.org/details/sepsis-d-iaa-i3d-iai-i3d-i-ia-i3da-iia-i3di-ia-i3-d-ia-i3d-iia-i3di-ia-i3d",
@@ -10749,7 +10845,7 @@
    "flag_adj": 0,
    "raw": 62,
    "score": 71,
-   "rank": 414
+   "rank": 418
   },
   {
    "url": "https://pixabay.com/sound-effects/city-demolition-site-field-recording-344011",
@@ -10773,7 +10869,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 415
+   "rank": 419
   },
   {
    "url": "https://thomas-spinec.students-laplateforme.io/cinetech/movie/1328893",
@@ -10803,7 +10899,7 @@
    "flag_adj": -30,
    "raw": 61,
    "score": 70,
-   "rank": 416
+   "rank": 420
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com/album/synthetic-dystopia?fbclid=IwQ0xDSwKgb3tleHRuA2FlbQIxMQABHpL0WjXcy2ukM3NEIOxikggYulJUFbnHv76JsrXzy9szuGlt8PVf7KoFQwTK_aem_pM4TRpPuSUjfWUHgyfUA4Q",
@@ -10830,7 +10926,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 417
+   "rank": 421
   },
   {
    "url": "https://www.youtube.com/watch?v=XF0nks0Nnak",
@@ -10854,7 +10950,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 418
+   "rank": 422
   },
   {
    "url": "https://www.youtube.com/watch?v=c9ZoZhSci2Q",
@@ -10878,7 +10974,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 419
+   "rank": 423
   },
   {
    "url": "https://www.youtube.com/watch?v=ld4BzJkKMi8",
@@ -10902,7 +10998,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 420
+   "rank": 424
   },
   {
    "url": "https://www.twine.net/ZazieProductions",
@@ -10926,7 +11022,7 @@
    "flag_adj": 0,
    "raw": 61,
    "score": 70,
-   "rank": 421
+   "rank": 425
   },
   {
    "url": "https://www.reverbnation.com/zazieproductions",
@@ -10956,7 +11052,7 @@
    "flag_adj": -14,
    "raw": 61,
    "score": 70,
-   "rank": 422
+   "rank": 426
   },
   {
    "url": "https://www.clongclongmoo.org/category/locate/chile",
@@ -10982,7 +11078,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 423
+   "rank": 427
   },
   {
    "url": "https://arrhythniarecords.bandcamp.com/album/arrhythnia-digital-net-label-compilation-4-experimental-music-and-noise-anr122",
@@ -11008,7 +11104,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 424
+   "rank": 428
   },
   {
    "url": "https://christmasasaurus.bandcamp.com",
@@ -11034,7 +11130,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 425
+   "rank": 429
   },
   {
    "url": "https://graverobbedrecords.bandcamp.com",
@@ -11060,7 +11156,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 426
+   "rank": 430
   },
   {
    "url": "https://ifarmusiqueconcretecompilation.bandcamp.com/album/los-valses-siderales",
@@ -11086,7 +11182,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 427
+   "rank": 431
   },
   {
    "url": "https://ingrown.bandcamp.com/album/14-years-100-releases-compilation",
@@ -11112,7 +11208,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 428
+   "rank": 432
   },
   {
    "url": "https://lessthanone.bandcamp.com/track/pivot-and-deflect",
@@ -11138,7 +11234,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 429
+   "rank": 433
   },
   {
    "url": "https://loudsilencedigital.bandcamp.com/album/lsd100",
@@ -11165,7 +11261,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 430
+   "rank": 434
   },
   {
    "url": "https://moonmusiq.bandcamp.com/album/untitled",
@@ -11191,7 +11287,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 431
+   "rank": 435
   },
   {
    "url": "https://onedoneproject.bandcamp.com/album/365",
@@ -11217,7 +11313,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 432
+   "rank": 436
   },
   {
    "url": "https://owlripperrecordings.bandcamp.com/album/comp27-shadowlands-4",
@@ -11243,7 +11339,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 433
+   "rank": 437
   },
   {
    "url": "https://pushtoeject.bandcamp.com/album/songs-to-kill-transphobes-to",
@@ -11269,7 +11365,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 434
+   "rank": 438
   },
   {
    "url": "https://slitheringblackrecords.bandcamp.com",
@@ -11295,7 +11391,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 435
+   "rank": 439
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com/album/synthetic-dystopia",
@@ -11323,7 +11419,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 436
+   "rank": 440
   },
   {
    "url": "https://utopiadistrict.bandcamp.com/album/late-night-love-letters",
@@ -11350,7 +11446,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 437
+   "rank": 441
   },
   {
    "url": "https://voidstarproductions.bandcamp.com/album/solidarity-phase-ii-a-benefit-compilation-for-the-aclu",
@@ -11377,7 +11473,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 438
+   "rank": 442
   },
   {
    "url": "https://gumroad.com/zazieproductions",
@@ -11401,7 +11497,7 @@
    "flag_adj": 0,
    "raw": 60,
    "score": 70,
-   "rank": 439
+   "rank": 443
   },
   {
    "url": "https://www.last.fm/music/Zazie+Productions",
@@ -11433,7 +11529,7 @@
    "flag_adj": -22,
    "raw": 60,
    "score": 70,
-   "rank": 440
+   "rank": 444
   },
   {
    "url": "https://camembertelectrique.bandcamp.com",
@@ -11457,7 +11553,7 @@
    "flag_adj": 0,
    "raw": 59,
    "score": 70,
-   "rank": 441
+   "rank": 445
   },
   {
    "url": "https://séraphitüs-séraphîta.weebly.com/blog/42-seconds-7-compilation-on-owlripper-recordings",
@@ -11481,7 +11577,7 @@
    "flag_adj": 0,
    "raw": 59,
    "score": 70,
-   "rank": 442
+   "rank": 446
   },
   {
    "url": "https://thelatest.co.uk/brighton/2024/10/09/celebrate-halloween-with-our-very-spooky-film-festival",
@@ -11516,7 +11612,7 @@
    "flag_adj": -60,
    "raw": 58,
    "score": 69,
-   "rank": 443
+   "rank": 447
   },
   {
    "url": "https://argalirecordsnetlabel.bandcamp.com/album/fourteenth-quarterly-report-of-argali-records-netlabel-the-great-reconnection",
@@ -11541,7 +11637,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 444
+   "rank": 448
   },
   {
    "url": "https://argalirecordsnetlabel.bandcamp.com/track/vibroscriptorium",
@@ -11565,7 +11661,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 445
+   "rank": 449
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/album/icelock-continuum",
@@ -11590,7 +11686,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 446
+   "rank": 450
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/track/frost-directive-xiii-broadcast-leak-id-blzrd-741",
@@ -11614,7 +11710,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 447
+   "rank": 451
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/track/grief-is-a-hot-commodity",
@@ -11638,7 +11734,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 448
+   "rank": 452
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/track/isochamber-drift",
@@ -11662,7 +11758,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 449
+   "rank": 453
   },
   {
    "url": "https://ifarmusiqueconcretecompilation.bandcamp.com/track/liquid-phosphorus",
@@ -11686,7 +11782,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 450
+   "rank": 454
   },
   {
    "url": "https://ifarmusiqueconcretecompilation.bandcamp.com/track/movimiento-diez-oscillographia",
@@ -11710,7 +11806,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 451
+   "rank": 455
   },
   {
    "url": "https://petroglyphmusic.bandcamp.com/track/zazie-productions-moving-in-perpetual-slumber",
@@ -11734,7 +11830,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 452
+   "rank": 456
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com/track/zazie-productions-post-carbon-signal-rot-comunion-v23",
@@ -11758,7 +11854,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 453
+   "rank": 457
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com/track/zazie-productions-slippage-beneath-the-hyperlink",
@@ -11782,7 +11878,7 @@
    "flag_adj": 0,
    "raw": 58,
    "score": 69,
-   "rank": 454
+   "rank": 458
   },
   {
    "url": "https://vocal.media/stories?status=published",
@@ -11812,7 +11908,7 @@
    "flag_adj": -16,
    "raw": 58,
    "score": 69,
-   "rank": 455
+   "rank": 459
   },
   {
    "url": "https://songstats.com/artist/hxc5ipay/zazie-productions",
@@ -11842,7 +11938,7 @@
    "flag_adj": -16,
    "raw": 58,
    "score": 69,
-   "rank": 456
+   "rank": 460
   },
   {
    "url": "https://itch.io/c/5777074/zazie-productions-collection-vol-3",
@@ -11866,7 +11962,7 @@
    "flag_adj": 0,
    "raw": 57,
    "score": 69,
-   "rank": 457
+   "rank": 461
   },
   {
    "url": "https://filmacorn.vercel.app/details/1328893",
@@ -11896,7 +11992,7 @@
    "flag_adj": -30,
    "raw": 57,
    "score": 69,
-   "rank": 458
+   "rank": 462
   },
   {
    "url": "https://horror.zazieproductions.com",
@@ -11926,7 +12022,7 @@
    "flag_adj": -10,
    "raw": 57,
    "score": 69,
-   "rank": 459
+   "rank": 463
   },
   {
    "url": "https://churchofmalware.org",
@@ -11953,7 +12049,7 @@
    "flag_adj": -10,
    "raw": 57,
    "score": 69,
-   "rank": 460
+   "rank": 464
   },
   {
    "url": "https://www.indiegogo.com/en/projects/bario-ai-/audioplatform",
@@ -11981,7 +12077,7 @@
    "flag_adj": -10,
    "raw": 57,
    "score": 69,
-   "rank": 461
+   "rank": 465
   },
   {
    "url": "https://slaps.com/ZazieProd",
@@ -12010,7 +12106,7 @@
    "flag_adj": -14,
    "raw": 57,
    "score": 69,
-   "rank": 462
+   "rank": 466
   },
   {
    "url": "https://writexo.com/raw/8ilsx2y1",
@@ -12040,7 +12136,7 @@
    "flag_adj": -16,
    "raw": 57,
    "score": 69,
-   "rank": 463
+   "rank": 467
   },
   {
    "url": "https://www.reddit.com/r/lastfm/comments/ujng7o/12x12_past_year_please_recommend_me_some_music",
@@ -12069,7 +12165,35 @@
    "flag_adj": -6,
    "raw": 56,
    "score": 69,
-   "rank": 464
+   "rank": 468
+  },
+  {
+   "url": "https://openfilmzone.com/zone-wall",
+   "norm": "openfilmzone.com/zone-wall",
+   "host": "openfilmzone.com",
+   "sources": [
+    "data/master/master_index.csv",
+    "master_index"
+   ],
+   "target": "Zazie Kanwar-Torge",
+   "category": "Film, Festivals & Exhibitions",
+   "tier": "B",
+   "status": "verified",
+   "date": "2026-02",
+   "title": "Zone Wall — Open Film Zone (Founder’s Circle / OFZ Awards)",
+   "notes": "Zazie Kanwar-Torge listed as a \"New Founding Creator\" under the February 2026 \"Enter the Matrix\" block. Recognition/founder wall of the same Open Film Zone site that hosts Phantom Requiem (openfilmzone.com/videos/phantom-requiem/). Name-on-page verified 2026-09-15.",
+   "primary": true,
+   "topic": "Award-winning film & festival recognition",
+   "flags": [
+    "UNOFFICIAL FILM MIRROR"
+   ],
+   "flag_reasons": [
+    "UNOFFICIAL FILM MIRROR - scraper/streamer replica of the same TMDB or festival record - not a separate placement"
+   ],
+   "flag_adj": -30,
+   "raw": 56,
+   "score": 69,
+   "rank": 469
   },
   {
    "url": "https://loudsilencedigital.bandcamp.com/album/lsd100fbclid=IwZXh0bgNhZW0CMTEAAR3PU1",
@@ -12093,7 +12217,7 @@
    "flag_adj": 0,
    "raw": 56,
    "score": 69,
-   "rank": 465
+   "rank": 470
   },
   {
    "url": "https://artvee.com/members/zazie_productions",
@@ -12125,7 +12249,7 @@
    "flag_adj": -26,
    "raw": 56,
    "score": 69,
-   "rank": 466
+   "rank": 471
   },
   {
    "url": "https://hackmd.io/@vFyqhdToTb6sqgqrxzVeDQ/r1Sz_jihkg",
@@ -12155,7 +12279,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 467
+   "rank": 472
   },
   {
    "url": "https://play.anghami.com/song/105231243",
@@ -12185,7 +12309,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 468
+   "rank": 473
   },
   {
    "url": "https://sonichits.com/video/Zazie_Productions/Seroquel_Coma",
@@ -12215,7 +12339,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 469
+   "rank": 474
   },
   {
    "url": "https://www.soundclick.com/zazieproductions/?content=videos",
@@ -12245,7 +12369,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 470
+   "rank": 475
   },
   {
    "url": "https://soundgasm.net/u/ZazieProductions",
@@ -12275,7 +12399,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 471
+   "rank": 476
   },
   {
    "url": "https://x-minusovka.com/?song=Zazie+Productions",
@@ -12305,7 +12429,7 @@
    "flag_adj": -16,
    "raw": 56,
    "score": 69,
-   "rank": 472
+   "rank": 477
   },
   {
    "url": "https://moview.janakoudelkova.cz/singlemovie.html?id=1328893",
@@ -12335,7 +12459,7 @@
    "flag_adj": -30,
    "raw": 55,
    "score": 68,
-   "rank": 473
+   "rank": 478
   },
   {
    "url": "https://pelis-api.vercel.app/pelicula/1328893",
@@ -12365,7 +12489,7 @@
    "flag_adj": -30,
    "raw": 55,
    "score": 68,
-   "rank": 474
+   "rank": 479
   },
   {
    "url": "https://ain23.bandcamp.com",
@@ -12388,7 +12512,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 475
+   "rank": 480
   },
   {
    "url": "https://argalirecordsnetlabel.bandcamp.com",
@@ -12411,7 +12535,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 476
+   "rank": 481
   },
   {
    "url": "https://brokensoundtapes.bandcamp.com/album/aspirin-age-volume-five-a-shoegaze-compilation",
@@ -12434,7 +12558,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 477
+   "rank": 482
   },
   {
    "url": "https://camembertelectrique.bandcamp.com/album/arboreal-telegraph",
@@ -12457,7 +12581,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 478
+   "rank": 483
   },
   {
    "url": "https://dodendans.bandcamp.com/album/dd049-v-a-echoesofancientwrath",
@@ -12480,7 +12604,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 479
+   "rank": 484
   },
   {
    "url": "https://ennaytch.bandcamp.com/album/harsh-noise-wall-means-fight-back-smash-gay-oppression",
@@ -12503,7 +12627,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 480
+   "rank": 485
   },
   {
    "url": "https://ensembleforsoundpoetryandcontemporarymusic.bandcamp.com",
@@ -12526,7 +12650,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 481
+   "rank": 486
   },
   {
    "url": "https://errantstaticnoise.bandcamp.com",
@@ -12549,7 +12673,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 482
+   "rank": 487
   },
   {
    "url": "https://ghostnunmusic.bandcamp.com",
@@ -12572,7 +12696,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 483
+   "rank": 488
   },
   {
    "url": "https://gohrecordings.bandcamp.com/album/h-p-lovecraft-s-whisperer-in-darkness",
@@ -12595,7 +12719,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 484
+   "rank": 489
   },
   {
    "url": "https://ingrown.bandcamp.com",
@@ -12618,7 +12742,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 485
+   "rank": 490
   },
   {
    "url": "https://internetdaemon.bandcamp.com",
@@ -12641,7 +12765,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 486
+   "rank": 491
   },
   {
    "url": "https://lessthanone.bandcamp.com",
@@ -12664,7 +12788,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 487
+   "rank": 492
   },
   {
    "url": "https://loudsilencedigital.bandcamp.com",
@@ -12687,7 +12811,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 488
+   "rank": 493
   },
   {
    "url": "https://loudsilencedigital.bandcamp.com/album/lsd100?fbclid=IwZXh0bgNhZW0CMTEAAR3PU1T1BVT98ilQAkflCmmo6Btd_jHLH11ULjUqVLOl9uc4y3KSsY3oCXY_aem_ue-lklpTegFf53H6srfiJQ",
@@ -12710,7 +12834,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 489
+   "rank": 494
   },
   {
    "url": "https://loudsilencedigital.bandcamp.com/album/two-years",
@@ -12733,7 +12857,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 490
+   "rank": 495
   },
   {
    "url": "https://nyotgrinder.bandcamp.com/album/nyotgrinder-noise-compilation-vol-2",
@@ -12756,7 +12880,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 491
+   "rank": 496
   },
   {
    "url": "https://owlripperrecordings.bandcamp.com",
@@ -12779,7 +12903,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 492
+   "rank": 497
   },
   {
    "url": "https://petroglyphmusic.bandcamp.com",
@@ -12802,7 +12926,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 493
+   "rank": 498
   },
   {
    "url": "https://plataformarecs.bandcamp.com",
@@ -12825,7 +12949,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 494
+   "rank": 499
   },
   {
    "url": "https://relicsoftheeternalcity.bandcamp.com",
@@ -12848,7 +12972,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 495
+   "rank": 500
   },
   {
    "url": "https://rocketpunchrecords.bandcamp.com/album/make-a-change-a-compilation-of-skankin-pickle-covers",
@@ -12871,7 +12995,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 496
+   "rank": 501
   },
   {
    "url": "https://shackinthebarleyproductions.bandcamp.com",
@@ -12894,7 +13018,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 497
+   "rank": 502
   },
   {
    "url": "https://soundsforthesoul.bandcamp.com",
@@ -12917,7 +13041,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 498
+   "rank": 503
   },
   {
    "url": "https://thechurchofnoisygoat.bandcamp.com",
@@ -12940,7 +13064,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 499
+   "rank": 504
   },
   {
    "url": "https://thehillsaredead.bandcamp.com",
@@ -12963,7 +13087,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 500
+   "rank": 505
   },
   {
    "url": "https://thehillsaredead.bandcamp.com/album/harsh-noise-corpus-vol-4",
@@ -12986,7 +13110,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 501
+   "rank": 506
   },
   {
    "url": "https://thehillsaredead.bandcamp.com/album/harsh-noise-corpus-vol-5",
@@ -13009,7 +13133,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 502
+   "rank": 507
   },
   {
    "url": "https://tshnproductions.bandcamp.com",
@@ -13032,7 +13156,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 503
+   "rank": 508
   },
   {
    "url": "https://witch-house.bandcamp.com/album/beyond-the-body",
@@ -13055,7 +13179,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 504
+   "rank": 509
   },
   {
    "url": "https://z-dimension.bandcamp.com/album/shards-vol-1",
@@ -13078,7 +13202,7 @@
    "flag_adj": 0,
    "raw": 55,
    "score": 68,
-   "rank": 505
+   "rank": 510
   },
   {
    "url": "https://groover.co/en/influencer/profile/0.zazie-productions",
@@ -13109,7 +13233,7 @@
    "flag_adj": -30,
    "raw": 55,
    "score": 68,
-   "rank": 506
+   "rank": 511
   },
   {
    "url": "https://openfilmzone.com/videos/phantom-requiem",
@@ -13137,7 +13261,7 @@
    "flag_adj": -30,
    "raw": 54,
    "score": 68,
-   "rank": 507
+   "rank": 512
   },
   {
    "url": "https://zazieproductions.github.io/void-oculus",
@@ -13161,7 +13285,7 @@
    "flag_adj": 0,
    "raw": 54,
    "score": 68,
-   "rank": 508
+   "rank": 513
   },
   {
    "url": "https://txt.fyi/1e6a35890de43189",
@@ -13191,7 +13315,7 @@
    "flag_adj": -16,
    "raw": 54,
    "score": 68,
-   "rank": 509
+   "rank": 514
   },
   {
    "url": "https://www.baidu.com/link?url=lGOPTjwdo-SJgH88b8O6BfcutJYDNcLfDDdoK_GDhgodoo9uajS_-T8r0CJBuFvTJ6JJ63asEqzCWIS0zFOkNK&wd=&eqid=94b87bd700fb95d100000006676ae907",
@@ -13214,7 +13338,7 @@
    "flag_adj": 0,
    "raw": 54,
    "score": 68,
-   "rank": 510
+   "rank": 515
   },
   {
    "url": "https://betalist.com/startups/bario",
@@ -13242,7 +13366,7 @@
    "flag_adj": -10,
    "raw": 53,
    "score": 68,
-   "rank": 511
+   "rank": 516
   },
   {
    "url": "https://www.fangpi.net/music/13393673",
@@ -13272,7 +13396,7 @@
    "flag_adj": -16,
    "raw": 53,
    "score": 68,
-   "rank": 512
+   "rank": 517
   },
   {
    "url": "https://music.yandex.ru/artist/17856702/tracks",
@@ -13298,7 +13422,7 @@
    "flag_adj": 0,
    "raw": 53,
    "score": 68,
-   "rank": 513
+   "rank": 518
   },
   {
    "url": "https://perchance.org/zazieproductions",
@@ -13329,7 +13453,7 @@
    "flag_adj": -16,
    "raw": 52,
    "score": 67,
-   "rank": 514
+   "rank": 519
   },
   {
    "url": "https://websim.ai/p/mtopbz5cf0mlvd0jf7w9/22",
@@ -13359,7 +13483,7 @@
    "flag_adj": -16,
    "raw": 52,
    "score": 67,
-   "rank": 515
+   "rank": 520
   },
   {
    "url": "https://frenchstream.tv/movie/1328893",
@@ -13389,7 +13513,7 @@
    "flag_adj": -30,
    "raw": 51,
    "score": 67,
-   "rank": 516
+   "rank": 521
   },
   {
    "url": "https://deliriumpsychosis.bandcamp.com/album/digital-intifada",
@@ -13419,7 +13543,7 @@
    "flag_adj": -10,
    "raw": 50,
    "score": 67,
-   "rank": 517
+   "rank": 522
   },
   {
    "url": "https://prfree.org/@zazieproductions/zazie-productions-unveils-phantom-requiem-2024-a-haunting-five-minute-stop-motion-avant-garde-masterpiece-q85vaihvx2hk",
@@ -13451,7 +13575,7 @@
    "flag_adj": -54,
    "raw": 50,
    "score": 67,
-   "rank": 518
+   "rank": 523
   },
   {
    "url": "https://blog.spacehey.com/entry?id=1380281",
@@ -13483,7 +13607,7 @@
    "flag_adj": -26,
    "raw": 50,
    "score": 67,
-   "rank": 519
+   "rank": 524
   },
   {
    "url": "https://www.kkbox.com/sg/sc/artist/8spDJ-lczbMOkUS99q",
@@ -13515,7 +13639,7 @@
    "flag_adj": -22,
    "raw": 50,
    "score": 67,
-   "rank": 520
+   "rank": 525
   },
   {
    "url": "https://music.163.com/#/artist?id=52749380",
@@ -13545,7 +13669,7 @@
    "flag_adj": -16,
    "raw": 50,
    "score": 67,
-   "rank": 521
+   "rank": 526
   },
   {
    "url": "https://music.163.com/song?id=2083550087",
@@ -13575,7 +13699,7 @@
    "flag_adj": -16,
    "raw": 50,
    "score": 67,
-   "rank": 522
+   "rank": 527
   },
   {
    "url": "https://www.reverbnation.com/zazieproductions/songs",
@@ -13607,7 +13731,7 @@
    "flag_adj": -30,
    "raw": 50,
    "score": 67,
-   "rank": 523
+   "rank": 528
   },
   {
    "url": "https://tunedex.routenote.com/artists/4UOgvZEOo7xBhFBjJvlMm0",
@@ -13639,7 +13763,7 @@
    "flag_adj": -22,
    "raw": 50,
    "score": 67,
-   "rank": 524
+   "rank": 529
   },
   {
    "url": "https://hdfilmcehennemi.beauty/film/phantom-requiem-2024-21328893T",
@@ -13669,7 +13793,7 @@
    "flag_adj": -30,
    "raw": 49,
    "score": 66,
-   "rank": 525
+   "rank": 530
   },
   {
    "url": "https://argalirecordsnetlabel.com",
@@ -13693,7 +13817,7 @@
    "flag_adj": 0,
    "raw": 49,
    "score": 66,
-   "rank": 526
+   "rank": 531
   },
   {
    "url": "https://ok.ru/music/artist/122911094866528",
@@ -13723,7 +13847,7 @@
    "flag_adj": -16,
    "raw": 49,
    "score": 66,
-   "rank": 527
+   "rank": 532
   },
   {
    "url": "https://www.facebook.com/groups/300926313634847/posts/2649080848819370",
@@ -13751,7 +13875,7 @@
    "flag_adj": -6,
    "raw": 48,
    "score": 66,
-   "rank": 528
+   "rank": 533
   },
   {
    "url": "https://www.lyrics.com/lyric-lf/16514545/Zazie+Productions/Black+Fr1day%3A+Jingle+No.+2",
@@ -13777,7 +13901,7 @@
    "flag_adj": 0,
    "raw": 48,
    "score": 66,
-   "rank": 529
+   "rank": 534
   },
   {
    "url": "https://the-dots.com/users/zazie-productions-1813011?mode=preview",
@@ -13809,7 +13933,7 @@
    "flag_adj": -36,
    "raw": 48,
    "score": 66,
-   "rank": 530
+   "rank": 535
   },
   {
    "url": "https://www.musicgateway.com/creative-professionals/artist/zazie-productions",
@@ -13839,7 +13963,7 @@
    "flag_adj": -12,
    "raw": 48,
    "score": 66,
-   "rank": 531
+   "rank": 536
   },
   {
    "url": "https://www.qobuz.com/de-de/interpreter/zazie-productions/14145610",
@@ -13869,7 +13993,7 @@
    "flag_adj": -36,
    "raw": 48,
    "score": 66,
-   "rank": 532
+   "rank": 537
   },
   {
    "url": "https://itch.io/post/12575624",
@@ -13897,7 +14021,7 @@
    "flag_adj": -10,
    "raw": 47,
    "score": 66,
-   "rank": 533
+   "rank": 538
   },
   {
    "url": "https://sequencer.party/projects/327",
@@ -13925,7 +14049,7 @@
    "flag_adj": -10,
    "raw": 47,
    "score": 66,
-   "rank": 534
+   "rank": 539
   },
   {
    "url": "https://sequencer.party/users/175",
@@ -13953,7 +14077,7 @@
    "flag_adj": -10,
    "raw": 47,
    "score": 66,
-   "rank": 535
+   "rank": 540
   },
   {
    "url": "https://www.bizapedia.com/nc/zazie-productions-llc.html",
@@ -13977,7 +14101,7 @@
    "flag_adj": 0,
    "raw": 47,
    "score": 66,
-   "rank": 536
+   "rank": 541
   },
   {
    "url": "https://sonicrider.nl/jazzular-element-1-thoughts-about-david-lynch-compilation-sonicrider-the-church-of-noisy-goat",
@@ -14003,7 +14127,7 @@
    "flag_adj": 0,
    "raw": 46,
    "score": 65,
-   "rank": 537
+   "rank": 542
   },
   {
    "url": "https://replit.com/@ZazieProduction",
@@ -14035,7 +14159,7 @@
    "flag_adj": -26,
    "raw": 46,
    "score": 65,
-   "rank": 538
+   "rank": 543
   },
   {
    "url": "https://write.as/1oznmq3kbhveh.md",
@@ -14069,7 +14193,7 @@
    "flag_adj": -32,
    "raw": 46,
    "score": 65,
-   "rank": 539
+   "rank": 544
   },
   {
    "url": "https://getmusic.fm/r/various-artists-moon-musiq-untitled",
@@ -14101,7 +14225,7 @@
    "flag_adj": -16,
    "raw": 46,
    "score": 65,
-   "rank": 540
+   "rank": 545
   },
   {
    "url": "https://muzvibe.org/search/Zazie",
@@ -14131,7 +14255,7 @@
    "flag_adj": -16,
    "raw": 46,
    "score": 65,
-   "rank": 541
+   "rank": 546
   },
   {
    "url": "http://playlost.fm/playlist/75PxWthUYPOskOU1EjGrF",
@@ -14161,7 +14285,7 @@
    "flag_adj": -16,
    "raw": 46,
    "score": 65,
-   "rank": 542
+   "rank": 547
   },
   {
    "url": "https://www.prfree.org/@zazieproductions/zazie-productions-unveils-phantom-requiem-2024-ahaunting-five-minute-stop-motion-avant-garde-masterpiece-q85vaihvx2h",
@@ -14190,7 +14314,7 @@
    "flag_adj": -24,
    "raw": 44,
    "score": 64,
-   "rank": 543
+   "rank": 548
   },
   {
    "url": "https://www.instagram.com/p/DQWpMP8kYmJ",
@@ -14218,7 +14342,7 @@
    "flag_adj": -6,
    "raw": 42,
    "score": 64,
-   "rank": 544
+   "rank": 549
   },
   {
    "url": "https://www.lyrics.com/lyric-lf/8858319/Zazie+Productions/Stunning+That+You'd+Care",
@@ -14242,7 +14366,7 @@
    "flag_adj": 0,
    "raw": 42,
    "score": 64,
-   "rank": 545
+   "rank": 550
   },
   {
    "url": "https://spacehey.com/profile?id=3044031",
@@ -14272,7 +14396,7 @@
    "flag_adj": -10,
    "raw": 42,
    "score": 64,
-   "rank": 546
+   "rank": 551
   },
   {
    "url": "https://twitter.com/Deborahdjohn/status/1890497671573520710",
@@ -14302,7 +14426,7 @@
    "flag_adj": -6,
    "raw": 42,
    "score": 64,
-   "rank": 547
+   "rank": 552
   },
   {
    "url": "https://pronthego.com/pages/blog/art-pr-expanding-artistic-reach-through-digital-exhibitions?amp=1|print=1",
@@ -14329,7 +14453,7 @@
    "flag_adj": -24,
    "raw": 42,
    "score": 64,
-   "rank": 548
+   "rank": 553
   },
   {
    "url": "https://www.reddit.com/r/AlbumArtPorn/s/PJYdrEGZb3",
@@ -14359,7 +14483,7 @@
    "flag_adj": -6,
    "raw": 41,
    "score": 63,
-   "rank": 549
+   "rank": 554
   },
   {
    "url": "https://www.boomplay.com/albums/66891844",
@@ -14386,7 +14510,7 @@
    "flag_adj": -16,
    "raw": 40,
    "score": 63,
-   "rank": 550
+   "rank": 555
   },
   {
    "url": "https://app.grayswan.ai/arena/user/67d8dc232e68df6d96295cdb",
@@ -14415,7 +14539,7 @@
    "flag_adj": -12,
    "raw": 39,
    "score": 63,
-   "rank": 551
+   "rank": 556
   },
   {
    "url": "https://muso.ai",
@@ -14443,7 +14567,7 @@
    "flag_adj": -16,
    "raw": 38,
    "score": 62,
-   "rank": 552
+   "rank": 557
   },
   {
    "url": "https://www.gequbao.com/music/1642349",
@@ -14473,7 +14597,7 @@
    "flag_adj": -16,
    "raw": 38,
    "score": 62,
-   "rank": 553
+   "rank": 558
   },
   {
    "url": "https://zvu4no.org/tracks/Zazie%20Productions",
@@ -14502,7 +14626,7 @@
    "flag_adj": -16,
    "raw": 38,
    "score": 62,
-   "rank": 554
+   "rank": 559
   },
   {
    "url": "https://www.lyrics.com/lyric-lf/8858319/Zazie+Productions/Stunning+That+You%27d+Care",
@@ -14532,7 +14656,7 @@
    "flag_adj": -10,
    "raw": 37,
    "score": 62,
-   "rank": 555
+   "rank": 560
   },
   {
    "url": "https://www.coolmindmaps.com/?action=mindmap&question=What%20software%20does%20Zazie%20Productions%20use?&code=a55a7843e7bdc9df6d4db4d3e16f2cf0",
@@ -14562,7 +14686,7 @@
    "flag_adj": -10,
    "raw": 36,
    "score": 62,
-   "rank": 556
+   "rank": 561
   },
   {
    "url": "https://gms.purwana.net/?devid=zazieproductions",
@@ -14592,7 +14716,7 @@
    "flag_adj": -10,
    "raw": 36,
    "score": 62,
-   "rank": 557
+   "rank": 562
   },
   {
    "url": "https://www.tumblr.com/lezet",
@@ -14620,7 +14744,7 @@
    "flag_adj": -6,
    "raw": 35,
    "score": 61,
-   "rank": 558
+   "rank": 563
   },
   {
    "url": "https://bario.icu",
@@ -14648,7 +14772,7 @@
    "flag_adj": -10,
    "raw": 35,
    "score": 61,
-   "rank": 559
+   "rank": 564
   },
   {
    "url": "https://wiki2.org/en/List_of_experimental_musicians",
@@ -14679,7 +14803,7 @@
    "flag_adj": -18,
    "raw": 34,
    "score": 61,
-   "rank": 560
+   "rank": 565
   },
   {
    "url": "https://theresanaiforthat.com/@zazieproduction",
@@ -14713,7 +14837,7 @@
    "flag_adj": -42,
    "raw": 34,
    "score": 61,
-   "rank": 561
+   "rank": 566
   },
   {
    "url": "https://www.gnoosic.com/discussion/zazie+productions.html",
@@ -14745,7 +14869,7 @@
    "flag_adj": -30,
    "raw": 34,
    "score": 61,
-   "rank": 562
+   "rank": 567
   },
   {
    "url": "https://musicstax.com/playlist/goa-trancepsy-trance/75PxWthUYPOskOU1EjGrFX",
@@ -14777,7 +14901,7 @@
    "flag_adj": -22,
    "raw": 34,
    "score": 61,
-   "rank": 563
+   "rank": 568
   },
   {
    "url": "https://www.paroles-musique.com/eng/Zazie-Productions-Stunning-That-You-d-Care-lyrics,p6370983",
@@ -14809,7 +14933,7 @@
    "flag_adj": -30,
    "raw": 34,
    "score": 61,
-   "rank": 564
+   "rank": 569
   },
   {
    "url": "https://xn--sraphits-sraphta-bqbj3h5m.weebly.com/blog/42-seconds-7-compilation-on-owlripper-recordings",
@@ -14834,7 +14958,7 @@
    "flag_adj": 0,
    "raw": 33,
    "score": 61,
-   "rank": 565
+   "rank": 570
   },
   {
    "url": "https://www.yyyyyyy.info",
@@ -14862,7 +14986,7 @@
    "flag_adj": -10,
    "raw": 33,
    "score": 61,
-   "rank": 566
+   "rank": 571
   },
   {
    "url": "https://www.youtube-nocooki",
@@ -14886,7 +15010,7 @@
    "flag_adj": 0,
    "raw": 33,
    "score": 61,
-   "rank": 567
+   "rank": 572
   },
   {
    "url": "https://tiermaker.com/categories/music/zazie-productions-releases-tier-list-15405489",
@@ -14916,7 +15040,7 @@
    "flag_adj": -10,
    "raw": 31,
    "score": 60,
-   "rank": 568
+   "rank": 573
   },
   {
    "url": "https://www.mailmodo.com/ebook/state-of-onboarding/2025-o",
@@ -14946,7 +15070,7 @@
    "flag_adj": -26,
    "raw": 30,
    "score": 60,
-   "rank": 569
+   "rank": 574
   },
   {
    "url": "https://slaps.com/user/ZazieProd",
@@ -14978,7 +15102,7 @@
    "flag_adj": -30,
    "raw": 30,
    "score": 60,
-   "rank": 570
+   "rank": 575
   },
   {
    "url": "https://app.notion.com/p/18c89e259c3c813baf39c100d3f2fe69?pvs=21",
@@ -15008,7 +15132,7 @@
    "flag_adj": -16,
    "raw": 29,
    "score": 59,
-   "rank": 571
+   "rank": 576
   },
   {
    "url": "https://mastodon.bida.im/@iyezine/113995823411563269",
@@ -15040,7 +15164,7 @@
    "flag_adj": -16,
    "raw": 29,
    "score": 59,
-   "rank": 572
+   "rank": 577
   },
   {
    "url": "https://web-cdn.bsky.app/profile/hamiltonslive.bsky.social/post/3lifmisw6es2u",
@@ -15072,7 +15196,7 @@
    "flag_adj": -16,
    "raw": 29,
    "score": 59,
-   "rank": 573
+   "rank": 578
   },
   {
    "url": "https://justwatch-hd.com/tr/person/5112050#",
@@ -15104,7 +15228,7 @@
    "flag_adj": -54,
    "raw": 29,
    "score": 59,
-   "rank": 574
+   "rank": 579
   },
   {
    "url": "https://ok.ru/music/album/123001281196995",
@@ -15131,7 +15255,7 @@
    "flag_adj": -16,
    "raw": 29,
    "score": 59,
-   "rank": 575
+   "rank": 580
   },
   {
    "url": "https://muzvibe.org/search/ZazieProductions",
@@ -15159,7 +15283,7 @@
    "flag_adj": -16,
    "raw": 28,
    "score": 59,
-   "rank": 576
+   "rank": 581
   },
   {
    "url": "https://breezewiki.com/aesthetics/wiki/Analog_Horror",
@@ -15187,7 +15311,7 @@
    "flag_adj": -18,
    "raw": 25,
    "score": 58,
-   "rank": 577
+   "rank": 582
   },
   {
    "url": "https://www.isitagoodplaylist.com/curator/punkrockdinosaur",
@@ -15219,7 +15343,7 @@
    "flag_adj": -20,
    "raw": 25,
    "score": 58,
-   "rank": 578
+   "rank": 583
   },
   {
    "url": "https://x.com/djohnhopper/status/1895789160608514084",
@@ -15251,7 +15375,7 @@
    "flag_adj": -22,
    "raw": 25,
    "score": 58,
-   "rank": 579
+   "rank": 584
   },
   {
    "url": "https://www.musiclessons.co",
@@ -15279,7 +15403,7 @@
    "flag_adj": -36,
    "raw": 24,
    "score": 57,
-   "rank": 580
+   "rank": 585
   },
   {
    "url": "https://icebergcharts.com/i/Animated_Short_Films",
@@ -15311,7 +15435,7 @@
    "flag_adj": -16,
    "raw": 23,
    "score": 57,
-   "rank": 581
+   "rank": 586
   },
   {
    "url": "https://www.quotev.com/quiz/16626763/What-Zazie-Productions-Song-Are-You",
@@ -15343,7 +15467,7 @@
    "flag_adj": -16,
    "raw": 23,
    "score": 57,
-   "rank": 582
+   "rank": 587
   },
   {
    "url": "https://www.quotev.com/quiz/16687733/Zazie-Productions-Trivia-IMPOSSIBLE-EDITION",
@@ -15375,7 +15499,7 @@
    "flag_adj": -16,
    "raw": 23,
    "score": 57,
-   "rank": 583
+   "rank": 588
   },
   {
    "url": "https://www.senscritique.com/contact/Zazie_Productions/7375565",
@@ -15408,7 +15532,7 @@
    "flag_adj": -16,
    "raw": 23,
    "score": 57,
-   "rank": 584
+   "rank": 589
   },
   {
    "url": "https://samples.eduwriter.ai/236649204/sonic-absurdity-and-cognitive-dissonance-how-zazie",
@@ -15438,7 +15562,7 @@
    "flag_adj": -6,
    "raw": 21,
    "score": 56,
-   "rank": 585
+   "rank": 590
   },
   {
    "url": "https://m.douyin.com/qishui/song/7104127023261435905",
@@ -15470,7 +15594,7 @@
    "flag_adj": -22,
    "raw": 19,
    "score": 56,
-   "rank": 586
+   "rank": 591
   },
   {
    "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/EccentricArtist",
@@ -15502,7 +15626,7 @@
    "flag_adj": -28,
    "raw": 19,
    "score": 56,
-   "rank": 587
+   "rank": 592
   },
   {
    "url": "https://outsider.fandom.com/wiki/List_of_outsider_musicians",
@@ -15534,7 +15658,7 @@
    "flag_adj": -28,
    "raw": 17,
    "score": 55,
-   "rank": 588
+   "rank": 593
   },
   {
    "url": "https://zvu4no.org/tracks/Zazie",
@@ -15562,7 +15686,7 @@
    "flag_adj": -16,
    "raw": 17,
    "score": 55,
-   "rank": 589
+   "rank": 594
   },
   {
    "url": "https://forums.stevehoffman.tv/threads/has-anyone-here-heard-about-so-called-outsider-music.1162267/page-7",
@@ -15596,7 +15720,7 @@
    "flag_adj": -32,
    "raw": 14,
    "score": 54,
-   "rank": 590
+   "rank": 595
   },
   {
    "url": "https://icebergcharts.com/i/Animated_Movies",
@@ -15628,7 +15752,7 @@
    "flag_adj": -26,
    "raw": 13,
    "score": 54,
-   "rank": 591
+   "rank": 596
   },
   {
    "url": "https://icebergcharts.com/i/Earworms",
@@ -15660,7 +15784,7 @@
    "flag_adj": -26,
    "raw": 13,
    "score": 54,
-   "rank": 592
+   "rank": 597
   },
   {
    "url": "https://icebergcharts.com/i/Instrumental_Music",
@@ -15692,7 +15816,7 @@
    "flag_adj": -28,
    "raw": 11,
    "score": 53,
-   "rank": 593
+   "rank": 598
   },
   {
    "url": "https://witch-house.com/forum/viewtopic.php?p=23018",
@@ -15726,7 +15850,7 @@
    "flag_adj": -36,
    "raw": 9,
    "score": 52,
-   "rank": 594
+   "rank": 599
   },
   {
    "url": "https://xoyondo.com/ap/pwhs1p75sb8acfp",
@@ -15758,7 +15882,7 @@
    "flag_adj": -26,
    "raw": 9,
    "score": 52,
-   "rank": 595
+   "rank": 600
   },
   {
    "url": "https://app.notion.com/p/In-Your-Eyes-E-Zine-19989e259c3c8057bf81d66c6ab9903c?pvs=21",
@@ -15792,7 +15916,7 @@
    "flag_adj": -38,
    "raw": 7,
    "score": 52,
-   "rank": 596
+   "rank": 601
   },
   {
    "url": "https://www.saidit.net/s/MUSICUNKNOWN",
@@ -15824,7 +15948,7 @@
    "flag_adj": -26,
    "raw": 7,
    "score": 52,
-   "rank": 597
+   "rank": 602
   },
   {
    "url": "https://scrapbox.io/Mnemonic-Debris/AUTHENTICATION_OVERRIDE:_ZAZIE_PROD%2FHEXKEY::8R-VAT-I0N",
@@ -15858,7 +15982,7 @@
    "flag_adj": -42,
    "raw": -2,
    "score": 48,
-   "rank": 598
+   "rank": 603
   },
   {
    "url": "https://viewsync-2.appspot.co",
@@ -15886,7 +16010,7 @@
    "flag_adj": -36,
    "raw": -3,
    "score": 48,
-   "rank": 599
+   "rank": 604
   },
   {
    "url": "https://www.youtuberepeater",
@@ -15914,7 +16038,7 @@
    "flag_adj": -36,
    "raw": -3,
    "score": 48,
-   "rank": 600
+   "rank": 605
   },
   {
    "url": "https://urbanpoll.com/polls/what-best-zazie-production-masterpiece-album-poll-dtaziega",
@@ -15948,7 +16072,7 @@
    "flag_adj": -38,
    "raw": -7,
    "score": 47,
-   "rank": 601
+   "rank": 606
   },
   {
    "url": "https://web.ligaudio.ru/mp3/zazie",
@@ -15982,7 +16106,7 @@
    "flag_adj": -66,
    "raw": -8,
    "score": 46,
-   "rank": 602
+   "rank": 607
   },
   {
    "url": "https://commie.io/#fjZr3dSA",
@@ -16016,7 +16140,7 @@
    "flag_adj": -42,
    "raw": -9,
    "score": 46,
-   "rank": 603
+   "rank": 608
   },
   {
    "url": "https://www.metal-tracker.com/torrents/356412.html",
@@ -16052,7 +16176,7 @@
    "flag_adj": -52,
    "raw": -11,
    "score": 45,
-   "rank": 604
+   "rank": 609
   },
   {
    "url": "https://thevanishingpointsyndicate.bandcamp.com/track/pyrogenesis",
@@ -16076,7 +16200,7 @@
    "flag_adj": 0,
    "raw": -29,
    "score": 39,
-   "rank": 605
+   "rank": 610
   },
   {
    "url": "https://youtube.com/playlist?list=OLAK5uy_ngubRtLWcNXLotccVBhDFrdueOi4531G4",
@@ -16100,7 +16224,7 @@
    "flag_adj": 0,
    "raw": -29,
    "score": 39,
-   "rank": 606
+   "rank": 611
   },
   {
    "url": "https://www.discogs.com/release/34149232-Various-DOSTOIVSKI",
@@ -16126,7 +16250,7 @@
    "flag_adj": 0,
    "raw": -31,
    "score": 38,
-   "rank": 607
+   "rank": 612
   },
   {
    "url": "https://www.discogs.com/release/35567218-Various-Thinning-Veil-Compilation",
@@ -16152,7 +16276,7 @@
    "flag_adj": 0,
    "raw": -31,
    "score": 38,
-   "rank": 608
+   "rank": 613
   },
   {
    "url": "https://codex.churchofmalware.org/researchers/ed001/zazie",
@@ -16184,7 +16308,7 @@
    "flag_adj": -10,
    "raw": -40,
    "score": 35,
-   "rank": 609
+   "rank": 614
   },
   {
    "url": "https://producerzach.substack.com",
@@ -16208,7 +16332,7 @@
    "flag_adj": 0,
    "raw": -48,
    "score": 32,
-   "rank": 610
+   "rank": 615
   },
   {
    "url": "https://creators.spotify.com/pod/profile/fsftf/episodes/The-Online-Frontier-of-Sound-Exploring-The-Vanishing-Point-Syndicates-First-Compilation-e30bl26",
@@ -16237,7 +16361,7 @@
    "flag_adj": -16,
    "raw": -52,
    "score": 31,
-   "rank": 611
+   "rank": 616
   },
   {
    "url": "https://bytstav.sk/gDrA",
@@ -16260,7 +16384,7 @@
    "flag_adj": 0,
    "raw": -56,
    "score": 30,
-   "rank": 612
+   "rank": 617
   },
   {
    "url": "https://thewikihow.com/video_",
@@ -16284,7 +16408,7 @@
    "flag_adj": 0,
    "raw": -57,
    "score": 29,
-   "rank": 613
+   "rank": 618
   },
   {
    "url": "https://www.boomplay.com/lyrics/151661449",
@@ -16313,7 +16437,7 @@
    "flag_adj": -16,
    "raw": -58,
    "score": 29,
-   "rank": 614
+   "rank": 619
   },
   {
    "url": "https://paste2.org/zgjMW539",
@@ -16340,7 +16464,7 @@
    "flag_adj": -16,
    "raw": -60,
    "score": 28,
-   "rank": 615
+   "rank": 620
   },
   {
    "url": "https://www.trendingbot.org/topic/418115_klerksdorp",
@@ -16368,7 +16492,7 @@
    "flag_adj": 0,
    "raw": -60,
    "score": 28,
-   "rank": 616
+   "rank": 621
   },
   {
    "url": "https://rant.li/scienceinnovation/zazie-productions-researcher-sonic-engineer-and-theorist-of",
@@ -16399,7 +16523,7 @@
    "flag_adj": -10,
    "raw": -63,
    "score": 27,
-   "rank": 617
+   "rank": 622
   },
   {
    "url": "https://www.rsssearchhub.com/feed/1185189bcc80cd02d670a3aaae58ebf3/city-portland-mercury",
@@ -16428,7 +16552,7 @@
    "flag_adj": 0,
    "raw": -67,
    "score": 26,
-   "rank": 618
+   "rank": 623
   },
   {
    "url": "https://medium.com/zazzy-studio",
@@ -16456,7 +16580,7 @@
    "flag_adj": -16,
    "raw": -68,
    "score": 25,
-   "rank": 619
+   "rank": 624
   },
   {
    "url": "https://www.viberate.com/artist/zazie-productions",
@@ -16489,7 +16613,7 @@
    "flag_adj": -30,
    "raw": -68,
    "score": 25,
-   "rank": 620
+   "rank": 625
   },
   {
    "url": "https://www.boomplay.com/artists/46971970",
@@ -16520,7 +16644,7 @@
    "flag_adj": -16,
    "raw": -69,
    "score": 25,
-   "rank": 621
+   "rank": 626
   },
   {
    "url": "https://wnloveet.click/product_details/105751966.html",
@@ -16547,7 +16671,7 @@
    "flag_adj": 0,
    "raw": -75,
    "score": 23,
-   "rank": 622
+   "rank": 627
   },
   {
    "url": "https://box.hitplayer.ru/?s=zazie",
@@ -16574,7 +16698,7 @@
    "flag_adj": -16,
    "raw": -77,
    "score": 22,
-   "rank": 623
+   "rank": 628
   },
   {
    "url": "https://wikigit.org/wiki/List_of_experimental_musicians",
@@ -16607,7 +16731,7 @@
    "flag_adj": -34,
    "raw": -80,
    "score": 21,
-   "rank": 624
+   "rank": 629
   },
   {
    "url": "https://www.breakinghits.app/zazieproductions",
@@ -16643,7 +16767,7 @@
    "flag_adj": -42,
    "raw": -81,
    "score": 21,
-   "rank": 625
+   "rank": 630
   },
   {
    "url": "https://wikimili.com/en/List_of_experimental_musicians",
@@ -16676,7 +16800,7 @@
    "flag_adj": -28,
    "raw": -81,
    "score": 21,
-   "rank": 626
+   "rank": 631
   },
   {
    "url": "https://credits.muso.ai/profile/4010f3b7-9a87-4961-8dfd-917de0ba787e",
@@ -16710,7 +16834,7 @@
    "flag_adj": -26,
    "raw": -82,
    "score": 21,
-   "rank": 627
+   "rank": 632
   },
   {
    "url": "https://socialcounts.org/youtube-video-live-view-count/UX2kv3G89Jw",
@@ -16740,7 +16864,7 @@
    "flag_adj": -36,
    "raw": -82,
    "score": 21,
-   "rank": 628
+   "rank": 633
   },
   {
    "url": "https://justpaste.it/gepby",
@@ -16774,7 +16898,7 @@
    "flag_adj": -32,
    "raw": -83,
    "score": 20,
-   "rank": 629
+   "rank": 634
   },
   {
    "url": "https://songdata.io/search?query=Zazie+Productions+",
@@ -16801,7 +16925,7 @@
    "flag_adj": -16,
    "raw": -85,
    "score": 20,
-   "rank": 630
+   "rank": 635
   },
   {
    "url": "https://thirdeyemusic.co.uk/?name=Zazie_Productions&dir=tracks",
@@ -16828,7 +16952,7 @@
    "flag_adj": -16,
    "raw": -85,
    "score": 20,
-   "rank": 631
+   "rank": 636
   },
   {
    "url": "https://polsy.org.uk/play/yt/?v",
@@ -16856,7 +16980,7 @@
    "flag_adj": -36,
    "raw": -86,
    "score": 19,
-   "rank": 632
+   "rank": 637
   },
   {
    "url": "https://socialcounts.org/youtu",
@@ -16884,7 +17008,7 @@
    "flag_adj": -36,
    "raw": -86,
    "score": 19,
-   "rank": 633
+   "rank": 638
   },
   {
    "url": "https://www.backstage.com/u/audreyjarnagin",
@@ -16915,7 +17039,7 @@
    "flag_adj": -42,
    "raw": -87,
    "score": 19,
-   "rank": 634
+   "rank": 639
   },
   {
    "url": "https://www.newtv.co.th/demo",
@@ -16943,7 +17067,7 @@
    "flag_adj": -30,
    "raw": -87,
    "score": 19,
-   "rank": 635
+   "rank": 640
   },
   {
    "url": "https://www.wikiwand.com/en/articles/List_of_experimental_musicians",
@@ -16976,7 +17100,7 @@
    "flag_adj": -34,
    "raw": -87,
    "score": 19,
-   "rank": 636
+   "rank": 641
   },
   {
    "url": "https://culturevein.com/videos/UX2kv3G89Jw",
@@ -17006,7 +17130,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 637
+   "rank": 642
   },
   {
    "url": "https://deturl.com/play.php?v=UX2kv3G89Jw",
@@ -17037,7 +17161,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 638
+   "rank": 643
   },
   {
    "url": "https://fooyoh.com/nowwatch/watch/UX2kv3G89Jw",
@@ -17067,7 +17191,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 639
+   "rank": 644
   },
   {
    "url": "https://www.musiclessons.com/youtube/watch?v=UX2kv3G89Jw",
@@ -17097,7 +17221,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 640
+   "rank": 645
   },
   {
    "url": "https://pakvim.net/watch/UX2kv3G89Jw",
@@ -17127,7 +17251,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 641
+   "rank": 646
   },
   {
    "url": "https://thewikihow.com/video_UX2kv3G89Jw",
@@ -17157,7 +17281,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 642
+   "rank": 647
   },
   {
    "url": "https://viewsync-2.appspot.com/player.html?v=UX2kv3G89Jw",
@@ -17187,7 +17311,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 643
+   "rank": 648
   },
   {
    "url": "https://www.youtube-nocookie.com/embed/UX2kv3G89Jw",
@@ -17217,7 +17341,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 644
+   "rank": 649
   },
   {
    "url": "https://yt.nimlinks.com/@zazieproductions",
@@ -17248,7 +17372,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 645
+   "rank": 650
   },
   {
    "url": "https://yt.nimlinks.com/UX2kv3G89Jw",
@@ -17278,7 +17402,7 @@
    "flag_adj": -36,
    "raw": -89,
    "score": 18,
-   "rank": 646
+   "rank": 651
   },
   {
    "url": "https://www.chosic.com/artist/zazie-productions/4UOgvZEOo7xBhFBjJvlMm0",
@@ -17312,7 +17436,7 @@
    "flag_adj": -30,
    "raw": -91,
    "score": 17,
-   "rank": 647
+   "rank": 652
   },
   {
    "url": "https://anotepad.com/notes/5246g357",
@@ -17346,7 +17470,7 @@
    "flag_adj": -40,
    "raw": -93,
    "score": 17,
-   "rank": 648
+   "rank": 653
   },
   {
    "url": "https://culturevein.com/videos",
@@ -17374,7 +17498,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 649
+   "rank": 654
   },
   {
    "url": "https://fooyoh.com/nowwatch",
@@ -17402,7 +17526,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 650
+   "rank": 655
   },
   {
    "url": "https://gazetaolsztynska.pl/g",
@@ -17430,7 +17554,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 651
+   "rank": 656
   },
   {
    "url": "https://heartvod.com/play=UX",
@@ -17458,7 +17582,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 652
+   "rank": 657
   },
   {
    "url": "https://listenonrepeat.com/wa",
@@ -17486,7 +17610,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 653
+   "rank": 658
   },
   {
    "url": "https://pakvim.net/watch/UX2",
@@ -17514,7 +17638,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 654
+   "rank": 659
   },
   {
    "url": "https://salda.ws/video.php?id",
@@ -17542,7 +17666,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 655
+   "rank": 660
   },
   {
    "url": "https://www.topsheetmusic.eu",
@@ -17570,7 +17694,7 @@
    "flag_adj": -36,
    "raw": -93,
    "score": 17,
-   "rank": 656
+   "rank": 661
   },
   {
    "url": "https://yt.nimlinks.com/UX2kv",
@@ -17598,7 +17722,7 @@
    "flag_adj": -36,
    "raw": -94,
    "score": 16,
-   "rank": 657
+   "rank": 662
   },
   {
    "url": "https://www.agencesartistiques.com/fiche-artiste/739100-elsa-levy.html?lng=en",
@@ -17629,7 +17753,7 @@
    "flag_adj": -42,
    "raw": -95,
    "score": 16,
-   "rank": 658
+   "rank": 663
   },
   {
    "url": "https://childrenofyemen.org/zvgw5/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -17660,7 +17784,7 @@
    "flag_adj": -42,
    "raw": -96,
    "score": 16,
-   "rank": 659
+   "rank": 664
   },
   {
    "url": "https://yewtu.be/watch?v=UX2kv3G89Jw",
@@ -17690,7 +17814,7 @@
    "flag_adj": -36,
    "raw": -97,
    "score": 15,
-   "rank": 660
+   "rank": 665
   },
   {
    "url": "https://www.tiktok.com/@usery..y..yulles/video/7453287097533746450",
@@ -17723,7 +17847,7 @@
    "flag_adj": -48,
    "raw": -99,
    "score": 15,
-   "rank": 661
+   "rank": 666
   },
   {
    "url": "https://viewsync.net/watch?v=UX2kv3G89Jw&t=0&mode=solo&autoplay=false",
@@ -17753,7 +17877,7 @@
    "flag_adj": -36,
    "raw": -99,
    "score": 15,
-   "rank": 662
+   "rank": 667
   },
   {
    "url": "https://www.tvonlayn.ru/video",
@@ -17781,7 +17905,7 @@
    "flag_adj": -30,
    "raw": -101,
    "score": 14,
-   "rank": 663
+   "rank": 668
   },
   {
    "url": "https://video.link/watch?v=UX",
@@ -17809,7 +17933,7 @@
    "flag_adj": -30,
    "raw": -101,
    "score": 14,
-   "rank": 664
+   "rank": 669
   },
   {
    "url": "https://yewtu.be/watch?v=UX",
@@ -17837,7 +17961,7 @@
    "flag_adj": -36,
    "raw": -101,
    "score": 14,
-   "rank": 665
+   "rank": 670
   },
   {
    "url": "https://smartpersonsguide.com/MNNiI/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -17868,7 +17992,7 @@
    "flag_adj": -42,
    "raw": -102,
    "score": 14,
-   "rank": 666
+   "rank": 671
   },
   {
    "url": "https://archivio.lavocedinovara.com/KmDEB/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -17899,7 +18023,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 667
+   "rank": 672
   },
   {
    "url": "http://www.bytstav.sk/gDrA/ira-and-ruth-levinson-art-museum-north-carolina",
@@ -17930,7 +18054,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 668
+   "rank": 673
   },
   {
    "url": "https://designbymm.cz/.modules/gbt72mhz/ira-and-ruth-levinson-art-museum-north-carolina",
@@ -17961,7 +18085,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 669
+   "rank": 674
   },
   {
    "url": "https://maynenkhikobelco.com/ZVuos/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -17992,7 +18116,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 670
+   "rank": 675
   },
   {
    "url": "https://patchworkers.info/ac-valhalla/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -18023,7 +18147,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 671
+   "rank": 676
   },
   {
    "url": "https://powerkabel.com.pe/love-quotes/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -18054,7 +18178,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 672
+   "rank": 677
   },
   {
    "url": "https://www.sarlmca.fr/x83v4/ira-and-ruth-levinson-art-museum-north-carolina",
@@ -18085,7 +18209,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 673
+   "rank": 678
   },
   {
    "url": "https://slatersgarage.com/PxyL/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -18116,7 +18240,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 674
+   "rank": 679
   },
   {
    "url": "https://www.stb.hu/youtube/U",
@@ -18144,7 +18268,7 @@
    "flag_adj": -30,
    "raw": -103,
    "score": 13,
-   "rank": 675
+   "rank": 680
   },
   {
    "url": "https://vidmak.com/fs0vz3/ira-and-ruth-levinson-art-museum-north-carolina",
@@ -18175,7 +18299,7 @@
    "flag_adj": -42,
    "raw": -103,
    "score": 13,
-   "rank": 676
+   "rank": 681
   },
   {
    "url": "https://viewsync.net/watch?v",
@@ -18203,7 +18327,7 @@
    "flag_adj": -36,
    "raw": -103,
    "score": 13,
-   "rank": 677
+   "rank": 682
   },
   {
    "url": "https://www.juetao.org/yfc/san-bernardino-county-sheriff-jobs",
@@ -18236,7 +18360,7 @@
    "flag_adj": -50,
    "raw": -104,
    "score": 13,
-   "rank": 678
+   "rank": 683
   },
   {
    "url": "https://www.hribi.net/video_youtube/startup-summit%20/UX2kv3G89Jw",
@@ -18266,7 +18390,7 @@
    "flag_adj": -36,
    "raw": -105,
    "score": 13,
-   "rank": 679
+   "rank": 684
   },
   {
    "url": "https://www.hribi.net/video_youtube/watch/UX2kv3G89Jw",
@@ -18296,7 +18420,7 @@
    "flag_adj": -36,
    "raw": -105,
    "score": 13,
-   "rank": 680
+   "rank": 685
   },
   {
    "url": "https://www.vtomb.com/?watch=UX2kv3G89Jw",
@@ -18326,7 +18450,7 @@
    "flag_adj": -36,
    "raw": -105,
    "score": 13,
-   "rank": 681
+   "rank": 686
   },
   {
    "url": "https://www.vtomb.com/video/UX2kv3G89Jw",
@@ -18356,7 +18480,7 @@
    "flag_adj": -36,
    "raw": -105,
    "score": 13,
-   "rank": 682
+   "rank": 687
   },
   {
    "url": "https://comunicati.musicalive.net/c/cant-get-my-eyes-off-you-123",
@@ -18390,7 +18514,7 @@
    "flag_adj": -40,
    "raw": -107,
    "score": 12,
-   "rank": 683
+   "rank": 688
   },
   {
    "url": "https://deturl.com/play.php?v",
@@ -18418,7 +18542,7 @@
    "flag_adj": -36,
    "raw": -107,
    "score": 12,
-   "rank": 684
+   "rank": 689
   },
   {
    "url": "https://mlx.su/paste/view/26990c6b",
@@ -18452,7 +18576,7 @@
    "flag_adj": -26,
    "raw": -107,
    "score": 12,
-   "rank": 685
+   "rank": 690
   },
   {
    "url": "https://www.ytrepeat.com/wat",
@@ -18480,7 +18604,7 @@
    "flag_adj": -36,
    "raw": -107,
    "score": 12,
-   "rank": 686
+   "rank": 691
   },
   {
    "url": "https://r.darrennathanael.com/r/Album_Cover_Art/comments/1i5wjf8/zazie_productions_to_halt_space_adrift_2023",
@@ -18512,7 +18636,7 @@
    "flag_adj": -42,
    "raw": -108,
    "score": 11,
-   "rank": 687
+   "rank": 692
   },
   {
    "url": "https://canal50.com/player-20",
@@ -18540,7 +18664,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 688
+   "rank": 693
   },
   {
    "url": "https://clipzag.com/watch?v=",
@@ -18568,7 +18692,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 689
+   "rank": 694
   },
   {
    "url": "https://www.hribi.net/video_yo",
@@ -18596,7 +18720,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 690
+   "rank": 695
   },
   {
    "url": "https://www.nsfwyoutube.com/watch?v=UX2kv3G89Jw",
@@ -18626,7 +18750,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 691
+   "rank": 696
   },
   {
    "url": "https://shoshanagarfield.com/bidirectional-lstm/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -18659,7 +18783,7 @@
    "flag_adj": -48,
    "raw": -109,
    "score": 11,
-   "rank": 692
+   "rank": 697
   },
   {
    "url": "https://www.vtomb.com/?watc",
@@ -18687,7 +18811,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 693
+   "rank": 698
   },
   {
    "url": "https://www.vtomb.com/video",
@@ -18715,7 +18839,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 694
+   "rank": 699
   },
   {
    "url": "https://youplay.nimtools.com/watch/?v=UX2kv3G89Jw",
@@ -18745,7 +18869,7 @@
    "flag_adj": -36,
    "raw": -109,
    "score": 11,
-   "rank": 695
+   "rank": 700
   },
   {
    "url": "https://lcofcu.com/4o5ct9/archive.php?tag=black-mountain-college-ira-and-ruth-levinson-museum",
@@ -18778,7 +18902,7 @@
    "flag_adj": -50,
    "raw": -111,
    "score": 10,
-   "rank": 696
+   "rank": 701
   },
   {
    "url": "https://lu.etvplayvideos.com/UX2kv3G89Jw/video-not-available",
@@ -18808,7 +18932,7 @@
    "flag_adj": -36,
    "raw": -111,
    "score": 10,
-   "rank": 697
+   "rank": 702
   },
   {
    "url": "https://lu.etvplayvideos.com/UX2kv3G89Jw/w",
@@ -18838,7 +18962,7 @@
    "flag_adj": -36,
    "raw": -111,
    "score": 10,
-   "rank": 698
+   "rank": 703
   },
   {
    "url": "https://www.topsheetmusic.eu/sysmusic/templates/youtube.php?v=UX2kv3G89Jw",
@@ -18871,7 +18995,7 @@
    "flag_adj": -66,
    "raw": -111,
    "score": 10,
-   "rank": 699
+   "rank": 704
   },
   {
    "url": "https://youtubu.tv/watch?v=U",
@@ -18899,7 +19023,7 @@
    "flag_adj": -36,
    "raw": -111,
    "score": 10,
-   "rank": 700
+   "rank": 705
   },
   {
    "url": "https://polsy.org.uk/play/yt/?vurl=https://www.youtube.com/watch?v=UX2kv3G89Jw",
@@ -18931,7 +19055,7 @@
    "flag_adj": -66,
    "raw": -112,
    "score": 10,
-   "rank": 701
+   "rank": 706
   },
   {
    "url": "https://www.nsfwyoutube.com",
@@ -18959,7 +19083,7 @@
    "flag_adj": -36,
    "raw": -113,
    "score": 10,
-   "rank": 702
+   "rank": 707
   },
   {
    "url": "https://youplay.nimtools.com",
@@ -18987,7 +19111,7 @@
    "flag_adj": -36,
    "raw": -113,
    "score": 10,
-   "rank": 703
+   "rank": 708
   },
   {
    "url": "https://lu.etvplayvideos.com",
@@ -19015,7 +19139,7 @@
    "flag_adj": -36,
    "raw": -115,
    "score": 9,
-   "rank": 704
+   "rank": 709
   },
   {
    "url": "https://listenonrepeat.com/watch/?v=UX2kv3G89Jw",
@@ -19048,7 +19172,7 @@
    "flag_adj": -66,
    "raw": -117,
    "score": 8,
-   "rank": 705
+   "rank": 710
   },
   {
    "url": "https://clipzag.com/watch?v=UX2kv3G89Jw",
@@ -19079,7 +19203,7 @@
    "flag_adj": -36,
    "raw": -119,
    "score": 8,
-   "rank": 706
+   "rank": 711
   },
   {
    "url": "https://www.clipzui.fun/video/64f3a4n3t2j5x3y3c4o553.html",
@@ -19112,7 +19236,7 @@
    "flag_adj": -52,
    "raw": -119,
    "score": 8,
-   "rank": 707
+   "rank": 712
   },
   {
    "url": "https://heartvod.com/play=UX2kv3G89Jw",
@@ -19144,7 +19268,7 @@
    "flag_adj": -66,
    "raw": -119,
    "score": 8,
-   "rank": 708
+   "rank": 713
   },
   {
    "url": "https://www.newtv.co.th/demo/web/video.php?v=UX2kv3G89Jw",
@@ -19176,7 +19300,7 @@
    "flag_adj": -66,
    "raw": -119,
    "score": 8,
-   "rank": 709
+   "rank": 714
   },
   {
    "url": "https://salda.ws/video.php?id=UX2kv3G89Jw",
@@ -19208,7 +19332,7 @@
    "flag_adj": -66,
    "raw": -119,
    "score": 8,
-   "rank": 710
+   "rank": 715
   },
   {
    "url": "http://hiontech.kr/data/persuasive-speech/black-mountain-college-ira-and-ruth-levinson-museum",
@@ -19239,7 +19363,7 @@
    "flag_adj": -42,
    "raw": -125,
    "score": 6,
-   "rank": 711
+   "rank": 716
   },
   {
    "url": "https://gazetaolsztynska.pl/gminaelk/tv/video/youtube/UX2kv3G89Jw",
@@ -19272,7 +19396,7 @@
    "flag_adj": -66,
    "raw": -133,
    "score": 3,
-   "rank": 712
+   "rank": 717
   },
   {
    "url": "https://www.tvonlayn.ru/video/UX2kv3G89Jw",
@@ -19304,7 +19428,7 @@
    "flag_adj": -66,
    "raw": -133,
    "score": 3,
-   "rank": 713
+   "rank": 718
   },
   {
    "url": "https://video.link/watch?v=UX2kv3G89Jw",
@@ -19336,7 +19460,7 @@
    "flag_adj": -66,
    "raw": -133,
    "score": 3,
-   "rank": 714
+   "rank": 719
   },
   {
    "url": "https://www.youtuberepeater.com/watch?v=UX2kv3G89Jw#gsc.tab=0",
@@ -19368,7 +19492,7 @@
    "flag_adj": -66,
    "raw": -133,
    "score": 3,
-   "rank": 715
+   "rank": 720
   },
   {
    "url": "https://www.ytrepeat.com/watch/?v=UX2kv3G89Jw",
@@ -19400,7 +19524,7 @@
    "flag_adj": -66,
    "raw": -133,
    "score": 3,
-   "rank": 716
+   "rank": 721
   },
   {
    "url": "https://canal50.com/player-2020.asp?video=UX2kv3G89Jw&letra=4280&version=movil&autoplay=1",
@@ -19432,7 +19556,7 @@
    "flag_adj": -66,
    "raw": -135,
    "score": 2,
-   "rank": 717
+   "rank": 722
   },
   {
    "url": "https://www.stb.hu/youtube/UX2kv3G89Jw",
@@ -19464,7 +19588,7 @@
    "flag_adj": -66,
    "raw": -135,
    "score": 2,
-   "rank": 718
+   "rank": 723
   },
   {
    "url": "https://youtubu.tv/watch?v=UX2kv3G89Jw",
@@ -19496,7 +19620,7 @@
    "flag_adj": -66,
    "raw": -137,
    "score": 1,
-   "rank": 719
+   "rank": 724
   },
   {
    "url": "https://lu.etvplayvideos.com/UX2kv3G89Jw/v",
@@ -19528,7 +19652,7 @@
    "flag_adj": -66,
    "raw": -141,
    "score": 0,
-   "rank": 720
+   "rank": 725
   }
  ],
  "engine_endpoints": [

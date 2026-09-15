@@ -658,7 +658,7 @@ for e in engine_rows:
     e['sources'] = sorted(e['sources'])
 
 with open(OUT, 'w', encoding='utf-8') as fh:
-    json.dump({'generated_from_repo_date': '2026-09-05',
+    json.dump({'generated_from_repo_date': '2026-09-15',
                'counts': {'records': len(rows), 'engine_endpoints': len(engine_rows)},
                'records': rows, 'engine_endpoints': engine_rows}, fh, indent=1, ensure_ascii=False)
 
