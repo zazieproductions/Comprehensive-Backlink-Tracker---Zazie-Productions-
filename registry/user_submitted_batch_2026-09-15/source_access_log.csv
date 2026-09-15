@@ -1,0 +1,10 @@
+TimestampUTC,URL,Method,QueryOrNavigation,HTTPStatus,Bytes,ExactPhraseFound,ErrorNotes,LiveStatusTag
+2026-09-15T00:00:00Z,http://www.art-squat.com/articles11/Zazie/,fetch_page,user submission — direct fetch,200,n/a,"Yes (""Zazie Productions"" headline + ""Zazie Kanwar-Torge"" in body)",,live
+2026-09-15T00:01:00Z,https://www.chilimovie.com/movies/expire-vid-23219402.html,fetch_page,user submission — direct fetch,200,n/a,"Yes (""Zazie Kanwar-Torge"" — Sound Designer)",,live
+2026-09-15T00:02:00Z,https://www.lynnesachs.com/tag/curating/,fetch_page,user submission — direct fetch,200,n/a,"Yes (""Zazie Kanwar-Torge"" in Featured filmmakers)",,live
+2026-09-15T00:03:00Z,https://rave.dj/P9E0qpLDYmEexg,fetch_page,user submission — direct fetch,200,n/a,"Yes (page title ""Hella Zazie Productions Mixtape"")",,live
+2026-09-15T00:04:00Z,https://web.ligaudio.ru/mp3/zazie%20productions,fetch_page,user submission — direct fetch,200,n/a,Yes (6 exact-name tracks listed),,live
+2026-09-15T00:05:00Z,https://muzjam.org/search/Zazie%20Productions,fetch_page,user submission — direct fetch,200,n/a,Yes (4 exact-name tracks listed),,live
+2026-09-15T00:06:00Z,https://en.kinorium.com/12570740/,fetch_page,user submission (minus ?ysclid= click-id) — direct fetch,200,n/a,"Yes (""Zazie Kanwar-Torge"" — Composers)",,live
+2026-09-15T00:07:00Z,https://en.kinorium.com/name/7902176/,fetch_page,adjacent link on USB15-03,200,n/a,"Yes (""Zazie Kanwar-Torge - composer, producer"")",,live
+2026-09-15T00:08:00Z,https://www.chilimovie.com/crew/5724380.html,fetch_page,adjacent link on USB15-05,200,n/a,"Yes (""Zazie Kanwar-Torge - Movie and TV Credits"")",,live

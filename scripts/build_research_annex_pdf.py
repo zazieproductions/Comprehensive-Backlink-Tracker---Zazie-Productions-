@@ -441,6 +441,9 @@ WP_LOG = read_csv('registry', 'web_presence_expansion', 'research_log.csv')
 LT_LEDGER = read_csv('registry', 'spam_scraper_syndication_lowtrust_2026-09-05', 'lowtrust_ledger.csv')
 LT_QUERIES = read_csv('registry', 'spam_scraper_syndication_lowtrust_2026-09-05', 'queries_run.csv')
 LT_ACCESS = read_csv('registry', 'spam_scraper_syndication_lowtrust_2026-09-05', 'source_access_log.csv')
+USER_LEDGER = read_csv('registry', 'user_submitted_batch_2026-09-15', 'submission_ledger.csv')
+USER_ACCESS = read_csv('registry', 'user_submitted_batch_2026-09-15', 'source_access_log.csv')
+USER_LEADS = read_csv('registry', 'user_submitted_batch_2026-09-15', 'adjacent_leads.csv')
 MX_VISIBILITY = read_csv('registry', 'maxdepth_pass_2026-09-05', 'engine_visibility.csv')
 MX_REVERIFIED = read_csv('registry', 'maxdepth_pass_2026-09-05', 'reverified_urls.csv')
 MX_LEADS = read_csv('registry', 'maxdepth_pass_2026-09-05', 'discovery_ledger.csv')
@@ -454,7 +457,7 @@ story = []
 stat_cells = [
     (str(N_LINKS), 'links in the master volume'),
     (str(len(ENGINE_AUDIT) + len(ENGINE_MATRIX) + len(MX_VISIBILITY)), 'engine probes logged'),
-    ('11', 'research passes reported'),
+    ('12', 'research passes + user-submitted batches'),
     (str(len(MD_FEATURES)), 'magazine / zine features'),
     (str(len(P3_LEDGER)), 'editorial-literary ledger rows'),
     (str(len(LT_LEDGER)), 'quarantine register rows'),
@@ -480,7 +483,8 @@ WHAT = (
     'and every query and source-access log the passes produced.'
     '<br/><br/><b>HOW IT IS ORGANISED.</b> One colour-coded section per research register, ordered from method (rules, '
     'engine audits) through the discovery passes in the order they ran, to the cross-cutting registers (quarantine, '
-    'link map, listen links, seed coverage) and the process appendices (queries, access logs, endpoints). Chips carry '
+    'link map, listen links, seed coverage), the process appendices (queries, access logs, endpoints) and the '
+    'user-submitted link batch of 2026-09-15. Chips carry '
     'status: <font color="#188038"><b>green = worked / live</b></font>, <font color="#b06000"><b>amber = partial</b></font>, '
     '<font color="#b3261e"><b>red = blocked / broken</b></font>, <font color="#7b8794"><b>grey = unreach­able / uncheck­ed</b></font>, '
     '<font color="#546e7a"><b>slate = lead or archive-only</b></font>. Every URL is printed in full and clickable.'
@@ -495,14 +499,15 @@ TOC = [
     ('2', 'Search-engine audit — Passes 1-8', 'every mainstream, meta and independent engine probed, what each returned, what blocked bots', 'sec:2', '#1a73e8'),
     ('3', 'Regional & alt-engine sweep — Pass 9', '62 regional, independent, archival and scholarly interfaces with access verdicts', 'sec:3', '#0f9d8f'),
     ('4', 'Maximum-Depth Research Pass — 2026-09-05', 'engine visibility per target, re-verified anchors, discovery ledger of all 20 leads, follow-up queue', 'sec:4', '#5e35b1'),
-    ('5', 'Magazine & zine features registry', '19 qualified editorial features with evidence, engine visibility matrix, Tier-C mentions, unresolved leads', 'sec:5', '#c2185b'),
+    ('5', 'Magazine & zine features registry', '20 qualified editorial features with evidence, engine visibility matrix, Tier-C mentions, unresolved leads', 'sec:5', '#c2185b'),
     ('6', 'Editorial & literary evidence ledger — Phase 3', 'every literary/editorial surface checked with exact evidence quotes and discovery route', 'sec:6', '#7b1fa2'),
     ('7', 'Web-presence blind-spot expansion — Pass 11', 'backlinks, visual surfaces, social, entity records, historical/deleted pages, web archaeology', 'sec:7', '#00796b'),
-    ('8', 'Low-trust quarantine register — Pass 10', '89 spam / scraper / syndication / SEO-poisoning rows, safety charter, queries and access log', 'sec:8', '#616161'),
+    ('8', 'Low-trust quarantine register — Pass 10', '94 spam / scraper / syndication / SEO-poisoning and borderline-kept rows, safety charter, queries and access log', 'sec:8', '#616161'),
     ('9', 'Accomplishment Register to link map', 'the 2026 register entries mapped to their public links, with HUNT / AUTH / lead states', 'sec:9', '#e8710a'),
     ('10', 'Listen links — every compilation appearance', 'one listen link per compilation credit, confirmed / label-root / unresolved', 'sec:10', '#039be5'),
     ('11', 'Seed index & domain coverage', 'the original raw-dump seed: 260 URLs across 230 domains', 'sec:11', '#2e7d32'),
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
+    ('13', 'User-submitted link batch — 2026-09-15', 'seven reader-found URLs + 2 adjacent surfaces, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log', 'sec:13', '#ad1457'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -514,7 +519,7 @@ for i, (num, title, blurb, key, col) in enumerate(TOC, start=1):
                      para(f'<b>page {PAGEMAP.get(key, "-")}</b>', 'cell', TA_RIGHT,
                           colour=INK if PAGEMAP.get(key) else SOFT)])
     toc_extra.append(('BACKGROUND', (0, i), (0, i), colors.HexColor(col)))
-story += [banner('CONTENTS', size=11, sub='twelve colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
+story += [banner('CONTENTS', size=11, sub='thirteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [9 * mm, 74 * mm, CW - 111 * mm, 28 * mm], zebra=True, font=7.2,
                extra=toc_extra + [('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
@@ -1001,9 +1006,9 @@ story.append(grid(rows, [22 * mm, 84 * mm, 12 * mm, 62 * mm, 58 * mm, CW - 238 *
 story.append(PageBreak())
 
 # =========================================================== §8 LOW-TRUST QUARANTINE
-section('8', 'LOW-TRUST QUARANTINE REGISTER — PASS 10 (2026-09-05)', '#616161',
+section('8', 'LOW-TRUST QUARANTINE REGISTER — PASS 10 (2026-09-05) + 2026-09-15 ADDITIONS', '#616161',
         'every spam / scraper / syndication / SEO-poisoning / text-injection occurrence of the exact strings — an evidence-preservation bucket that is never counted as coverage, credit, profile, release or biography',
-        right=f'{len(LT_LEDGER)} quarantined rows · {len(set(r.get("Host", "") for r in LT_LEDGER))} hosts')
+        right=f'{len(LT_LEDGER)} register rows · {len(set(r.get("Host", "") for r in LT_LEDGER))} hosts')
 
 story.append(notebox(
     '<b>CHARTER.</b> This register documents contamination, it does not endorse it. Rows are hacked-site doorways '
@@ -1211,7 +1216,81 @@ story.append(grid(rows, [16 * mm, 20 * mm, 78 * mm, 24 * mm, 62 * mm, 36 * mm, C
                   zebra=True, font=5.5))
 story.append(PageBreak())
 
-# =========================================================== APPENDIX — ENDPOINTS & TOOLS
+# =========================================================== §13 USER-SUBMITTED BATCH
+section('13', 'USER-SUBMITTED LINK BATCH — 2026-09-15', '#ad1457',
+        'seven reader-found URLs plus two adjacent surfaces they led to — every one opened, exact-name checked and dispositioned the same day; the batch that follows Pass 11',
+        right=f'{len(USER_LEDGER)} URLs dispositioned · {len(USER_ACCESS)} fetches logged · {len(USER_LEADS)} leads queued')
+
+story.append(notebox(
+    '<b>WHAT HAPPENED.</b> On 2026-09-15 the operator handed over seven new links. All seven were opened the same day '
+    '(plus the two adjacent surfaces they immediately revealed — the Kinorium person page behind the submitted title '
+    'page and the chilimovie crew page behind the submitted film page). <b>Result: 9 records, 1 quarantine, 4 leads.</b> '
+    'The headline finds: a dedicated Art Squat artist interview (Tier A press feature, both exact names, byline Johnny '
+    'Otto, 2025); a <b>new film credit</b> — "Zazie Kanwar-Torge" as Composer on <i>The Haunted</i> (2026) in the Kinorium '
+    'database, whose person page also documents Peregrinus (TV, 2026—), Pothole (2025) and Choleric (post-production); '
+    'and a live, on-page upgrade of the Lynne Sachs "Films for Freedom" mention from search-snippet evidence to rendered '
+    'text. The chilimovie pair are TMDB-scraper replicas — the Expire (2025) sound-designer credit is recorded as real, '
+    'the surface kept at Tier C with the UNOFFICIAL FILM MIRROR flag. RaveDJ is an auto-generated mixtape page; LightAudio '
+    'a licensed RU streaming mirror showing six exact-name tracks; MuzJam an unlicensed free-download index — the one '
+    'quarantine of the batch (PIRATE-SCRAPE, Tier D). Quarantine-register rows LT-090…LT-094 record every borderline call.',
+    '#f3e5f0'))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.1 — Submission ledger: verdict per URL</b> (cross-registered rows: ZKT4-021, WPX-029/030, LT-090…094)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+CATCOL = {'Press & Editorial': '#c2185b', 'Film, Festivals & Exhibitions': '#6a1b9a',
+          'Profiles & Catalogs': '#1565c0', 'Streaming & Music Platforms': '#0277bd',
+          'Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust': '#616161'}
+for i, r in enumerate(USER_LEDGER):
+    tc, tfill, _ = tier_chip(r.get('TrustTier', ''))
+    lc, lfill = live_chip(r.get('LiveStatus_2026-09-05', ''))
+    cat = r.get('MasterCategory', '')
+    rows.append([para(f'<b>{esc(r.get("RecordID", ""))}</b>', 'tiny'),
+                 para(f'<b>{esc(r.get("FeatureTitle", "") or "")}</b>', 'tiny'),
+                 para(linkify(r.get('URL', ''), '#5b1f66'), 'tiny'),
+                 para(esc(r.get('Target', '')), 'tiny', colour=SOFT),
+                 para(f'<font color="{CATCOL.get(cat, "#37474f")}"><b>{esc(cat)}</b></font>', 'tiny'),
+                 tc, lc,
+                 para(esc((r.get('Notes') or '')[:230]), 'tiny', colour=SOFT)])
+    extra += [('BACKGROUND', (5, i + 1), (5, i + 1), tfill), ('BACKGROUND', (6, i + 1), (6, i + 1), lfill),
+              ('VALIGN', (5, i + 1), (5, i + 1), 'MIDDLE'), ('VALIGN', (6, i + 1), (6, i + 1), 'MIDDLE')]
+story.append(grid(rows, [15 * mm, 46 * mm, 62 * mm, 22 * mm, 30 * mm, 10 * mm, 17 * mm, CW - 202 * mm],
+                  header=['ID', 'PAGE', 'URL (clickable)', 'TARGET', 'CATEGORY', 'TIER', 'LIVE', 'VERDICT / EVIDENCE'],
+                  zebra=True, font=5.7, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.2 — Adjacent leads queued for the next pass</b> (seen this batch, pages not yet opened — leads never count as records)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in USER_LEADS:
+    rows.append([para(f'<b>{esc(r.get("LeadID", ""))}</b>', 'tiny'),
+                 para(linkify(r.get('LeadURL', ''), '#546e7a'), 'tiny'),
+                 para(esc(r.get('What', '')), 'tiny'),
+                 para(esc((r.get('WhyNotYetRecorded') or '')[:90]), 'tiny', colour=SOFT),
+                 para(esc((r.get('NextAction') or '')[:90]), 'tiny', colour=SOFT)])
+story.append(grid(rows, [15 * mm, 62 * mm, 70 * mm, CW - 15 * mm - 62 * mm - 70 * mm - 62 * mm, 62 * mm],
+                  header=['LEAD', 'URL', 'WHAT IT IS', 'WHY NOT YET A RECORD', 'NEXT ACTION'],
+                  zebra=True, font=5.7))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.3 — Fetch log (all 2026-09-15 accesses)</b>', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(USER_ACCESS):
+    lc, lfill = access_chip(r.get('LiveStatusTag', ''))
+    rows.append([para(esc((r.get('TimestampUTC') or '')[:19]), 'tiny', colour=SOFT),
+                 para(linkify(r.get('URL', ''), '#1a3d8f'), 'tiny'),
+                 para(f'<font face="Courier" size="5.2">{esc(r.get("Method", ""))}</font>', 'tiny'),
+                 para(esc((r.get('ExactPhraseFound') or '')[:110]), 'tiny'),
+                 lc])
+    extra += [('BACKGROUND', (4, i + 1), (4, i + 1), lfill), ('VALIGN', (4, i + 1), (4, i + 1), 'MIDDLE')]
+story.append(grid(rows, [26 * mm, CW - 26 * mm - 20 * mm - 78 * mm - 18 * mm, 20 * mm, 78 * mm, 18 * mm],
+                  header=['UTC TIME', 'URL (clickable)', 'METHOD', 'EXACT STRING CONFIRMED', 'LIVE'],
+                  zebra=True, font=5.7, extra=extra))
+story.append(PageBreak())
+
+
 section('A', 'APPENDIX — TOOLS, ENDPOINTS & QUERY TEMPLATES', '#0b5d8f',
         'every search endpoint, API probe, archive lookup and research tool the census used — method artefacts, not media records; reproduced so the census can be re-run exactly',
         right=f'{len(ENDPOINTS)} logged endpoints')
