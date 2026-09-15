@@ -311,6 +311,13 @@ def harvest_csv(path, label):
         return
     with open(path, encoding='utf-8', errors='replace') as fh:
         for r in csv.DictReader(fh):
+            # A fetch row explicitly marked "checked-negative" documents that the page was opened
+            # and did NOT render the exact name — the URL alone is not evidence of presence, so it
+            # never becomes a record from the access log. (Rows without the marker keep the
+            # long-standing behaviour; historical logs contain none of these markers.)
+            marker_hay = ' '.join(str(r.get(k) or '') for k in ('Method', 'QueryOrNavigation', 'ErrorNotes', 'Notes'))
+            if 'checked-negative' in marker_hay.lower():
+                continue
             def g(*keys):
                 for k in keys:
                     v = r.get(k)

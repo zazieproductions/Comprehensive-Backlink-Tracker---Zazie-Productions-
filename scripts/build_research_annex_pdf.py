@@ -507,7 +507,7 @@ TOC = [
     ('10', 'Listen links — every compilation appearance', 'one listen link per compilation credit, confirmed / label-root / unresolved', 'sec:10', '#039be5'),
     ('11', 'Seed index & domain coverage', 'the original raw-dump seed: 260 URLs across 230 domains', 'sec:11', '#2e7d32'),
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
-    ('13', 'User-submitted link batch — 2026-09-15', 'seven reader-found URLs + 2 adjacent surfaces, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log', 'sec:13', '#ad1457'),
+    ('13', 'User-submitted link batch — 2026-09-15', 'eleven reader-found/adjacent URLs, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log — incl. the Ars Electronica 2026 work credit', 'sec:13', '#ad1457'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -1218,21 +1218,25 @@ story.append(PageBreak())
 
 # =========================================================== §13 USER-SUBMITTED BATCH
 section('13', 'USER-SUBMITTED LINK BATCH — 2026-09-15', '#ad1457',
-        'seven reader-found URLs plus two adjacent surfaces they led to — every one opened, exact-name checked and dispositioned the same day; the batch that follows Pass 11',
+        'nine reader-found URLs plus three adjacent surfaces they led to — every one opened, exact-name checked and dispositioned the same day; the batch that follows Pass 11',
         right=f'{len(USER_LEDGER)} URLs dispositioned · {len(USER_ACCESS)} fetches logged · {len(USER_LEADS)} leads queued')
 
 story.append(notebox(
-    '<b>WHAT HAPPENED.</b> On 2026-09-15 the operator handed over seven new links. All seven were opened the same day '
-    '(plus the two adjacent surfaces they immediately revealed — the Kinorium person page behind the submitted title '
-    'page and the chilimovie crew page behind the submitted film page). <b>Result: 9 records, 1 quarantine, 4 leads.</b> '
-    'The headline finds: a dedicated Art Squat artist interview (Tier A press feature, both exact names, byline Johnny '
-    'Otto, 2025); a <b>new film credit</b> — "Zazie Kanwar-Torge" as Composer on <i>The Haunted</i> (2026) in the Kinorium '
-    'database, whose person page also documents Peregrinus (TV, 2026—), Pothole (2025) and Choleric (post-production); '
-    'and a live, on-page upgrade of the Lynne Sachs "Films for Freedom" mention from search-snippet evidence to rendered '
-    'text. The chilimovie pair are TMDB-scraper replicas — the Expire (2025) sound-designer credit is recorded as real, '
-    'the surface kept at Tier C with the UNOFFICIAL FILM MIRROR flag. RaveDJ is an auto-generated mixtape page; LightAudio '
-    'a licensed RU streaming mirror showing six exact-name tracks; MuzJam an unlicensed free-download index — the one '
-    'quarantine of the batch (PIRATE-SCRAPE, Tier D). Quarantine-register rows LT-090…LT-094 record every borderline call.',
+    '<b>WHAT HAPPENED.</b> On 2026-09-15 the operator handed over seven new links, followed the same day by an eighth '
+    '— all opened on arrival, plus the three adjacent surfaces they immediately revealed (the Kinorium person page, the '
+    'chilimovie crew page, and the Ars Electronica MEDIUM SONORUM concert page). <b>Result: 11 records, 1 quarantine, '
+    '4 leads.</b> The headline finds: <b>a work-level Ars Electronica Festival 2026 credit</b> — "Zazie Productions '
+    '[Zazie Kanwar-Torge (US)]" performing <i>Slippage Beyond The Hyperlink</i> (2026, 2:15 min) in the MEDIUM SONORUM '
+    'closing concert, Sonic Lab 20.4 system, Anton Bruckner University Linz (Tier A ×2 — it resolves max-depth lead '
+    'ZL26-12 and corroborates Accomplishment Register entry #20, now linked in §9); a dedicated Art Squat artist '
+    'interview (Tier A press feature, both exact names, byline Johnny Otto, 2025); <b>a new film credit</b> — composer '
+    'on <i>The Haunted</i> (2026) in the Kinorium database, whose person page also documents Peregrinus (TV, 2026—), '
+    'Pothole (2025) and Choleric (post-production); and a live, on-page upgrade of the Lynne Sachs "Films for Freedom" '
+    'mention from search-snippet evidence to rendered text. The chilimovie pair are TMDB-scraper replicas — the Expire '
+    '(2025) sound-designer credit is recorded as real, the surface kept at Tier C with the UNOFFICIAL FILM MIRROR flag. '
+    'RaveDJ is an auto-generated mixtape page; LightAudio a licensed RU streaming mirror showing six exact-name tracks; '
+    'MuzJam an unlicensed free-download index — the one quarantine of the batch (PIRATE-SCRAPE, Tier D). Quarantine-'
+    'register rows LT-090…LT-094 record every borderline call.',
     '#f3e5f0'))
 story.append(Spacer(1, 3 * mm))
 

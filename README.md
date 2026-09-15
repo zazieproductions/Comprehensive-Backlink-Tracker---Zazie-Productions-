@@ -9,7 +9,7 @@ link batch processed **2026-09-15**.
 
 | PDF | What it is |
 |---|---|
-| **`Zazie_Master_Directory_COLOUR_CODED.pdf`** | The directory itself — 729 catalogued links in 14 colour-coded media-type sections, tier-ranked (A–D), every URL clickable, with per-category stats and the engine-endpoint appendix. |
+| **`Zazie_Master_Directory_COLOUR_CODED.pdf`** | The directory itself — 731 catalogued links in 14 colour-coded media-type sections, tier-ranked (A–D), every URL clickable, with per-category stats and the engine-endpoint appendix. |
 | **`Zazie_Research_Annex_COLOUR_CODED.pdf`** | The research record behind it — 13 colour-coded sections + endpoint appendix: census rules, 11 engine/discovery passes (audits, evidence ledgers, query inventories, access logs), the quarantine register with its safety charter, the 2026 Accomplishment Register → public-link map, listen-link appearance table, seed-index coverage, the user-submitted link batch of 2026-09-15, and every tool/query template used. |
 
 The CSV/JSON registries below are the **source of truth**; the PDFs are their organised,
@@ -20,7 +20,7 @@ lives in the two PDFs.
 
 ```
 sources/            original inputs (link-dump PDF, media-master PDF, 2026 register DOCX)
-data/master/        consolidated_directory.json (canonical: 729 records + 73 endpoints),
+data/master/        consolidated_directory.json (canonical: 731 records + 73 endpoints),
                     master_index.csv, listen_links.csv, register_link_map.csv
 data/research/      engine_audit.csv (per-pass engine access results)
 registry/           per-pass machine registers (CSV/JSON only):
