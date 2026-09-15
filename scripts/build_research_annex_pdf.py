@@ -507,7 +507,7 @@ TOC = [
     ('10', 'Listen links — every compilation appearance', 'one listen link per compilation credit, confirmed / label-root / unresolved', 'sec:10', '#039be5'),
     ('11', 'Seed index & domain coverage', 'the original raw-dump seed: 260 URLs across 230 domains', 'sec:11', '#2e7d32'),
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
-    ('13', 'User-submitted intake pass — 2026-09-15', 'five URLs handed in after the baseline: what each one turned out to be, what counted, what did not, and why', 'sec:13', '#6d4c41'),
+    ('13', 'User-submitted intake pass — 2026-09-15', f'{len(USP_INTAKE)} URLs handed in after the baseline: what each one turned out to be, what counted, what did not, and why', 'sec:13', '#6d4c41'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -1222,13 +1222,13 @@ USP_DUP = [r for r in USP_INTAKE if 'ALREADY CATALOGUED' in (r.get('Verdict') or
 USP_LEAD = [r for r in USP_INTAKE if (r.get('Verdict') or '').upper().startswith('LEAD')]
 
 section('13', 'USER-SUBMITTED INTAKE PASS — 2026-09-15', '#6d4c41',
-        'five URLs handed in ten days after the 2026-09-05 baseline. Each one was opened, its exact-name evidence read or its '
-        'inaccessibility recorded, and then tested against the Pass-7 evidence standard — two entered the master volume, two were '
-        'already in it, one could not be verified at all and stayed a lead',
+        f'{len(USP_INTAKE)} URLs handed in after the 2026-09-05 baseline. Each was opened, its exact-name evidence read or its '
+        f'inaccessibility recorded: {len(USP_NEW)} entered the master volume, {len(USP_DUP)} were already in it, '
+        f'and {len(USP_LEAD)} stayed an unverified lead.',
         right=f'{len(USP_NEW)} new records · {len(USP_DUP)} re-verified · {len(USP_LEAD)} lead')
 
 story.append(notebox(
-    '<b>OUTCOME.</b> Two genuinely new records joined the master volume. <b>60 Secondes Radio — Tableau d\'honneur</b> '
+    '<b>FIRST BATCH.</b> Two genuinely new records joined the master volume. <b>60 Secondes Radio — Tableau d\'honneur</b> '
     '(Podcasts &amp; Broadcasts, Tier B): the live page was opened and the exact string <font face="Courier">Zazie '
     'Productions-USA</font> read inside the <b>2025</b> block of the honor roll, which credits every artist whose '
     'one-minute radio-art piece the project has broadcast — 2150 works from 76 countries since 2015. That makes it a '
@@ -1255,6 +1255,16 @@ story.append(notebox(
     'standard the exact string was neither read on the page, nor returned by a structured response, nor confirmed in an '
     'index snapshot — all three conditions fail, so it is logged as a lead and does <b>not</b> appear in the master '
     'volume. Re-test it in a real browser, or look for a Clan Analogue release carrying the credit.', '#f3efe9'))
+story.append(Spacer(1, 2.5 * mm))
+
+story.append(notebox(
+    '<b>ADDITIONAL BATCH.</b> Four further submitted URLs yielded three new records and one re-verification. '
+    '<b>SpaceHey</b>: Radiator Log - June, 2025 has a Zazie Productions byline; this is self-published creative work, '
+    'not independent coverage. <b>Aishwariya’s LittLog</b>: New Anthology Forthcoming explicitly lists Poetry by '
+    'Zazie Kanwar-Torge in the contents of Anxiety &amp; Depression (ISBN 9798284477878). '
+    '<b>TSHN Productions / Bandcamp</b>: STONEWALL/NOISEWALL volume 1 credits Zazie Productions on track 6, '
+    'Stalactite of Dead Reckoning (05:01). <b>Heard</b> was already catalogued and was re-verified without a duplicate; '
+    'its listed collaboration claims are not independently corroborated by this intake.', '#f3efe9'))
 story.append(Spacer(1, 2.5 * mm))
 
 story.append(para('<b>13.1 — Intake ledger: every submitted URL and its verdict</b>', 'legend'))
