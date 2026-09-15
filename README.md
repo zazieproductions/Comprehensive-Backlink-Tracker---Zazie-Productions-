@@ -7,7 +7,7 @@ syndication and archival records. Every link is **tier-ranked**, **status-checke
 
 📅 Research baseline through **2026-09-05** · extended by user-submitted intake passes through **2026-09-15**
 
-[![records 730](https://img.shields.io/badge/records-730-0b6e4f?style=flat-square)](data/master/consolidated_directory.json)
+[![records 743](https://img.shields.io/badge/records-743-0b6e4f?style=flat-square)](data/master/consolidated_directory.json)
 [![engine endpoints 73](https://img.shields.io/badge/engine%20endpoints-73-1a73e8?style=flat-square)](Zazie_Research_Annex_COLOUR_CODED.pdf)
 [![media types 14](https://img.shields.io/badge/media%20types-14-7b1fa2?style=flat-square)](Zazie_Master_Directory_COLOUR_CODED.pdf)
 [![baseline 2026-09-05](https://img.shields.io/badge/baseline-2026--09--05-b06000?style=flat-square)](Zazie_Research_Annex_COLOUR_CODED.pdf)
@@ -15,8 +15,8 @@ syndication and archival records. Every link is **tier-ranked**, **status-checke
 
 > [!TIP]
 > ### 🧭 The 30-second map
-> - **Just want to read the links?** → open 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) — 730 clickable links in 14 colour-coded sections.
-> - **Want the method and the evidence?** → open 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) — 13 colour-coded research sections + appendix.
+> - **Just want to read the links?** → open 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) — 743 clickable links in 14 colour-coded sections.
+> - **Want the method and the evidence?** → open 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) — 14 colour-coded research sections + appendix.
 > - **Want to use the data?** → `data/master/` (CSV/JSON — the source of truth).
 > - **Colour question?** → jump to [Reading the colour code](#reading-the-colour-code): the legend below uses the **exact hex values** from both PDFs.
 
@@ -48,8 +48,8 @@ Pick your goal — each row is a complete route, no archaeology needed:
 
 | | Volume | What it is |
 |---|---|---|
-| <span style="background-color:#37424e; color:#ffffff;"> MASTER </span> | 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) | **The directory itself** — 730 catalogued links in 14 colour-coded media-type sections, tier-ranked A–D, every URL clickable, per-category stats and the engine-endpoint appendix. |
-| <span style="background-color:#0b5d8f; color:#ffffff;"> ANNEX </span> | 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) | **The research record behind it** — 13 colour-coded sections + endpoint appendix: census rules, 12 engine/discovery passes (audits, evidence ledgers, query inventories, access logs), the quarantine register with its safety charter, the 2026 Accomplishment Register → public-link map, listen-link appearance table, seed-index coverage, and every tool/query template used. |
+| <span style="background-color:#37424e; color:#ffffff;"> MASTER </span> | 📕 [`Zazie_Master_Directory_COLOUR_CODED.pdf`](Zazie_Master_Directory_COLOUR_CODED.pdf) | **The directory itself** — 743 catalogued links in 14 colour-coded media-type sections, tier-ranked A–D, every URL clickable, per-category stats and the engine-endpoint appendix. |
+| <span style="background-color:#0b5d8f; color:#ffffff;"> ANNEX </span> | 📓 [`Zazie_Research_Annex_COLOUR_CODED.pdf`](Zazie_Research_Annex_COLOUR_CODED.pdf) | **The research record behind it** — 14 colour-coded sections + endpoint appendix: census rules, 13 engine/discovery passes (audits, evidence ledgers, query inventories, access logs), the quarantine register with its safety charter, the 2026 Accomplishment Register → public-link map, listen-link appearance table, seed-index coverage, and every tool/query template used. |
 
 ### 🗺️ Inside the Research Annex — every section has its own banner colour
 
@@ -74,14 +74,14 @@ Pick your goal — each row is a complete route, no archaeology needed:
 
 | | Figure | What it counts |
 |---|---|---|
-| <span style="background-color:#0b6e4f; color:#ffffff;"> 730 </span> | catalogued links | every public exact-name appearance (all records, all tiers) |
+| <span style="background-color:#0b6e4f; color:#ffffff;"> 743 </span> | catalogued links | every public exact-name appearance (all records, all tiers) |
 | <span style="background-color:#1a73e8; color:#ffffff;"> 73 </span> | engine endpoints | discovery/search endpoints, printed in Annex appendix A |
 | <span style="background-color:#7b1fa2; color:#ffffff;"> 14 </span> | media types | the colour-coded sections of the Master Directory |
-| <span style="background-color:#37424e; color:#ffffff;"> 13 + 1 </span> | Annex sections | research sections 1–13 plus the tools/endpoint appendix |
-| <span style="background-color:#1a73e8; color:#ffffff;"> 12 </span> | engine passes | engine/discovery passes documented in the Annex |
-| <span style="background-color:#039be5; color:#ffffff;"> 60 </span> | listen links | compilation appearances — 31 confirmed · 28 label pages · 1 unresolved |
-| <span style="background-color:#e8710a; color:#ffffff;"> 54 </span> | register links | 2026 Accomplishment Register entries mapped to public links (of 203 register records) |
-| <span style="background-color:#7b1fa2; color:#ffffff;"> 8 </span> | pass registries | machine passes under `registry/` |
+| <span style="background-color:#37424e; color:#ffffff;"> 14 + 1 </span> | Annex sections | research sections 1–14 plus the tools/endpoint appendix |
+| <span style="background-color:#1a73e8; color:#ffffff;"> 13 </span> | engine passes | engine/discovery passes documented in the Annex |
+| <span style="background-color:#039be5; color:#ffffff;"> 61 </span> | listen links | compilation appearances — 32 confirmed · 28 label pages · 1 unresolved |
+| <span style="background-color:#e8710a; color:#ffffff;"> 55 </span> | register links | 2026 Accomplishment Register entries mapped to public links (of 203 register records) |
+| <span style="background-color:#7b1fa2; color:#ffffff;"> 9 </span> | pass registries | machine passes under `registry/` |
 | <span style="background-color:#b06000; color:#ffffff;"> 3 </span> | source files | original inputs under `sources/` |
 
 ## 🎨 Reading the colour code
@@ -92,24 +92,24 @@ Pick your goal — each row is a complete route, no archaeology needed:
 
 ### 1 · 🏷️ Media types — the 14 sections of the Master Directory
 
-In PDF order. The bar shows each section's share of the 730 records.
+In PDF order. The bar shows each section's share of the 743 records.
 
-| # | Swatch | Section (PDF order) | Hex | Count | Share of 730 |
+| # | Swatch | Section (PDF order) | Hex | Count | Share of 743 |
 |---|---|---|---|---|---|
-| 1 | <span style="background-color:#d93025;">&nbsp;&nbsp;&nbsp;</span> | 📰 Press & Editorial | `#d93025` | 96 | ██████ |
-| 2 | <span style="background-color:#7b1fa2;">&nbsp;&nbsp;&nbsp;</span> | 🏆 Publications & Recognition | `#7b1fa2` | 25 | ██ |
-| 3 | <span style="background-color:#d81b60;">&nbsp;&nbsp;&nbsp;</span> | 🎬 Film, Festivals & Exhibitions | `#d81b60` | 52 | ███ |
+| 1 | <span style="background-color:#d93025;">&nbsp;&nbsp;&nbsp;</span> | 📰 Press & Editorial | `#d93025` | 97 | ██████ |
+| 2 | <span style="background-color:#7b1fa2;">&nbsp;&nbsp;&nbsp;</span> | 🏆 Publications & Recognition | `#7b1fa2` | 28 | ██ |
+| 3 | <span style="background-color:#d81b60;">&nbsp;&nbsp;&nbsp;</span> | 🎬 Film, Festivals & Exhibitions | `#d81b60` | 55 | ███ |
 | 4 | <span style="background-color:#3949ab;">&nbsp;&nbsp;&nbsp;</span> | 🎙️ Podcasts & Broadcasts | `#3949ab` | 7 | █ |
-| 5 | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | 📇 Profiles & Catalogs | `#1a73e8` | 105 | ███████ |
+| 5 | <span style="background-color:#1a73e8;">&nbsp;&nbsp;&nbsp;</span> | 📇 Profiles & Catalogs | `#1a73e8` | 106 | ███████ |
 | 6 | <span style="background-color:#c2185b;">&nbsp;&nbsp;&nbsp;</span> | 💿 Music Discography | `#c2185b` | 1 | █ |
-| 7 | <span style="background-color:#039be5;">&nbsp;&nbsp;&nbsp;</span> | 🎧 Streaming & Music Platforms | `#039be5` | 55 | ███ |
+| 7 | <span style="background-color:#039be5;">&nbsp;&nbsp;&nbsp;</span> | 🎧 Streaming & Music Platforms | `#039be5` | 57 | ████ |
 | 8 | <span style="background-color:#00897b;">&nbsp;&nbsp;&nbsp;</span> | 📖 Lyrics & Music Databases | `#00897b` | 1 | █ |
 | 9 | <span style="background-color:#e8710a;">&nbsp;&nbsp;&nbsp;</span> | 📦 Music Compilations | `#e8710a` | 162 | ██████████ |
 | 10 | <span style="background-color:#2e7d32;">&nbsp;&nbsp;&nbsp;</span> | 🏛️ Official Properties & Channels | `#2e7d32` | 51 | ███ |
 | 11 | <span style="background-color:#188038;">&nbsp;&nbsp;&nbsp;</span> | 👥 Community, Wiki & Fan Indexes | `#188038` | 54 | ███ |
 | 12 | <span style="background-color:#0f9d8f;">&nbsp;&nbsp;&nbsp;</span> | 🔍 Search-Engine Index | `#0f9d8f` | 3 | █ |
 | 13 | <span style="background-color:#607d8b;">&nbsp;&nbsp;&nbsp;</span> | 🪞 Video Mirror / Backlink Sites | `#607d8b` | 5 | █ |
-| 14 | <span style="background-color:#616161;">&nbsp;&nbsp;&nbsp;</span> | ⛔ Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust | `#616161` | 113 | ███████ |
+| 14 | <span style="background-color:#616161;">&nbsp;&nbsp;&nbsp;</span> | ⛔ Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust | `#616161` | 116 | ███████ |
 
 ### 2 · 🥇 Trust tiers — evidence quality, on every row
 
@@ -155,16 +155,16 @@ A = strongest → D = weakest (quarantined). Full tier definitions: **Annex §1*
 
 ```
 📦 Comprehensive Backlink Tracker
-├── 📕 Zazie_Master_Directory_COLOUR_CODED.pdf      ← READ: the directory (730 links, 14 sections)
-├── 📓 Zazie_Research_Annex_COLOUR_CODED.pdf        ← READ: the method (13 sections + appendix)
+├── 📕 Zazie_Master_Directory_COLOUR_CODED.pdf      ← READ: the directory (743 links, 14 sections)
+├── 📓 Zazie_Research_Annex_COLOUR_CODED.pdf        ← READ: the method (14 sections + appendix)
 ├── 📥 sources/                                     ← raw original inputs (3 files)
 │   ├── Random_Zazie_Productions_links.pdf          raw link dump
 │   ├── Zazie_Media_Master.pdf                      133 verified URL-level records (+leads)
 │   └── Zazie_2026_Accomplishment_Register_Maximal_Edition.docx
 ├── 📊 data/master/                                 ← CANONICAL (source of truth)
-│   ├── consolidated_directory.json                 730 records + 73 engine endpoints
+│   ├── consolidated_directory.json                 743 records + 73 engine endpoints
 │   ├── master_index.csv                            canonical index, one row per URL
-│   ├── listen_links.csv                            60 compilation appearances
+│   ├── listen_links.csv                            61 compilation appearances
 │   └── register_link_map.csv                       Accomplishment Register → public links
 ├── 🧪 data/research/
 │   └── engine_audit.csv                            passes 1–8 engine access results
@@ -188,7 +188,7 @@ A = strongest → D = weakest (quarantined). Full tier definitions: **Annex §1*
 | `sources/` | <span style="background-color:#b06000; color:#ffffff;"> raw </span> | original inputs — never edited downstream |
 | `registry/` | <span style="background-color:#7b1fa2; color:#ffffff;"> evidence </span> | per-pass machine registers — the proof trail |
 | `scripts/` | <span style="background-color:#e8710a; color:#ffffff;"> build </span> | rebuilds the canonical data and both PDFs |
-| `data/master/` | <span style="background-color:#0b6e4f; color:#ffffff;"> canonical </span> | **source of truth** — 730 records + 73 endpoints |
+| `data/master/` | <span style="background-color:#0b6e4f; color:#ffffff;"> canonical </span> | **source of truth** — 743 records + 73 endpoints |
 | `data/research/` | <span style="background-color:#0f9d8f; color:#ffffff;"> audit </span> | engine access results for passes 1–8 |
 | root PDFs | <span style="background-color:#37424e; color:#ffffff;"> reading </span> | the organised, permanent reading editions |
 
