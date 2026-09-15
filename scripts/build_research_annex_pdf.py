@@ -323,7 +323,7 @@ class AnnexDoc(BaseDocTemplate):
         cv.setFillColor(SOFT)
         cv.setFont('Helvetica', 7.6)
         cv.drawCentredString(PAGE[0] / 2, BM - 5.5 * mm,
-                             f'Compiled {date.today():%d %B %Y} from the repository census registries · research baseline dated through 2026-09-05')
+                             f'Compiled {date.today():%d %B %Y} from the repository census registries · research baseline dated through 2026-09-15')
         cv.restoreState()
 
     def body_deco(self, cv, doc):
@@ -444,6 +444,44 @@ LT_ACCESS = read_csv('registry', 'spam_scraper_syndication_lowtrust_2026-09-05',
 MX_VISIBILITY = read_csv('registry', 'maxdepth_pass_2026-09-05', 'engine_visibility.csv')
 MX_REVERIFIED = read_csv('registry', 'maxdepth_pass_2026-09-05', 'reverified_urls.csv')
 MX_LEADS = read_csv('registry', 'maxdepth_pass_2026-09-05', 'discovery_ledger.csv')
+US_LEDGER = read_csv('registry', 'user_supplied_backlinks_2026-09-15', 'submission_ledger.csv')
+US_ACCESS = read_csv('registry', 'user_supplied_backlinks_2026-09-15', 'source_access_log.csv')
+US_UPDATES = [
+    ('https://film-makerscoop.com/screenings/films-for-freedom-presented-by-the-film-makers-cooperative-a',
+     'status unverified -> verified; target corrected to the name the page prints (Zazie Kanwar-Torge); date, '
+     'title and the screening detail added — the featured-filmmaker list of 100+ artists carries the exact string, '
+     'and the row now matches the register’s Films for Freedom entry as verified evidence.'),
+    ('https://www.tickettailor.com/events/motherof/2336870',
+     're-checked and still verified; the run has moved to September 2026 as "SWINEWOMB | SECOND COMING" while the '
+     'Creative Team block still reads "Composer — Zazie Kanwar-Torge" (register entry 50).'),
+    ('https://artfacts.net/artist/zazie-kanwar-torge',
+     'status unverified -> verified-partial; the record is live and carries ranking Top 1,000,000 Global with one '
+     'verified group exhibition (Muslab 2025, Quito, 24-28 Nov 2025). It stays lead-grade because the name renders '
+     'with a lower-case "t".'),
+    ('https://www.linkedin.com/in/zazie-kanwar-torge-3b8a98373/',
+     'cross-reference only — the MyWebAR roundup (March 2026) links this exact URL as the artist’s profile; the '
+     'profile itself was not re-opened, so the row keeps its unverified status.'),
+]
+US_RULE_CALLS = [
+    ('Exact-name rule (Pass 7)',
+     'Accepted: "Zazie Kanwar-Torge" and "Zazie Productions" read on the fetched page. Rejected as evidence, kept '
+     'as leads: the en-dash form on mywebar.com and the lower-case "Kanwar-torge" form on artfacts.net.'),
+    ('Duplicate handling',
+     'Two submitted URLs (Film-Makers’ Co-op, Ticket Tailor) already had rows; they were updated in place rather '
+     'than counted twice, and both are marked DUPLICATE in the ledger.'),
+    ('URL normalisation',
+     'The Standaard Boekhandel URL was submitted with filter/sort parameters; the record is carried at its '
+     'canonical contributor URL, with the submitted string preserved in the SubmittedURL column of the ledger.'),
+    ('Localised editions',
+     'mywebar.com (en dash) and jp.mywebar.com (hyphen) are one placement on two editions: the countable row is the '
+     'Japanese one, the English one is filed as its lead.'),
+    ('Auto-generated metadata flag',
+     'Gaana (unfilled {language} template placeholder) and Flickchart (TMDB-built filmography) were added to the '
+     'repository’s AUTO-GENERATED METADATA integrity rule, so both rows carry the flag in the master volume.'),
+    ('No-count probes',
+     'One follow-up (the Clan Analogue open-submission call) was logged in the access log with its URL in the '
+     'ProbeURL column, because it carries no exact name and must not become a record.'),
+]
 REGISTER_MAP = read_csv('data', 'master', 'register_link_map.csv')
 LISTEN = read_csv('data', 'master', 'listen_links.csv')
 SEED_DOMAINS = read_csv('registry', 'seed', 'seed_domain_summary.csv')
@@ -454,7 +492,7 @@ story = []
 stat_cells = [
     (str(N_LINKS), 'links in the master volume'),
     (str(len(ENGINE_AUDIT) + len(ENGINE_MATRIX) + len(MX_VISIBILITY)), 'engine probes logged'),
-    ('11', 'research passes reported'),
+    ('12', 'research passes reported'),
     (str(len(MD_FEATURES)), 'magazine / zine features'),
     (str(len(P3_LEDGER)), 'editorial-literary ledger rows'),
     (str(len(LT_LEDGER)), 'quarantine register rows'),
@@ -477,7 +515,8 @@ WHAT = (
     'literary evidence ledger, the web-presence expansion (backlinks, entity records, historical pages, web archaeology), '
     'the complete low-trust quarantine register with its safety charter, the map from the 2026 Accomplishment Register '
     'to public links, a listen link for every compilation credit, the seed-domain coverage of the original link dump, '
-    'and every query and source-access log the passes produced.'
+    'and every query and source-access log the passes produced. Section 13 reports the ten URLs the census owner '
+    'supplied after the eleven research passes of 2026-09-15 and how each was tested.'
     '<br/><br/><b>HOW IT IS ORGANISED.</b> One colour-coded section per research register, ordered from method (rules, '
     'engine audits) through the discovery passes in the order they ran, to the cross-cutting registers (quarantine, '
     'link map, listen links, seed coverage) and the process appendices (queries, access logs, endpoints). Chips carry '
@@ -503,6 +542,7 @@ TOC = [
     ('10', 'Listen links — every compilation appearance', 'one listen link per compilation credit, confirmed / label-root / unresolved', 'sec:10', '#039be5'),
     ('11', 'Seed index & domain coverage', 'the original raw-dump seed: 260 URLs across 230 domains', 'sec:11', '#2e7d32'),
     ('12', 'Query inventories & source-access logs', 'every exact query string run per pass and every fetch logged with its outcome', 'sec:12', '#8a6d3b'),
+    ('13', 'User-supplied backlink pass — 2026-09-15', 'ten hand-found URLs fetched and tested: submission ledger, evidence read on each page, five derived discoveries, four rows corrected', 'sec:13', '#d84315'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
@@ -514,7 +554,7 @@ for i, (num, title, blurb, key, col) in enumerate(TOC, start=1):
                      para(f'<b>page {PAGEMAP.get(key, "-")}</b>', 'cell', TA_RIGHT,
                           colour=INK if PAGEMAP.get(key) else SOFT)])
     toc_extra.append(('BACKGROUND', (0, i), (0, i), colors.HexColor(col)))
-story += [banner('CONTENTS', size=11, sub='twelve colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
+story += [banner('CONTENTS', size=11, sub='thirteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [9 * mm, 74 * mm, CW - 111 * mm, 28 * mm], zebra=True, font=7.2,
                extra=toc_extra + [('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
@@ -1209,6 +1249,118 @@ for r in WP_LOG:
 story.append(grid(rows, [16 * mm, 20 * mm, 78 * mm, 24 * mm, 62 * mm, 36 * mm, CW - 236 * mm],
                   header=['DATE', 'AREA', 'SYSTEM / QUERY (clickable)', 'TARGET', 'RESULT', 'OUTCOME', 'NOTES'],
                   zebra=True, font=5.5))
+story.append(PageBreak())
+
+# =========================================================== §13 USER-SUPPLIED BACKLINK PASS (2026-09-15)
+section('13', 'USER-SUPPLIED BACKLINK PASS — 2026-09-15', '#d84315',
+        'ten URLs handed to the census by its owner: every one fetched and tested against the Pass-7 exact-name rule, '
+        'the five discoveries they led to, and the four master rows the pass corrected or refreshed',
+        right=f'{len(US_LEDGER)} ledger rows · {len(US_ACCESS)} fetches logged')
+
+US_INTRO = (
+    '<b>WHAT THIS PASS IS.</b> After the eleven research passes of 2026-09-05 the census owner supplied ten more '
+    'URLs found by hand. Each one was opened directly on 2026-09-15 and read against the same rulebook every other '
+    'pass used: the exact strings <font face="Courier">Zazie Kanwar-Torge</font> and '
+    '<font face="Courier">Zazie Productions</font> must be rendered on the page; a no-space or en-dash variant is a '
+    '<i>lead</i>, never a record. Two of the ten were already in the master index (the Film-Makers’ Co-op '
+    'screening and the Swinewomb ticket page) and were corrected in place instead of being counted twice; the '
+    'remaining eight produced new records, and following the links those pages themselves offered produced five '
+    'more — the Gaana "Zazie Productions" persona, the exibart Pebbles Underground event page, the Clan Analogue '
+    'track page, the Japanese edition of the MyWebAR article and the ArtFacts exhibition record.'
+    '<br/><br/><b>WHAT IT CHANGED.</b> 13 new records entered the master volume, four existing rows were updated '
+    '(the Film-Makers’ Co-op screening promoted from <i>unverified</i> to <i>verified</i>, the ArtFacts artist '
+    'record promoted to <i>verified-partial</i> with its ranking and exhibition data, and fresh re-check notes on the '
+    'Swinewomb ticket page and the LinkedIn profile), and one listen link was added for the new Clan Analogue '
+    'compilation. Two of the new rows are deliberately carried as leads: the English MyWebAR article prints the name '
+    'with an en dash, and the ArtFacts analytics and exhibition pages either render a lower-case '
+    '"Kanwar-torge" or hide the roster behind a login — the census rules do not accept either form as evidence.'
+    '<br/><br/><b>THE ONE GENUINELY NEW PLACEMENT.</b> Clan Analogue’s <i>Stories From the Field</i> '
+    '(released 11 September 2026) is the first catalogued credit nothing else in the census had seen: no register '
+    'entry, no index row, no search pass surfaced it. The album page credits "Zazie Productions - Appliance Suite '
+    'in D minor"; the track page adds "Written and produced by Zazie Kanwar-Torge" and a signed note on the '
+    'appliances sampled.')
+story.append(notebox(US_INTRO, '#fff6f2'))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.1 — Submission ledger</b> (one row per URL: how it was found, what the page says, '
+                  'and whether it is a new record or an update to a row the census already held)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(US_LEDGER, start=1):
+    tier_para, fill, tint = tier_chip(r.get('TrustTier', ''))
+    rows.append([para(f'<b>{esc(r.get("ID", ""))}</b>', 'tiny'),
+                 para(esc(r.get('Origin', '')), 'tiny', colour=SOFT),
+                 para(linkify(r.get('URL', '')), 'url'),
+                 para(esc(r.get('Target', '')), 'tiny'),
+                 tier_para,
+                 para(esc(r.get('MasterCategory', '')), 'tiny'),
+                 live_chip(r.get('LiveStatus_2026-09-15', ''))[0],
+                 para(esc(r.get('VerificationNote', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('Novelty', '')), 'tiny', colour=SOFT)])
+    extra.append(('BACKGROUND', (4, i), (4, i), tint))
+    if str(r.get('Novelty', '')).startswith('DUPLICATE'):
+        extra.append(('BACKGROUND', (8, i), (8, i), LSLATE))
+story.append(grid(rows, [12 * mm, 34 * mm, 72 * mm, 21 * mm, 9 * mm, 27 * mm, 13 * mm, 30 * mm, CW - 218 * mm],
+                  header=['ID', 'ORIGIN', 'URL (clickable)', 'TARGET', 'T', 'CATEGORY', 'LIVE',
+                          'VERIFICATION', 'NOVELTY VS BASELINE'],
+                  zebra=True, font=5.4, extra=extra))
+story.append(PageBreak())
+
+story.append(para('<b>13.2 — Evidence read on each page</b> (the exact wording the pass recorded, with the '
+                  'name as the page renders it)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in US_LEDGER:
+    rows.append([para(f'<b>{esc(r.get("ID", ""))}</b>', 'tiny'),
+                 para(esc(r.get('ExactNameOnPage', '')), 'tiny'),
+                 para(esc(r.get('Independence', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('EvidenceLevel', '')), 'tiny'),
+                 para(esc(r.get('BestUse', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('CVValue', '')), 'tiny', TA_RIGHT, colour=SOFT)])
+story.append(grid(rows, [12 * mm, 52 * mm, 42 * mm, CW - 130 * mm, 18 * mm, 6 * mm],
+                  header=['ID', 'NAME AS THE PAGE RENDERS IT', 'INDEPENDENCE', 'EVIDENCE READ ON 2026-09-15',
+                          'BEST USE', 'CV'],
+                  zebra=True, font=5.5))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.3 — Source-access log</b> (every fetch the pass made, including the negative probe)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(US_ACCESS, start=1):
+    outcome = r.get('Outcome', '')
+    ol = str(outcome).lower()
+    fill = LGREEN if ol.startswith('worked') else (LRED if 'negative' in ol or 'block' in ol else LAMBER)
+    rows.append([para(esc((r.get('TimestampUTC') or '')[:10]), 'tiny', colour=SOFT),
+                 para(linkify(r.get('URL') or r.get('ProbeURL') or ''), 'url'),
+                 para(esc(r.get('QueryOrNavigation', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('NameRendering', '')), 'tiny'),
+                 para(f'<b>{esc(r.get("ExactPhraseFound", ""))}</b>', 'tiny'),
+                 para(f'<b>{esc(str(outcome))}</b>', 'tiny'),
+                 para(esc(r.get('FetchNotes', '')), 'tiny', colour=SOFT)])
+    extra.append(('BACKGROUND', (5, i), (5, i), fill))
+story.append(grid(rows, [17 * mm, 88 * mm, 52 * mm, 40 * mm, 15 * mm, 15 * mm, CW - 227 * mm],
+                  header=['DATE', 'URL FETCHED (clickable)', 'QUERY / NAVIGATION', 'NAME AS RENDERED',
+                          'EXACT', 'RESULT', 'WHAT THE FETCH RETURNED'],
+                  zebra=True, font=5.4, extra=extra))
+story.append(PageBreak())
+
+story.append(para('<b>13.4 — Master rows corrected or refreshed by the pass</b> (no new record; the URL was '
+                  'already in the census and the pass changed what the census knows about it)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for u, what in US_UPDATES:
+    rows.append([para(linkify(u), 'url'), para(esc(what), 'tiny')])
+story.append(grid(rows, [96 * mm, CW - 96 * mm], header=['MASTER ROW (clickable)', 'WHAT THE 2026-09-15 PASS CHANGED'],
+                  zebra=True, font=5.6))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>13.5 — Rule calls made during the pass</b>', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for rule, call in US_RULE_CALLS:
+    rows.append([para(f'<b>{esc(rule)}</b>', 'tiny'), para(esc(call), 'tiny')])
+story.append(grid(rows, [46 * mm, CW - 46 * mm], header=['RULE', 'HOW IT WAS APPLIED ON 2026-09-15'],
+                  zebra=True, font=5.6))
 story.append(PageBreak())
 
 # =========================================================== APPENDIX — ENDPOINTS & TOOLS
