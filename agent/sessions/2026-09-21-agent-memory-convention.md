@@ -1,6 +1,6 @@
 # 📋 Session handoff — 2026-09-21 · agent-memory-convention
 
-**Branch:** `arena/01a0c52f-comprehensive-backlink-tracker` · **PR:** this change's PR · **Merged to main:** pending at session end
+**Branch:** `arena/01a0c52f-comprehensive-backlink-tracker` · **PR:** [#19](https://github.com/zazieproductions/Comprehensive-Backlink-Tracker---Zazie-Productions-/pull/19) · **Merged to main:** pending — merging #19 completes the ritual
 
 ## 🙋 What was asked
 
