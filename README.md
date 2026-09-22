@@ -211,6 +211,10 @@ Inside every project section of the Master Directory the rows are grouped by rol
 │   └── project_sections/
 │       ├── projects.csv                            🧩 THE PROJECT REGISTER — one row per project + its match rules
 │       └── README.md                               how to add a project, an alias or an exclusion
+├── 🤖 agent/                                       ← AGENT LAYER: working memory & session handoffs
+│   ├── AGENT_MEMORY.md                             🧠 read first: live state, decisions, open loops
+│   ├── README.md                                   ▶️⏹️ session-start / session-end rituals
+│   └── sessions/                                   📋 one handoff note per agent session (+ _TEMPLATE.md)
 └── ⚙️ scripts/                                     ← rebuild everything
     ├── ingest_all_links.py                         registries → data/master/*
     ├── build_project_sections.py                   clusters → data/master/project_clusters.*  (run by the master build)
@@ -226,6 +230,7 @@ Inside every project section of the Master Directory the rows are grouped by rol
 | `data/master/` | <span style="background-color:#0b6e4f; color:#ffffff;"> canonical </span> | **source of truth** — 754 records + 73 endpoints |
 | `data/research/` | <span style="background-color:#0f9d8f; color:#ffffff;"> audit </span> | engine access results for passes 1–8 |
 | root PDFs | <span style="background-color:#37424e; color:#ffffff;"> reading </span> | the organised, permanent reading editions |
+| `agent/` | <span style="background-color:#5e35b1; color:#ffffff;"> agent </span> | **meta** — off the data pipeline: agent working memory & session handoffs |
 
 ## ♻️ Regenerate
 
@@ -248,6 +253,9 @@ Requirements: Python 3 + `reportlab` (and `pymupdf`) — a local `.venv/` is git
 
 > [!NOTE]
 > **No narrative Markdown reports are kept** — everything readable lives in the two PDFs. If it isn't in `data/`, `registry/`, `sources/` or `scripts/`, it belongs in one of the PDFs.
+
+> [!NOTE]
+> **One documented exception: `agent/`.** Agent working memory & session handoffs live in [`agent/`](agent/README.md) — the same class of document as `registry/project_sections/README.md`: working instructions and state, not research narrative. Everything readable still belongs in the PDFs.
 
 > [!IMPORTANT]
 > **Projects are curated, never guessed.** A link joins a project only because a rule in `registry/project_sections/projects.csv` says so — an alias found in its URL/title, a documented URL pin, or (for a few hosts whose titles never name the project) a phrase in its evidence note. No fuzzy similarity: every membership is traceable to one register line. Adding a project = one CSV row + a rebuild.
