@@ -1,6 +1,6 @@
 # 📋 Session handoff — 2026-09-24 · castro-bmc-radio-backlink
 
-**Branch:** `arena/01a0d1a8-comprehensive-backlink-tracker` · **PR:** _(link added once opened)_ · **Merged to main:** pending — merging the PR completes the ritual
+**Branch:** `arena/01a0d1a8-comprehensive-backlink-tracker` · **PR:** [#20](https://github.com/zazieproductions/Comprehensive-Backlink-Tracker---Zazie-Productions-/pull/20) · **Merged to main:** pending — merging #20 completes the ritual
 
 ## 🙋 What was asked
 

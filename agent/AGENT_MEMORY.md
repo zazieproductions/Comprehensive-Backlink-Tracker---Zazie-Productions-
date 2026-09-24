@@ -126,4 +126,4 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
 | Date | Session note | Branch | Summary |
 |---|---|---|---|
 | 2026-09-21 | [agent-memory-convention](sessions/2026-09-21-agent-memory-convention.md) | `arena/01a0c52f-comprehensive-backlink-tracker` | Created this convention (from the 24/7-agent discussion); no data changes |
-| 2026-09-24 | [castro-bmc-radio-backlink](sessions/2026-09-24-castro-bmc-radio-backlink.md) | `arena/01a0d1a8-comprehensive-backlink-tracker` | +1 record (castro.fm BMC Radio Art episode → project `bmc-radio`, Tier B, live) → 755; fixed the ingest feedback loop + Annex contents chip offset; Annex §17 |
+| 2026-09-24 | [castro-bmc-radio-backlink](sessions/2026-09-24-castro-bmc-radio-backlink.md) | `arena/01a0d1a8-comprehensive-backlink-tracker` (PR [#20](https://github.com/zazieproductions/Comprehensive-Backlink-Tracker---Zazie-Productions-/pull/20)) | +1 record (castro.fm BMC Radio Art episode → project `bmc-radio`, Tier B, live) → 755; fixed the ingest feedback loop + Annex contents chip offset; Annex §17 |
