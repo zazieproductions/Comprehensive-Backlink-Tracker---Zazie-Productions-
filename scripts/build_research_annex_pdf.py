@@ -492,6 +492,10 @@ USP_INTAKE = read_csv('registry', 'user_submitted_pass_2026-09-15', 'intake_ledg
 USP_ACCESS = read_csv('registry', 'user_submitted_pass_2026-09-15', 'source_access_log.csv')
 USP_LEADS = read_csv('registry', 'user_submitted_pass_2026-09-15', 'discovery_ledger.csv')
 USP_DUPES = read_csv('registry', 'user_submitted_pass_2026-09-15', 'duplicate_map.csv')
+UL_LEDGER = read_csv('registry', 'user_submitted_link_2026-09-24', 'submission_ledger.csv')
+UL_DUPES = read_csv('registry', 'user_submitted_link_2026-09-24', 'duplicate_map.csv')
+UL_LEADS = read_csv('registry', 'user_submitted_link_2026-09-24', 'adjacent_leads.csv')
+UL_ACCESS = read_csv('registry', 'user_submitted_link_2026-09-24', 'source_access_log.csv')
 
 story = []
 
@@ -499,7 +503,7 @@ story = []
 stat_cells = [
     (str(N_LINKS), 'links in the master volume'),
     (str(len(ENGINE_AUDIT) + len(ENGINE_MATRIX) + len(MX_VISIBILITY)), 'engine probes logged'),
-    ('16', 'research passes & submitted batches'),
+    ('17', 'research passes & submitted batches'),
     (str(len(MD_FEATURES)), 'magazine / zine features'),
     (str(len(P3_LEDGER)), 'editorial-literary ledger rows'),
     (str(len(LT_LEDGER)), 'quarantine register rows'),
@@ -523,11 +527,13 @@ WHAT = (
     'the complete low-trust quarantine register with its safety charter, the map from the 2026 Accomplishment Register '
     'to public links, a listen link for every compilation credit, the seed-domain coverage of the original link dump, '
     'and every query and source-access log the passes produced. Sections 13, 14 and 16 report the three batches of '
-    'URLs handed in on 2026-09-15; section 15 re-cuts the whole census by the project each link belongs to.'
+    'URLs handed in on 2026-09-15 and section 17 the single link handed in on 2026-09-24; section 15 re-cuts the '
+    'whole census by the project each link belongs to.'
     '<br/><br/><b>HOW IT IS ORGANISED.</b> One colour-coded section per research register, ordered from method (rules, '
     'engine audits) through the discovery passes in the order they ran, to the cross-cutting registers (quarantine, '
-    'link map, listen links, seed coverage), the process appendices (queries, access logs, endpoints) and the '
-    'the project-section re-cut of the census (§15) and the three user-submitted batches of 2026-09-15 (§13, §14, §16). Chips carry '
+    'link map, listen links, seed coverage), the process appendices (queries, access logs, endpoints), the '
+    'project-section re-cut of the census (§15), the three user-submitted batches of 2026-09-15 (§13, §14, §16) and the '
+    'single link submitted on 2026-09-24 (§17). Chips carry '
     'status: <font color="#188038"><b>green = worked / live</b></font>, <font color="#b06000"><b>amber = partial</b></font>, '
     '<font color="#b3261e"><b>red = blocked / broken</b></font>, <font color="#7b8794"><b>grey = unreach­able / uncheck­ed</b></font>, '
     '<font color="#546e7a"><b>slate = lead or archive-only</b></font>. Every URL is printed in full and clickable.'
@@ -554,22 +560,25 @@ TOC = [
     ('14', 'Second user-supplied backlink pass — 2026-09-15', 'ten hand-found URLs fetched and tested: submission ledger, evidence read on each page, five derived discoveries, four rows corrected', 'sec:14', '#d84315'),
     ('15', 'Project-section pass — grouping the census by project', 'the census re-cut one project at a time — every commission, compilation, anthology and film with all of its links in one place, own page first, scraped copies last', 'sec:15', '#0b6e4f'),
     ('16', 'User-submitted link batch — 2026-09-15 (third batch)', 'eleven reader-found/adjacent URLs, each opened and exact-name checked: verdicts, quarantine calls, leads and the fetch log — incl. the Ars Electronica 2026 work credit', 'sec:16', '#ad1457'),
+    ('17', 'User-submitted link — 2026-09-24 (Castro episode page)', 'one reader-found podcast-player page for the BMC Radio Art commission: exact-name check, the same-episode surface map, adjacent leads, the fetch log — and one pipeline fix', 'sec:17', '#3949ab'),
     ('A', 'Appendix — tools, endpoints & query templates', 'all search endpoints, APIs and archive lookups used by the census, clickable', 'sec:A', '#0b5d8f'),
 ]
 toc_rows = []
 toc_extra = []
-for i, (num, title, blurb, key, col) in enumerate(TOC, start=1):
+# the contents grid has no header row, so table row i IS TOC entry i (0-based) — indexing from 1 used to paint
+# every chip one row low (row 1 blank, each section in its predecessor's colour, the appendix in §16's)
+for i, (num, title, blurb, key, col) in enumerate(TOC):
     toc_rows.append([para(f'<para alignment="center"><font color="#ffffff" size="7"><b>{esc(num)}</b></font></para>', colour=colors.white),
                      para(f'<b>{esc(title)}</b>', 'cell'),
                      para(esc(blurb), 'cell', colour=SOFT),
                      para(f'<b>page {PAGEMAP.get(key, "-")}</b>', 'cell', TA_RIGHT,
                           colour=INK if PAGEMAP.get(key) else SOFT)])
     toc_extra.append(('BACKGROUND', (0, i), (0, i), colors.HexColor(col)))
-story += [banner('CONTENTS', size=11, sub='sixteen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
+story += [banner('CONTENTS', size=11, sub='seventeen colour-coded registers plus the endpoint appendix — rendered from the CSV/JSON registries'),
           Spacer(1, 3 * mm),
           grid(toc_rows, [9 * mm, 74 * mm, CW - 111 * mm, 28 * mm], zebra=True, font=7.2,
-               extra=toc_extra + [('VALIGN', (0, 1), (0, -1), 'MIDDLE'),
-                                  ('TOPPADDING', (0, 1), (-1, -1), 3), ('BOTTOMPADDING', (0, 1), (-1, -1), 3)])]
+               extra=toc_extra + [('VALIGN', (0, 0), (0, -1), 'MIDDLE'),
+                                  ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3)])]
 story.append(PageBreak())
 
 
@@ -1713,6 +1722,124 @@ for i, r in enumerate(USER_ACCESS):
 story.append(grid(rows, [26 * mm, CW - 26 * mm - 20 * mm - 78 * mm - 18 * mm, 20 * mm, 78 * mm, 18 * mm],
                   header=['UTC TIME', 'URL (clickable)', 'METHOD', 'EXACT STRING CONFIRMED', 'LIVE'],
                   zebra=True, font=5.7, extra=extra))
+story.append(PageBreak())
+
+# =========================================================== §17 USER-SUBMITTED LINK (2026-09-24)
+UL_PROJ = next((p for p in PROJ_LIST if p.get('id') == 'bmc-radio'), None) or {}
+UL_PROJ_N = UL_PROJ.get('link_count', 0)
+UL_PROJ_DIST = (UL_PROJ.get('role_counts') or {}).get('distribution', 0)
+
+section('17', 'USER-SUBMITTED LINK — 2026-09-24 (CASTRO EPISODE PAGE)', '#3949ab',
+        'one podcast-player page handed in by the census owner: opened, exact-name checked and filed under the BMC Radio '
+        'Art commission it belongs to — a new host for the census, not a new credit',
+        right=f'{len(UL_LEDGER)} URL dispositioned · {len(UL_ACCESS)} fetch attempts logged · {len(UL_LEADS)} leads queued')
+
+story.append(notebox(
+    '<b>WHAT HAPPENED.</b> On 2026-09-24 the census owner handed in one more link, '
+    '<font face="Courier">castro.fm/episode/6w8RTd</font>. It is the <b>Castro</b> podcast player\'s page for the episode '
+    '<i>BMC Radio Art: Zazie Productions - Cheaper Impressions</i> of <b>Black Mountain College Radio</b>, the podcast of '
+    'the Black Mountain College Museum + Arts Center (15 December 2021, 4 min). Both census names render on the page — '
+    '<font face="Courier">Zazie Productions</font> in the episode title, <font face="Courier">Zazie Kanwar-Torge</font> in '
+    'the artist bio of the show notes — so it clears the Pass-7 exact-name rule on its own. '
+    f'<b>Result: 1 new record</b> (Podcasts &amp; Broadcasts, Tier B, live), filed in PART I under <b>BMC RADIO ART</b> '
+    f'with the role <i>distribution</i>: the commission section now holds {UL_PROJ_N} links, {UL_PROJ_DIST} of them '
+    'platform copies of the same broadcast. What is new is the host, not the credit — the commission was already counted '
+    'through the museum\'s announcement page, and this episode was already catalogued on Apple Podcasts, SoundCloud, '
+    'iVoox, podcast365.ro and Listen Notes (17.2). castro.fm had no entry in the project host table, which would have '
+    'filed it as a generic <i>reference</i> page; it now sits with the other podcast directories as <i>distribution</i>.'
+    '<br/><br/><b>HOW IT WAS READ.</b> The sandbox shell could not reach castro.fm at all (TLS handshake reset — the same '
+    'reset hit bing.com while github.com and pypi.org answered), so the page was read through the fetch_page tool; both '
+    'attempts are in the fetch log (17.4). The show-level pages the episode links to — the Castro, Pocket Casts and '
+    'Overcast pages for the whole podcast — were not opened and are queued as leads (17.3); leads never count as records.',
+    '#e8eaf6'))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>17.1 — Submission ledger: verdict per URL</b> (cross-registered: DUP-017 · project bmc-radio)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(UL_LEDGER, start=1):
+    tc, tfill, _ = tier_chip(r.get('TrustTier', ''))
+    lc, lfill = live_chip(r.get('LiveStatus', ''))
+    cat = r.get('MasterCategory', '')
+    rows.append([para(f'<b>{esc(r.get("RecordID", ""))}</b>', 'tiny'),
+                 para(f'<b>{esc(r.get("FeatureTitle", ""))}</b>', 'tiny'),
+                 para(linkify(r.get('URL', ''), '#283593'), 'url'),
+                 para(esc(r.get('ExactNameOnPage', '')), 'tiny', colour=SOFT),
+                 para(f'<font color="{CAT_COLOR.get(cat, "#37474f")}"><b>{esc(cat)}</b></font>', 'tiny'),
+                 tc, lc,
+                 para(esc(r.get('Project', '')), 'tiny'),
+                 para(f'<b>{esc(r.get("Novelty", ""))}.</b> {esc(r.get("Notes", ""))}', 'tiny', colour=SOFT)])
+    extra += [('BACKGROUND', (5, i), (5, i), tfill), ('BACKGROUND', (6, i), (6, i), lfill),
+              ('VALIGN', (5, i), (6, i), 'MIDDLE')]
+story.append(grid(rows, [15 * mm, 40 * mm, 44 * mm, 38 * mm, 24 * mm, 9 * mm, 13 * mm, 24 * mm, CW - 207 * mm],
+                  header=['ID', 'PAGE', 'URL (clickable)', 'NAME AS THE PAGE RENDERS IT', 'CATEGORY', 'TIER', 'LIVE',
+                          'PROJECT / ROLE', 'NOVELTY · VERDICT / EVIDENCE'],
+                  zebra=True, font=5.7, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>17.2 — The same episode across the census</b> (why the Castro page is its own record but not a '
+                  'second credit)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in UL_DUPES:
+    variants = [v.strip() for v in (r.get('Variants') or '').split(' | ') if v.strip()]
+    rows.append([para(f'<b>{esc(r.get("ClusterID", ""))}</b>', 'tiny'),
+                 para(linkify(r.get('Canonical', ''), '#283593'), 'url'),
+                 para('<br/>'.join(linkify(v) for v in variants), 'url'),
+                 para(esc(r.get('Type', '')), 'tiny'),
+                 para(f'<b>{esc(r.get("Status", ""))}</b>', 'tiny'),
+                 para(esc(r.get('Notes', '')), 'tiny', colour=SOFT)])
+story.append(grid(rows, [15 * mm, 36 * mm, 92 * mm, 24 * mm, 24 * mm, CW - 191 * mm],
+                  header=['CLUSTER', 'NEW URL (clickable)', 'SAME-EPISODE SURFACES ALREADY CATALOGUED (clickable)',
+                          'TYPE', 'TREATMENT', 'NOTES'],
+                  zebra=True, font=5.7))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>17.3 — Adjacent leads queued for a later pass</b> (seen on the Castro page, not opened — leads '
+                  'never count as records)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows = []
+for r in UL_LEADS:
+    rows.append([para(f'<b>{esc(r.get("LeadID", ""))}</b>', 'tiny'),
+                 para(linkify(r.get('LeadURL', ''), '#546e7a'), 'url'),
+                 para(esc(r.get('What', '')), 'tiny'),
+                 para(esc(r.get('Status_2026-09-24', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('WhyNotYetRecorded', '')), 'tiny', colour=SOFT),
+                 para(esc(r.get('NextAction', '')), 'tiny', colour=SOFT)])
+story.append(grid(rows, [15 * mm, 62 * mm, 62 * mm, 16 * mm, (CW - 155 * mm) / 2, (CW - 155 * mm) / 2],
+                  header=['LEAD', 'URL (clickable)', 'WHAT IT IS', 'STATUS', 'WHY NOT YET A RECORD', 'NEXT ACTION'],
+                  zebra=True, font=5.7))
+story.append(Spacer(1, 3 * mm))
+
+story.append(para('<b>17.4 — Fetch log</b> (every attempt on 2026-09-24, including the route that failed)', 'legend'))
+story.append(Spacer(1, 1.2 * mm))
+rows, extra = [], []
+for i, r in enumerate(UL_ACCESS, start=1):
+    tag = r.get('LiveStatusTag', '') or ''
+    lc, lfill = (live_chip if tag.lower().startswith('live') else access_chip)(tag)
+    rows.append([para(esc((r.get('TimestampUTC') or '')[:19]), 'tiny', colour=SOFT),
+                 para(linkify(r.get('URL', ''), '#1a3d8f'), 'url'),
+                 para(f'<font face="Courier" size="5.2">{esc(r.get("Method", ""))}</font>', 'tiny'),
+                 para(f'<b>{esc(r.get("HTTPStatus", ""))}</b>', 'tiny'),
+                 para(esc(r.get('ExactPhraseFound', '')), 'tiny'),
+                 para(esc(r.get('ErrorNotes', '')), 'tiny', colour=SOFT),
+                 lc])
+    extra += [('BACKGROUND', (6, i), (6, i), lfill), ('VALIGN', (6, i), (6, i), 'MIDDLE')]
+story.append(grid(rows, [26 * mm, 44 * mm, 24 * mm, 10 * mm, 56 * mm, CW - 180 * mm, 20 * mm],
+                  header=['UTC TIME', 'URL (clickable)', 'METHOD', 'HTTP', 'EXACT STRING CONFIRMED', 'ERROR NOTES', 'RESULT'],
+                  zebra=True, font=5.7, extra=extra))
+story.append(Spacer(1, 3 * mm))
+
+story.append(notebox(
+    '<b>ONE PIPELINE FIX CAME OUT OF THIS PASS.</b> <font face="Courier">scripts/ingest_all_links.py</font> harvests every '
+    'CSV under <font face="Courier">data/</font> — and since the project pass (§15) was added, that included the pass\'s '
+    'own output, <font face="Courier">data/master/project_clusters.csv</font>. Every rebuild after the first therefore fed '
+    'the project pass back into the census: a baseline rebuild with <i>no</i> data change promoted 66 records from '
+    'unverified to verified (the harvester reads any status cell containing "verified" as verified — "unverified" '
+    'included), injected 161 dates, changed 276 credibility scores and moved 695 ranks, none of it backed by evidence. '
+    'The derived file is now excluded from the ingest. With the fix a rebuild reproduces the committed census '
+    'byte-for-byte and is idempotent, so the only change this pass makes to the master data is the one new record and '
+    'the one-place rank shift it causes for the records below it.', '#fdf4e5'))
 story.append(PageBreak())
 
 # =========================================================== APPENDIX — ENDPOINTS & TOOLS

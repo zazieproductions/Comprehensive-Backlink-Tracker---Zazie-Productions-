@@ -14,10 +14,13 @@ notes were retired, so this script needs nothing else.
   data/research/engine_audit.csv                            Pass 1-8 engine access audit (no record URLs)
   registry/**.csv                                           feature directory, low-trust ledger, regional pass,
                                                             max-depth pass, phase-3 ledger, web-presence expansion,
-                                                            user-supplied backlink pass (2026-09-15), seed
+                                                            user-submitted passes (2026-09-15, 2026-09-24), seed
   sources/Zazie_Media_Master.pdf                            133 verified URL-level records (+leads), structured rows
   sources/Random_Zazie_Productions_links.pdf                raw link dump (annotations + text lines)
   sources/Zazie_2026_Accomplishment_Register_Maximal_Edition.docx   docx relationship hyperlinks
+
+Never ingested: data/master/project_clusters.csv — it is a DOWNSTREAM output (built from this script's
+result by scripts/build_project_sections.py), so reading it back would loop the project pass into the census.
 
 Usage:  python3 scripts/ingest_all_links.py
 """
@@ -353,9 +356,17 @@ def harvest_csv(path, label):
                               date=g('Date', 'DateSearched', 'year', 'date')[:24], notes=notes)
 
 
+# Derived outputs are never inputs. data/master/project_clusters.csv is written by
+# scripts/build_project_sections.py FROM this script's output; harvesting it fed the project pass
+# back into the census on every rebuild after the first (66 statuses promoted, 161 dates injected,
+# ~700 ranks shifted with no new evidence). Excluding it makes steps 1 -> 4 idempotent.
+DERIVED_OUTPUTS = {os.path.join('data', 'master', 'project_clusters.csv')}
+
 for f in sorted(glob.glob(os.path.join(BASE, 'registry', '**', '*.csv'), recursive=True)):
     harvest_csv(f, os.path.relpath(f, BASE))
 for f in sorted(glob.glob(os.path.join(BASE, 'data', '**', '*.csv'), recursive=True)):
+    if os.path.relpath(f, BASE) in DERIVED_OUTPUTS:
+        continue
     harvest_csv(f, os.path.relpath(f, BASE))
 
 
@@ -672,7 +683,7 @@ for e in engine_rows:
     e['sources'] = sorted(e['sources'])
 
 with open(OUT, 'w', encoding='utf-8') as fh:
-    json.dump({'generated_from_repo_date': '2026-09-15',
+    json.dump({'generated_from_repo_date': '2026-09-24',
                'counts': {'records': len(rows), 'engine_endpoints': len(engine_rows)},
                'records': rows, 'engine_endpoints': engine_rows}, fh, indent=1, ensure_ascii=False)
 
