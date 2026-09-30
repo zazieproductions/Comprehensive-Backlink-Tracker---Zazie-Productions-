@@ -1,0 +1,4 @@
+LeadID,LeadURL,What,FoundVia,Status_2026-09-24,WhyNotYetRecorded,NextAction
+USL24-01,https://castro.fm/share/podcast/7597da06-be58-4198-afef-7bb286e158e3,Castro show page — Black Mountain College Radio (the podcast this episode belongs to),USB24-01 page header (show link),not opened,"show-level page; its episode list was not read this pass, so the exact name has not been observed on it",open; record as a Podcasts & Broadcasts distribution row only if the episode title renders the exact name
+USL24-02,http://pca.st/itunes/1538618362,"Pocket Casts — Black Mountain College Radio (Listen-on button, Apple feed id 1538618362)",USB24-01 Listen-on buttons,not opened,same,same
+USL24-03,https://overcast.fm/itunes1538618362,"Overcast — Black Mountain College Radio (Listen-on button, Apple feed id 1538618362)",USB24-01 Listen-on buttons,not opened,same,same

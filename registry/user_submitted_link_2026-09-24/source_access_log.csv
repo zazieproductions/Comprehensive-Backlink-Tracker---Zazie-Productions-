@@ -1,0 +1,3 @@
+TimestampUTC,URL,Method,QueryOrNavigation,HTTPStatus,Bytes,ExactPhraseFound,ErrorNotes,LiveStatusTag
+2026-09-24T04:25:00Z,https://castro.fm/episode/6w8RTd,fetch_page,user submission — direct fetch,200,n/a,"Yes — ""Zazie Productions"" (episode title) + ""Zazie Kanwar-Torge"" (show notes)",,live
+2026-09-24T04:25:00Z,https://castro.fm/episode/6w8RTd,curl (sandbox shell),user submission — second fetch route,000,0,n/a — no response,"TLS handshake reset (curl exit 35, SSL_ERROR_SYSCALL). The same reset hit bing.com and the castro.fm homepage from this sandbox while github.com and pypi.org answered 200: a sandbox egress limit, not a property of castro.fm. The evidence rests on the fetch_page read above.",unreachable (sandbox egress)

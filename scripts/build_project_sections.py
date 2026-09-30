@@ -93,6 +93,7 @@ HOST_ROLE = {
     'tunein.com': 'distribution', 'ivoox.com': 'distribution', 'podbean.com': 'distribution',
     'listennotes.com': 'distribution', 'podcasts-online.org': 'distribution',
     'podcast365.ro': 'distribution', 'soundcloud.com': 'distribution', 'bandcamp.com': 'distribution',
+    'castro.fm': 'distribution',
     'youtube.com': 'media', 'youtu.be': 'media', 'vimeo.com': 'media', 'tiktok.com': 'media',
     'eventbrite.co.uk': 'event', 'tickettailor.com': 'event', 'stayhappening.com': 'event',
     'mycommunitycinema.org.uk': 'event', 'dionysianpubliclibrary.com': 'canonical',
