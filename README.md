@@ -45,6 +45,7 @@ Pick your goal — each row is a complete route, no archaeology needed:
 | 🕵️ Trace one link back to the pass that found it | `registry/<pass>/` ledgers + `source_access_log.csv` | Annex §2–8, §12–14, §16–17 |
 | 🛡️ Avoid the quarantined, low-trust links | ⛔ Tier D rows — printed last, in the quarantine section | Annex §8 — Low-Trust Quarantine Register |
 | 🏗️ Rebuild the PDFs from the data | [Regenerate](#regenerate) | `scripts/` |
+| 🔗 Hand over a new link, or see the state at a glance | Notion → 🧭 **Backlink Census — Continuity Hub** | [Notion bridge](#notion-bridge) → `registry/notion_bridge/` |
 
 ## 📦 The two deliverables
 
@@ -172,6 +173,22 @@ Inside every project section of the Master Directory the rows are grouped by rol
 | 10 | 🗄️ Archive snapshot | <span style="background-color:#8a6d3b;">&nbsp;&nbsp;&nbsp;</span> | `#8a6d3b` | 3 | Wayback / archive captures of a page that also exists live |
 | 11 | ⛔ Quarantine — do not cite | <span style="background-color:#616161;">&nbsp;&nbsp;&nbsp;</span> | `#616161` | 71 | scraped clones, SEO doorways and syndication spam carrying the project — evidence of contamination only |
 
+## 🔗 Notion bridge
+
+The Notion workspace and this repo know about each other. The repo is the **source of truth**; Notion
+is a **mirror and an intake point** — it never becomes a census source.
+
+| Where | What |
+|---|---|
+| 🧭 **Backlink Census — Continuity Hub** (Notion, child of *Media Coverage*) | Derived state: counts, open loops, rebuild commands, object map — refreshed with the counts, as-of dated |
+| 📥 **Backlink Submissions** (Notion, child of the hub) | Drop-box for candidate links: one row per URL, `New` → `Ingested` (with the pass folder) · `Duplicate` · `Not exact name` |
+| [`registry/notion_bridge/`](registry/notion_bridge/README.md) | The bridge contract, and `notion_object_map.csv` — one row per Notion object with its ID, repo counterpart and direction |
+| [`agent/AGENT_MEMORY.md`](agent/AGENT_MEMORY.md) | 🧠 The resume point the hub mirrors; standing job #5 is keeping the two in step |
+
+A published **Coverage** row or a new **Submissions** row is a *candidate*. It enters the census only
+through a dated pass, after the exact name is seen rendering on the page — the same evidence rule as
+every other link (Annex §1).
+
 ## 🗂️ Repository map
 
 **One-line data flow** — every file sits somewhere on this pipeline:
@@ -210,9 +227,12 @@ Inside every project section of the Master Directory the rows are grouped by rol
 │   ├── user_supplied_backlinks_2026-09-15/         second user-supplied pass: submission ledger & access log
 │   ├── user_submitted_batch_2026-09-15/            third user-submitted batch: submission ledger, adjacent leads, access log
 │   ├── user_submitted_link_2026-09-24/             fourth submission (one link): ledger, same-episode map, adjacent leads, access log
-│   └── project_sections/
-│       ├── projects.csv                            🧩 THE PROJECT REGISTER — one row per project + its match rules
-│       └── README.md                               how to add a project, an alias or an exclusion
+│   ├── project_sections/
+│   │   ├── projects.csv                            🧩 THE PROJECT REGISTER — one row per project + its match rules
+│   │   └── README.md                               how to add a project, an alias or an exclusion
+│   └── notion_bridge/                              🔗 continuity with the Notion workspace (§ Notion bridge)
+│       ├── notion_object_map.csv                   Notion object → repo counterpart, direction, as-of date
+│       └── README.md                               the bridge contract: authority, flows, inert columns, no secrets
 ├── 🤖 agent/                                       ← AGENT LAYER: working memory & session handoffs
 │   ├── AGENT_MEMORY.md                             🧠 read first: live state, decisions, open loops
 │   ├── README.md                                   ▶️⏹️ session-start / session-end rituals
@@ -237,6 +257,8 @@ Inside every project section of the Master Directory the rows are grouped by rol
 ## ♻️ Regenerate
 
 Requirements: Python 3 + `reportlab` (and `pymupdf`) — a local `.venv/` is git-ignored.
+**Step 1 refuses to run** if `pymupdf` is missing while `sources/*.pdf` are present: rebuilding
+without the PDF sources would silently rewrite provenance across the census (L-007).
 
 | Step | Run | Result |
 |---|---|---|

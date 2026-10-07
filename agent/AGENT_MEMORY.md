@@ -5,9 +5,9 @@
 > PDFs; this file never overrides them (when in doubt, `data/` wins and this file gets fixed).
 > Rituals and rules: [`agent/README.md`](README.md).
 
-**Last updated:** 2026-09-24 ·
-**Last session:** [`2026-09-24-castro-bmc-radio-backlink`](sessions/2026-09-24-castro-bmc-radio-backlink.md) ·
-**Branch:** `arena/01a0d1a8-comprehensive-backlink-tracker`
+**Last updated:** 2026-10-07 ·
+**Last session:** [`2026-10-07-notion-continuity-bridge`](sessions/2026-10-07-notion-continuity-bridge.md) ·
+**Branch:** `arena/4a5a934e-comprehensive-backlink-tracker`
 
 ## 🎯 Mission
 
@@ -41,6 +41,17 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
 - **Figures corrected from the data on 2026-09-24** (they were stale before that session, not moved
   by it): README "links with no project" 338 → **348**; README role band *Reference* 43 → **44**;
   project-register README "400 links" → 402 and "743 records" → 755.
+- **Notion bridge live (2026-10-07).** The Notion workspace is wired to the census through
+  `registry/notion_bridge/` — see 🔁 standing job #5. Notion is a **mirror + intake, never a source**:
+  🧭 *Backlink Census — Continuity Hub* (child of *Media Coverage*) mirrors 📍 and 🌀, and
+  📥 *Backlink Submissions* (child of the hub) is where candidate links are dropped. Every object,
+  its ID and its repo counterpart is in `notion_object_map.csv` with an as-of date.
+- **Rebuild environment (2026-10-07).** Run every step inside `.venv/` —
+  `python3 -m venv .venv && ./.venv/bin/pip install pymupdf reportlab`. `.venv/` is git-ignored *and*
+  excluded from workspace snapshots, so it must be recreated in each new session. System Python lacks
+  both deps; the ingest now **refuses to run** in that state rather than degrading (L-007, closed).
+  Measured impact of the old silent path: no records lost, but 422 records lost their PDF provenance,
+  379 lost PDF-derived notes/titles and 4 tiers shifted — a census rewritten with no error.
 
 ## 🔁 Standing jobs (the recurring playbook)
 
@@ -59,6 +70,11 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
    `registry/maxdepth_pass_2026-09-05`); never edit old ledgers in place.
 4. **Anything that changes counts** → regenerate steps 1→4 (root README §♻️) and update, in one
    session: root README badges & prose, and 📍 in this file.
+5. **Keep the Notion bridge in sync** → after any change to counts or loops, refresh the hub page's
+   *Where things stand* table and *Open loops* list (same session, with the as-of date), and update
+   `registry/notion_bridge/notion_object_map.csv` whenever an object or property changes. Intake flows
+   the other way: a new row in 📥 *Backlink Submissions* (or a published Coverage row) becomes a normal
+   dated pass — the bridge never bypasses evidence.
 
 ## 🧠 Decision log (append-only)
 
@@ -71,6 +87,10 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
 | 2026-09-24 | Ingest excludes the derived `data/master/project_clusters.csv` (`DERIVED_OUTPUTS` in `ingest_all_links.py`) | It globs `data/**/*.csv`, so every rebuild after the first looped the project pass back in: 66 unverified→verified promotions, 161 injected dates, 276 score / 695 rank changes, no evidence. With the exclusion, HEAD rebuilds byte-identically and the pipeline is idempotent | same |
 | 2026-09-24 | Annex contents-grid chip index fixed (`enumerate(TOC)` from 0) | The grid has no header row, so every chip sat one row low (row 1 blank, appendix in §16's colour); the new §17 row would have shown §16's colour | same |
 | 2026-09-24 | Page renders **both** names → `master_index` target = `Zazie Kanwar-Torge`; the pass ledger's Target lists both | Follows the 2026-09-15 rows (Clan Analogue track page, exibart event page) | same |
+| 2026-10-07 | Notion is a **mirror + intake, never a census source**; the repo wins every disagreement | Two systems, one authority — the same principle as "memory is never the source of truth" | [2026-10-07](sessions/2026-10-07-notion-continuity-bridge.md) |
+| 2026-10-07 | Bridge lives in `registry/notion_bridge/` (register + README), not in `agent/`; map columns stay harvest-inert (`NotionURL`, `VerifiedOn`…) | `agent/` stays identity-free working state; the ingest globs `registry/**/*.csv`, so a `url`/`link`/`backlink` column would silently fabricate census records | same |
+| 2026-10-07 | Intake database kept separate from the Coverage database; hub page parented under Media Coverage | Coverage is outreach status (pitched → published), intake is candidate URLs; `create_page` cannot create workspace-level pages, so Media Coverage is the parent until the user moves it | same |
+| 2026-10-07 | The `pymupdf` trap is **fixed in code** (ingest exits 1), not just documented | A missing dependency that silently rewrites 422 provenance links and 4 tiers is a defect; documentation is what you write after the code can no longer do the wrong thing | same |
 
 ## 🌀 Open loops
 
@@ -82,12 +102,18 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
 | L-004 | Master Directory contents grid paints every chip **one row low** — same header-less-grid bug fixed in the Annex this session, but encoded in ~12 hand-written row offsets (`toc_extra` in `build_master_directory_pdf.py`, ~L756-771: band tints, chips, separator rules) | Flagged to the user, not fixed (pre-existing, outside that session's task). With an OK: shift every `toc_extra` row index by −1 (keep `-1` end rows), rebuild, check page 7 visually | 2026-09-24 |
 | L-005 | Latent: `harvest_csv` computes status with `'verified' in live`, so a cell reading "unverified" harvests as verified. **0 records affected today** (a higher-priority `master_index` status always wins); it only amplified the L-002 loop | Optional fix: word-boundary test; must still rebuild byte-identical to the current census | 2026-09-24 |
 | L-006 | Page-map caches (`data/master/.pdf_pagemap.json`, `.annex_pagemap.json`) are only re-measured when **absent** — with a stale cache the contents pages keep old page numbers | Documented (root README ♻️ tip + pitfall 1). Optional code fix: re-run pass 2 whenever the measured map differs from the cached one | 2026-09-24 |
+| L-007 | ~~A missing `pymupdf` makes `ingest_all_links.py` silently skip both PDF sources~~ ✅ **2026-10-07 — fixed in code.** The ingest now exits 1 with an actionable message when `pymupdf` is absent but `sources/*.pdf` exist. Measured impact of the old path (system `python3`, 2026-10-07): **0 records lost**, but 422 lost PDF provenance, 379 lost PDF-derived notes/titles, 4 tiers shifted — silently. Both directions tested: system python → loud fail, `data/` untouched; `.venv` python → `data/` byte-identical | Closed. Recreate `.venv` first thing every session (🧰) — now enforced by the script, not by memory | 2026-10-07 |
 
 ## 🧰 Quick how-to (details in root README)
 
-- Rebuild everything, in order: `python scripts/ingest_all_links.py` →
-  `python scripts/build_project_sections.py --report` → `python scripts/build_master_directory_pdf.py` →
-  `python scripts/build_research_annex_pdf.py` (Python 3 + `reportlab` + `pymupdf`; `.venv/` is git-ignored).
+- Rebuild everything, in order — **inside `.venv/`**, which is git-ignored and not carried across
+  sandboxes: `python3 -m venv .venv && ./.venv/bin/pip install pymupdf reportlab`, then
+  `./.venv/bin/python scripts/ingest_all_links.py` →
+  `./.venv/bin/python scripts/build_project_sections.py --report` →
+  `./.venv/bin/python scripts/build_master_directory_pdf.py` →
+  `./.venv/bin/python scripts/build_research_annex_pdf.py`. Never use system `python3`: the ingest
+  now hard-fails without `pymupdf` (L-007, fixed), and the builders' page-map pass returns silently
+  without it (L-006).
 - Verify counts before trusting this file:
   `python -c "import json; d=json.load(open('data/master/consolidated_directory.json')); print(len(d['records']), len(d['engine_endpoints']))"`
 - Project arithmetic check: `project_clusters.csv` rows should equal
@@ -119,7 +145,16 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
    those words out of the opening of a new `master_index.csv` note (write "distributes", not
    "syndicates").
 9. **Derived outputs under `data/` must be listed in `DERIVED_OUTPUTS`** (`ingest_all_links.py`) —
-   the ingest globs `data/**/*.csv`, and anything it reads back becomes evidence.
+   the ingest globs `data/**/*.csv`, and anything it reads back becomes evidence. The same glob covers
+   `registry/**/*.csv`: never give a register column a harvestable URL name (`URL`, `link`, `backlink`,
+   `listen_url`…) unless it *is* evidence (see `registry/notion_bridge/README.md`).
+10. **`pymupdf` missing = a rewritten census.** The ingest used to set `pymupdf = None` on ImportError
+    and then skip both PDF sources without a word. **Closed 2026-10-07**: it now exits 1 with the
+    `.venv` bootstrap in the message, before writing anything. The old failure was *not* record loss —
+    it was silent provenance and metadata damage (422 provenance links, 379 note sets, 4 tiers), which
+    is harder to notice. Still always `./.venv/bin/python`, never system `python3`: the builders'
+    page-map pass (L-006) remains silent without the dep. `.venv` is git-ignored and excluded from
+    workspace snapshots — recreate it every session.
 
 ## 📜 Session index
 
@@ -127,3 +162,4 @@ colour-coded. Research baseline **2026-09-05**, extended by four user-submitted 
 |---|---|---|---|
 | 2026-09-21 | [agent-memory-convention](sessions/2026-09-21-agent-memory-convention.md) | `arena/01a0c52f-comprehensive-backlink-tracker` | Created this convention (from the 24/7-agent discussion); no data changes |
 | 2026-09-24 | [castro-bmc-radio-backlink](sessions/2026-09-24-castro-bmc-radio-backlink.md) | `arena/01a0d1a8-comprehensive-backlink-tracker` (PR [#20](https://github.com/zazieproductions/Comprehensive-Backlink-Tracker---Zazie-Productions-/pull/20)) | +1 record (castro.fm BMC Radio Art episode → project `bmc-radio`, Tier B, live) → 755; fixed the ingest feedback loop + Annex contents chip offset; Annex §17 |
+| 2026-10-07 | [notion-continuity-bridge](sessions/2026-10-07-notion-continuity-bridge.md) | `arena/4a5a934e-comprehensive-backlink-tracker` | Wired the Notion workspace to the census: hub page 🧭 + intake DB 📥 on the Notion side, `registry/notion_bridge/` map + contract on the repo side; found the `pymupdf` silent-degradation trap and **closed it in code** (L-007 — ingest exits 1 rather than rewriting provenance); re-verified the untouched-checkout rebuild byte-identical. No census change (755) |
