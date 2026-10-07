@@ -41,6 +41,25 @@ except Exception:
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(BASE, 'data', 'master', 'consolidated_directory.json')
 
+# The source PDFs are two of the census's evidence sources. Without pymupdf, harvest_pdf() and the
+# Media Master table reader both no-op, so the rebuild used to finish "successfully" while quietly
+# rewriting the census: measured 2026-10-07 → 422 records lost their PDF provenance, 379 lost
+# PDF-derived notes/titles and 4 tiers shifted, with no error and no record to show for it. A census
+# rebuilt without its sources is not the census, so fail loudly and early instead. (L-007)
+PDF_SOURCES = [os.path.join(BASE, 'sources', 'Random_Zazie_Productions_links.pdf'),
+               os.path.join(BASE, 'sources', 'Zazie_Media_Master.pdf')]
+if pymupdf is None:
+    _present = [f for f in PDF_SOURCES if os.path.exists(f)]
+    if _present:
+        sys.exit('FATAL: pymupdf is not installed, but source PDFs are present:\n'
+                 + ''.join(f'  - {os.path.relpath(f, BASE)}\n' for f in _present)
+                 + 'Rebuilding without them would silently drop PDF-derived sources, notes and tiers\n'
+                   'from the census (422 provenance links / 379 note sets / 4 tiers on 2026-10-07).\n'
+                   'Use the documented build environment:\n'
+                   '  python3 -m venv .venv && ./.venv/bin/pip install pymupdf reportlab\n'
+                   '  ./.venv/bin/python scripts/ingest_all_links.py\n'
+                   '(agent/AGENT_MEMORY.md — pitfall 10 / L-007)')
+
 SPAM = 'Spam, Scraper, Syndication, SEO-Poisoning & Low-Trust'
 
 CANON_CATS = ['Press & Editorial', 'Film, Festivals & Exhibitions', 'Publications & Recognition',
